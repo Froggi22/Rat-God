@@ -1,11 +1,14 @@
 {
-	"name": "v13",
+	"name": "ratgod",
 	"version": "1.3.0",
 	"description": "Rat God is a intelligent bot that will help you in Escape From Tarkov.",
 	"main": "index.js",
-	"scripts": {
-	"test": "echo \"Error: no test specified\" && exit 1"
-	},
 	"author": "Froggi22",
-	"license": "ISC"
+	"license": "MIT",
+	"dependencies": {
+		"discord.js": "^13.1.0"
+	},
+	"devDependencies": {
+		"standardx": "^7.0.0"
+	}
 }
