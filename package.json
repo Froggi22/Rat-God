@@ -6,7 +6,8 @@
 	"author": "Froggi22",
 	"license": "MIT",
 	"dependencies": {
-		"discord.js": "^13.1.0"
+		"discord.js": "^13.1.0",
+		"dotenv": "^10.0.0"
 	},
 	"devDependencies": {
 		"standardx": "^7.0.0"
