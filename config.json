@@ -1,85 +1,90 @@
 {
-	"ammoEmbedTitle": "Ammunition Table",
-	"ammoEmbedDescription": "**Type \"/ammocmd\" to get the list of all calibers**",
-	"embedColor": "#ffd700",
+	"embedDesign": {
+		"gameUpdate": "Updated for game version: 0.12.11.2.13567",
+		"color": "#ffd700",
+
+		"ammoTitle": "Ammunition Table",
+		"ammoDescription": "**Type \"/Ammocmd\" to get the list of all calibers**",
+		
+		"mapsNullTitle": "Maps Command",
+		"mapsNullDescription": "The different types of maps",
+
+		"mapsInfoDescription": "Useful info"
+	},
+
+	"ammo": {
+		"12x70mm": "https://cdn.discordapp.com/attachments/865617643449221141/865623942177882132/12x70mm.png",
+		"20x70mm": "https://cdn.discordapp.com/attachments/865617643449221141/865623976964390922/20x70mm.png",
+		"23x75": "https://cdn.discordapp.com/attachments/865617643449221141/865623994190397520/23x75mm.png",
+		"9x18mm Makarov": "https://cdn.discordapp.com/attachments/865617643449221141/865624028818440202/9x18_Makarov.png",
+		"7.62x25mm Tokarev": "https://cdn.discordapp.com/attachments/865617643449221141/865624052365918208/7.62x25mm_Tokarev.png",
+		"9x19mm Parabellum": "https://cdn.discordapp.com/attachments/865617643449221141/865624092975956038/9x19_Parabellum.png",
+		".45 ACP": "https://cdn.discordapp.com/attachments/865617643449221141/865624115665698876/45_ACP.png",
+		"9x21mm Gyurza": "https://cdn.discordapp.com/attachments/865617643449221141/865624133940543488/9x21mm_Gyurza.png",
+		"5.7x28mm FN": "https://cdn.discordapp.com/attachments/865617643449221141/865624155235418152/5.7x28mm_FN.png",
+		"4.6x30mm HK": "https://cdn.discordapp.com/attachments/865617643449221141/865624181869248592/4.6x30mm_HK.png",
+		"9x39mm": "https://cdn.discordapp.com/attachments/865617643449221141/865624208877027368/9x39mm.png",
+		".366 TKM": "https://cdn.discordapp.com/attachments/865617643449221141/865624227247292486/366_TKM.png",
+		"5.45x39mm": "https://cdn.discordapp.com/attachments/865617643449221141/865624247179411456/5.45x39.png",
+		"5.56x45mm NATO": "https://cdn.discordapp.com/attachments/865617643449221141/865624272462807040/5.56x45mm_NATO.png",
+		".300 Blackout": "https://cdn.discordapp.com/attachments/865617643449221141/865624298453860372/300_Blackout.png",
+		"7.62x39mm": "https://cdn.discordapp.com/attachments/865617643449221141/865683969314652170/7.62x39mm.png",
+		"7.62x51mm NATO": "https://cdn.discordapp.com/attachments/865617643449221141/865684006748815390/7.62x51mm_NATO.png",
+		"7.62x54mmR": "https://cdn.discordapp.com/attachments/865617643449221141/865684038915194930/7.62x54mmR.png",
+		".338 Lapua Magnum": "https://cdn.discordapp.com/attachments/865617643449221141/865684065830043648/338_Lapua_Magnum.png",
+		"12.7x55mm STs-130": "https://cdn.discordapp.com/attachments/865617643449221141/865684097116536862/12.7x55mm_STs-130.png",
+		"40x46 mm": "https://cdn.discordapp.com/attachments/865617643449221141/865684134009634846/40x46_mm.png",
+		"Stationary Weapons": "https://cdn.discordapp.com/attachments/865617643449221141/865684165538480158/Stationary_Weapons.png"
+	},
+
+	"maps": {
+		"FactoryNullImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/6c/Fac4.png/revision/latest?cb=20180322235010",
+		"FactoryInfoImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/4b/Fac9.png/revision/latest?cb=20180322235120",
+		"FactoryMapImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/cd/Factory_3D_b_Johnny_Tushonka.jpg/revision/latest?cb=20210704215141",
+		
+		"WoodsNullImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/cd/Woods-Showcase-11.png/revision/latest?cb=20190212212759",
+		"WoodsInfoImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/74/Woods-Showcase-14.png/revision/latest?cb=20190212212824",
+		"WoodsMapImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/05/Glory4lyfeWoods_map_v4_marked.png/revision/latest?cb=20210221204359",
+		"WoodsHSImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/55/Woods_Caches.png/revision/latest?cb=20210122093726",
+		
+		"CustomsNullImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/40/Customs07.png/revision/latest?cb=20180525014110",
+		"CustomsInfoImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/eb/Customs_Dealmaker_Haunt.png/revision/latest?cb=20200905125123",
+		"CustomsMapImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/55/CustomsLargeExpansionGloryMonki.png/revision/latest?cb=20210224211032",
+		"CustomsHSImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/7e/Customs_Hidden_Stashes.jpg/revision/latest?cb=20191111193149",
+		"CustomsDormsImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/96/DormRoomsMap.jpg/revision/latest?cb=20200328162326",
+		"Customs3DImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/27/2021_Customs_by_PaulRIISK.png/revision/latest?cb=20210202221431",
+
+		"ShorelineNullImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/cd/Woods-Showcase-11.png/revision/latest?cb=20190212212759",
+		"ShorelineInfoImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a1/Sanitar_Map.png/revision/latest?cb=20200803113415",
+		"ShorelineMapImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/ac/Shoreline_Map_-_12.7.png/revision/latest?cb=20200809112827",
+		"ShorelineHSImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/8c/Shoreline_hidden_stashes_map_with_pics.jpg/revision/latest?cb=20210110045931",
+		"ShorelineKeyImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/7e/ShorelineKeySpawnsByStealtheh.jpg/revision/latest?cb=20190908171904",
+		"ShorelineResortImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/34/UNKSO_Shoreline_Resort_Loot_Map_VER_2.0.png/revision/latest?cb=20201130114640",
+		"Shoreline3DImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e1/Actual_caches_37_map_shoreline.jpg/revision/latest?cb=20200105023458",
+
+		"InterchangeNullImage": "https://i.imgur.com/uYXcQx9.jpg",
+		"InterchangeInfoImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d9/InterchangeKillaPath.jpg/revision/latest?cb=20200122135446",
+		"InterchangeMapImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e5/InterchangeMap_Updated_4.24.2020.png/revision/latest?cb=20210320055357",
+		"InterchangeHSImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/fe/Interchange_hidden_stash_map.jpg/revision/latest?cb=20191117132146",
+
+		"LabsNullImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/db/Labs-Showcase-10.png/revision/latest?cb=20190123211524",
+		"LabsInfoImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/24/Labs-Showcase-2.png/revision/latest?cb=20190123211403",
+		"LabsMapImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/cf/The_Lab_Map_%28Horizontal%29_%28EN%29.png/revision/latest?cb=20200330144615",
+		"LabsBasementImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/06/TheLabBasementByLogiwonk.png/revision/latest?cb=20210525222902",
+		"LabsFirstImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/35/TheLabFirstFloorByLogiwonk.png/revision/latest?cb=20190210195441",
+		"LabsSecondImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/0f/TheLabSecondFloorByLogiwonk.png/revision/latest?cb=20190210195443",
+		"Labs3DImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/6d/The_Lab_3D_map_by_SteelSmith_TTV.png/revision/latest?cb=20200510152630",
+
+		"ReserveNullImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b6/Reserve_top_view.jpg/revision/latest?cb=20190723174600",
+		"ReserveInfoImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/62/Gluhar_Spawn_Locations.png/revision/latest?cb=20191226213630",
+		"ReserveMapImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/42/3D_Map_by_loweffortsaltbox.png/revision/latest?cb=20200410160036",
+		"ReserveKeyImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/9f/Keys_and_doors_v3.png/revision/latest?cb=20201023113645",
+		"ReserveD2Image": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d0/ReserveExpandedUnderground.png/revision/latest?cb=20201004224828"
+	},
 	
-	"mapsEmbedNullTitle": "Maps Command",
-	"mapsEmbedNullDescription": "The different types of maps",
-
-	"mapsEmbedInfoDescription": "Useful info",
-
-	
-	
-	"ammo12gImage": "https://cdn.discordapp.com/attachments/865617643449221141/865623942177882132/12x70mm.png",
-	"ammo20gImage": "https://cdn.discordapp.com/attachments/865617643449221141/865623976964390922/20x70mm.png",
-	"ammo4gImage": "https://cdn.discordapp.com/attachments/865617643449221141/865623994190397520/23x75mm.png",
-	"ammo918Image": "https://cdn.discordapp.com/attachments/865617643449221141/865624028818440202/9x18_Makarov.png",
-	"ammot762Image": "https://cdn.discordapp.com/attachments/865617643449221141/865624052365918208/7.62x25mm_Tokarev.png",
-	"ammo919Image": "https://cdn.discordapp.com/attachments/865617643449221141/865624092975956038/9x19_Parabellum.png",
-	"ammo45Image": "https://cdn.discordapp.com/attachments/865617643449221141/865624115665698876/45_ACP.png",
-	"ammo921Image": "https://cdn.discordapp.com/attachments/865617643449221141/865624133940543488/9x21mm_Gyurza.png",
-	"ammoa57Image": "https://cdn.discordapp.com/attachments/865617643449221141/865624155235418152/5.7x28mm_FN.png",
-	"ammo46Image": "https://cdn.discordapp.com/attachments/865617643449221141/865624181869248592/4.6x30mm_HK.png",
-	"ammo939Image": "https://cdn.discordapp.com/attachments/865617643449221141/865624208877027368/9x39mm.png",
-	"ammo366Image": "https://cdn.discordapp.com/attachments/865617643449221141/865624227247292486/366_TKM.png",
-	"ammo545Image": "https://cdn.discordapp.com/attachments/865617643449221141/865624247179411456/5.45x39.png",
-	"ammo556Image": "https://cdn.discordapp.com/attachments/865617643449221141/865624272462807040/5.56x45mm_NATO.png",
-	"ammo300Image": "https://cdn.discordapp.com/attachments/865617643449221141/865624298453860372/300_Blackout.png",
-	"ammo762Image": "https://cdn.discordapp.com/attachments/865617643449221141/865683969314652170/7.62x39mm.png",
-	"ammon762Image": "https://cdn.discordapp.com/attachments/865617643449221141/865684006748815390/7.62x51mm_NATO.png",
-	"ammor762Image": "https://cdn.discordapp.com/attachments/865617643449221141/865684038915194930/7.62x54mmR.png",
-	"ammo338Image": "https://cdn.discordapp.com/attachments/865617643449221141/865684065830043648/338_Lapua_Magnum.png",
-	"ammo127Image": "https://cdn.discordapp.com/attachments/865617643449221141/865684097116536862/12.7x55mm_STs-130.png",
-	"ammo40Image": "https://cdn.discordapp.com/attachments/865617643449221141/865684134009634846/40x46_mm.png",
-	"ammoStationaryImage": "https://cdn.discordapp.com/attachments/865617643449221141/865684165538480158/Stationary_Weapons.png",
-
-
-	"mapsFactoryNullImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/6c/Fac4.png/revision/latest?cb=20180322235010",
-	"mapsFactoryInfoImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/4b/Fac9.png/revision/latest?cb=20180322235120",
-	"mapsFactoryMapImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/cd/Factory_3D_b_Johnny_Tushonka.jpg/revision/latest?cb=20210704215141",
-	
-	"mapsWoodsNullImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/cd/Woods-Showcase-11.png/revision/latest?cb=20190212212759",
-	"mapsWoodsInfoImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/74/Woods-Showcase-14.png/revision/latest?cb=20190212212824",
-	"mapsWoodsMapImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/05/Glory4lyfeWoods_map_v4_marked.png/revision/latest?cb=20210221204359",
-	"mapsWoodsHSImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/55/Woods_Caches.png/revision/latest?cb=20210122093726",
-	
-	"mapsCustomsNullImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/40/Customs07.png/revision/latest?cb=20180525014110",
-	"mapsCustomsInfoImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/eb/Customs_Dealmaker_Haunt.png/revision/latest?cb=20200905125123",
-	"mapsCustomsMapImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/55/CustomsLargeExpansionGloryMonki.png/revision/latest?cb=20210224211032",
-	"mapsCustomsHSImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/7e/Customs_Hidden_Stashes.jpg/revision/latest?cb=20191111193149",
-	"mapsCustomsDormsImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/96/DormRoomsMap.jpg/revision/latest?cb=20200328162326",
-	"mapsCustoms3DImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/27/2021_Customs_by_PaulRIISK.png/revision/latest?cb=20210202221431",
-
-	"mapsShorelineNullImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/cd/Woods-Showcase-11.png/revision/latest?cb=20190212212759",
-	"mapsShorelineInfoImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a1/Sanitar_Map.png/revision/latest?cb=20200803113415",
-	"mapsShorelineMapImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/ac/Shoreline_Map_-_12.7.png/revision/latest?cb=20200809112827",
-	"mapsShorelineHSImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/8c/Shoreline_hidden_stashes_map_with_pics.jpg/revision/latest?cb=20210110045931",
-	"mapsShorelineKeyImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/7e/ShorelineKeySpawnsByStealtheh.jpg/revision/latest?cb=20190908171904",
-	"mapsShorelineResortImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/34/UNKSO_Shoreline_Resort_Loot_Map_VER_2.0.png/revision/latest?cb=20201130114640",
-	"mapsShoreline3DImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e1/Actual_caches_37_map_shoreline.jpg/revision/latest?cb=20200105023458",
-
-	"mapsInterchangeNullImage": "https://i.imgur.com/uYXcQx9.jpg",
-	"mapsInterchangeInfoImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d9/InterchangeKillaPath.jpg/revision/latest?cb=20200122135446",
-	"mapsInterchangeMapImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e5/InterchangeMap_Updated_4.24.2020.png/revision/latest?cb=20210320055357",
-	"mapsInterchangeHSImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/fe/Interchange_hidden_stash_map.jpg/revision/latest?cb=20191117132146",
-
-	"mapsLabsNullImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/db/Labs-Showcase-10.png/revision/latest?cb=20190123211524",
-	"mapsLabsInfoImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/24/Labs-Showcase-2.png/revision/latest?cb=20190123211403",
-	"mapsLabsMapImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/cf/The_Lab_Map_%28Horizontal%29_%28EN%29.png/revision/latest?cb=20200330144615",
-	"mapsLabsBasementImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/06/TheLabBasementByLogiwonk.png/revision/latest?cb=20210525222902",
-	"mapsLabsFirstImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/35/TheLabFirstFloorByLogiwonk.png/revision/latest?cb=20190210195441",
-	"mapsLabsSecondImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/0f/TheLabSecondFloorByLogiwonk.png/revision/latest?cb=20190210195443",
-	"mapsLabs3DImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/6d/The_Lab_3D_map_by_SteelSmith_TTV.png/revision/latest?cb=20200510152630",
-
-	"mapsReserveNullImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b6/Reserve_top_view.jpg/revision/latest?cb=20190723174600",
-	"mapsReserveInfoImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/62/Gluhar_Spawn_Locations.png/revision/latest?cb=20191226213630",
-	"mapsReserveMapImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/42/3D_Map_by_loweffortsaltbox.png/revision/latest?cb=20200410160036",
-	"mapsReserveKeyImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/9f/Keys_and_doors_v3.png/revision/latest?cb=20201023113645",
-	"mapsReserveD2Image": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d0/ReserveExpandedUnderground.png/revision/latest?cb=20201004224828",
-
-
-	"modAbuseImage": "https://cdn.discordapp.com/attachments/865617643449221141/867828829489594429/Mod_abuse.png",
-	"supportInviteLink": "https://discord.gg/kg7VfRQ9Xw",
-	"lastUpdated": "2021-08-13",
-	"gameUpdate": "Updated for game version: 0.12.11.2.13567"
+	"general": {
+		"modAbuseImage": "https://cdn.discordapp.com/attachments/865617643449221141/867828829489594429/Mod_abuse.png",
+		"supportInviteLink": "https://discord.gg/kg7VfRQ9Xw",
+		"lastUpdated": "2021-08-14"
+	}
 }
