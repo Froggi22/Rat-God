@@ -2,9 +2,8 @@ const { MessageEmbed } = require('discord.js')
 const { embedColor } = require('../../config.json')
 
 module.exports = {
-	name: 'servercount',
 	description: 'Amount of servers, channels and users the bot is connected to',
-	async execute (message, client) {
+	async run (message, client) {
 		const Embed = new MessageEmbed()
 			.setColor(embedColor)
 			.addFields(

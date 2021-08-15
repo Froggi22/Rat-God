@@ -2,7 +2,6 @@ const { MessageEmbed } = require('discord.js')
 const confX = require('../../config.json')
 
 module.exports = {
-	name: 'maps',
 	description: 'Map guides',
 	options: [
 		{
@@ -62,7 +61,7 @@ module.exports = {
 			]
 		}
 	],
-	execute (interaction) {
+	run (interaction) {
 		// const data1 = interaction.options.getString("area")
 		const data2 = interaction.options.getString('map')
 		// EMBEDS - ONLY ONE, CHANGE THE CHANGEY BOIS NOT 100 FUCKING EMBEDS

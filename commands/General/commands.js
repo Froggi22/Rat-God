@@ -2,9 +2,8 @@ const { MessageEmbed } = require('discord.js')
 const { embedColor } = require('../../config.json')
 
 module.exports = {
-	name: 'commands',
 	description: 'A complete list of Rat Gods commands',
-	async execute (message) {
+	async run (message) {
 		const Embed = new MessageEmbed()
 			.setTitle('A Complete List Of Commands For Rat God')
 			.setDescription('A list of all functioning commands for Rat God')

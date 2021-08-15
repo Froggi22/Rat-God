@@ -2,9 +2,8 @@ const { MessageEmbed } = require('discord.js')
 const { embedColor, supportInviteLink } = require('../../config.json')
 
 module.exports = {
-	name: 'support',
 	description: 'Link to Froggis DMs and the support discord server',
-	async execute (message) {
+	async run (message) {
 		const Embed = new MessageEmbed()
 			.setThumbnail('https://cdn.discordapp.com/attachments/865617643449221141/866742462093852742/Rat_God.jpg')
 			.setTitle('Support')

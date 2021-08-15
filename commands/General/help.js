@@ -2,9 +2,8 @@ const { MessageEmbed } = require('discord.js')
 const { embedColor, lastUpdated, gameUpdate } = require('../../config.json')
 
 module.exports = {
-	name: 'help',
 	description: 'A mini-list of Rat Gods commands',
-	async execute (message) {
+	async run (message) {
 		const Embed = new MessageEmbed()
 			.setTitle('Rat Gods Commands')
 			.setDescription('Leave suggestions to Froggi22#3436')
