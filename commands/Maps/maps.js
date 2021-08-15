@@ -106,7 +106,7 @@ module.exports = {
 				.setTimestamp()
 				.setColor(embedDesign.color)
 				.setFooter(embedDesign.gameUpdate)
-				.setTitle(`${map === 'null' ? locationCap : map} ${maps.titles[map]}`)
+				.setTitle(`${locationCap} ${maps.titles[map]}`)
 				.setDescription(maps.descriptions[map][location] || maps.descriptions[map])
 				.setImage(maps.images[location][map])
 				.addFields(maps.fields[location][map])

@@ -16,7 +16,7 @@ readdirSync('./events').forEach(file => {
 })
 
 const commands = []
-readdirSync('./commands').forEach(folder => readdirSync(`./commands/${folder}`).forEach(file => commands.push(file.replace('.js', ''))))
+readdirSync('./commands').forEach(folder => readdirSync(`./commands/${folder}`).forEach(file => commands.push({ name: file.replace('.js', ''), value: file.replace('.js', '') })))
 module.exports = { commands }
 
 // Command Handler
@@ -25,7 +25,7 @@ readdirSync('./commands').forEach(folder => {
 		const command = require(`./commands/${folder}/${file}`)
 		command.name = file.replace('.js', '')
 		if (command.description && command.run) client.commands.set(command.name, command)
-		if (!command.description) console.log(`${chalk.bgHex('#FFFF00')('    ')} [./commands/${folder}/${file}] You forgot descripption!`)
+		if (!command.description) console.log(`${chalk.bgHex('#FFFF00')('    ')} [./commands/${folder}/${file}] You forgot description!`)
 		if (!command.run) console.log(`${chalk.bgHex('#FFFF00')('    ')} [./commands/${folder}/${file}] You forgot run!`)
 	})
 })

@@ -70,7 +70,11 @@
 			"Interactive Map": {
 				"factory": "[A **very** useful Factory map](https://tarkov-tools.com/map/factory)",
 				"woods": "[A **very** useful Woods map](https://tarkov-tools.com/map/woods)",
-				"customs": "[A **very** useful Customs map](https://tarkov-tools.com/map/customs)"
+				"customs": "[A **very** useful Customs map](https://tarkov-tools.com/map/customs)",
+				"shoreline": "[A **very** useful Shoreline map](https://tarkov-tools.com/map/shoreline)",
+				"interchange": "[A **very** useful Interchange map](https://tarkov-tools.com/map/interchange)",
+				"labs": "[A **very** useful Labs map](https://tarkov-tools.com/map/labs)",
+				"reserve": "[A **very** useful Reserve map](https://tarkov-tools.com/map/reserve)"
 			},
 			"Hidden Stashes": "Locations of all hidden stashes",
 			"3D Map": "A useful 3D Customs map",
@@ -214,7 +218,7 @@
 			},
 			"labs": {
 				"null": [
-					{ "name": "Type \"/Maps Labs Info\" to get detailed info about the area", "value": "Detailed map: **/Maps Labs Map**\nInteractive map: **/Maps Labs Interactive Map**\nMap for each floor: **/Maps Labs Basement Map/First Floor Map/Second Floor Map**\n3D map: **/Maps Labs 3D**" }
+					{ "name": "Type \"/Maps Labs Info\" to get detailed info about the area", "value": "Detailed map: **/Maps Labs Map**\nInteractive map: **/Maps Labs Interactive Map**\nMap for each floor: **/Maps Labs Basement/First Floor/Second Floor**\n3D map: **/Maps Labs 3D**" }
 				],
 				"Info": [
 					{ "name": "Description", "value": "Underground laboratory complex TerraGroup Labs is a secret object right under the center of Tarkov. Officially, this research center does not exist and, based on data scraps, is engaged in R&D, testing and simulation projects in chemistry, physics, biology, and high-tech areas." },
@@ -307,7 +311,7 @@
 				"null": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/db/Labs-Showcase-10.png/revision/latest?cb=20190123211524",
 				"Info": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/24/Labs-Showcase-2.png/revision/latest?cb=20190123211403",
 				"Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/cf/The_Lab_Map_%28Horizontal%29_%28EN%29.png/revision/latest?cb=20200330144615",
-				"Basement Floor Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/06/TheLabBasementByLogiwonk.png/revision/latest?cb=20210525222902",
+				"Basement Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/06/TheLabBasementByLogiwonk.png/revision/latest?cb=20210525222902",
 				"First Floor Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/35/TheLabFirstFloorByLogiwonk.png/revision/latest?cb=20190210195441",
 				"Second Floor Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/0f/TheLabSecondFloorByLogiwonk.png/revision/latest?cb=20190210195443",
 				"3D Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/6d/The_Lab_3D_map_by_SteelSmith_TTV.png/revision/latest?cb=20200510152630"
