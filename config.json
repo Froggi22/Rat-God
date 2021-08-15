@@ -10,6 +10,9 @@
 	"general": {
 		"modAbuseImage": "https://cdn.discordapp.com/attachments/865617643449221141/867828829489594429/Mod_abuse.png",
 		"supportInviteLink": "https://discord.gg/kg7VfRQ9Xw",
+		"descriptionRatGod": "Rat God is a intelligent bot that will help you in Escape From Tarkov. The purpose of the bot is to have easy and fast access to information that's within the game to make it easier for the players.",
+		"permissionsRatGod": "Rat Gods minimum permission requirements are:\nRead Messages, Send Messages, Embed Links, Attach Files, Read Message History, Add Reactions, Use Application Commands.",
+		"prefixMessage": "My prefix is   **/**",
 		"lastUpdated": "2021-08-15"
 	},
 
