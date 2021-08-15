@@ -85,7 +85,7 @@
 			"First Floor Map": "Closer look at 1st floor",
 			"Second Floor Map": "Closer look at 2nd floor",
 			"Key Map": "What each key unlocks",
-			"D-2 Bunker Map": "Map of the underground D-2 Bunker Map"
+			"D-2 Bunker Map": "Map of the underground D-2 Bunker"
 		},
 		"fields": {
 			"factory": {
@@ -321,7 +321,7 @@
 				"Info": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/62/Gluhar_Spawn_Locations.png/revision/latest?cb=20191226213630",
 				"Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/42/3D_Map_by_loweffortsaltbox.png/revision/latest?cb=20200410160036",
 				"Key Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/9f/Keys_and_doors_v3.png/revision/latest?cb=20201023113645",
-				"D2 Bunker Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d0/ReserveExpandedUnderground.png/revision/latest?cb=20201004224828"
+				"D-2 Bunker Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d0/ReserveExpandedUnderground.png/revision/latest?cb=20201004224828"
 			}
 		}
 	}
