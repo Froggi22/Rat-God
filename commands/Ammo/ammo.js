@@ -12,7 +12,7 @@ module.exports = {
 	}],
 	run (interaction) {
 		const caliber = interaction.options.getString('caliber')
-		return interaction.reply({
+		interaction.reply({
 			embeds: [new MessageEmbed()
 				.setTitle(`${caliber} ${embedDesign.ammoTitle}`)
 				.setDescription(`${embedDesign.ammoDescription}`)

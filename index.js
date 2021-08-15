@@ -15,6 +15,10 @@ readdirSync('./events').forEach(file => {
 	else console.log(`${chalk.bgHex('#FFFF00')('    ')} [./events/${file}] You forgot run!`)
 })
 
+const commands = []
+readdirSync('./commands').forEach(folder => readdirSync(`./commands/${folder}`).forEach(file => commands.push(file.replace('.js', ''))))
+module.exports = { commands }
+
 // Command Handler
 readdirSync('./commands').forEach(folder => {
 	readdirSync(`./commands/${folder}`).forEach(file => {

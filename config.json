@@ -2,14 +2,15 @@
 	"embedDesign": {
 		"gameUpdate": "Updated for game version: 0.12.11.2.13567",
 		"color": "#ffd700",
-
-		"ammoTitle": "Ammunition Table",
-		"ammoDescription": "**Type \"/Ammocmd\" to get the list of all calibers**",
 		
-		"mapsNullTitle": "Maps Command",
-		"mapsNullDescription": "The different types of maps",
+		"ammoTitle": "Ammunition Table",
+		"ammoDescription": "Type **/Help** to get Rat Gods commands"
+	},
 
-		"mapsInfoDescription": "Useful info"
+	"general": {
+		"modAbuseImage": "https://cdn.discordapp.com/attachments/865617643449221141/867828829489594429/Mod_abuse.png",
+		"supportInviteLink": "https://discord.gg/kg7VfRQ9Xw",
+		"lastUpdated": "2021-08-15"
 	},
 
 	"ammo": {
@@ -39,9 +40,51 @@
 
 	"maps": {
 		"factory": ["Info", "Map", "Interactive Map"],
-		"woods": ["Info", "Map", "Interactive Map", "Hidden Stashes"],
-		"customs": ["Info", "Map", "Interactive Map", "Hidden Stashes", "Dorms Map", "3D Map"],
-		"shoreline": ["Info", "Map", "Interactive Map", "Hidden Stashes", "Key Spawns Map", "Resort Map", "3D Map"],
+		"woods": ["Info", "Map", "Hidden Stashes", "Interactive Map"],
+		"customs": ["Info", "Map", "Hidden Stashes", "Interactive Map", "Dorms Map", "3D Map"],
+		"shoreline": ["Info", "Map", "Hidden Stashes", "Interactive Map", "Key Spawns Map", "Resort Map", "3D Map"],
+		"interchange": ["Info", "Map", "Hidden Stashes", "Interactive Map"],
+		"labs": ["Info", "Map", "Interactive Map", "Basement Map", "First Floor Map", "Second Floor Map", "3D Map"],
+		"reserve": ["Info", "Map", "Interactive Map", "Key Map", "D-2 Bunker"],
+
+		"titles": {
+			"null": "Maps Command",
+			"Info": "Detailed Information",
+			"Map": "Detailed Map",
+			"Interactive Map": "Interactive Map",
+			"Hidden Stashes": "Hidden Stashes",
+			"3D Map": "3D Customs Map",
+
+			"Dorms Map": "Customs Dorms Map",
+			"Key Spawns Map": "Key Spawns Map",
+			"Resort Map": "Resort Map",
+			"Basement Map": "Basement Map",
+			"First Floor Map": "First Floor Map",
+			"Second Floor Map": "Second Floor Map",
+			"Key Map": "Key Map",
+			"D-2 Bunker": "D-2 Bunker"
+		},
+		"descriptions": {
+			"null": "The different types of maps",
+			"Info": "Useful info",
+			"Map": "A useful map",
+			"Interactive Map": {
+				"factory": "[A **very** useful Factory map](https://tarkov-tools.com/map/factory)",
+				"woods": "[A **very** useful Woods map](https://tarkov-tools.com/map/woods)",
+				"customs": "[A **very** useful Customs map](https://tarkov-tools.com/map/customs)"
+			},
+			"Hidden Stashes": "Locations of all hidden stashes",
+			"3D Map": "A useful 3D Customs map",
+
+			"Dorms Map": "Dorms guide",
+			"Key Spawns Map": "Key spawns map",
+			"Resort Map": "Resort guide",
+			"Basement Map": "Closer look at basement",
+			"First Floor Map": "Closer look at 1st floor",
+			"Second Floor Map": "Closer look at 2nd floor",
+			"Key Map": "What each key unlocks",
+			"D-2 Bunker": "Map of the underground D-2 Bunker"
+		},
 
 		"fields": {
 			"factory": {
@@ -149,28 +192,6 @@
 				]
 			}
 		},
-		"titles": {
-			"null": "Maps Command",
-			"Info": "Detailed Information",
-			"Map": "Detailed Map",
-			"Interactive Map": "Interactive Map",
-			"Hidden Stashes": "Hidden Stashes",
-			"Dorms Map": "Customs Dorms Map",
-			"3D Map": "3D Customs Map"
-		},
-		"descriptions": {
-			"null": "The different types of maps",
-			"Info": "Useful info",
-			"Map": "A useful map",
-			"Interactive Map": {
-				"factory": "[A **very** useful Factory map](https://tarkov-tools.com/map/factory)",
-				"woods": "[A **very** useful Woods map](https://tarkov-tools.com/map/woods)",
-				"customs": "[A **very** useful Customs map](https://tarkov-tools.com/map/customs)"
-			},
-			"Hidden Stashes": "Locations of all hidden stashes",
-			"Dorms Map": "Dorms guide",
-			"3D Map": "A useful 3D Customs map"
-		},
 		"images": {
 			"factory": {
 				"null": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/6c/Fac4.png/revision/latest?cb=20180322235010",
@@ -223,11 +244,5 @@
 				"D2 Bunker Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d0/ReserveExpandedUnderground.png/revision/latest?cb=20201004224828"
 			}
 		}
-	},
-	
-	"general": {
-		"modAbuseImage": "https://cdn.discordapp.com/attachments/865617643449221141/867828829489594429/Mod_abuse.png",
-		"supportInviteLink": "https://discord.gg/kg7VfRQ9Xw",
-		"lastUpdated": "2021-08-14"
 	}
 }

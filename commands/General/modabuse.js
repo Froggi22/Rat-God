@@ -1,15 +1,15 @@
 const { MessageEmbed } = require('discord.js')
-const { embedColor, modAbuseImage } = require('../../config.json')
+const { embedDesign, general } = require('../../config.json')
 
 module.exports = {
 	description: 'For those complaining about mod abuse',
-	async run (message) {
-		const Embed = new MessageEmbed()
-			.setTitle('Mod abuse')
-			.setColor(embedColor)
-			.setImage(modAbuseImage)
-			.setTimestamp()
-
-		await message.reply({ embeds: [Embed] })
+	run (interaction) {
+		interaction.reply({
+			embeds: [new MessageEmbed()
+				.setTitle('Mod abuse')
+				.setColor(embedDesign.color)
+				.setImage(general.modAbuseImage)
+				.setTimestamp()]
+		})
 	}
 }
