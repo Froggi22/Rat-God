@@ -45,7 +45,7 @@
 		"shoreline": ["Info", "Map", "Hidden Stashes", "Interactive Map", "Key Spawns Map", "Resort Map", "3D Map"],
 		"interchange": ["Info", "Map", "Hidden Stashes", "Interactive Map"],
 		"labs": ["Info", "Map", "Interactive Map", "Basement Map", "First Floor Map", "Second Floor Map", "3D Map"],
-		"reserve": ["Info", "Map", "Interactive Map", "Key Map", "D-2 Bunker"],
+		"reserve": ["Info", "Map", "Interactive Map", "Key Map", "D-2 Bunker Map"],
 
 		"titles": {
 			"null": "Maps Command",
@@ -54,7 +54,6 @@
 			"Interactive Map": "Interactive Map",
 			"Hidden Stashes": "Hidden Stashes",
 			"3D Map": "3D Customs Map",
-
 			"Dorms Map": "Customs Dorms Map",
 			"Key Spawns Map": "Key Spawns Map",
 			"Resort Map": "Resort Map",
@@ -62,7 +61,7 @@
 			"First Floor Map": "First Floor Map",
 			"Second Floor Map": "Second Floor Map",
 			"Key Map": "Key Map",
-			"D-2 Bunker": "D-2 Bunker"
+			"D-2 Bunker Map": "D-2 Bunker Map"
 		},
 		"descriptions": {
 			"null": "The different types of maps",
@@ -75,7 +74,6 @@
 			},
 			"Hidden Stashes": "Locations of all hidden stashes",
 			"3D Map": "A useful 3D Customs map",
-
 			"Dorms Map": "Dorms guide",
 			"Key Spawns Map": "Key spawns map",
 			"Resort Map": "Resort guide",
@@ -83,9 +81,8 @@
 			"First Floor Map": "Closer look at 1st floor",
 			"Second Floor Map": "Closer look at 2nd floor",
 			"Key Map": "What each key unlocks",
-			"D-2 Bunker": "Map of the underground D-2 Bunker"
+			"D-2 Bunker Map": "Map of the underground D-2 Bunker Map"
 		},
-
 		"fields": {
 			"factory": {
 				"null": [
@@ -123,10 +120,10 @@
 				"Map": [
 					{"name": "Type \"/Maps Woods Info\" to get detailed info about the area","value": "Made for **0.12.11**‎\nMap is still valid."}
 				],
-				"Interactive Map": [
+				"Hidden Stashes": [
 					{"name": "Type \"/Maps Woods Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid."}
 				],
-				"Hidden Stashes": [
+				"Interactive Map": [
 					{"name": "Type \"/Maps Woods Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid."}
 				]
 			},
@@ -188,7 +185,86 @@
 					{ "name": "Type \"/Maps Shoreline Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid." }
 				],
 				"3D Map": [
-					{ "name": "Type \"/Maps Customs Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid." }
+					{ "name": "Type \"/Maps Shoreline Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid." }
+				]
+			},
+			"interchange": {
+				"null": [
+					{"name": "Type \"/Maps Interchange Info\" to get detailed info about the area", "value": "Detailed map: **/Maps Interchange Map**\nGuide for hidden stashes: **/Maps Interchange Hidden Stashes**\nInteractive map: **/Maps Interchange Interactive Map**"}
+				],
+				"Info": [
+					{ "name": "Description", "value": "The South interchange is a key location for transport in the city. This strategic area connects the port and harbor with the industrial outskirts of Tarkov. Located in the center of the interchange is a huge ULTRA shopping mall which was used as the main base of operation for the EMERCOM evacuation." },
+					{ "name": "Features", "value": "Three anchor stores:\n**IDEA** (a furniture store)\n**OLI** (a hardware store)\n**Goshan** (a grocery store).\n\nMany small stores that sell a wide variety of products including electronics, clothing, exercise equipment, firearms, and food.\n\nOutside there is a go-kart track, large parking lots, small wooded areas, and numerous roads.\n\nA fully linked illumination grid, able to be switched on at the [power station](https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/c5/Power_switch.png/revision/latest?cb=20200312223921).\n\nAlarms around some stores and a triggerable alarm at the Kiba Arms Store. The alarms can be switched off at designated terminals:" },
+					{ "name": "Alarm switches", "value": "[2F switch](https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/83/Inter_alarm_terminal.png/revision/latest?cb=20200312221706) and [1F switch](https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/aa/Inter_alarm_terminal_2.png/revision/latest?cb=20200312221936)\n[Location of the switches](https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/ec/Interchange_alarm_map.png/revision/latest?cb=20200314130950)" },
+					{ "name": "Boss", "value": "**Name:** Killa." },
+					{ "name": "Locations", "value": "Marked on the map.\nPatrolling on the 1st floor of the mall near the escalators.\nCan rush 2nd floor upon aggression\n**as of 0.12.11**" },
+					{ "name": "Health", "value": "890 Total, Head: 70, Thorax: 210, Stomach: 170, Arms: 100 each, Legs: 120 each." },
+					{ "name": "Followers", "value": "Killa has no followers of any sort." },
+					{ "name": "Suggestions", "value": "Leave suggestions about what else would be nice to have inside of this command." }
+        ],
+				"Map": [
+					{"name": "Type \"/Maps Interchange Info\" to get detailed info about the area","value": "Made for **0.12.11**‎\nMap is still valid."}
+				],
+				"Hidden Stashes": [
+					{"name": "Type \"/Maps Interchange Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid."}
+				],
+				"Interactive Map": [
+					{"name": "Type \"/Maps Interchange Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid."}
+				]
+			},
+			"labs": {
+				"null": [
+					{ "name": "Type \"/Maps Labs Info\" to get detailed info about the area", "value": "Detailed map: **/Maps Labs Map**\nInteractive map: **/Maps Labs Interactive Map**\nMap for each floor: **/Maps Labs Basement Map/First Floor Map/Second Floor Map**\n3D map: **/Maps Labs 3D**" }
+				],
+				"Info": [
+					{ "name": "Description", "value": "Underground laboratory complex TerraGroup Labs is a secret object right under the center of Tarkov. Officially, this research center does not exist and, based on data scraps, is engaged in R&D, testing and simulation projects in chemistry, physics, biology, and high-tech areas." },
+					{ "name": "Features", "value": "**Insurance** does not work on labs.\n**Announcer**\nWhenever an event of high importance happens inside The Lab, an announcement will be triggered.\nThere is an announcement for every extraction besides the **Ventilation shaft** and the **Sewage conduit**. The announcement for the parking extraction can be disabled using the [**Yellow keycard**](https://escapefromtarkov.fandom.com/wiki/Lab._Yellow_keycard).\n**Tagged and Cursed**\nUnlike other maps in Tarkov, PMCs are not tagged and cursed at the start of a raid on Labs when deploying with no gear or weapons.\nYou can't go in as a scav on Labs." },
+					{ "name": "Boss", "value": "There is no boss on this map but every single AI is a [Raider](https://escapefromtarkov.fandom.com/wiki/Scav_Raiders). They are way more dangerous and carry better gear." },
+					{ "name": "Suggestions", "value": "Leave suggestions about what else would be nice to have inside of this command." }
+        ],
+				"Map": [
+					{ "name": "Type \"/Maps Labs Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid." }
+				],
+				"Interactive Map": [
+					{ "name": "Type \"/Maps Labs Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid." }
+				],
+				"Basement Map": [
+					{ "name": "Type \"/Maps Labs Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid." }
+				],
+				"First Floor Map": [
+					{ "name": "Type \"/Maps Labs Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid." }
+				],
+				"Second Floor Map": [
+					{ "name": "Type \"/Maps Labs Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid." }
+				],
+				"3D Map": [
+					{ "name": "Type \"/Maps Labs Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid." }
+				]
+			},
+			"reserve": {
+				"null": [
+					{ "name": "Type \"/Maps Reserve Info\" to get detailed info about the area", "value": "Detailed map: **/Maps Reserve Map**\nInteractive map: **/Maps Reserve Interactive Map**\nDetailed map with key guide: **/Maps Reserve Key Map**\nUnderground D-2 Bunker: **/Maps Reserve D-2 Bunker Map**" }
+				],
+				"Info": [
+					{ "name": "Description", "value": "The secret Federal State Reserve Agency base that, according to urban legend, contains enough supplies to last for years: food, medications and other resources, enough to survive an all-out nuclear war."},
+					{ "name": "Features", "value": "Mounted, static weaponry in the form of the [AGS grenade launcher](https://escapefromtarkov.fandom.com/wiki/AGS_30x29_mm_automatic_grenade_launcher) and [NSV machine gun](https://escapefromtarkov.fandom.com/wiki/NSV_\"Utes\"_12.7x108_machine_gun)."},
+					{ "name": "Boss", "value": "**Name:** Glukhar."},
+					{ "name": "Locations", "value": "Marked circles on the map.\nIn and around the \"K\" Buildings near the train station.\nIn and around the \"Bishop\", \"Pawn\", and \"Knight\" Dorms.\nIn and around the Repair Depot\n**as of 0.12.11**"},
+					{ "name": "Health", "value": "1010 Total, Head: 70, Thorax: 220, Stomach: 140, Arms: 145 each, Legs: 145 each."},
+					{ "name": "Followers", "value": "Glukhar always has 6 followers with a wide assortment of weapons and gear."},
+					{ "name": "Suggestions", "value": "Leave suggestions about what else would be nice to have inside of this command."}
+        ],
+				"Map": [
+					{ "name": "Type \"/Maps Reserve Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid." }
+				],
+				"Interactive Map": [
+					{ "name": "Type \"/Maps Reserve Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid." }
+				],
+				"Key Map": [
+					{ "name": "Type \"/Maps Reserve Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid." }
+				],
+				"D-2 Bunker Map": [
+					{ "name": "Type \"/Maps Reserve Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid." }
 				]
 			}
 		},

@@ -55,6 +55,45 @@ module.exports = {
 					choices: maps.shoreline.map(choice => { return { name: choice, value: choice } })
 				}
 			]
+		},
+		{
+			name: 'interchange',
+			description: 'Interchange area',
+			type: 'SUB_COMMAND',
+			options: [
+				{
+					name: 'map',
+					description: 'What kind of map guide?',
+					type: 'STRING',
+					choices: maps.interchange.map(choice => { return { name: choice, value: choice } })
+				}
+			]
+		},
+		{
+			name: 'labs',
+			description: 'The Lab area',
+			type: 'SUB_COMMAND',
+			options: [
+				{
+					name: 'map',
+					description: 'What kind of map guide?',
+					type: 'STRING',
+					choices: maps.labs.map(choice => { return { name: choice, value: choice } })
+				}
+			]
+		},
+		{
+			name: 'reserve',
+			description: 'Reserve area',
+			type: 'SUB_COMMAND',
+			options: [
+				{
+					name: 'map',
+					description: 'What kind of map guide?',
+					type: 'STRING',
+					choices: maps.reserve.map(choice => { return { name: choice, value: choice } })
+				}
+			]
 		}
 	],
 	run (interaction) {
