@@ -5,7 +5,7 @@ module.exports = {
 		const command = client.commands.get(interaction.commandName)
 		if (!command) return
 		try {
-			command.run(interaction)
+			command.run(interaction, client)
 		} catch (error) {
 			console.log(error)
 			return interaction.reply({ content: 'There was an error while executing this command!', ephemeral: true })

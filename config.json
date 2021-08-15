@@ -38,48 +38,191 @@
 	},
 
 	"maps": {
-		"FactoryNullImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/6c/Fac4.png/revision/latest?cb=20180322235010",
-		"FactoryInfoImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/4b/Fac9.png/revision/latest?cb=20180322235120",
-		"FactoryMapImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/cd/Factory_3D_b_Johnny_Tushonka.jpg/revision/latest?cb=20210704215141",
-		
-		"WoodsNullImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/cd/Woods-Showcase-11.png/revision/latest?cb=20190212212759",
-		"WoodsInfoImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/74/Woods-Showcase-14.png/revision/latest?cb=20190212212824",
-		"WoodsMapImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/05/Glory4lyfeWoods_map_v4_marked.png/revision/latest?cb=20210221204359",
-		"WoodsHSImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/55/Woods_Caches.png/revision/latest?cb=20210122093726",
-		
-		"CustomsNullImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/40/Customs07.png/revision/latest?cb=20180525014110",
-		"CustomsInfoImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/eb/Customs_Dealmaker_Haunt.png/revision/latest?cb=20200905125123",
-		"CustomsMapImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/55/CustomsLargeExpansionGloryMonki.png/revision/latest?cb=20210224211032",
-		"CustomsHSImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/7e/Customs_Hidden_Stashes.jpg/revision/latest?cb=20191111193149",
-		"CustomsDormsImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/96/DormRoomsMap.jpg/revision/latest?cb=20200328162326",
-		"Customs3DImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/27/2021_Customs_by_PaulRIISK.png/revision/latest?cb=20210202221431",
+		"factory": ["Info", "Map", "Interactive Map"],
+		"woods": ["Info", "Map", "Interactive Map", "Hidden Stashes"],
+		"customs": ["Info", "Map", "Interactive Map", "Hidden Stashes", "Dorms Map", "3D Map"],
+		"shoreline": ["Info", "Map", "Interactive Map", "Hidden Stashes", "Key Spawns Map", "Resort Map", "3D Map"],
 
-		"ShorelineNullImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/cd/Woods-Showcase-11.png/revision/latest?cb=20190212212759",
-		"ShorelineInfoImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a1/Sanitar_Map.png/revision/latest?cb=20200803113415",
-		"ShorelineMapImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/ac/Shoreline_Map_-_12.7.png/revision/latest?cb=20200809112827",
-		"ShorelineHSImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/8c/Shoreline_hidden_stashes_map_with_pics.jpg/revision/latest?cb=20210110045931",
-		"ShorelineKeyImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/7e/ShorelineKeySpawnsByStealtheh.jpg/revision/latest?cb=20190908171904",
-		"ShorelineResortImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/34/UNKSO_Shoreline_Resort_Loot_Map_VER_2.0.png/revision/latest?cb=20201130114640",
-		"Shoreline3DImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e1/Actual_caches_37_map_shoreline.jpg/revision/latest?cb=20200105023458",
-
-		"InterchangeNullImage": "https://i.imgur.com/uYXcQx9.jpg",
-		"InterchangeInfoImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d9/InterchangeKillaPath.jpg/revision/latest?cb=20200122135446",
-		"InterchangeMapImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e5/InterchangeMap_Updated_4.24.2020.png/revision/latest?cb=20210320055357",
-		"InterchangeHSImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/fe/Interchange_hidden_stash_map.jpg/revision/latest?cb=20191117132146",
-
-		"LabsNullImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/db/Labs-Showcase-10.png/revision/latest?cb=20190123211524",
-		"LabsInfoImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/24/Labs-Showcase-2.png/revision/latest?cb=20190123211403",
-		"LabsMapImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/cf/The_Lab_Map_%28Horizontal%29_%28EN%29.png/revision/latest?cb=20200330144615",
-		"LabsBasementImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/06/TheLabBasementByLogiwonk.png/revision/latest?cb=20210525222902",
-		"LabsFirstImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/35/TheLabFirstFloorByLogiwonk.png/revision/latest?cb=20190210195441",
-		"LabsSecondImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/0f/TheLabSecondFloorByLogiwonk.png/revision/latest?cb=20190210195443",
-		"Labs3DImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/6d/The_Lab_3D_map_by_SteelSmith_TTV.png/revision/latest?cb=20200510152630",
-
-		"ReserveNullImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b6/Reserve_top_view.jpg/revision/latest?cb=20190723174600",
-		"ReserveInfoImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/62/Gluhar_Spawn_Locations.png/revision/latest?cb=20191226213630",
-		"ReserveMapImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/42/3D_Map_by_loweffortsaltbox.png/revision/latest?cb=20200410160036",
-		"ReserveKeyImage": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/9f/Keys_and_doors_v3.png/revision/latest?cb=20201023113645",
-		"ReserveD2Image": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d0/ReserveExpandedUnderground.png/revision/latest?cb=20201004224828"
+		"fields": {
+			"factory": {
+				"null": [
+					{"name": "Type \"/Maps Factory Info\" to get detailed info about the area", "value": "Detailed map: **/Maps Factory Map**‎\nInteractive map: **/Maps Factory Interactive Map**"}
+				],
+				"Info": [
+					{ "name": "Description", "value": "‎The industrial estate and facilities of chemical factory #16 were rented out illegally to the TerraGroup company.\nDuring the Contract Wars, this factory was a hotbed for numerous firefights between USEC and BEAR operatives that determined control over the entire Tarkov industrial district.\nWith time, the factory premises were converted into a shelter for local civilians, Scavs, along with the occasional USEC or BEAR operators." },
+					{ "name": "Features", "value": "A small, fast-paced CQC map inside of a multi-story industrial factory, complete with tunnels and overhead walkways." },
+					{ "name": "Boss", "value": "**Name:** Tagilla." },
+					{ "name": "Locations", "value": "Tagilla can be found mainly nearby the pit and underground sections of Factory.\n**as of 0.12.11**" },
+					{ "name": "Health", "value": "1220 Total, Head: 100, Thorax: 320, Stomach: 260, Arms: 130 each, Legs: 140 each." },
+					{ "name": "Followers", "value": "Tagilla has no followers of any sort." },
+					{ "name": "Suggestions", "value": "Leave suggestions about what else would be nice to have inside of this command." }
+				],
+				"Map": [
+					{"name": "Type \"/Maps Factory Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid."}
+				],
+				"Interactive Map": [
+					{"name": "Type \"/Maps Factory Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid."}
+				]
+			},
+			"woods": {
+				"null": [
+					{"name": "Type \"/Maps Woods Info\" to get detailed info about the area", "value": "Detailed map: **/Maps Woods Map**\nGuide for hidden stashes: **/Maps Woods Hidden Stashes**\nInteractive map: **/Maps Woods Interactive Map**"}
+				],
+				"Info": [
+					{ "name": "Description", "value": "The Priozersky Natural Reserve recently became part of the state-protected wildlife reserves of the North Western Federal District." },
+					{ "name": "Features", "value": "Woods is the largest map containing a moderately sized section of woods with some open fields, small hills, a logging camp, and the bunkers [ZB-014](https://escapefromtarkov.fandom.com/wiki/Key_ZB-014) and [ZB-016](https://escapefromtarkov.fandom.com/wiki/ZB-016)." },
+					{ "name": "Boss", "value": "**Name:** Shturman." },
+					{ "name": "Locations", "value": "Shturman and his followers typically spawn in and around the Lumber Mill in the center of the map, rarely leaving the grounds.\n**as of 0.12.11**" },
+					{ "name": "Health", "value": "812 Total, Head: 62, Thorax: 180, Stomach: 150, Arms: 100 each, Legs: 110 each." },
+					{ "name": "Followers", "value": "Shturman always has two followers, each with high caliber weapons and deadly accuracy, additionally they can have class 3-6 armor vests." },
+					{ "name": "Suggestions", "value": "Leave suggestions about what else would be nice to have inside of this command." }
+				],
+				"Map": [
+					{"name": "Type \"/Maps Woods Info\" to get detailed info about the area","value": "Made for **0.12.11**‎\nMap is still valid."}
+				],
+				"Interactive Map": [
+					{"name": "Type \"/Maps Woods Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid."}
+				],
+				"Hidden Stashes": [
+					{"name": "Type \"/Maps Woods Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid."}
+				]
+			},
+			"customs": {
+				"null": [
+					{"name": "Type \"/Maps Customs Info\" to get detailed info about the area", "value": "Detailed map: **/Maps Customs Map**\nGuide for hidden stashes: **/Maps Customs Hidden Stashes**\nInteractive map: **/Maps Customs Interactive Map**\nDorms map: **/Maps Customs Dorms**\n3D map: **/Maps Customs 3D**"}
+				],
+				"Info": [
+					{ "name": "Description", "value": "A large area of industrial park land situated adjacent to the factory. This area houses a customs terminal, fuel storage facilities, offices, and dorms as well as a variety of other infrastructure buildings." },
+					{ "name": "Features", "value": "**The Dorms** are two buildings located in the southernmost area of the map. The eastern building is three stories tall while the western building is two stories tall. Each structure boasts a front entrance and a fire escape at each end with doorways leading to each floor (some of which are blocked or permanently locked). These dorms are the location of many Quests and unlockable rooms.\n\n**Construction** is a two story concrete frame of a building. This structure had a wide view of the river crossing and bridge.\n\n**New Gas Station** is a building at the western side of the map, near the main road. The building has two unlockable rooms in it, and a view on the shortcut.\n\n**Military Checkpoint** is at the end of the road past the Gas Station. This point has many Scavs and is the only location with easy access through the wall to the extraction zones.\n\n**ZB-1013 or Stronghold** is at the northern end of the map and features a unlockable extract; loot; and views of crackhouse, construction and the train crossing." },
+					{ "name": "Boss", "value": "**Name:** Reshala." },
+					{ "name": "Locations", "value": "Marked circles on the map.\nIn the \"Dorms\", in the \"New Gas Station\", or in the \"Scav Stronghold\"\nRarely at the tower south of the \"New Gas Station\"\nRarely at the passage between Checkpoint and Sub-Station\n**as of 0.12.11**" },
+					{ "name": "Health", "value": "752 Total, Head: 62, Thorax: 145, Stomach: 125, Arms: 100 each, Legs: 110 each." },
+					{ "name": "Followers", "value": "Following Reshala around are 4 heavily armed guards." },
+					{ "name": "Suggestions", "value": "Leave suggestions about what else would be nice to have inside of this command." }
+				],
+				"Map": [
+					{"name": "Type \"/Maps Customs Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid."}
+				],
+				"Hidden Stashes": [
+					{"name": "Type \"/Maps Customs Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid."}
+				],
+				"Interactive Map": [
+					{"name": "Type \"/Maps Customs Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid."}
+				],
+				"Dorms Map": [
+					{"name": "Type \"/Maps Customs Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid."}
+				],
+				"3D Map": [
+					{"name": "Type \"/Maps Customs Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid."}
+				]
+			},
+			"shoreline": {
+				"null": [
+					{ "name": "Type \"/Maps Shoreline Info\" to get detailed info about the area", "value": "Detailed map: **/Maps Shoreline Map**\nGuide for hidden stashes: **/Maps Shoreline Hidden Stashes**\nInteractive map: **/Maps Shoreline Interactive Map**\nKey Spawns Map: **/Maps Shoreline Key Spawns Map**\nResort Map: **/Maps Shoreline Resort**\n3D map: **/Maps Shoreline 3D**" }
+				],
+				"Info": [
+					{ "name": "Description", "value": "Shoreline is a large area located on the coastal outskirts of Tarkov, next to the city's port. The area's geography features tracts of undulating woodland, large open fields, jagged cliffs, a swamp and a long stretch of shoreline. Significant man made points of interest include a partially abandoned village, a modern residential development, a boating facility, a gas station, a weather station, a cellular communications tower and the focal point of the map, the Azure Coast Health Resort. This luxury compound consists of three multi-story buildings and was once used as temporary accommodation by members of TerraGroup and its associated divisions as they prepared for the evacuation of Tarkov Port. When operational, the resort draws power from a nearby hydroelectric plant." },
+          { "name": "Features", "value": "Shoreline is the second largest location in Escape from Tarkov and contains a plethora of areas for players to explore and loot. The large, varied terrain means players can expect to engage in fire fights at both close quarters and long range." },
+          { "name": "Boss", "value": "**Name:** Sanitar." },
+          { "name": "Locations", "value": "Marked circles on the map.\nPort/Pier Area\nLocked cottage area\nHealth resort east and west wing\n**as of 0.12.11**" },
+          { "name": "Health", "value": "1270 Total, Head: 70, Thorax: 360, Stomach: 140, Arms: 120 each, Legs: 230 each." },
+          { "name": "Followers", "value": "Following Sanitar are two well-armed and armored guards." },
+          { "name": "Suggestions", "value": "Leave suggestions about what else would be nice to have inside of this command." }
+        ],
+				"Map": [
+					{ "name": "Type \"/Maps Shoreline Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid." }
+				],
+				"Hidden Stashes": [
+					{ "name": "Type \"/Maps Shoreline Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid." }
+				],
+				"Interactive Map": [
+					{ "name": "Type \"/Maps Shoreline Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid." }
+				],
+				"Key Spawns Map": [
+					{ "name": "Type \"/Maps Shoreline Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid." }
+				],
+				"Resort Map": [
+					{ "name": "Type \"/Maps Shoreline Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid." }
+				],
+				"3D Map": [
+					{ "name": "Type \"/Maps Customs Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid." }
+				]
+			}
+		},
+		"titles": {
+			"null": "Maps Command",
+			"Info": "Detailed Information",
+			"Map": "Detailed Map",
+			"Interactive Map": "Interactive Map",
+			"Hidden Stashes": "Hidden Stashes",
+			"Dorms Map": "Customs Dorms Map",
+			"3D Map": "3D Customs Map"
+		},
+		"descriptions": {
+			"null": "The different types of maps",
+			"Info": "Useful info",
+			"Map": "A useful map",
+			"Interactive Map": {
+				"factory": "[A **very** useful Factory map](https://tarkov-tools.com/map/factory)",
+				"woods": "[A **very** useful Woods map](https://tarkov-tools.com/map/woods)",
+				"customs": "[A **very** useful Customs map](https://tarkov-tools.com/map/customs)"
+			},
+			"Hidden Stashes": "Locations of all hidden stashes",
+			"Dorms Map": "Dorms guide",
+			"3D Map": "A useful 3D Customs map"
+		},
+		"images": {
+			"factory": {
+				"null": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/6c/Fac4.png/revision/latest?cb=20180322235010",
+				"Info": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/4b/Fac9.png/revision/latest?cb=20180322235120",
+				"Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/cd/Factory_3D_b_Johnny_Tushonka.jpg/revision/latest?cb=20210704215141"
+			},
+			"woods": {
+				"null": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/cd/Woods-Showcase-11.png/revision/latest?cb=20190212212759",
+				"Info": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/74/Woods-Showcase-14.png/revision/latest?cb=20190212212824",
+				"Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/05/Glory4lyfeWoods_map_v4_marked.png/revision/latest?cb=20210221204359",
+				"Hidden Stashes": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/55/Woods_Caches.png/revision/latest?cb=20210122093726"
+			},
+			"customs": {
+				"null": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/40/Customs07.png/revision/latest?cb=20180525014110",
+				"Info": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/eb/Customs_Dealmaker_Haunt.png/revision/latest?cb=20200905125123",
+				"Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/55/CustomsLargeExpansionGloryMonki.png/revision/latest?cb=20210224211032",
+				"Hidden Stashes": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/7e/Customs_Hidden_Stashes.jpg/revision/latest?cb=20191111193149",
+				"Dorms Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/96/DormRoomsMap.jpg/revision/latest?cb=20200328162326",
+				"3D Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/27/2021_Customs_by_PaulRIISK.png/revision/latest?cb=20210202221431" 
+			},
+			"shoreline": {
+				"null": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/cd/Woods-Showcase-11.png/revision/latest?cb=20190212212759",
+				"Info": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a1/Sanitar_Map.png/revision/latest?cb=20200803113415",
+				"Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/ac/Shoreline_Map_-_12.7.png/revision/latest?cb=20200809112827",
+				"Hidden Stashes": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/8c/Shoreline_hidden_stashes_map_with_pics.jpg/revision/latest?cb=20210110045931",
+				"Key Spawns Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/7e/ShorelineKeySpawnsByStealtheh.jpg/revision/latest?cb=20190908171904",
+				"Resort Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/34/UNKSO_Shoreline_Resort_Loot_Map_VER_2.0.png/revision/latest?cb=20201130114640",
+				"3D Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e1/Actual_caches_37_map_shoreline.jpg/revision/latest?cb=20200105023458"
+			},
+			"interchange": {
+				"null" : "https://i.imgur.com/uYXcQx9.jpg",
+				"Info": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d9/InterchangeKillaPath.jpg/revision/latest?cb=20200122135446",
+				"Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e5/InterchangeMap_Updated_4.24.2020.png/revision/latest?cb=20210320055357",
+				"Hidden Stashes": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/fe/Interchange_hidden_stash_map.jpg/revision/latest?cb=20191117132146"
+			},
+			"labs": {
+				"null": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/db/Labs-Showcase-10.png/revision/latest?cb=20190123211524",
+				"Info": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/24/Labs-Showcase-2.png/revision/latest?cb=20190123211403",
+				"Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/cf/The_Lab_Map_%28Horizontal%29_%28EN%29.png/revision/latest?cb=20200330144615",
+				"Basement Floor Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/06/TheLabBasementByLogiwonk.png/revision/latest?cb=20210525222902",
+				"First Floor Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/35/TheLabFirstFloorByLogiwonk.png/revision/latest?cb=20190210195441",
+				"Second Floor Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/0f/TheLabSecondFloorByLogiwonk.png/revision/latest?cb=20190210195443",
+				"3D Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/6d/The_Lab_3D_map_by_SteelSmith_TTV.png/revision/latest?cb=20200510152630"
+			},
+			"reserve": {
+				"null": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b6/Reserve_top_view.jpg/revision/latest?cb=20190723174600",
+				"Info": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/62/Gluhar_Spawn_Locations.png/revision/latest?cb=20191226213630",
+				"Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/42/3D_Map_by_loweffortsaltbox.png/revision/latest?cb=20200410160036",
+				"Key Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/9f/Keys_and_doors_v3.png/revision/latest?cb=20201023113645",
+				"D2 Bunker Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d0/ReserveExpandedUnderground.png/revision/latest?cb=20201004224828"
+			}
+		}
 	},
 	
 	"general": {
