@@ -18,8 +18,7 @@ module.exports = {
 		owner.send({ embeds: [embed] })
 
 		const channel = client.channels.cache.get('867736540645031966')
-		const collector = owner.user.dmChannel.createMessageCollector({ time: 600000 })
+		const collector = owner.user.dmChannel.createMessageCollector({ max: 2, time: 600000 })
 		collector.on('collect', message => { if (message) channel.send(message) })
-		collector.on('end', collected => console.log(`Collected ${collected.size} messages`))
 	}
 }
