@@ -1,6 +1,8 @@
 const { owners } = require('../config.json')
 module.exports = {
 	async run (message, client) {
+		if (message.content.includes('<@!866073671155974174>')) return message.channel.send('My prefix is "/"')
+
 		if (message.content === '!deploy' && owners.includes(message.author.id)) {
 			await client.application?.fetch()
 
