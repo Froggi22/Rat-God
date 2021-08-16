@@ -5,7 +5,17 @@ const { Client, Collection, Intents } = require('discord.js')
 
 const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] })
 client.commands = new Collection()
+client.cooldowns = new Collection()
 client.login(process.env.token)
+
+// Export commands
+const commands = []
+readdirSync('./commands').forEach(folder => {
+	readdirSync(`./commands/${folder}`).forEach(file => {
+		commands.push(file.replace('.js', ''))
+	})
+})
+module.exports = { commands }
 
 // Event Handler
 readdirSync('./events').forEach(file => {
@@ -14,10 +24,6 @@ readdirSync('./events').forEach(file => {
 	if (event.run) client.on(event.name, (...args) => event.run(...args, client))
 	else console.log(`${chalk.bgHex('#FFFF00')('    ')} [./events/${file}] You forgot run!`)
 })
-
-const commands = []
-readdirSync('./commands').forEach(folder => readdirSync(`./commands/${folder}`).forEach(file => commands.push({ name: file.replace('.js', ''), value: file.replace('.js', '') })))
-module.exports = { commands }
 
 // Command Handler
 readdirSync('./commands').forEach(folder => {

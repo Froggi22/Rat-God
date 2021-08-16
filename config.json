@@ -1,4 +1,5 @@
 {
+	"owners": ["229212817448894464", "379643682984296448"],
 	"embedDesign": {
 		"gameUpdate": "Updated for game version: 0.12.11.2.13567",
 		"color": "#ffd700",
@@ -13,7 +14,9 @@
 		"descriptionRatGod": "Rat God is a intelligent bot that will help you in Escape From Tarkov. The purpose of the bot is to have easy and fast access to information that's within the game to make it easier for the players.",
 		"permissionsRatGod": "Rat Gods minimum permission requirements are:\nRead Messages, Send Messages, Embed Links, Attach Files, Read Message History, Add Reactions, Use Application Commands.",
 		"prefixMessage": "My prefix is   **/**",
-		"lastUpdated": "2021-08-15"
+		"prefix": "/",
+		"cooldown": 3000,
+		"lastUpdated": "2021-08-16"
 	},
 
 	"ammo": {

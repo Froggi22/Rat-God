@@ -1,19 +1,30 @@
-const { MessageEmbed } = require('discord.js')
-const { embedDesign, general } = require('../../config.json')
+const { commands } = require('../../index')
 
 module.exports = {
-	description: 'A mini-list of Rat Gods commands',
-	run (interaction) {
-		interaction.reply({
-			embeds: [new MessageEmbed().setTitle('Rat Gods Commands')
-				.setDescription('Leave suggestions to Froggi22#3436')
-				.setColor(embedDesign.color)
-				.addFields(
-					{ name: 'Commands', value: `${general.prefixMessage}.\n\`Ammo\` - Shows all ammo commands. \n\`Maps\` - Shows all maps commands.\n‏‏‎\n\`Ping\` - Pings the bot.\n\`Modabuse\` - For those complaining about mod abuse.\n\`Servercount\` - How many servers the bot is invited to.\n\`Support\` - Sends support link.‎\n` },
-					{ name: 'Version 1.3.0', value: `‏‏‎**Last updated -** ${general.lastUpdated}\n\`Latest\` - Shows latest updates.\n‏‏‎ ‎` }
-				)
-				.setTimestamp()
-				.setFooter(embedDesign.gameUpdate)]
-		})
+	description: 'Dynamic Help Command',
+	options: [{
+		type: 'STRING',
+		name: 'command_name',
+		description: 'The Command Name To Get Help With',
+		choices: commands.map(choice => { return { name: choice, value: choice } })
+	}],
+	run (interaction, client) {
+		const command_name = interaction.options.getString('command_name')
+
+		const data = []
+
+		if (!command_name) {
+			data.push('Here\'s a list of all my commands:')
+			data.push(client.commands.map(command => command.name).join(', '))
+			data.push('\nYou can send `/help [command name]` to get info on a specific command!')
+
+			return interaction.reply(data.join('\n'))
+		}
+		const command = client.commands.get(command_name)
+
+		data.push(`**Name:** ${command.name}`)
+		data.push(`**Description:** ${command.description}`)
+
+		interaction.reply(data.join('\n'))
 	}
 }
