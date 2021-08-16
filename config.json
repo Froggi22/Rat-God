@@ -1,5 +1,4 @@
 {
-	"owners": ["229212817448894464", "379643682984296448"],
 	"embedDesign": {
 		"gameUpdate": "Updated for game version: 0.12.11.2.13567",
 		"color": "#ffd700",
@@ -9,6 +8,9 @@
 	},
 
 	"general": {
+		"sendMessageError": "I don't have permission to send messages in that channel!",
+
+		"owners": ["229212817448894464", "379643682984296448"],
 		"modAbuseImage": "https://cdn.discordapp.com/attachments/865617643449221141/867828829489594429/Mod_abuse.png",
 		"supportInviteLink": "https://discord.gg/kg7VfRQ9Xw",
 		"descriptionRatGod": "Rat God is a intelligent bot that will help you in Escape From Tarkov. The purpose of the bot is to have easy and fast access to information that's within the game to make it easier for the players.",
