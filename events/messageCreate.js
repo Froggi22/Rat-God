@@ -24,8 +24,7 @@ module.exports = {
 
 			// Global Slash Commands
 			// await client.application.commands.set([])
-			await client.application.commands.set(client.commands.map(command => command)).then(console.log).catch(console.error)
-
+			await client.application.commands.set(client.commands.map(command => command))
 			message.channel.send('Deployed Guild Slash Commands')
 		}
 	}
