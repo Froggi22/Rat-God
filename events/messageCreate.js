@@ -20,10 +20,11 @@ module.exports = {
 			await client.application?.fetch()
 
 			// Guild Slash Comamnds
-			await client.guilds.cache.get('861948446910578699').commands.set(client.commands.map(command => command))
+			// await client.guilds.cache.get('861948446910578699').commands.set(client.commands.map(command => command))
 
 			// Global Slash Commands
-			await client.application.commands.set([])
+			// await client.application.commands.set([])
+			await client.application.commands.set(client.commands.map(command => command)).then(console.log).catch(console.error)
 
 			message.channel.send('Deployed Guild Slash Commands')
 		}
