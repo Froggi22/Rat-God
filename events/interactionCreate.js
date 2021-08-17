@@ -7,10 +7,11 @@ module.exports = {
 		const command = client.commands.get(interaction.commandName)
 
 		if (!command) return
+		const date = new Date().toISOString().replace('T', ' ').substr(0, 19)
+		console.log(`${date} || ${interaction.user.tag} || Interaction`)
 
 		// Cooldown
 		const now = Date.now()
-
 		const expirationTime = client.cooldowns.get(interaction.user.id) + general.cooldown
 		if (now < expirationTime) {
 			const timeLeft = (expirationTime - now) / 1000
