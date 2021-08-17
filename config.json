@@ -1,5 +1,9 @@
 {
 	"embedDesign": {
+		"ratGodImage": "https://cdn.discordapp.com/attachments/865617643449221141/866742462093852742/Rat_God.jpg",
+		"wikiMain": "https://escapefromtarkov.fandom.com/wiki/Escape_from_Tarkov_Wiki",
+		"wikiBallistics": "https://escapefromtarkov.fandom.com/wiki/Ballistics",
+		"wikiMaps": "https://escapefromtarkov.fandom.com/wiki/Map_of_Tarkov",
 		"gameUpdate": "Updated for game version: 0.12.11.2.13567",
 		"color": "#ffd700",
 		
@@ -9,7 +13,6 @@
 
 	"general": {
 		"sendMessageError": "I don't have permission to send messages in that channel!",
-
 		"owners": ["229212817448894464", "379643682984296448"],
 		"modAbuseImage": "https://cdn.discordapp.com/attachments/865617643449221141/867828829489594429/Mod_abuse.png",
 		"supportInviteLink": "https://discord.gg/kg7VfRQ9Xw",
@@ -18,7 +21,7 @@
 		"prefixMessage": "My prefix is   **/**",
 		"prefix": "/",
 		"cooldown": 3000,
-		"lastUpdated": "2021-08-16"
+		"lastUpdated": "2021-08-17"
 	},
 
 	"ammo": {

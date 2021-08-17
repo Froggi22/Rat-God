@@ -6,7 +6,7 @@ module.exports = {
 	async run (interaction) {
 		interaction.reply({
 			embeds: [new MessageEmbed()
-				.setTitle('A Complete List Of Commands For Rat God')
+				.setAuthor('A Complete List Of Commands For Rat God', embedDesign.ratGodImage, embedDesign.wikiMain)
 				.setDescription('A list of all functioning commands for Rat God')
 				.setColor(embedDesign.color)
 				.addFields(

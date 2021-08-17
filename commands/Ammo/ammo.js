@@ -14,7 +14,7 @@ module.exports = {
 		const caliber = interaction.options.getString('caliber')
 		interaction.reply({
 			embeds: [new MessageEmbed()
-				.setTitle(`${caliber} ${embedDesign.ammoTitle}`)
+				.setAuthor(`${caliber} ${embedDesign.ammoTitle}`, embedDesign.ratGodImage, embedDesign.wikiBallistics)
 				.setDescription(`${embedDesign.ammoDescription}`)
 				.setImage(ammo[caliber])
 				.setFooter(embedDesign.gameUpdate)

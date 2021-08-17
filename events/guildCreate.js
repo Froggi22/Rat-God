@@ -12,7 +12,7 @@ module.exports = {
 			.setDescription(general.descriptionRatGod)
 			.setThumbnail('https://cdn.discordapp.com/attachments/865617643449221141/866742462093852742/Rat_God.jpg')
 			.setColor(embedDesign.color)
-			.addField(`\n${general.prefixMessage}`, `${general.permissionsRatGod}\n`)
+			.addField(`${general.prefixMessage}`, `${general.permissionsRatGod}\n`)
 			.setFooter(embedDesign.gameUpdate)
 			.setTimestamp()
 

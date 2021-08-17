@@ -6,7 +6,7 @@ module.exports = {
 	run (interaction) {
 		interaction.reply({
 			embeds: [new MessageEmbed()
-				.setTitle('Mod abuse')
+				.setAuthor('Mod abuse', embedDesign.ratGodImage, embedDesign.wikiMain)
 				.setColor(embedDesign.color)
 				.setImage(general.modAbuseImage)
 				.setTimestamp()]

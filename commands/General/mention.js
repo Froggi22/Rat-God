@@ -6,7 +6,7 @@ module.exports = {
 	run (interaction) {
 		interaction.reply({
 			embeds: [new MessageEmbed()
-				.setTitle(':facepalm: You are supposed to mention the bot dummy :facepalm:')
+				.setAuthor('🤦‍♂️ You are supposed to mention the bot dummy 🤦‍♂️', embedDesign.ratGodImage, embedDesign.wikiMain)
 				.setColor(embedDesign.color)
 				.setTimestamp()]
 		})

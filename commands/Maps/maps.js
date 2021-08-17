@@ -105,7 +105,7 @@ module.exports = {
 			embeds: [new MessageEmbed()
 				.setTimestamp()
 				.setColor(embedDesign.color)
-				.setFooter(embedDesign.gameUpdate)
+				.setAuthor(embedDesign.gameUpdate, embedDesign.ratGodImage, embedDesign.wikiMaps)
 				.setTitle(`${locationCap} ${maps.titles[map]}`)
 				.setDescription(maps.descriptions[map][location] || maps.descriptions[map])
 				.setImage(maps.images[location][map])

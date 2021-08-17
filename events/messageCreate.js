@@ -1,19 +1,12 @@
 const { general } = require('../config.json')
+const { Permissions } = require('discord.js')
 
 module.exports = {
 	async run (message, client) {
 		if (message.content.startsWith('<@866073671155974174>') || message.content.startsWith('<@!866073671155974174>')) {
-			console.log(message.channel)
-			if (message.channel === 'DMChannel') {
-				console.log('ITS A DM')
-				return message.channel.send(general.prefixMessage)
-			} else if (message.channel !== 'DMChannel' && !message.guild.me.permissions.has('SEND_MESSAGES')) {
-				console.log('ITS NOT A DM AND NO PERMS')
-				message.author.send(general.sendMessageError)
-			} else {
-				console.log('ITS PERFECT')
-				return message.channel.send(general.prefixMessage)
-			}
+			if (message.channel.type === 'DM') return message.reply(general.prefixMessage)
+			else if (message.channel.permissionsFor(message.guild.me).has(Permissions.FLAGS.SEND_MESSAGES)) return message.reply(general.prefixMessage)
+			else return message.author.send(general.sendMessageError).catch(error => console.log(`Error: ${error}`))
 		}
 
 		if (message.content === '!deploy' && general.owners.includes(message.author.id)) {

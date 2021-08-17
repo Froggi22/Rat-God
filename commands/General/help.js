@@ -5,7 +5,8 @@ module.exports = {
 	description: 'A mini-list of Rat Gods commands',
 	run (interaction) {
 		interaction.reply({
-			embeds: [new MessageEmbed().setTitle('Rat Gods Commands')
+			embeds: [new MessageEmbed()
+				.setAuthor('Rat Gods Commands', embedDesign.ratGodImage, embedDesign.wikiMain)
 				.setDescription('Leave suggestions to Froggi22#3436')
 				.setColor(embedDesign.color)
 				.addFields(
