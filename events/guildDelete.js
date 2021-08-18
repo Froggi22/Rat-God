@@ -40,6 +40,7 @@ module.exports = {
 						embed
 							.setTitle('Feedback message closed!')
 							.setDescription('We\'re sorry you didn\'t want to send us feedback!\nIf you did, please head over to the [Support Server!](https://discord.gg/kg7VfRQ9Xw)')
+							.setFields([])
 						owner.user.dmChannel.send({ embeds: [embed] })
 					})
 			})
