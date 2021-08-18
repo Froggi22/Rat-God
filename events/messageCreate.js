@@ -16,16 +16,13 @@ module.exports = {
 			}
 		}
 
-		if (message.content === '!deploy' && general.owners.includes(message.author.id)) {
-			await client.application?.fetch()
-
-			// Guild Slash Comamnds
-			// await client.guilds.cache.get('861948446910578699').commands.set(client.commands.map(command => command))
-
-			// Global Slash Commands
-			// await client.application.commands.set([])
-			await client.application.commands.set(client.commands.map(command => command))
+		if (message.content === '!guild' && general.owners.includes(message.author.id)) {
+			await client.guilds.cache.get('861948446910578699').commands.set(client.commands.map(command => command))
 			message.channel.send('Deployed Guild Slash Commands')
+		}
+		if (message.content === '!global' && general.owners.includes(message.author.id)) {
+			await client.application.commands.set(client.commands.map(command => command))
+			message.channel.send('Deployed Global Slash Commands')
 		}
 	}
 }
