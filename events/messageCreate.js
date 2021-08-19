@@ -12,17 +12,16 @@ module.exports = {
 				return message.reply(general.prefixMessage)
 			}	else {
 				console.log(`${message.author.tag} || Mention Error`)
-				return message.author.send(general.sendMessageError).catch(error => console.log(`Error: ${error}`))
+				return message.reply(general.sendMessageError).catch(error => console.log(`Error: ${error}`))
 			}
 		}
-
 		if (message.content === '!guild' && general.owners.includes(message.author.id)) {
 			await client.guilds.cache.get('861948446910578699').commands.set(client.commands.map(command => command))
-			message.channel.send('Deployed Guild Slash Commands')
+			message.reply('Deployed Guild Slash Commands')
 		}
 		if (message.content === '!global' && general.owners.includes(message.author.id)) {
 			await client.application.commands.set(client.commands.map(command => command))
-			message.channel.send('Deployed Global Slash Commands')
+			message.reply('Deployed Global Slash Commands')
 		}
 	}
 }

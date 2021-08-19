@@ -5,6 +5,7 @@ module.exports = {
 	async run (guild, client) {
 		const date = new Date().toISOString().replace('T', ' ').substr(0, 19)
 		console.log(`${date} || Rat God is no longer in "${guild.name}", and is now in "${client.guilds.cache.size}" servers.`)
+		client.user.setPresence({ activities: [{ type: 'LISTENING', name: `/Help | In ${client.guilds.cache.size} Servers` }] })
 
 		const owner = await guild.fetchOwner().catch(error => console.log(`Error: ${error}`))
 		if (!owner) return console.log('Cannot Fetch Owner')

@@ -6,6 +6,7 @@ module.exports = {
 		const date = new Date().toISOString().replace('T', ' ').substr(0, 19)
 		const owner = await guild.fetchOwner()
 		console.log(`${date} || Rat God joined a new server "${guild.name}", and is now in "${client.guilds.cache.size}" servers.`)
+		client.user.setPresence({ activities: [{ type: 'LISTENING', name: `/Help | In ${client.guilds.cache.size} Servers` }] })
 
 		const embed = new MessageEmbed()
 			.setTitle('Thank you for inviting Rat God!')

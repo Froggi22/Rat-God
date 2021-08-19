@@ -1,27 +1,34 @@
 {
 	"embedDesign": {
-		"ratGodImage": "https://cdn.discordapp.com/attachments/865617643449221141/866742462093852742/Rat_God.jpg",
-		"wikiMain": "https://escapefromtarkov.fandom.com/wiki/Escape_from_Tarkov_Wiki",
-		"wikiBallistics": "https://escapefromtarkov.fandom.com/wiki/Ballistics",
 		"wikiMaps": "https://escapefromtarkov.fandom.com/wiki/Map_of_Tarkov",
 		"gameUpdate": "Updated for game version: 0.12.11.2.13567",
 		"color": "#ffd700",
 		
 		"ammoTitle": "Ammunition Table",
-		"ammoDescription": "Type **/Help** to get Rat Gods commands"
+		"ammoDescription": "Type **/Help** to get Rat Gods commands",
+
+		"ratGodImage": "https://cdn.discordapp.com/attachments/865617643449221141/866742462093852742/Rat_God.jpg",
+		"wikiMain": "https://escapefromtarkov.fandom.com/wiki/Escape_from_Tarkov_Wiki",
+		"wikiBallistics": "https://escapefromtarkov.fandom.com/wiki/Ballistics"
 	},
 
 	"general": {
-		"sendMessageError": "I don't have permission to send messages in that channel!",
+		"lastUpdated": "2021-08-19",
+		"version": "1.3.0",
+		"latestUpdateMessage": "~ Changed prefix from `%` to `/`.\n--- The command execution will be slash commands, so technically the prefix was removed.\n+ Every command has a Rat God icon and a link to the official wiki.\n--- The link is clickable on the commands title.\n+ 3 second command execution cooldown for each user.\n+ Welcome message in DMs to the guild owner.\n+ Goodbye message in DMs to the guild owner when kicked.\n--- A feedback request message will also be included.\n--- If the feedback goes through, it will confirm it by another message.\n--- If the timer (curr. 10 min) ends, a message will appear.\n- Removed Ammocmd.\n```",
+		"prefix": "/",
+		"prefixMessage": "My prefix is   **/**",
 		"owners": ["229212817448894464", "379643682984296448"],
-		"modAbuseImage": "https://cdn.discordapp.com/attachments/865617643449221141/867828829489594429/Mod_abuse.png",
+
+		"helpCommands": "`Ammo` - Shows all ammo commands. \n`Maps` - Shows all maps commands.\n‏‏‎\n`Ping` - Pings the bot.\n`Modabuse` - For those complaining about mod abuse.\n`Servercount` - How many servers the bot is invited to.\n`Support` - Sends support link.‎",
 		"supportInviteLink": "https://discord.gg/kg7VfRQ9Xw",
+		"modAbuseImage": "https://cdn.discordapp.com/attachments/865617643449221141/867828829489594429/Mod_abuse.png",
+		"sendMessageError": "I don't have permission to send messages in that channel!",
 		"descriptionRatGod": "Rat God is a intelligent bot that will help you in Escape From Tarkov. The purpose of the bot is to have easy and fast access to information that's within the game to make it easier for the players.",
 		"permissionsRatGod": "Rat Gods minimum permission requirements are:\nRead Messages, Send Messages, Embed Links, Attach Files, Read Message History, Add Reactions, Use Application Commands.",
-		"prefixMessage": "My prefix is   **/**",
-		"prefix": "/",
-		"cooldown": 3000,
-		"lastUpdated": "2021-08-18"
+		"cooldown": 3000
+		
+		
 	},
 
 	"ammo": {
@@ -313,7 +320,7 @@
 				"3D Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e1/Actual_caches_37_map_shoreline.jpg/revision/latest?cb=20200105023458"
 			},
 			"interchange": {
-				"null" : "https://i.imgur.com/uYXcQx9.jpg",
+				"null" : "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/af/Interchange.jpg/revision/latest?cb=20180124204206",
 				"Info": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d9/InterchangeKillaPath.jpg/revision/latest?cb=20200122135446",
 				"Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e5/InterchangeMap_Updated_4.24.2020.png/revision/latest?cb=20210320055357",
 				"Hidden Stashes": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/fe/Interchange_hidden_stash_map.jpg/revision/latest?cb=20191117132146"
