@@ -4,7 +4,7 @@ module.exports = {
 	async run (client) {
 		let guilds = ''
 		client.guilds.cache.forEach((guild) => {
-			guilds = guilds.concat(guild).concat('\n')
+			guilds = guilds.concat(guild).concat(' || ')
 		})
 		console.log(`-----Guilds-----\n${guilds}-----${client.guilds.cache.size} Servers-----`)
 		const date = new Date().toISOString().replace('T', ' ').substr(0, 19)
