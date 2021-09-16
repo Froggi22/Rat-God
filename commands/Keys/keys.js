@@ -1,4 +1,4 @@
-/* module.exports = {
+module.exports = {
 	description: 'Key Guides',
 	options: [
 		{
@@ -28,4 +28,4 @@
 			]
 		}
 	]
-} */
+}
