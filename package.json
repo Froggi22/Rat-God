@@ -12,5 +12,9 @@
 	},
 	"devDependencies": {
 		"standardx": "^7.0.0"
+	},
+	"engines": {
+		"node": "16.x",
+		"npm": "7.x"
 	}
 }
