@@ -15,13 +15,19 @@ module.exports = {
 				return message.reply(general.sendMessageError).catch(error => console.log(`Error: ${error}`))
 			}
 		}
-		if (message.content === '!guild' && general.owners.includes(message.author.id)) {
+
+		if (!general.owners.includes(message.author.id)) return
+
+		switch (message.content) {
+		case '!guild':
 			await client.guilds.cache.get('861948446910578699').commands.set(client.commands.map(command => command))
-			message.reply('Deployed Guild Slash Commands')
-		}
-		if (message.content === '!global' && general.owners.includes(message.author.id)) {
+			return message.reply('Deployed Guild Slash Commands')
+		case '!global':
 			await client.application.commands.set(client.commands.map(command => command))
-			message.reply('Deployed Global Slash Commands')
+			return message.reply('Deployed Global Slash Commands')
+		case '!removeguild':
+			await client.guilds.cache.get('861948446910578699').commands.set([])
+			return message.reply('Removed Guild Slash Commands')
 		}
 	}
 }
