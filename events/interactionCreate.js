@@ -7,7 +7,7 @@ module.exports = {
 		const command = client.commands.get(interaction.commandName);
 
 		if (!command) return;
-		const date = new Date().toISOString().replace("T", " ").substr(0, 19);
+		const date = new Date().toISOString().replace("T", " ").replace("Z", "");
 		console.log(`${date} || ${interaction.user.tag} || Interaction`);
 
 		// Cooldown
