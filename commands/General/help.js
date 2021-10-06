@@ -1,5 +1,5 @@
-const { MessageEmbed } = require('discord.js')
-const { embedDesign, general } = require('../../config.json')
+const { MessageEmbed } = require('discord.js');
+const { embedDesign, general } = require('../../config.json');
 
 module.exports = {
 	description: 'A mini-list of Rat Gods commands',
@@ -15,6 +15,6 @@ module.exports = {
 				)
 				.setTimestamp()
 				.setFooter(embedDesign.gameUpdate)]
-		})
+		});
 	}
-}
+};

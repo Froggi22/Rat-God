@@ -1,5 +1,5 @@
-const { MessageEmbed } = require('discord.js')
-const { embedDesign, general } = require('../../config.json')
+const { MessageEmbed } = require('discord.js');
+const { embedDesign, general } = require('../../config.json');
 
 module.exports = {
 	description: 'Link to Froggis DMs and the support discord server',
@@ -15,6 +15,6 @@ module.exports = {
 					{ name: 'Froggis DMs', value: 'Froggi22#3436' }
 				)
 				.setTimestamp()]
-		})
+		});
 	}
-}
+};

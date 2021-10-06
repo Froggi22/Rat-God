@@ -1,5 +1,5 @@
-const { MessageEmbed } = require('discord.js')
-const { embedDesign, maps } = require('../../config.json')
+const { MessageEmbed } = require('discord.js');
+const { embedDesign, maps } = require('../../config.json');
 
 module.exports = {
 	description: 'Map guides',
@@ -13,7 +13,7 @@ module.exports = {
 					name: 'map',
 					description: 'What kind of map guide?',
 					type: 'STRING',
-					choices: maps.factory.map(choice => { return { name: choice, value: choice } })
+					choices: maps.factory.map(choice => { return { name: choice, value: choice }; })
 				}
 			]
 		},
@@ -26,7 +26,7 @@ module.exports = {
 					name: 'map',
 					description: 'What kind of map guide?',
 					type: 'STRING',
-					choices: maps.woods.map(choice => { return { name: choice, value: choice } })
+					choices: maps.woods.map(choice => { return { name: choice, value: choice }; })
 				}
 			]
 		},
@@ -39,7 +39,7 @@ module.exports = {
 					name: 'map',
 					description: 'What kind of map guide?',
 					type: 'STRING',
-					choices: maps.customs.map(choice => { return { name: choice, value: choice } })
+					choices: maps.customs.map(choice => { return { name: choice, value: choice }; })
 				}
 			]
 		},
@@ -52,7 +52,7 @@ module.exports = {
 					name: 'map',
 					description: 'What kind of map guide?',
 					type: 'STRING',
-					choices: maps.shoreline.map(choice => { return { name: choice, value: choice } })
+					choices: maps.shoreline.map(choice => { return { name: choice, value: choice }; })
 				}
 			]
 		},
@@ -65,7 +65,7 @@ module.exports = {
 					name: 'map',
 					description: 'What kind of map guide?',
 					type: 'STRING',
-					choices: maps.interchange.map(choice => { return { name: choice, value: choice } })
+					choices: maps.interchange.map(choice => { return { name: choice, value: choice }; })
 				}
 			]
 		},
@@ -78,7 +78,7 @@ module.exports = {
 					name: 'map',
 					description: 'What kind of map guide?',
 					type: 'STRING',
-					choices: maps.labs.map(choice => { return { name: choice, value: choice } })
+					choices: maps.labs.map(choice => { return { name: choice, value: choice }; })
 				}
 			]
 		},
@@ -91,15 +91,15 @@ module.exports = {
 					name: 'map',
 					description: 'What kind of map guide?',
 					type: 'STRING',
-					choices: maps.reserve.map(choice => { return { name: choice, value: choice } })
+					choices: maps.reserve.map(choice => { return { name: choice, value: choice }; })
 				}
 			]
 		}
 	],
 	run (interaction) {
-		const location = interaction.options.getSubcommand()
-		const map = interaction.options.getString('map') || 'null'
-		const locationCap = location[0].toUpperCase() + location.slice(1)
+		const location = interaction.options.getSubcommand();
+		const map = interaction.options.getString('map') || 'null';
+		const locationCap = location[0].toUpperCase() + location.slice(1);
 
 		return interaction.reply({
 			embeds: [new MessageEmbed()
@@ -112,6 +112,6 @@ module.exports = {
 				.setImage(maps.images[location][map])
 				.addFields(maps.fields[location][map])
 			]
-		})
+		});
 	}
-}
+};

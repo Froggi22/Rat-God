@@ -1,5 +1,5 @@
-const { MessageEmbed } = require('discord.js')
-const { embedDesign, general } = require('../../config.json')
+const { MessageEmbed } = require('discord.js');
+const { embedDesign, general } = require('../../config.json');
 
 module.exports = {
 	description: 'For those complaining about mod abuse',
@@ -10,6 +10,6 @@ module.exports = {
 				.setColor(embedDesign.color)
 				.setImage(general.modAbuseImage)
 				.setTimestamp()]
-		})
+		});
 	}
-}
+};

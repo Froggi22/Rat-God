@@ -1,5 +1,5 @@
-const { MessageEmbed } = require('discord.js')
-const { embedDesign } = require('../../config.json')
+const { MessageEmbed } = require('discord.js');
+const { embedDesign } = require('../../config.json');
 
 module.exports = {
 	description: 'Amount of servers, channels and users the bot is connected to',
@@ -13,6 +13,6 @@ module.exports = {
 					{ name: 'Users', value: `${client.users.cache.size}`, inline: true }
 				)
 				.setTimestamp()]
-		})
+		});
 	}
-}
+};

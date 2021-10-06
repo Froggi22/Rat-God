@@ -1,5 +1,5 @@
-const { MessageEmbed } = require('discord.js')
-const { embedDesign } = require('../../config.json')
+const { MessageEmbed } = require('discord.js');
+const { embedDesign } = require('../../config.json');
 
 module.exports = {
 	description: 'A complete list of Rat Gods commands',
@@ -18,6 +18,6 @@ module.exports = {
 				// {name: "Keys", value: "WIP", inline: false}
 				)
 				.setTimestamp()]
-		})
+		});
 	}
-}
+};

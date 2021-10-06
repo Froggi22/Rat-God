@@ -1,5 +1,5 @@
-const { MessageEmbed } = require('discord.js')
-const { embedDesign } = require('../../config.json')
+const { MessageEmbed } = require('discord.js');
+const { embedDesign } = require('../../config.json');
 
 module.exports = {
 	description: 'Joke mention command',
@@ -9,6 +9,6 @@ module.exports = {
 				.setAuthor('🤦‍♂️ You are supposed to mention the bot dummy 🤦‍♂️', embedDesign.ratGodImage, embedDesign.wikiMain)
 				.setColor(embedDesign.color)
 				.setTimestamp()]
-		})
+		});
 	}
-}
+};

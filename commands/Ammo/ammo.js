@@ -1,5 +1,5 @@
-const { MessageEmbed } = require('discord.js')
-const { embedDesign, ammo } = require('../../config.json')
+const { MessageEmbed } = require('discord.js');
+const { embedDesign, ammo } = require('../../config.json');
 
 module.exports = {
 	description: 'Ammo charts for different calibers',
@@ -8,10 +8,10 @@ module.exports = {
 		name: 'caliber',
 		description: 'The ammunition caliber',
 		required: true,
-		choices: Object.keys(ammo).map(choice => { return { name: choice, value: choice } })
+		choices: Object.keys(ammo).map(choice => { return { name: choice, value: choice }; })
 	}],
 	run (interaction) {
-		const caliber = interaction.options.getString('caliber')
+		const caliber = interaction.options.getString('caliber');
 		interaction.reply({
 			embeds: [new MessageEmbed()
 				.setAuthor(`${caliber} ${embedDesign.ammoTitle}`, embedDesign.ratGodImage, embedDesign.wikiBallistics)
@@ -21,6 +21,6 @@ module.exports = {
 				.setColor(embedDesign.color)
 				.setTimestamp()
 			]
-		})
+		});
 	}
-}
+};
