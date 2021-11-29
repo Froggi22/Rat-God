@@ -3,7 +3,7 @@ const { Permissions } = require("discord.js")
 
 module.exports = {
 	async run (message, client) {
-		if (message.content.startsWith("<@866073671155974174>") || message.content.startsWith("<@!866073671155974174>")) {
+		if (message.content.match(/^<@!?866073671155974174>/)) {
 			if (message.channel.type === "DM") {
 				console.log(`${message.author.tag} || DM Mention`)
 				return message.reply(general.prefixMessage)
@@ -12,7 +12,7 @@ module.exports = {
 				return message.reply(general.prefixMessage)
 			}	else {
 				console.log(`${message.author.tag} || Mention Error`)
-				return message.reply(general.sendMessageError).catch(error => console.log(`Error: ${error}`))
+				return message.author.dmChannel.send(general.sendMessageError).catch(error => console.log(`Error: ${error}`))
 			}
 		}
 

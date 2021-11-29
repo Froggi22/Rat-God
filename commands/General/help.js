@@ -11,7 +11,7 @@ module.exports = {
 				.setColor(embedDesign.color)
 				.addFields(
 					{ name: "Commands", value: `${general.prefixMessage}.\n${general.helpCommands}\n` },
-					{ name: `Version ${general.version}`, value: `‏‏‎**Last updated -** ${general.lastUpdated}\n\`Latest\` - Shows latest updates.\n[Instructional Video](https://youtu.be/xoIsMagQBYU)\n‏‏‎ ‎` }
+					{ name: `Version ${general.version}`, value: `**Last updated -** ${general.lastUpdated}\n\`Latest\` - Shows latest updates.\n[Instructional Video](https://youtu.be/xoIsMagQBYU)\n‏‏‎ ‎` }
 				)
 				.setTimestamp()
 				.setFooter(embedDesign.gameUpdate)]

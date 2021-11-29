@@ -3,9 +3,7 @@ const chalk = require("chalk")
 module.exports = {
 	async run (client) {
 		let guilds = ""
-		client.guilds.cache.forEach((guild) => {
-			guilds = guilds.concat(guild).concat(" || ")
-		})
+		client.guilds.cache.forEach(guild => { guilds += ` ${guild} || ` })
 		console.log(`----- Guilds -----  ${guilds}  ----- ${client.guilds.cache.size} Servers -----`)
 		const date = new Date().toISOString().replace("T", " ").replace("Z", "")
 		console.log(`${chalk.bgHex("#00FF00")("    ")} ${date} || Ready! Logged in as ${client.user.tag}`)
