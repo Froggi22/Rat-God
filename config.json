@@ -20,7 +20,7 @@
 		"prefixMessage": "My prefix is   **/**",
 		"owners": ["229212817448894464", "379643682984296448"],
 
-		"helpCommands": "`Ammo` - Shows all ammo commands. \n`Maps` - Shows all maps commands.\n‏‏‎\n`Ping` - Pings the bot.\n`Modabuse` - For those complaining about mod abuse.\n`Servercount` - How many servers the bot is invited to.\n`Support` - Sends support link.‎",
+		"helpCommands": "`Ammo` - Shows all ammo commands. \n`Maps` - Shows all maps commands.\n\n`Ping` - Pings the bot.\n`Modabuse` - For those complaining about mod abuse.\n`Servercount` - How many servers the bot is invited to.\n`Support` - Sends support link.",
 		"supportInviteLink": "https://discord.gg/kg7VfRQ9Xw",
 		"modAbuseImage": "https://cdn.discordapp.com/attachments/865617643449221141/867828829489594429/Mod_abuse.png",
 		"sendMessageError": "I don't have permission to send messages in that channel!",
@@ -108,10 +108,10 @@
 		"fields": {
 			"factory": {
 				"null": [
-					{"name": "Type \"/Maps Factory Info\" to get detailed info about the area", "value": "Detailed map: **/Maps Factory Map**‎\nInteractive map: **/Maps Factory Interactive Map**"}
+					{"name": "Type \"/Maps Factory Info\" to get detailed info about the area", "value": "Detailed map: **/Maps Factory Map**\nInteractive map: **/Maps Factory Interactive Map**"}
 				],
 				"Info": [
-					{ "name": "Description", "value": "‎The industrial estate and facilities of chemical factory #16 were rented out illegally to the TerraGroup company.\nDuring the Contract Wars, this factory was a hotbed for numerous firefights between USEC and BEAR operatives that determined control over the entire Tarkov industrial district.\nWith time, the factory premises were converted into a shelter for local civilians, Scavs, along with the occasional USEC or BEAR operators." },
+					{ "name": "Description", "value": "The industrial estate and facilities of chemical factory #16 were rented out illegally to the TerraGroup company.\nDuring the Contract Wars, this factory was a hotbed for numerous firefights between USEC and BEAR operatives that determined control over the entire Tarkov industrial district.\nWith time, the factory premises were converted into a shelter for local civilians, Scavs, along with the occasional USEC or BEAR operators." },
 					{ "name": "Features", "value": "A small, fast-paced CQC map inside of a multi-story industrial factory, complete with tunnels and overhead walkways." },
 					{ "name": "Boss", "value": "**Name:** Tagilla." },
 					{ "name": "Locations", "value": "Tagilla can be found mainly nearby the pit and underground sections of Factory.\n**as of 0.12.11**" },
@@ -120,10 +120,10 @@
 					{ "name": "Suggestions", "value": "Leave suggestions about what else would be nice to have inside of this command." }
 				],
 				"Map": [
-					{"name": "Type \"/Maps Factory Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid."}
+					{"name": "Type \"/Maps Factory Info\" to get detailed info about the area", "value": "Made for **0.12.11**\nMap is still valid."}
 				],
 				"Interactive Map": [
-					{"name": "Type \"/Maps Factory Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid."}
+					{"name": "Type \"/Maps Factory Info\" to get detailed info about the area", "value": "Made for **0.12.11**\nMap is still valid."}
 				]
 			},
 			"woods": {
@@ -140,13 +140,13 @@
 					{ "name": "Suggestions", "value": "Leave suggestions about what else would be nice to have inside of this command." }
 				],
 				"Map": [
-					{"name": "Type \"/Maps Woods Info\" to get detailed info about the area","value": "Made for **0.12.11**‎\nMap is still valid."}
+					{"name": "Type \"/Maps Woods Info\" to get detailed info about the area","value": "Made for **0.12.11**\nMap is still valid."}
 				],
 				"Hidden Stashes": [
-					{"name": "Type \"/Maps Woods Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid."}
+					{"name": "Type \"/Maps Woods Info\" to get detailed info about the area", "value": "Made for **0.12.11**\nMap is still valid."}
 				],
 				"Interactive Map": [
-					{"name": "Type \"/Maps Woods Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid."}
+					{"name": "Type \"/Maps Woods Info\" to get detailed info about the area", "value": "Made for **0.12.11**\nMap is still valid."}
 				]
 			},
 			"customs": {
@@ -163,19 +163,19 @@
 					{ "name": "Suggestions", "value": "Leave suggestions about what else would be nice to have inside of this command." }
 				],
 				"Map": [
-					{"name": "Type \"/Maps Customs Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid."}
+					{"name": "Type \"/Maps Customs Info\" to get detailed info about the area", "value": "Made for **0.12.11**\nMap is still valid."}
 				],
 				"Hidden Stashes": [
-					{"name": "Type \"/Maps Customs Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid."}
+					{"name": "Type \"/Maps Customs Info\" to get detailed info about the area", "value": "Made for **0.12.11**\nMap is still valid."}
 				],
 				"Interactive Map": [
-					{"name": "Type \"/Maps Customs Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid."}
+					{"name": "Type \"/Maps Customs Info\" to get detailed info about the area", "value": "Made for **0.12.11**\nMap is still valid."}
 				],
 				"Dorms Map": [
-					{"name": "Type \"/Maps Customs Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid."}
+					{"name": "Type \"/Maps Customs Info\" to get detailed info about the area", "value": "Made for **0.12.11**\nMap is still valid."}
 				],
 				"3D Map": [
-					{"name": "Type \"/Maps Customs Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid."}
+					{"name": "Type \"/Maps Customs Info\" to get detailed info about the area", "value": "Made for **0.12.11**\nMap is still valid."}
 				]
 			},
 			"shoreline": {
@@ -192,22 +192,22 @@
           { "name": "Suggestions", "value": "Leave suggestions about what else would be nice to have inside of this command." }
         ],
 				"Map": [
-					{ "name": "Type \"/Maps Shoreline Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid." }
+					{ "name": "Type \"/Maps Shoreline Info\" to get detailed info about the area", "value": "Made for **0.12.11**\nMap is still valid." }
 				],
 				"Hidden Stashes": [
-					{ "name": "Type \"/Maps Shoreline Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid." }
+					{ "name": "Type \"/Maps Shoreline Info\" to get detailed info about the area", "value": "Made for **0.12.11**\nMap is still valid." }
 				],
 				"Interactive Map": [
-					{ "name": "Type \"/Maps Shoreline Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid." }
+					{ "name": "Type \"/Maps Shoreline Info\" to get detailed info about the area", "value": "Made for **0.12.11**\nMap is still valid." }
 				],
 				"Key Spawns Map": [
-					{ "name": "Type \"/Maps Shoreline Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid." }
+					{ "name": "Type \"/Maps Shoreline Info\" to get detailed info about the area", "value": "Made for **0.12.11**\nMap is still valid." }
 				],
 				"Resort Map": [
-					{ "name": "Type \"/Maps Shoreline Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid." }
+					{ "name": "Type \"/Maps Shoreline Info\" to get detailed info about the area", "value": "Made for **0.12.11**\nMap is still valid." }
 				],
 				"3D Map": [
-					{ "name": "Type \"/Maps Shoreline Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid." }
+					{ "name": "Type \"/Maps Shoreline Info\" to get detailed info about the area", "value": "Made for **0.12.11**\nMap is still valid." }
 				]
 			},
 			"interchange": {
@@ -225,13 +225,13 @@
 					{ "name": "Suggestions", "value": "Leave suggestions about what else would be nice to have inside of this command." }
         ],
 				"Map": [
-					{"name": "Type \"/Maps Interchange Info\" to get detailed info about the area","value": "Made for **0.12.11**‎\nMap is still valid."}
+					{"name": "Type \"/Maps Interchange Info\" to get detailed info about the area","value": "Made for **0.12.11**\nMap is still valid."}
 				],
 				"Hidden Stashes": [
-					{"name": "Type \"/Maps Interchange Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid."}
+					{"name": "Type \"/Maps Interchange Info\" to get detailed info about the area", "value": "Made for **0.12.11**\nMap is still valid."}
 				],
 				"Interactive Map": [
-					{"name": "Type \"/Maps Interchange Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid."}
+					{"name": "Type \"/Maps Interchange Info\" to get detailed info about the area", "value": "Made for **0.12.11**\nMap is still valid."}
 				]
 			},
 			"labs": {
@@ -245,22 +245,22 @@
 					{ "name": "Suggestions", "value": "Leave suggestions about what else would be nice to have inside of this command." }
         ],
 				"Map": [
-					{ "name": "Type \"/Maps Labs Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid." }
+					{ "name": "Type \"/Maps Labs Info\" to get detailed info about the area", "value": "Made for **0.12.11**\nMap is still valid." }
 				],
 				"Interactive Map": [
-					{ "name": "Type \"/Maps Labs Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid." }
+					{ "name": "Type \"/Maps Labs Info\" to get detailed info about the area", "value": "Made for **0.12.11**\nMap is still valid." }
 				],
 				"Basement Map": [
-					{ "name": "Type \"/Maps Labs Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid." }
+					{ "name": "Type \"/Maps Labs Info\" to get detailed info about the area", "value": "Made for **0.12.11**\nMap is still valid." }
 				],
 				"First Floor Map": [
-					{ "name": "Type \"/Maps Labs Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid." }
+					{ "name": "Type \"/Maps Labs Info\" to get detailed info about the area", "value": "Made for **0.12.11**\nMap is still valid." }
 				],
 				"Second Floor Map": [
-					{ "name": "Type \"/Maps Labs Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid." }
+					{ "name": "Type \"/Maps Labs Info\" to get detailed info about the area", "value": "Made for **0.12.11**\nMap is still valid." }
 				],
 				"3D Map": [
-					{ "name": "Type \"/Maps Labs Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid." }
+					{ "name": "Type \"/Maps Labs Info\" to get detailed info about the area", "value": "Made for **0.12.11**\nMap is still valid." }
 				]
 			},
 			"reserve": {
@@ -277,16 +277,16 @@
 					{ "name": "Suggestions", "value": "Leave suggestions about what else would be nice to have inside of this command."}
         ],
 				"Map": [
-					{ "name": "Type \"/Maps Reserve Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid." }
+					{ "name": "Type \"/Maps Reserve Info\" to get detailed info about the area", "value": "Made for **0.12.11**\nMap is still valid." }
 				],
 				"Interactive Map": [
-					{ "name": "Type \"/Maps Reserve Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid." }
+					{ "name": "Type \"/Maps Reserve Info\" to get detailed info about the area", "value": "Made for **0.12.11**\nMap is still valid." }
 				],
 				"Key Map": [
-					{ "name": "Type \"/Maps Reserve Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid." }
+					{ "name": "Type \"/Maps Reserve Info\" to get detailed info about the area", "value": "Made for **0.12.11**\nMap is still valid." }
 				],
 				"D-2 Bunker Map": [
-					{ "name": "Type \"/Maps Reserve Info\" to get detailed info about the area", "value": "Made for **0.12.11**‎\nMap is still valid." }
+					{ "name": "Type \"/Maps Reserve Info\" to get detailed info about the area", "value": "Made for **0.12.11**\nMap is still valid." }
 				]
 			}
 		},

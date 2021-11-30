@@ -1,6 +1,4 @@
 {
 	"standard.autoFixOnSave": true,
-	"standard.engine": "standardx",
-	"editor.comments.insertSpace": false,
-	"editor.insertSpaces": false
+	"standard.engine": "standardx"
 }
