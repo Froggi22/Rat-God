@@ -5,7 +5,7 @@
 [![License: GPL v3](https://badgen.net/badge/License/GPL%20v3/blue)](LICENSE)
 [![Discord](https://badgen.net/discord/online-members/kg7VfRQ9Xw?icon=discord&label)](https://discord.com/invite/kg7VfRQ9Xw)
 
-This is the source code for Rat God, a Discord bot that will help you in Escape From Tarkov. Have easy and fast access to information in-game information!
+This is the source code for Rat God, a Discord bot that will help you in Escape From Tarkov. Have easy and fast access to in-game information!
 
 - [Website](https://rat-god-website.herokuapp.com/)
 - [Support Discord Server](https://discord.com/invite/kg7VfRQ9Xw) *<-- Highly recommend to join!*
@@ -76,6 +76,9 @@ Reserve:        Normal Map | Interactive Map | Keys | D-2 Bunker Map
 
 - The code is licensed under GPLv3. [Read more about what you can and cannot do with the code](https://en.wikipedia.org/wiki/GNU_General_Public_License).
 - Indentation: Tabs.
+- Commit titles are named with [Calver](https://calver.org/) scheme YYYY.0M.0D.MICRO.
+  - Example: `2021.12.07.0`.
+  - Explanation: The first commit on the 7th of december 2021.
 - Bot is hosted on Heroku, hence the: `Procfile`.
 
 ### Run me locally
