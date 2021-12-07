@@ -5,7 +5,7 @@ module.exports = {
 	async run (guild, client) {
 		const date = new Date().toISOString().replace("T", " ").replace("Z", "")
 		const owner = await guild.fetchOwner()
-		console.log(`${date} || Rat God joined a new server "${guild.name}", and is now in "${client.guilds.cache.size}" servers.`)
+		//console.log(`${date} || Rat God joined a new server "${guild.name}", and is now in "${client.guilds.cache.size}" servers.`)
 		client.user.setPresence({ activities: [{ type: "LISTENING", name: `/Help | In ${client.guilds.cache.size} Servers` }] })
 
 		const embed = new MessageEmbed()

@@ -1,12 +1,11 @@
 {
 	"name": "ratgod",
 	"version": "1.3.0",
-	"description": "Rat God is a intelligent bot that will help you in Escape From Tarkov.",
+	"description": "Rat God is a Discord bot that will help you in Escape From Tarkov.",
 	"main": "index.js",
 	"author": "Froggi22",
 	"license": "MIT",
 	"dependencies": {
-		"chalk": "^4.1.2",
 		"discord.js": "^13.1.0",
 		"dotenv": "^10.0.0"
 	},

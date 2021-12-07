@@ -8,7 +8,7 @@ module.exports = {
 
 		if (!command) return
 		const date = new Date().toISOString().replace("T", " ").replace("Z", "")
-		console.log(`${date} || ${interaction.user.tag} || Interaction`)
+		//console.log(`${date} || ${interaction.user.tag} || Interaction`)
 
 		// Cooldown
 		const now = Date.now()

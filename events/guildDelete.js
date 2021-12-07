@@ -4,11 +4,11 @@ const { embedDesign } = require("../config.json")
 module.exports = {
 	async run (guild, client) {
 		const date = new Date().toISOString().replace("T", " ").replace("Z", "")
-		console.log(`${date} || Rat God is no longer in "${guild.name}", and is now in "${client.guilds.cache.size}" servers.`)
+		//console.log(`${date} || Rat God is no longer in "${guild.name}", and is now in "${client.guilds.cache.size}" servers.`)
 		client.user.setPresence({ activities: [{ type: "LISTENING", name: `/Help | In ${client.guilds.cache.size} Servers` }] })
 
 		const owner = await guild.fetchOwner().catch(error => console.log(`Error: ${error}`))
-		if (!owner) return console.log("Cannot Fetch Owner")
+		if (!owner) return //console.log("Cannot Fetch Owner")
 		const embed = new MessageEmbed()
 			.setTitle("Sorry to see you go!")
 			.setDescription("If you would like to give any feedback on what we should improve, please send that in **one** message below!")
