@@ -1,6 +1,6 @@
 # Rat God
 
-<img style="float:right; border-radius:30px;" src="Rat God.jpg" alt="Rat God profile image" width="150" />
+<img align="right" src="Rat God.png" alt="Rat God profile image" width="150" />
 
 [![License: GPL v3](https://badgen.net/badge/License/GPL%20v3/blue)](LICENSE)
 [![Discord](https://badgen.net/discord/online-members/kg7VfRQ9Xw?icon=discord&label)](https://discord.com/invite/kg7VfRQ9Xw)
