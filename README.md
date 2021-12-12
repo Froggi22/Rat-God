@@ -16,6 +16,8 @@ This is the source code for Rat God, a Discord bot that will help you in Escape 
 - [Features](#features)
 - [Contributing](#contributing)
 
+- - -
+
 ## How to use
 
 1. [Click here to add me to your server!](https://discord.com/api/oauth2/authorize?client_id=864572952275714059&permissions=2147600448&scope=bot%20applications.commands)
