@@ -5,32 +5,6 @@ module.exports = {
 	description: "Map guides",
 	options: [
 		{
-			name: "factory",
-			description: "Factory area",
-			type: "SUB_COMMAND",
-			options: [
-				{
-					name: "map",
-					description: "What kind of map guide?",
-					type: "STRING",
-					choices: maps.factory.map(choice => { return { name: choice, value: choice } })
-				}
-			]
-		},
-		{
-			name: "woods",
-			description: "Woods area",
-			type: "SUB_COMMAND",
-			options: [
-				{
-					name: "map",
-					description: "What kind of map guide?",
-					type: "STRING",
-					choices: maps.woods.map(choice => { return { name: choice, value: choice } })
-				}
-			]
-		},
-		{
 			name: "customs",
 			description: "Customs area",
 			type: "SUB_COMMAND",
@@ -44,15 +18,15 @@ module.exports = {
 			]
 		},
 		{
-			name: "shoreline",
-			description: "Shoreline area",
+			name: "factory",
+			description: "Factory area",
 			type: "SUB_COMMAND",
 			options: [
 				{
 					name: "map",
 					description: "What kind of map guide?",
 					type: "STRING",
-					choices: maps.shoreline.map(choice => { return { name: choice, value: choice } })
+					choices: maps.factory.map(choice => { return { name: choice, value: choice } })
 				}
 			]
 		},
@@ -70,15 +44,15 @@ module.exports = {
 			]
 		},
 		{
-			name: "labs",
-			description: "The Lab area",
+			name: "lighthouse",
+			description: "Lighthouse area",
 			type: "SUB_COMMAND",
 			options: [
 				{
 					name: "map",
 					description: "What kind of map guide?",
 					type: "STRING",
-					choices: maps.labs.map(choice => { return { name: choice, value: choice } })
+					choices: maps.lighthouse.map(choice => { return { name: choice, value: choice } })
 				}
 			]
 		},
@@ -92,6 +66,45 @@ module.exports = {
 					description: "What kind of map guide?",
 					type: "STRING",
 					choices: maps.reserve.map(choice => { return { name: choice, value: choice } })
+				}
+			]
+		},
+		{
+			name: "shoreline",
+			description: "Shoreline area",
+			type: "SUB_COMMAND",
+			options: [
+				{
+					name: "map",
+					description: "What kind of map guide?",
+					type: "STRING",
+					choices: maps.shoreline.map(choice => { return { name: choice, value: choice } })
+				}
+			]
+		},
+		{
+			name: "labs",
+			description: "The Lab area",
+			type: "SUB_COMMAND",
+			options: [
+				{
+					name: "map",
+					description: "What kind of map guide?",
+					type: "STRING",
+					choices: maps.labs.map(choice => { return { name: choice, value: choice } })
+				}
+			]
+		},
+		{
+			name: "woods",
+			description: "Woods area",
+			type: "SUB_COMMAND",
+			options: [
+				{
+					name: "map",
+					description: "What kind of map guide?",
+					type: "STRING",
+					choices: maps.woods.map(choice => { return { name: choice, value: choice } })
 				}
 			]
 		}

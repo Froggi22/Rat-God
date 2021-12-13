@@ -7,7 +7,7 @@ module.exports = {
 		interaction.reply({
 			embeds: [new MessageEmbed()
 				.setAuthor("Latest update", embedDesign.ratGodImage, embedDesign.wikiMain)
-				.setDescription(`\`\`\`diff\n# ${general.version}\n\n${general.latestUpdateMessage}`)
+				.setDescription(`\`\`\`diff\n# ${general.version}\n\n${general.latestUpdateMessage}\n\`\`\``)
 				.setColor(embedDesign.color)
 				.addField("Appreciation letter", "Thank you for inviting and using my bot!\n I appreciate all feedback in the Support Server!\n")
 				.setTimestamp()

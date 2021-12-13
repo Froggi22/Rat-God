@@ -1,6 +1,6 @@
 # Rat God
 
-<img align="right" src="Rat God.png" alt="Rat God profile image" width="150" />
+<img align="right" src="Rat_God.png" alt="Rat God profile image" width="150" />
 
 [![License: GPL v3](https://badgen.net/badge/License/GPL%20v3/blue)](LICENSE)
 [![Discord](https://badgen.net/discord/online-members/kg7VfRQ9Xw?icon=discord&label)](https://discord.com/invite/kg7VfRQ9Xw)
@@ -63,13 +63,14 @@ Example command: `/maps woods map`.\
 Note: All maps have an Info command as well.
 
 ```txt
-Factory:        Normal Map | Interactive Map
-Woods:          Normal Map | Hidden Stashes | Interactive Map
 Customs:        Normal Map | Hidden Stashes | Interactive Map | Dorms Map | 3D Map
-Shoreline:      Normal Map | Hidden Stashes | Interactive Map | Key Spawns | Resort Map | 3D Map
+Factory:        Normal Map | Interactive Map
 Interchange:    Normal Map | Hidden Stashes | Interactive Map
-Labs:           Normal Map | Interactive Map | Basement Map | 1st Floor Map | 2nd Floor Map | 3D Map
+Lighthouse:     Normal Map | Interactive Map
 Reserve:        Normal Map | Interactive Map | Keys | D-2 Bunker Map
+Shoreline:      Normal Map | Hidden Stashes | Interactive Map | Key Spawns | Resort Map | 3D Map
+Labs:           Normal Map | Interactive Map | Basement Map | 1st Floor Map | 2nd Floor Map | 3D Map
+Woods:          Normal Map | Hidden Stashes | Interactive Map
 ```
 
 ## Contributing
@@ -78,6 +79,7 @@ Reserve:        Normal Map | Interactive Map | Keys | D-2 Bunker Map
 
 - The code is licensed under GPLv3. [Read more about what you can and cannot do with the code](https://en.wikipedia.org/wiki/GNU_General_Public_License).
 - Indentation: Tabs.
+- Node.js version 16.6+
 - Commit titles are named using the [Calver](https://calver.org/) scheme YYYY.0M.0D.MICRO.
   - Example: `2021.12.07.0`.
   - Explanation: The first commit on the 7th of December 2021.
