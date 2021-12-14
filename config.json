@@ -7,15 +7,15 @@
 		"ammoTitle": "Ammunition Table",
 		"ammoDescription": "Type **/Help** to get Rat Gods commands",
 
-		"ratGodImage": "https://cdn.discordapp.com/attachments/865617643449221141/866742462093852742/Rat_God.jpg",
+		"ratGodImage": "https://cdn.discordapp.com/attachments/865617643449221141/920252232371429426/Rat_God.png",
 		"wikiMain": "https://escapefromtarkov.fandom.com/wiki/Escape_from_Tarkov_Wiki",
 		"wikiBallistics": "https://escapefromtarkov.fandom.com/wiki/Ballistics"
 	},
 
 	"general": {
-		"lastUpdated": "2021-12-13",
+		"lastUpdated": "2021-12-14",
 		"version": "1.3.1",
-		"latestUpdateMessage": "+ Updated, edited and corrected everything for patch 12.12.\n\n+ Added Lighthouse map command.\n\n~ Corrected punctuation.",
+		"latestUpdateMessage": "+ Updated, edited and corrected everything for patch 12.12.\n\n+ Added Lighthouse map command.\n\n~ Corrected punctuation.\n+ New Rat God iamge",
 		"prefix": "/",
 		"prefixMessage": "My prefix is   **/**",
 		"owners": ["229212817448894464", "379643682984296448"],
@@ -24,7 +24,7 @@
 		"supportInviteLink": "https://discord.com/invite/kg7VfRQ9Xw",
 		"modAbuseImage": "https://cdn.discordapp.com/attachments/865617643449221141/867828829489594429/Mod_abuse.png",
 		"sendMessageError": "I don't have permission to send messages in that channel!",
-		"descriptionRatGod": "Rat God is a intelligent bot that will help you in Escape From Tarkov. The purpose of the bot is to have easy and fast access to information that's within the game to make it easier for the players.",
+		"descriptionRatGod": "Rat God will help you in Escape From Tarkov, by accessing in-game information and delivering it to you!",
 		"permissionsRatGod": "Rat Gods minimum permission requirements are:\nUse Application Commands.",
 		"cooldown": 3000
 	},
