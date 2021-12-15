@@ -78,7 +78,7 @@ Woods:          Normal Map | Hidden Stashes | Interactive Map
 
 ### General Information
 
-- The code is licensed under GPLv3. [Read more about what you can and cannot do with the code](https://en.wikipedia.org/wiki/GNU_General_Public_License).
+- This code is distributed under the terms of the [GNU General Public License, v3](LICENSE).
 - Indentation: Tabs.
 - Node.js version 16.6+
 - Commit titles are named using the [Calver](https://calver.org/) scheme YYYY.0M.0D.MICRO.
