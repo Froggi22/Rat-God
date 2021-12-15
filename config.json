@@ -3,7 +3,7 @@
 		"wikiMaps": "https://escapefromtarkov.fandom.com/wiki/Map_of_Tarkov",
 		"gameUpdate": "Updated for game version: 0.12.12.0.16029",
 		"color": "#ffd700",
-		
+
 		"ammoTitle": "Ammunition Table",
 		"ammoDescription": "Type **/Help** to get Rat Gods commands",
 
@@ -13,7 +13,7 @@
 	},
 
 	"general": {
-		"lastUpdated": "2021-12-14",
+		"lastUpdated": "2021-12-15",
 		"version": "1.3.1",
 		"latestUpdateMessage": "+ Updated, edited and corrected everything for patch 12.12.\n\n+ Added Lighthouse map command.\n\n~ Updated all ammo.\n\n~ Corrected punctuation.\n\n+ New Rat God profile picture + Christmas theme.",
 		"prefix": "/",
@@ -182,7 +182,7 @@
 					{ "name": "Type \"/Maps Interchange Info\" to get detailed info about the area.", "value": "\u200b" }
 				]
 			},
-			
+
 			"lighthouse": {
 				"null": [
 					{ "name": "Type \"/Maps Lighthouse Info\" to get detailed info about the area.", "value": "Detailed map: **/Maps Lighthouse Map**.\nInteractive map: **/Maps Lighthouse Interactive Map**." }
@@ -200,7 +200,7 @@
 					{ "name": "Type \"/Maps Lighthouse Info\" to get detailed info about the area.", "value": "\u200b" }
 				]
 			},
-			
+
 			"reserve": {
 				"null": [
 					{ "name": "Type \"/Maps Reserve Info\" to get detailed info about the area.", "value": "Detailed map: **/Maps Reserve Map**.\nInteractive map: **/Maps Reserve Interactive Map**.\nDetailed map with key guide: **/Maps Reserve Key Map**.\nUnderground D-2 Bunker: **/Maps Reserve D-2 Bunker Map**." }
@@ -227,7 +227,7 @@
 					{ "name": "Type \"/Maps Reserve Info\" to get detailed info about the area.", "value": "\u200b" }
 				]
 			},
-			
+
 			"shoreline": {
 				"null": [
 					{ "name": "Type \"/Maps Shoreline Info\" to get detailed info about the area.", "value": "Detailed map: **/Maps Shoreline Map**.\nGuide for hidden stashes: **/Maps Shoreline Hidden Stashes**.\nInteractive map: **/Maps Shoreline Interactive Map**.\nKey Spawns Map: **/Maps Shoreline Key Spawns Map**.\nResort Map: **/Maps Shoreline Resort**.\n3D map: **/Maps Shoreline 3D**." }
@@ -260,7 +260,7 @@
 					{ "name": "Type \"/Maps Shoreline Info\" to get detailed info about the area.", "value": "\u200b" }
 				]
 			},
-			
+
 			"labs": {
 				"null": [
 					{ "name": "Type \"/Maps Labs Info\" to get detailed info about the area.", "value": "Detailed map: **/Maps Labs Map**.\nInteractive map: **/Maps Labs Interactive Map**.\nMap for each floor: **/Maps Labs Basement/First Floor/Second Floor**.\n3D map: **/Maps Labs 3D**." }
@@ -322,7 +322,7 @@
 				"Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/55/CustomsLargeExpansionGloryMonki.png/revision/latest?cb=20210224211032",
 				"Hidden Stashes": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/7e/Customs_Hidden_Stashes.jpg/revision/latest?cb=20191111193149",
 				"Dorms Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/96/DormRoomsMap.jpg/revision/latest?cb=20200328162326",
-				"3D Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/27/2021_Customs_by_PaulRIISK.png/revision/latest?cb=20210202221431" 
+				"3D Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/27/2021_Customs_by_PaulRIISK.png/revision/latest?cb=20210202221431"
 			},
 			"factory": {
 				"null": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/6c/Fac4.png/revision/latest?cb=20180322235010",

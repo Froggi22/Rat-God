@@ -15,8 +15,8 @@ module.exports = {
 					{ name: "\u200b", value: "`Reserve`\n`Reserve Info`\n`Reserve Map`\n`Reserve IM`\n`Reserve Key Guide`\n`Reserve D-2 Bunker`\n\n`Shoreline`\n`Shoreline Info`\n`Shoreline Map`\n`Shoreline HS`\n`Shoreline IM`\n`Shoreline Key Spawns`\n`Shoreline Resort`\n\n`Labs`\n`Labs Info`\n`Labs Map`\n`Labs IM`\n`Labs Basement`\n`Labs 1st Floor`\n`Labs 2nd Floor`\n\n`Woods`\n`Woods Info`\n`Woods Map`\n`Woods HS`\n`Woods IM`", inline: true },
 
 					{ name: "General", value: "`Help` - Help command.\n`Ping` - Pings the bot.\n`Commands` - This message.\n`Modabuse` - Users breaking rules and complaining about mod abuse.\n`Mention` - Mention the bot to recieve the prefix.\n`Servercount` - Bot's popularity.\n`Support` - Contact details.\n`Latest` - Latest updates.", inline: true }
-				// {name: "Keys", value: "WIP", inline: false}
-				// {name: "Guns", value: "WIP", inline: false},
+				// { name: "Keys", value: "WIP", inline: false }
+				// { name: "Guns", value: "WIP", inline: false },
 				)
 				.setFooter(embedDesign.gameUpdate)
 				.setTimestamp()]

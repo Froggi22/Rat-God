@@ -6,7 +6,7 @@ module.exports = {
 	run (interaction) {
 		interaction.reply({
 			embeds: [new MessageEmbed()
-				.setThumbnail("https://cdn.discordapp.com/attachments/865617643449221141/866742462093852742/Rat_God.jpg")
+				.setThumbnail(embedDesign.ratGodImage)
 				.setAuthor("Support", embedDesign.ratGodImage, general.supportInviteLink)
 				.setDescription("Contact information for support")
 				.setColor(embedDesign.color)
