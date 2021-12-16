@@ -7,13 +7,13 @@
 		"ammoTitle": "Ammunition Table",
 		"ammoDescription": "Type **/Help** to get Rat Gods commands",
 
-		"ratGodImage": "https://cdn.discordapp.com/attachments/865617643449221141/920345571108216852/RG_Profile_Christmas.png",
+		"ratGodImage": "https://cdn.discordapp.com/attachments/865617643449221141/920926949298282496/RG_Profile_Christmas.png",
 		"wikiMain": "https://escapefromtarkov.fandom.com/wiki/Escape_from_Tarkov_Wiki",
 		"wikiBallistics": "https://escapefromtarkov.fandom.com/wiki/Ballistics"
 	},
 
 	"general": {
-		"lastUpdated": "2021-12-15",
+		"lastUpdated": "2021-12-16",
 		"version": "1.3.1",
 		"latestUpdateMessage": "+ Updated, edited and corrected everything for patch 12.12.\n\n+ Added Lighthouse map command.\n\n~ Updated all ammo.\n\n~ Corrected punctuation.\n\n+ New Rat God profile picture + Christmas theme.",
 		"prefix": "/",
