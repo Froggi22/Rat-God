@@ -5,10 +5,9 @@ module.exports = {
 		if (!interaction.isCommand()) return
 
 		const command = client.commands.get(interaction.commandName)
-
 		if (!command) return
-		const date = new Date().toISOString().replace("T", " ").replace("Z", "")
-		//console.log(`${date} || ${interaction.user.tag} || Interaction`)
+		/* const date = new Date().toISOString().replace("T", " ").replace("Z", "")
+		console.log(`${date} || ${interaction.user.tag} || Interaction`) */
 
 		// Cooldown
 		const now = Date.now()
@@ -19,9 +18,7 @@ module.exports = {
 		}
 
 		client.cooldowns.set(interaction.user.id, now)
-
 		setTimeout(() => client.cooldowns.delete(interaction.user.id), general.cooldown)
-
 		command.run(interaction, client)
 	}
 }
