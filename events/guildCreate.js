@@ -17,6 +17,7 @@ module.exports = {
 			.setFooter(embedDesign.gameUpdate)
 			.setTimestamp()
 
-		owner.send({ embeds: [embed] })
+		const channel = guild.channels.cache.find(channel => channel.permissionsFor(guild.me).has(Permissions.FLAGS.SEND_MESSAGES))
+		if (channel) channel.send({ embeds: [embed] })
 	}
 }
