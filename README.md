@@ -90,9 +90,10 @@ Woods:          Normal Map | Hidden Stashes | Interactive Map
 
 1. Clone me where you keep your Github projects: `git clone https://github.com/Froggi22/Rat-God.git`
 2. Navigate to the project folder: `cd Rat-God`.
-3. Edit the .env file and replace the `your-token-here` string with your API token, obtained from the [Discord Developer Portal](https://discord.com/developers).
-4. Install dependencies: `npm i`.
-5. Execute the program: `node index.js`.
+3. Create a new file called: `.env`.
+4. Edit said env file and write: `TOKEN=your-token-here`, but replace the "your-token-here" text with your API token, obtained from the [Discord Developer Portal](https://discord.com/developers).
+5. Install dependencies: `npm i`.
+6. Execute the program: `node .`.
 
 ### Submit a Pull Request
 
