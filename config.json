@@ -13,7 +13,7 @@
 	},
 
 	"general": {
-		"lastUpdated": "2021-12-20",
+		"lastUpdated": "2021-12-21",
 		"version": "1.3.1",
 		"latestUpdateMessage": "+ Updated, edited and corrected everything for patch 12.12.\n\n+ Added Lighthouse map command.\n\n~ Updated all ammo.\n\n~ Corrected punctuation.\n\n+ New Rat God profile picture + Christmas theme.",
 		"prefix": "/",
@@ -127,7 +127,7 @@
 					{ "name": "Type \"/Maps Customs Info\" to get detailed info about the area.", "value": "Use the middle mouse button to view the image in fullscreen." }
 				],
 				"Interactive Map": [
-					{ "name": "Type \"/Maps Customs Info\" to get detailed info about the area.", "value": "Use the middle mouse button to view the image in fullscreen." }
+					{ "name": "\u200b" }
 				],
 				"Dorms Map": [
 					{ "name": "Type \"/Maps Customs Info\" to get detailed info about the area.", "value": "Use the middle mouse button to view the image in fullscreen." }
@@ -154,7 +154,7 @@
 					{ "name": "Type \"/Maps Factory Info\" to get detailed info about the area.", "value": "Use the middle mouse button to view the image in fullscreen." }
 				],
 				"Interactive Map": [
-					{ "name": "Type \"/Maps Factory Info\" to get detailed info about the area.", "value": "Use the middle mouse button to view the image in fullscreen." }
+					{ "name": "Type \"/Maps Factory Info\" to get detailed info about the area.", "value": "\u200b" }
 				]
 			},
 
@@ -179,7 +179,7 @@
 					{ "name": "Type \"/Maps Interchange Info\" to get detailed info about the area.", "value": "Use the middle mouse button to view the image in fullscreen." }
 				],
 				"Interactive Map": [
-					{ "name": "Type \"/Maps Interchange Info\" to get detailed info about the area.", "value": "Use the middle mouse button to view the image in fullscreen." }
+					{ "name": "Type \"/Maps Interchange Info\" to get detailed info about the area.", "value": "\u200b" }
 				]
 			},
 
@@ -197,7 +197,7 @@
 					{ "name": "Type \"/Maps Lighthouse Info\" to get detailed info about the area.", "value": "Use the middle mouse button to view the image in fullscreen." }
 				],
 				"Interactive Map": [
-					{ "name": "Type \"/Maps Lighthouse Info\" to get detailed info about the area.", "value": "Use the middle mouse button to view the image in fullscreen." }
+					{ "name": "Type \"/Maps Lighthouse Info\" to get detailed info about the area.", "value": "\u200b" }
 				]
 			},
 
@@ -218,7 +218,7 @@
 					{ "name": "Type \"/Maps Reserve Info\" to get detailed info about the area.", "value": "Use the middle mouse button to view the image in fullscreen." }
 				],
 				"Interactive Map": [
-					{ "name": "Type \"/Maps Reserve Info\" to get detailed info about the area.", "value": "Use the middle mouse button to view the image in fullscreen." }
+					{ "name": "Type \"/Maps Reserve Info\" to get detailed info about the area.", "value": "\u200b" }
 				],
 				"Key Map": [
 					{ "name": "Type \"/Maps Reserve Info\" to get detailed info about the area.", "value": "Use the middle mouse button to view the image in fullscreen." }
@@ -248,7 +248,7 @@
 					{ "name": "Type \"/Maps Shoreline Info\" to get detailed info about the area.", "value": "Use the middle mouse button to view the image in fullscreen." }
 				],
 				"Interactive Map": [
-					{ "name": "Type \"/Maps Shoreline Info\" to get detailed info about the area.", "value": "Use the middle mouse button to view the image in fullscreen." }
+					{ "name": "Type \"/Maps Shoreline Info\" to get detailed info about the area.", "value": "\u200b" }
 				],
 				"Key Spawns Map": [
 					{ "name": "Type \"/Maps Shoreline Info\" to get detailed info about the area.", "value": "Use the middle mouse button to view the image in fullscreen." }
@@ -275,7 +275,7 @@
 					{ "name": "Type \"/Maps Labs Info\" to get detailed info about the area.", "value": "Use the middle mouse button to view the image in fullscreen." }
 				],
 				"Interactive Map": [
-					{ "name": "Type \"/Maps Labs Info\" to get detailed info about the area.", "value": "Use the middle mouse button to view the image in fullscreen." }
+					{ "name": "Type \"/Maps Labs Info\" to get detailed info about the area.", "value": "\u200b" }
 				],
 				"Basement Map": [
 					{ "name": "Type \"/Maps Labs Info\" to get detailed info about the area.", "value": "Use the middle mouse button to view the image in fullscreen." }
@@ -311,7 +311,7 @@
 					{ "name": "Type \"/Maps Woods Info\" to get detailed info about the area.", "value": "Use the middle mouse button to view the image in fullscreen." }
 				],
 				"Interactive Map": [
-					{ "name": "Type \"/Maps Woods Info\" to get detailed info about the area.", "value": "Use the middle mouse button to view the image in fullscreen." }
+					{ "name": "Type \"/Maps Woods Info\" to get detailed info about the area.", "value": "\u200b" }
 				]
 			}
 		},
