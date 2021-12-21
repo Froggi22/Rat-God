@@ -13,14 +13,16 @@
 	},
 
 	"general": {
-		"lastUpdated": "2021-12-21",
+		"lastUpdatedMessage": "**Last updated -** 2021-12-21.",
 		"version": "1.3.1",
-		"latestUpdateMessage": "+ Updated, edited and corrected everything for patch 12.12.\n\n+ Added Lighthouse map command.\n\n~ Updated all ammo.\n\n~ Corrected punctuation.\n\n+ New Rat God profile picture + Christmas theme.",
+		"latestUpdateMessage": "+ Rat God is now open source and has a brand new website! The links are listed in the command /Help.\n\n+ Updated, edited and corrected everything for patch 12.12.\n+ Added Lighthouse map command.\n~ Updated all ammo.\n\n+ New Rat God profile picture + Christmas theme.\n\n~ Corrected punctuation.",
 		"prefix": "/",
 		"prefixMessage": "My prefix is   **/**",
 		"owners": ["229212817448894464", "379643682984296448"],
+		"froggiDiscordTag": "Froggi22#3436",
 
 		"helpCommands": "`Ammo` - Shows all ammo commands. \n`Maps` - Shows all maps commands.\n\n`Ping` - Pings the bot.\n`Modabuse` - For those complaining about mod abuse.\n`Servercount` - How many servers the bot is invited to.\n`Support` - Sends support link.",
+		"helpCommandSubtext": "`Latest` - Shows latest updates.\n\n[Website](https://rat-god-website.herokuapp.com/).\n[Instructional Video](https://youtu.be/xQwQqnkmScg).\n[Github](https://github.com/Froggi22/Rat-God).",
 		"supportInviteLink": "https://discord.com/invite/kg7VfRQ9Xw",
 		"modAbuseImage": "https://cdn.discordapp.com/attachments/865617643449221141/867828829489594429/Mod_abuse.png",
 		"sendMessageError": "I don't have permission to send messages in that channel!",

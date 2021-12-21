@@ -7,11 +7,11 @@ module.exports = {
 		interaction.reply({
 			embeds: [new MessageEmbed()
 				.setAuthor("Rat Gods Commands", embedDesign.ratGodImage, embedDesign.wikiMain)
-				.setDescription("Leave suggestions to Froggi22#3436")
+				.setDescription(`Leave suggestions to ${general.froggiDiscordTag}.`)
 				.setColor(embedDesign.color)
 				.addFields(
 					{ name: "Commands", value: `${general.prefixMessage}.\n${general.helpCommands}\n` },
-					{ name: `Version ${general.version}`, value: `**Last updated -** ${general.lastUpdated}\n\`Latest\` - Shows latest updates.\n[Instructional Video](https://youtu.be/xoIsMagQBYU)\n` } //\n[Github](https://github.com/Froggi22/Rat-God)
+					{ name: `Version ${general.version}`, value: `${general.lastUpdatedMessage}\n${general.helpCommandSubtext}` }
 				)
 				.setTimestamp()
 				.setFooter(embedDesign.gameUpdate)]
