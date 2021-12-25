@@ -7,7 +7,8 @@
 	"license": "GPL-3.0-only",
 	"dependencies": {
 		"discord.js": "^13.1.0",
-		"dotenv": "^10.0.0"
+		"dotenv": "^10.0.0",
+		"graphql-request": "^3.7.0"
 	},
 	"devDependencies": {
 		"standardx": "^7.0.0"

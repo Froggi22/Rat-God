@@ -1,7 +1,7 @@
 {
 	"embedDesign": {
 		"wikiMaps": "https://escapefromtarkov.fandom.com/wiki/Map_of_Tarkov",
-		"gameUpdate": "Updated for game version: 0.12.12.2.16165",
+		"gameUpdate": "Updated for game version: 0.12.12.10.16338",
 		"color": "#ffd700",
 
 		"ammoTitle": "Ammunition Table",
@@ -13,7 +13,7 @@
 	},
 
 	"general": {
-		"lastUpdatedMessage": "**Last updated -** 2021-12-21.",
+		"lastUpdatedMessage": "**Last updated -** 2021-12-25.",
 		"version": "1.3.1",
 		"latestUpdateMessage": "+ Rat God is now open source and has a brand new website! The links are listed in the command /Help.\n\n+ Updated, edited and corrected everything for patch 12.12.\n+ Added Lighthouse map command.\n~ Updated all ammo.\n\n+ New Rat God profile picture + Christmas theme.\n\n~ Corrected punctuation.",
 		"prefix": "/",
@@ -60,7 +60,7 @@
 		"customs": ["Info", "Map", "Hidden Stashes", "Interactive Map", "Dorms Map", "3D Map"],
 		"factory": ["Info", "Map", "Interactive Map"],
 		"interchange": ["Info", "Map", "Hidden Stashes", "Interactive Map"],
-		"lighthouse": ["Info", "Map", "Interactive Map"],
+		"lighthouse": ["Info", "Map", "Hidden Stashes", "Interactive Map"],
 		"reserve": ["Info", "Map", "Interactive Map", "Key Map", "D-2 Bunker Map"],
 		"shoreline": ["Info", "Map", "Hidden Stashes", "Interactive Map", "Key Spawns Map", "Resort Map", "3D Map"],
 		"labs": ["Info", "Map", "Interactive Map", "Basement Map", "First Floor Map", "Second Floor Map", "3D Map"],
@@ -187,7 +187,7 @@
 
 			"lighthouse": {
 				"null": [
-					{ "name": "Type \"/Maps Lighthouse Info\" to get detailed info about the area.", "value": "Detailed map: **/Maps Lighthouse Map**.\nInteractive map: **/Maps Lighthouse Interactive Map**." }
+					{ "name": "Type \"/Maps Lighthouse Info\" to get detailed info about the area.", "value": "Detailed map: **/Maps Lighthouse Map**.\nGuide for hidden stashes: **/Maps Lighthouse Hidden Stashes**.\nInteractive map: **/Maps Lighthouse Interactive Map**." }
 				],
 				"Info": [
 					{ "name": "Description", "value": "The lighthouse at Cape Dalniy was an important strategic object on the way to Tarkov. During Contract Wars, it was the main entry point for USEC units and served as their base of operations. After the conflict, Scavs took a fancy to this place, until the old owners returned, who decided to stay in Tarkov and establish their own order." },
@@ -196,6 +196,9 @@
 					{ "name": "Suggestions", "value": "Leave suggestions about what else would be nice to have inside of this command." }
 				],
 				"Map": [
+					{ "name": "Type \"/Maps Lighthouse Info\" to get detailed info about the area.", "value": "Use the middle mouse button to view the image in fullscreen." }
+				],
+				"Hidden Stashes": [
 					{ "name": "Type \"/Maps Lighthouse Info\" to get detailed info about the area.", "value": "Use the middle mouse button to view the image in fullscreen." }
 				],
 				"Interactive Map": [
@@ -340,7 +343,8 @@
 			"lighthouse": {
 				"null" : "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/dc/Banner_lighthouse.png/revision/latest?cb=20211213001748",
 				"Info": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d6/Lighthouse_concept_%282%29.jpg/revision/latest?cb=20211102173810",
-				"Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/13/Jindouz_Lighthouse_Map_V1.png/revision/latest?cb=20211218192352"
+				"Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/13/Jindouz_Lighthouse_Map_V1.png/revision/latest?cb=20211218192352",
+				"Hidden Stashes": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/05/Hokkaido_Lighthouse_Stashes_Map.jpeg/revision/latest?cb=20211219225541"
 			},
 			"reserve": {
 				"null": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b6/Reserve_top_view.jpg/revision/latest?cb=20190723174600",
