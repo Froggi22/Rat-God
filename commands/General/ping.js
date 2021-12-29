@@ -5,12 +5,14 @@ module.exports = {
 	description: "Pinging responsetimes",
 	async run (interaction, client) {
 		const embed = new MessageEmbed()
-			.setColor("#FF0000")
-			.setAuthor(`🏓 Pong!\nThe heartbeat ping is ${Math.round(client.ws.ping)}ms.`)
+			.setColor(embedDesign.colorRed)
+			.setAuthor({ name: `🏓 Pong!\nThe heartbeat ping is ${Math.round(client.ws.ping)}ms.` })
+			.setTimestamp()
 		const reply = await interaction.reply({ embeds: [embed], fetchReply: true })
 		embed
 			.setColor(embedDesign.color)
-			.setAuthor(`🏓 Pong!\nThe heartbeat ping is ${Math.round(client.ws.ping)}ms.\nThe message round-trip took ${reply.createdTimestamp - interaction.createdTimestamp}ms.`)
+			.setAuthor({ name: `🏓 Pong!\nThe heartbeat ping is ${Math.round(client.ws.ping)}ms.\nThe message round-trip took ${reply.createdTimestamp - interaction.createdTimestamp}ms.` })
+			.setTimestamp()
 		interaction.editReply({ embeds: [embed] })
 	}
 }

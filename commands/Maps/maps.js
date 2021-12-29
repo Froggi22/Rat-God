@@ -115,15 +115,15 @@ module.exports = {
 		const locationCap = location[0].toUpperCase() + location.slice(1)
 
 		return interaction.reply({
-			embeds: [new MessageEmbed()
-				.setTimestamp()
-				.setFooter(embedDesign.gameUpdate)
+			embeds: [ new MessageEmbed()
 				.setColor(embedDesign.color)
-				.setAuthor(embedDesign.gameUpdate, embedDesign.ratGodImage, embedDesign.wikiMaps)
+				.setAuthor({ name: "Escape From Tarkov Maps Wiki", url: embedDesign.wikiMaps, iconURL: embedDesign.ratGodImage })
 				.setTitle(`${locationCap} ${maps.titles[map]}`)
 				.setDescription(maps.descriptions[map][location] || maps.descriptions[map])
 				.setImage(maps.images[location][map])
 				.addFields(maps.fields[location][map])
+				.setFooter({ text: embedDesign.gameUpdate })
+				.setTimestamp()
 			]
 		})
 	}

@@ -13,12 +13,12 @@ module.exports = {
 	run (interaction) {
 		const caliber = interaction.options.getString("caliber")
 		interaction.reply({
-			embeds: [new MessageEmbed()
-				.setAuthor(`${caliber} ${embedDesign.ammoTitle}`, embedDesign.ratGodImage, embedDesign.wikiBallistics)
+			embeds: [ new MessageEmbed()
+				.setColor(embedDesign.color)
+				.setAuthor({ name: `${caliber} ${embedDesign.ammoTitle}`, url: embedDesign.wikiBallistics, iconURL: embedDesign.ratGodImage })
 				.setDescription(`${embedDesign.ammoDescription}`)
 				.setImage(ammo[caliber])
-				.setFooter(embedDesign.gameUpdate)
-				.setColor(embedDesign.color)
+				.setFooter({ text: embedDesign.gameUpdate })
 				.setTimestamp()
 			]
 		})
