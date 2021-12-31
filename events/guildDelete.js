@@ -1,5 +1,5 @@
 module.exports = {
-	async run (client) {
+	async run (_guild, client) {
 		client.user.setPresence({ activities: [{ type: "LISTENING", name: `/Help | In ${client.guilds.cache.size} Servers` }] })
 	}
 }
