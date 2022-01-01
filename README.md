@@ -1,6 +1,6 @@
 # Rat God
 
-<img align="right" src="Images/RG_Christmas.png" alt="Rat God profile image" width="150" />
+<img align="right" src="Images/RG.png" alt="Rat God profile image" width="150" />
 
 [![License: GPL v3](https://badgen.net/badge/License/GPL%20v3/blue)](LICENSE)
 [![Discord](https://badgen.net/discord/online-members/kg7VfRQ9Xw?icon=discord&label)](https://discord.com/invite/kg7VfRQ9Xw)
@@ -13,6 +13,7 @@ This is the source code for Rat God, a Discord bot that will help you in Escape 
 
 ## Table of contents
 
+- [Description](#description)
 - [How to use](#how-to-use)
 - [Features](#features)
 - [Contributing](#contributing)
@@ -23,6 +24,14 @@ This is the source code for Rat God, a Discord bot that will help you in Escape 
 
 1. [Click here to add me to your server!](https://discord.com/api/oauth2/authorize?client_id=864572952275714059&permissions=2147600448&scope=bot%20applications.commands)
 2. Use the commands provided [here](#features) or with the help commands in Discord.
+
+## Description
+
+Rat God is an open source Discord bot that will help you in the game Escape From Tarkov!
+It obtains information from the Official Escape from Tarkov Wiki, and delivering it to the user with a slash command request.
+This bot benefits the user due to it being a fast lookup for ammunition and maps details, and most likely faster than looking it up on said Wiki!
+
+This project is constantly being worked and improved upon by a few number of people as a hobby. So please show your support in the Discord Support Server!
 
 ## Features
 
@@ -67,7 +76,7 @@ Note: All maps have an Info command as well.
 Customs:        Normal Map | Hidden Stashes | Interactive Map | Dorms Map | 3D Map
 Factory:        Normal Map | Interactive Map
 Interchange:    Normal Map | Hidden Stashes | Interactive Map
-Lighthouse:     Normal Map | Interactive Map
+Lighthouse:     Normal Map | Hidden Stashes | Interactive Map
 Reserve:        Normal Map | Interactive Map | Keys | D-2 Bunker Map
 Shoreline:      Normal Map | Hidden Stashes | Interactive Map | Key Spawns | Resort Map | 3D Map
 Labs:           Normal Map | Interactive Map | Basement Map | 1st Floor Map | 2nd Floor Map | 3D Map
