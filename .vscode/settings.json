@@ -1,4 +1,9 @@
 {
 	"standard.autoFixOnSave": true,
-	"standard.engine": "standardx"
+	"standard.engine": "standardx",
+	"editor.wordWrap": "on",
+	"editor.insertSpaces": false,
+	"editor.detectIndentation": false,
+	"editor.comments.insertSpace": false,
+	"files.trimTrailingWhitespace": true
 }
