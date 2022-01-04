@@ -19,7 +19,7 @@
 - [How to use](#how-to-use)
 - [Features](#features)
 - [Contributing](#contributing)
-- [Folder & File Information](#folder-&-file-information)
+- [Folder & File Information](#folder--file-information)
 
 ## About
 

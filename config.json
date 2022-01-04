@@ -276,7 +276,7 @@
 					{ "name": "Features", "value": "**Insurance** [doesn't work](https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/21/TheLab-Insurance-Messages-01.PNG/revision/latest/scale-to-width-down/512?cb=20181227203004) on labs.\n**Announcer**\nWhenever an event of high importance happens inside The Lab, an announcement will be triggered.\nThere is an announcement for every extraction besides the **Ventilation shaft** and the **Sewage conduit**. The announcement for the parking extraction can be disabled using the [Yellow keycard](https://escapefromtarkov.fandom.com/wiki/TerraGroup_Labs_keycard_(Yellow)).\n**Tagged and Cursed**\nUnlike other maps in Tarkov, PMCs are not tagged and cursed at the start of a raid on Labs when deploying with no gear or weapons.\nYou can't go in as a scav on Labs." },
 					{ "name": "Boss", "value": "There is no boss on this map but every single AI is a [Raider](https://escapefromtarkov.fandom.com/wiki/Scav_Raiders). They are dangerous but carry better gear." },
 					{ "name": "Suggestions", "value": "Leave suggestions about what else would be nice to have inside of this command." }
-        		],
+				],
 				"Map": [
 					{ "name": "Type \"/Maps Labs Info\" to get detailed info about the area.", "value": "Use the middle mouse button to view the image in fullscreen." }
 				],
