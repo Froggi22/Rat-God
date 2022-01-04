@@ -1,10 +1,11 @@
 const { MessageEmbed } = require("discord.js")
 const { embedDesign, general } = require("../../config.json")
+const commandReply = require("../../commandReply.js")
 
 module.exports = {
 	description: "List of the latest updates",
 	run (interaction) {
-		interaction.reply({
+		commandReply.interactionReply(interaction, {
 			embeds: [ new MessageEmbed()
 				.setColor(embedDesign.color)
 				.setAuthor({ name: "Latest update", url: embedDesign.wikiMain, iconURL: embedDesign.ratGodImage })

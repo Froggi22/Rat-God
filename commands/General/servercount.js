@@ -1,10 +1,11 @@
 const { MessageEmbed } = require("discord.js")
 const { embedDesign } = require("../../config.json")
+const commandReply = require("../../commandReply.js")
 
 module.exports = {
 	description: "Amount of servers, channels and users the bot is connected to",
 	run (interaction, client) {
-		interaction.reply({
+		commandReply.interactionReply(interaction, {
 			embeds: [ new MessageEmbed()
 				.setColor(embedDesign.color)
 				.addFields(

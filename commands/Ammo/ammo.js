@@ -1,5 +1,6 @@
 const { MessageEmbed } = require("discord.js")
 const { embedDesign, ammo } = require("../../config.json")
+const commandReply = require("../../commandReply.js")
 
 module.exports = {
 	description: "Ammo charts for different calibers",
@@ -12,7 +13,7 @@ module.exports = {
 	}],
 	run (interaction) {
 		const caliber = interaction.options.getString("caliber")
-		interaction.reply({
+		commandReply.interactionReply(interaction, {
 			embeds: [ new MessageEmbed()
 				.setColor(embedDesign.color)
 				.setAuthor({ name: `${caliber} ${embedDesign.ammoTitle}`, url: embedDesign.wikiBallistics, iconURL: embedDesign.ratGodImage })

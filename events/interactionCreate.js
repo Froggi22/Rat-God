@@ -1,8 +1,9 @@
 const { general } = require("../config.json")
+const commandReply = require("../commandReply.js")
 
 module.exports = {
 	async run (interaction, client) {
-		if (!interaction.isCommand()) return
+		if (!interaction.isCommand()) return // Return if interaction isn't a command
 
 		const command = client.commands.get(interaction.commandName)
 		if (!command) return
@@ -12,7 +13,7 @@ module.exports = {
 		const expirationTime = client.cooldowns.get(interaction.user.id) + general.cooldown
 		if (now < expirationTime) {
 			const timeLeft = (expirationTime - now) / 1000
-			return interaction.reply(`Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the \`${command.name}\` command.`)
+			return commandReply.interactionReply(interaction, `Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the \`${command.name}\` command.`)
 		}
 
 		client.cooldowns.set(interaction.user.id, now)

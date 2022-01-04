@@ -1,5 +1,6 @@
 const { MessageEmbed } = require("discord.js")
 const { embedDesign, maps } = require("../../config.json")
+const commandReply = require("../../commandReply.js")
 
 module.exports = {
 	description: "Map guides",
@@ -110,11 +111,11 @@ module.exports = {
 		}
 	],
 	run (interaction) {
-		const location = interaction.options.getSubcommand()
-		const map = interaction.options.getString("map") || "null"
-		const locationCap = location[0].toUpperCase() + location.slice(1)
+		const location = interaction.options.getSubcommand() // Fetch location, e.g. customs
+		const map = interaction.options.getString("map") || "null" // What kind of map, e.g. Hidden Stashes
+		const locationCap = location[0].toUpperCase() + location.slice(1) // Capitalize location name, e.g. customs -> Customs
 
-		return interaction.reply({
+		return commandReply.interactionReply(interaction, {
 			embeds: [ new MessageEmbed()
 				.setColor(embedDesign.color)
 				.setAuthor({ name: "Escape From Tarkov Maps Wiki", url: embedDesign.wikiMaps, iconURL: embedDesign.ratGodImage })

@@ -1,10 +1,11 @@
 const { MessageEmbed } = require("discord.js")
 const { embedDesign, general } = require("../../config.json")
+const commandReply = require("../../commandReply.js")
 
 module.exports = {
 	description: "A mini-list of Rat Gods commands",
 	run (interaction) {
-		interaction.reply({
+		commandReply.interactionReply(interaction, {
 			embeds: [ new MessageEmbed()
 				.setColor(embedDesign.color)
 				.setAuthor({ name: "Rat Gods Commands", url: embedDesign.wikiMain, iconURL: embedDesign.ratGodImage })

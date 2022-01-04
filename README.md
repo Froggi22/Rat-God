@@ -6,39 +6,39 @@
 	A Discord bot to help you in Escape From Tarkov!
 </p>
 <p align="center">
-<a href="LICENSE"><img src="https://badgen.net/badge/License/GPL%20v3/blue" alt="License GPL v3" /></a>
-<a href="https://discord.com/invite/kg7VfRQ9Xw"><img src="https://badgen.net/discord/online-members/kg7VfRQ9Xw?icon=discord&label" alt="Discord" /></a>
+	<a href="LICENSE"><img src="https://badgen.net/badge/License/GPL%20v3/blue" alt="License GPL v3" /></a>
+	<a href="https://discord.com/invite/kg7VfRQ9Xw"><img src="https://badgen.net/discord/online-members/kg7VfRQ9Xw?icon=discord&label" alt="Discord" /></a>
 </p>
 
 - - -
 
-## Table of contents 📜
+## Table of contents
 
-- [About 💡](#about)
-- [Links 🔗](#links)
-- [How to use ⚙️](#how-to-use)
-- [Features 📋](#features)
-- [Contributing 🖥️](#contributing)
-- [Folder & File Information 📁](#folder-&-file-information)
+- [About](#about)
+- [Links](#links)
+- [How to use](#how-to-use)
+- [Features](#features)
+- [Contributing](#contributing)
+- [Folder & File Information](#folder-&-file-information)
 
-## About 💡
+## About
 
 Rat God is an open source Discord bot that will help you in the game Escape From Tarkov! It obtains information from the Official Escape from Tarkov Wiki, and delivering it to the user with a slash command request. This bot benefits the user due to it being a fast lookup for ammunition and maps details, and most likely faster than looking it up on said Wiki!
 
 This project is constantly being worked and improved upon by a few number of people as a hobby. So please show your support in the Discord Support Server!
 
-## Links 🔗
+## Links
 
 - [Support Discord Server](https://discord.com/invite/kg7VfRQ9Xw) *<-- Highly recommend to join!*
 - [Website](https://rat-god-website.herokuapp.com/)
 - [Website's repository](https://github.com/Froggi22/Rat-God-Website)
 
-## How to use ⚙️
+## How to use
 
 1. Click [here](https://discord.com/api/oauth2/authorize?client_id=864572952275714059&permissions=2147600448&scope=bot%20applications.commands) to add me to your server!
 2. Use the commands provided [here](#features).
 
-## Features 📋
+## Features
 
 - Rat God uses **Slash commands** - Prefix: `/`.
 - Auto-complete choices, so you don't have to remember any by heart!
@@ -89,7 +89,7 @@ Labs:           Normal Map | Interactive Map | Basement Map | 1st Floor Map | 2n
 Woods:          Normal Map | Hidden Stashes | Interactive Map
 ```
 
-## Contributing 🖥️
+## Contributing
 
 ### Prerequisites
 
@@ -100,7 +100,7 @@ Woods:          Normal Map | Hidden Stashes | Interactive Map
   - Example: `2021.12.07.0`.
   - Explanation: The first commit on the 7th of December 2021.
 
-### Setup 🛠️
+### Setup
 
 1. Clone me where you keep your Github projects: `git clone https://github.com/Froggi22/Rat-God.git`.
 2. Navigate to the project folder: `cd Rat-God`.
@@ -109,7 +109,7 @@ Woods:          Normal Map | Hidden Stashes | Interactive Map
 5. Install dependencies: `npm i`.
 6. Execute the program: `node .`.
 
-### Submit a Pull Request 🙌
+### Submit a Pull Request
 
 1. Fork this repository (should be on the top right of this page).
 2. Clone the fork to your desired local Github projects folder.
@@ -125,7 +125,7 @@ git push origin <awesome-new-feature-name>
 
 6. `git` will output a link to help you create a new pull request from there.
 
-## Folder & File Information 📁
+## Folder & File Information
 
 ### What's in each folder?
 
