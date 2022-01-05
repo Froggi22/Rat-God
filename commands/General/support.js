@@ -6,7 +6,7 @@ module.exports = {
 	description: "Link to Froggi's DMs and the Discord Support Server",
 	run (interaction) {
 		commandReply.interactionReply(interaction, {
-			embeds: [ new MessageEmbed()
+			embeds: [new MessageEmbed()
 				.setColor(embedDesign.color)
 				.setAuthor({ name: "Support", url: general.supportInviteLink, iconURL: embedDesign.ratGodImage })
 				.setThumbnail(embedDesign.ratGodImage)

@@ -3,7 +3,7 @@ const commandReply = require("../commandReply.js")
 
 module.exports = {
 	async run (message, client) {
-		let botId = client.user.id
+		const botId = client.user.id
 		if (message.content.match(RegExp(`^<@!?${botId}>`))) { // If message starts with bot ping
 			return commandReply.messageReply(message, general.prefixMessage) // Reply with prefix
 		}

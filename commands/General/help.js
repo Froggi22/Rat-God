@@ -6,7 +6,7 @@ module.exports = {
 	description: "A mini-list of Rat Gods commands",
 	run (interaction) {
 		commandReply.interactionReply(interaction, {
-			embeds: [ new MessageEmbed()
+			embeds: [new MessageEmbed()
 				.setColor(embedDesign.color)
 				.setAuthor({ name: "Rat Gods Commands", url: embedDesign.wikiMain, iconURL: embedDesign.ratGodImage })
 				.setDescription(`Leave suggestions to ${general.froggiDiscordTag}.`)

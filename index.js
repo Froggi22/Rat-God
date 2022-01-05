@@ -31,6 +31,6 @@ readdirSync("./commands").forEach(folder => {
 		command.name = file.replace(".js", "")
 		if (command.description && command.run) client.commands.set(command.name, command)
 		if (!command.description) console.log(`[./commands/${folder}/${file}] You forgot description!`)
-		if (!command.run && folder != "Keys") console.log(`[./commands/${folder}/${file}] You forgot run!`)
+		if (!command.run && folder !== "Keys") console.log(`[./commands/${folder}/${file}] You forgot run!`)
 	})
 })

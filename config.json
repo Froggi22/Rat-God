@@ -14,7 +14,7 @@
 	},
 
 	"general": {
-		"lastUpdatedMessage": "**Last updated -** 2022-01-04.",
+		"lastUpdatedMessage": "**Last updated -** 2022-01-05.",
 		"version": "1.3.1",
 		"latestUpdateMessage": "+ Rat God is now open source and has a brand new website! The links are listed in the command /Help.\n\n+ Updated, edited and corrected everything for patch 12.12.\n+ Added Lighthouse map command.\n~ Updated all ammo.\n\n+ New Rat God profile picture.\n\n~ Corrected punctuation.",
 		"prefix": "/",
@@ -130,7 +130,7 @@
 					{ "name": "Type \"/Maps Customs Info\" to get detailed info about the area.", "value": "Use the middle mouse button to view the image in fullscreen." }
 				],
 				"Interactive Map": [
-					{ "name": "\u200b" }
+					{ "name": "Type \"/Maps Customs Info\" to get detailed info about the area.", "value": "*psst, click the link (blue text) to go to the interactive map!*" }
 				],
 				"Dorms Map": [
 					{ "name": "Type \"/Maps Customs Info\" to get detailed info about the area.", "value": "Use the middle mouse button to view the image in fullscreen." }
@@ -157,7 +157,7 @@
 					{ "name": "Type \"/Maps Factory Info\" to get detailed info about the area.", "value": "Use the middle mouse button to view the image in fullscreen." }
 				],
 				"Interactive Map": [
-					{ "name": "Type \"/Maps Factory Info\" to get detailed info about the area.", "value": "\u200b" }
+					{ "name": "Type \"/Maps Factory Info\" to get detailed info about the area.", "value": "*psst, click the link (blue text) to go to the interactive map!*" }
 				]
 			},
 
@@ -182,7 +182,7 @@
 					{ "name": "Type \"/Maps Interchange Info\" to get detailed info about the area.", "value": "Use the middle mouse button to view the image in fullscreen." }
 				],
 				"Interactive Map": [
-					{ "name": "Type \"/Maps Interchange Info\" to get detailed info about the area.", "value": "\u200b" }
+					{ "name": "Type \"/Maps Interchange Info\" to get detailed info about the area.", "value": "*psst, click the link (blue text) to go to the interactive map!*" }
 				]
 			},
 
@@ -203,7 +203,7 @@
 					{ "name": "Type \"/Maps Lighthouse Info\" to get detailed info about the area.", "value": "Use the middle mouse button to view the image in fullscreen." }
 				],
 				"Interactive Map": [
-					{ "name": "Type \"/Maps Lighthouse Info\" to get detailed info about the area.", "value": "\u200b" }
+					{ "name": "Type \"/Maps Lighthouse Info\" to get detailed info about the area.", "value": "*psst, click the link (blue text) to go to the interactive map!*" }
 				]
 			},
 
@@ -224,7 +224,7 @@
 					{ "name": "Type \"/Maps Reserve Info\" to get detailed info about the area.", "value": "Use the middle mouse button to view the image in fullscreen." }
 				],
 				"Interactive Map": [
-					{ "name": "Type \"/Maps Reserve Info\" to get detailed info about the area.", "value": "\u200b" }
+					{ "name": "Type \"/Maps Reserve Info\" to get detailed info about the area.", "value": "*psst, click the link (blue text) to go to the interactive map!*" }
 				],
 				"Key Map": [
 					{ "name": "Type \"/Maps Reserve Info\" to get detailed info about the area.", "value": "Use the middle mouse button to view the image in fullscreen." }
@@ -254,7 +254,7 @@
 					{ "name": "Type \"/Maps Shoreline Info\" to get detailed info about the area.", "value": "Use the middle mouse button to view the image in fullscreen." }
 				],
 				"Interactive Map": [
-					{ "name": "Type \"/Maps Shoreline Info\" to get detailed info about the area.", "value": "\u200b" }
+					{ "name": "Type \"/Maps Shoreline Info\" to get detailed info about the area.", "value": "*psst, click the link (blue text) to go to the interactive map!*" }
 				],
 				"Key Spawns Map": [
 					{ "name": "Type \"/Maps Shoreline Info\" to get detailed info about the area.", "value": "Use the middle mouse button to view the image in fullscreen." }
@@ -281,7 +281,7 @@
 					{ "name": "Type \"/Maps Labs Info\" to get detailed info about the area.", "value": "Use the middle mouse button to view the image in fullscreen." }
 				],
 				"Interactive Map": [
-					{ "name": "Type \"/Maps Labs Info\" to get detailed info about the area.", "value": "\u200b" }
+					{ "name": "Type \"/Maps Labs Info\" to get detailed info about the area.", "value": "*psst, click the link (blue text) to go to the interactive map!*" }
 				],
 				"Basement Map": [
 					{ "name": "Type \"/Maps Labs Info\" to get detailed info about the area.", "value": "Use the middle mouse button to view the image in fullscreen." }
@@ -317,7 +317,7 @@
 					{ "name": "Type \"/Maps Woods Info\" to get detailed info about the area.", "value": "Use the middle mouse button to view the image in fullscreen." }
 				],
 				"Interactive Map": [
-					{ "name": "Type \"/Maps Woods Info\" to get detailed info about the area.", "value": "\u200b" }
+					{ "name": "Type \"/Maps Woods Info\" to get detailed info about the area.", "value": "*psst, click the link (blue text) to go to the interactive map!*" }
 				]
 			}
 		},

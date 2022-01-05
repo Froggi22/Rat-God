@@ -6,7 +6,7 @@ module.exports = {
 	description: "List of the latest updates",
 	run (interaction) {
 		commandReply.interactionReply(interaction, {
-			embeds: [ new MessageEmbed()
+			embeds: [new MessageEmbed()
 				.setColor(embedDesign.color)
 				.setAuthor({ name: "Latest update", url: embedDesign.wikiMain, iconURL: embedDesign.ratGodImage })
 				.setDescription(`\`\`\`diff\n# ${general.version}\n\n${general.latestUpdateMessage}\n\`\`\``)

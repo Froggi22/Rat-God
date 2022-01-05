@@ -6,7 +6,7 @@ module.exports = {
 	description: "Amount of servers, channels and users the bot is connected to",
 	run (interaction, client) {
 		commandReply.interactionReply(interaction, {
-			embeds: [ new MessageEmbed()
+			embeds: [new MessageEmbed()
 				.setColor(embedDesign.color)
 				.addFields(
 					{ name: "Servers", value: `${client.guilds.cache.size}`, inline: true },

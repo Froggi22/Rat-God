@@ -116,7 +116,7 @@ module.exports = {
 		const locationCap = location[0].toUpperCase() + location.slice(1) // Capitalize location name, e.g. customs -> Customs
 
 		return commandReply.interactionReply(interaction, {
-			embeds: [ new MessageEmbed()
+			embeds: [new MessageEmbed()
 				.setColor(embedDesign.color)
 				.setAuthor({ name: "Escape From Tarkov Maps Wiki", url: embedDesign.wikiMaps, iconURL: embedDesign.ratGodImage })
 				.setTitle(`${locationCap} ${maps.titles[map]}`)
