@@ -9,9 +9,9 @@ module.exports = {
 				interaction.channel.send(messageContent)
 					.catch(() => {
 						interaction.user.send(messageContent)
+						interaction.user.send(`Interaction failed **and** ${general.sendMessageError}`)
 							.catch(error => {
 								console.log(`InteractionReply catch! > ${error}`)
-								interaction.user.send(`Interaction failed **and** ${general.sendMessageError}`)
 									.catch()
 							})
 					})
@@ -21,9 +21,9 @@ module.exports = {
 		message.reply(messageContent)
 			.catch(() => {
 				message.author.send(messageContent)
+				message.author.send(general.sendMessageError)
 					.catch(error => {
 						console.log(`MessageReply catch! > ${error}`)
-						message.author.send(general.sendMessageError)
 							.catch()
 					})
 			})
