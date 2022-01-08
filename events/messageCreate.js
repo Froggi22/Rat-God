@@ -8,7 +8,7 @@ module.exports = {
 			return commandReply.messageReply(message, general.prefixMessage) // Reply with prefix
 		}
 
-		if (!general.owners.includes(message.author.id)) return // If message isn't from owners[] then return
+		if (!general.developers.includes(message.author.id)) return // If message isn't from developers[] then return
 
 		switch (message.content) { // Check for interaction update commands
 		case "!guild":

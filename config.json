@@ -14,19 +14,22 @@
 	},
 
 	"general": {
-		"lastUpdatedMessage": "**Last updated -** 2022-01-05.",
+		"lastUpdatedMessage": "**Last updated -** 2022-01-08.",
 		"version": "1.3.1",
 		"latestUpdateMessage": "+ Rat God is now open source and has a brand new website! The links are listed in the command /Help.\n\n+ Updated, edited and corrected everything for patch 12.12.\n+ Added Lighthouse map command.\n~ Updated all ammo.\n\n+ New Rat God profile picture.\n\n~ Corrected punctuation.",
 		"prefix": "/",
 		"prefixMessage": "My prefix is   **/**",
-		"owners": ["229212817448894464", "379643682984296448"],
+		"developers": [
+			"229212817448894464",
+			"379643682984296448"
+		],
 		"froggiDiscordTag": "Froggi22#3436",
 
 		"helpCommands": "`Ammo` - Shows all ammo commands. \n`Maps` - Shows all maps commands.\n\n`Ping` - Pings the bot.\n`Modabuse` - For those complaining about mod abuse.\n`Servercount` - How many servers the bot is invited to.\n`Support` - Sends support link.",
 		"helpCommandSubtext": "`Latest` - Shows latest updates.\n\n[Website](https://rat-god-website.herokuapp.com/).\n[Instructional Video](https://youtu.be/xQwQqnkmScg).\n[Github](https://github.com/Froggi22/Rat-God).",
 		"supportInviteLink": "https://discord.com/invite/kg7VfRQ9Xw",
 		"modAbuseImage": "https://cdn.discordapp.com/attachments/865617643449221141/867828829489594429/Mod_abuse.png",
-		"sendMessageError": "I don't have permission to send messages in that channel!",
+		"sendMessageError": "I may not have have permission to send messages in that channel!",
 		"descriptionRatGod": "Rat God will help you in Escape From Tarkov, by accessing in-game information and delivering it to you!",
 		"permissionsRatGod": "Rat God's minimum permissions requirements are:\nUse Application Commands.\nSend Messages.\nEmbed Links.",
 		"cooldown": 3000
@@ -58,14 +61,62 @@
 	},
 
 	"maps": {
-		"customs": ["Info", "Map", "Hidden Stashes", "Interactive Map", "Dorms Map", "3D Map"],
-		"factory": ["Info", "Map", "Interactive Map"],
-		"interchange": ["Info", "Map", "Hidden Stashes", "Interactive Map"],
-		"lighthouse": ["Info", "Map", "Hidden Stashes", "Interactive Map"],
-		"reserve": ["Info", "Map", "Interactive Map", "Key Map", "D-2 Bunker Map"],
-		"shoreline": ["Info", "Map", "Hidden Stashes", "Interactive Map", "Key Spawns Map", "Resort Map", "3D Map"],
-		"labs": ["Info", "Map", "Interactive Map", "Basement Map", "First Floor Map", "Second Floor Map", "3D Map"],
-		"woods": ["Info", "Map", "Hidden Stashes", "Interactive Map"],
+		"customs": [
+			"Info",
+			"Map",
+			"Hidden Stashes",
+			"Interactive Map",
+			"Dorms Map",
+			"3D Map"
+		],
+		"factory": [
+			"Info",
+			"Map",
+			"Interactive Map"
+		],
+		"interchange": [
+			"Info",
+			"Map",
+			"Hidden Stashes",
+			"Interactive Map"
+		],
+		"lighthouse": [
+			"Info",
+			"Map",
+			"Hidden Stashes",
+			"Interactive Map"
+		],
+		"reserve": [
+			"Info",
+			"Map",
+			"Interactive Map",
+			"Key Map",
+			"D-2 Bunker Map"
+		],
+		"shoreline": [
+			"Info",
+			"Map",
+			"Hidden Stashes",
+			"Interactive Map",
+			"Key Spawns Map",
+			"Resort Map",
+			"3D Map"
+		],
+		"labs": [
+			"Info",
+			"Map",
+			"Interactive Map",
+			"Basement Map",
+			"First Floor Map",
+			"Second Floor Map",
+			"3D Map"
+		],
+		"woods": [
+			"Info",
+			"Map",
+			"Hidden Stashes",
+			"Interactive Map"
+		],
 
 		"titles": {
 			"null": "Maps Command",
@@ -83,6 +134,7 @@
 			"Key Map": "Key Map",
 			"D-2 Bunker Map": "D-2 Bunker Map"
 		},
+
 		"descriptions": {
 			"null": "The different types of maps:",
 			"Info": "Useful info:",
@@ -108,216 +160,489 @@
 			"Key Map": "What each key unlocks:",
 			"D-2 Bunker Map": "Map of the underground D-2 Bunker:"
 		},
-		"fields": {
 
+		"fields": {
 			"customs": {
 				"null": [
-					{ "name": "Type \"/Maps Customs Info\" to get detailed info about the area", "value": "Detailed map: **/Maps Customs Map**.\nGuide for hidden stashes: **/Maps Customs Hidden Stashes**.\nInteractive map: **/Maps Customs Interactive Map**.\nDorms map: **/Maps Customs Dorms**.\n3D map: **/Maps Customs 3D**." }
+					{
+						"name": "Type \"/Maps Customs Info\" to get detailed info about the area",
+						"value": "Detailed map: **/Maps Customs Map**.\nGuide for hidden stashes: **/Maps Customs Hidden Stashes**.\nInteractive map: **/Maps Customs Interactive Map**.\nDorms map: **/Maps Customs Dorms**.\n3D map: **/Maps Customs 3D**."
+					}
 				],
 				"Info": [
-					{ "name": "Description", "value": "A large area of industrial park land situated adjacent to the factory. This area houses a customs terminal, fuel storage facilities, offices, and dorms as well as a variety of other infrastructure buildings." },
-					{ "name": "Features", "value": "**The Dorms** are two buildings located in the **southernmost** area of the map. The eastern building is three stories tall while the western building is two stories tall. Each structure boasts a front entrance and a fire escape at each end with doorways leading to each floor (some of which are blocked or permanently locked). These dorms are the location of many Quests and unlockable rooms.\n\n**Construction** is a two story concrete frame of a building. This structure had a wide view of the river crossing and bridge.\n\n**New Gas Station** is a building at the western side of the map, near the main road. The building has two unlockable rooms in it, and a view on the shortcut.\n\n**Military Checkpoint** is at the end of the road past the Gas Station. This point has many Scavs and is the only location with easy access through the wall to the extraction zones.\n\n**ZB-1013 or Stronghold** is at the northern end of the map and features a unlockable extract; loot; and views of crackhouse, construction and the train crossing." },
-					{ "name": "Boss", "value": "**Name:** Reshala." },
-					{ "name": "Locations", "value": "Marked circles on the map.\nIn the \"Dorms\", in the \"New Gas Station\", or in the \"Scav Stronghold\"\nRarely at the tower south of the \"New Gas Station\"\nRarely at the passage between Checkpoint and Sub-Station." },
-					{ "name": "Health", "value": "752 Total, Head: 62, Thorax: 145, Stomach: 125, Arms: 100 each, Legs: 110 each." },
-					{ "name": "Followers", "value": "Following Reshala around are 4 heavily armed guards." },
-					{ "name": "Suggestions", "value": "Leave suggestions about what else would be nice to have inside of this command." }
+					{
+						"name": "Description",
+						"value": "A large area of industrial park land situated adjacent to the factory. This area houses a customs terminal, fuel storage facilities, offices, and dorms as well as a variety of other infrastructure buildings."
+					},
+					{
+						"name": "Features",
+						"value": "**The Dorms** are two buildings located in the **southernmost** area of the map. The eastern building is three stories tall while the western building is two stories tall. Each structure boasts a front entrance and a fire escape at each end with doorways leading to each floor (some of which are blocked or permanently locked). These dorms are the location of many Quests and unlockable rooms.\n\n**Construction** is a two story concrete frame of a building. This structure had a wide view of the river crossing and bridge.\n\n**New Gas Station** is a building at the western side of the map, near the main road. The building has two unlockable rooms in it, and a view on the shortcut.\n\n**Military Checkpoint** is at the end of the road past the Gas Station. This point has many Scavs and is the only location with easy access through the wall to the extraction zones.\n\n**ZB-1013 or Stronghold** is at the northern end of the map and features a unlockable extract; loot; and views of crackhouse, construction and the train crossing."
+					},
+					{
+						"name": "Boss",
+						"value": "**Name:** Reshala."
+					},
+					{
+						"name": "Locations",
+						"value": "Marked circles on the map.\nIn the \"Dorms\", in the \"New Gas Station\", or in the \"Scav Stronghold\"\nRarely at the tower south of the \"New Gas Station\"\nRarely at the passage between Checkpoint and Sub-Station."
+					},
+					{
+						"name": "Health",
+						"value": "752 Total, Head: 62, Thorax: 145, Stomach: 125, Arms: 100 each, Legs: 110 each."
+					},
+					{
+						"name": "Followers",
+						"value": "Following Reshala around are 4 heavily armed guards."
+					},
+					{
+						"name": "Suggestions",
+						"value": "Leave suggestions about what else would be nice to have inside of this command."
+					}
 				],
 				"Map": [
-					{ "name": "Type \"/Maps Customs Info\" to get detailed info about the area.", "value": "Use the middle mouse button to view the image in fullscreen." }
+					{
+						"name": "Type \"/Maps Customs Info\" to get detailed info about the area.",
+						"value": "Use the middle mouse button to view the image in fullscreen."
+					}
 				],
 				"Hidden Stashes": [
-					{ "name": "Type \"/Maps Customs Info\" to get detailed info about the area.", "value": "Use the middle mouse button to view the image in fullscreen." }
+					{
+						"name": "Type \"/Maps Customs Info\" to get detailed info about the area.",
+						"value": "Use the middle mouse button to view the image in fullscreen."
+					}
 				],
 				"Interactive Map": [
-					{ "name": "Type \"/Maps Customs Info\" to get detailed info about the area.", "value": "*psst, click the link (blue text) to go to the interactive map!*" }
+					{
+						"name": "Type \"/Maps Customs Info\" to get detailed info about the area.",
+						"value": "*psst, click the link (blue text) to go to the interactive map!*"
+					}
 				],
 				"Dorms Map": [
-					{ "name": "Type \"/Maps Customs Info\" to get detailed info about the area.", "value": "Use the middle mouse button to view the image in fullscreen." }
+					{
+						"name": "Type \"/Maps Customs Info\" to get detailed info about the area.",
+						"value": "Use the middle mouse button to view the image in fullscreen."
+					}
 				],
 				"3D Map": [
-					{ "name": "Type \"/Maps Customs Info\" to get detailed info about the area.", "value": "Use the middle mouse button to view the image in fullscreen." }
+					{
+						"name": "Type \"/Maps Customs Info\" to get detailed info about the area.",
+						"value": "Use the middle mouse button to view the image in fullscreen."
+					}
 				]
 			},
 
 			"factory": {
 				"null": [
-					{ "name": "Type \"/Maps Factory Info\" to get detailed info about the area.", "value": "Detailed map: **/Maps Factory Map**.\nInteractive map: **/Maps Factory Interactive Map**." }
+					{
+						"name": "Type \"/Maps Factory Info\" to get detailed info about the area.",
+						"value": "Detailed map: **/Maps Factory Map**.\nInteractive map: **/Maps Factory Interactive Map**."
+					}
 				],
 				"Info": [
-					{ "name": "Description", "value": "The industrial estate and facilities of chemical factory #16 were rented out illegally to the TerraGroup company.\nDuring the Contract Wars, this factory was a hotbed for numerous firefights between USEC and BEAR operatives that determined control over the entire Tarkov industrial district.\nWith time, the factory premises were converted into a shelter for local civilians, Scavs, along with the occasional USEC or BEAR operators." },
-					{ "name": "Features", "value": "A small, fast-paced CQC map inside of a multi-story industrial factory, complete with tunnels and overhead walkways." },
-					{ "name": "Boss", "value": "**Name:** Tagilla." },
-					{ "name": "Locations", "value": "Nearby the pit and underground sections." },
-					{ "name": "Health", "value": "1220 Total, Head: 100, Thorax: 320, Stomach: 260, Arms: 130 each, Legs: 140 each." },
-					{ "name": "Followers", "value": "Tagilla has no followers of any sort." },
-					{ "name": "Suggestions", "value": "Leave suggestions about what else would be nice to have inside of this command." }
+					{
+						"name": "Description",
+						"value": "The industrial estate and facilities of chemical factory #16 were rented out illegally to the TerraGroup company.\nDuring the Contract Wars, this factory was a hotbed for numerous firefights between USEC and BEAR operatives that determined control over the entire Tarkov industrial district.\nWith time, the factory premises were converted into a shelter for local civilians, Scavs, along with the occasional USEC or BEAR operators."
+					},
+					{
+						"name": "Features",
+						"value": "A small, fast-paced CQC map inside of a multi-story industrial factory, complete with tunnels and overhead walkways."
+					},
+					{
+						"name": "Boss",
+						"value": "**Name:** Tagilla."
+					},
+					{
+						"name": "Locations",
+						"value": "Nearby the pit and underground sections."
+					},
+					{
+						"name": "Health",
+						"value": "1220 Total, Head: 100, Thorax: 320, Stomach: 260, Arms: 130 each, Legs: 140 each."
+					},
+					{
+						"name": "Followers",
+						"value": "Tagilla has no followers of any sort."
+					},
+					{
+						"name": "Suggestions",
+						"value": "Leave suggestions about what else would be nice to have inside of this command."
+					}
 				],
 				"Map": [
-					{ "name": "Type \"/Maps Factory Info\" to get detailed info about the area.", "value": "Use the middle mouse button to view the image in fullscreen." }
+					{
+						"name": "Type \"/Maps Factory Info\" to get detailed info about the area.",
+						"value": "Use the middle mouse button to view the image in fullscreen."
+					}
 				],
 				"Interactive Map": [
-					{ "name": "Type \"/Maps Factory Info\" to get detailed info about the area.", "value": "*psst, click the link (blue text) to go to the interactive map!*" }
+					{
+						"name": "Type \"/Maps Factory Info\" to get detailed info about the area.",
+						"value": "*psst, click the link (blue text) to go to the interactive map!*"
+					}
 				]
 			},
 
 			"interchange": {
 				"null": [
-					{ "name": "Type \"/Maps Interchange Info\" to get detailed info about the area.", "value": "Detailed map: **/Maps Interchange Map**.\nGuide for hidden stashes: **/Maps Interchange Hidden Stashes**.\nInteractive map: **/Maps Interchange Interactive Map**." }
+					{
+						"name": "Type \"/Maps Interchange Info\" to get detailed info about the area.",
+						"value": "Detailed map: **/Maps Interchange Map**.\nGuide for hidden stashes: **/Maps Interchange Hidden Stashes**.\nInteractive map: **/Maps Interchange Interactive Map**."
+					}
 				],
 				"Info": [
-					{ "name": "Description", "value": "The South interchange is a key location for transport in the city. This strategic area connects the port and harbor with the industrial outskirts of Tarkov. Located in the center of the interchange is a huge ULTRA shopping mall which was used as the main base of operation for the EMERCOM evacuation." },
-					{ "name": "Features", "value": "Three anchor stores:\n**IDEA** (a furniture store)\n**OLI** (a hardware store)\n**Goshan** (a grocery store).\n\nMany small stores that sell a wide variety of products including electronics, clothing, exercise equipment, firearms, and food.\n\nOutside there is a go-kart track, large parking lots, small wooded areas, and numerous roads.\n\nA fully linked illumination grid, able to be switched on at the [power station](https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/c5/Power_switch.png/revision/latest?cb=20200312223921).\n\nAlarms around some stores and a triggerable alarm at the Kiba Arms Store. The alarms can be switched off at designated terminals:" },
-					{ "name": "Alarm switches", "value": "[2F Alarm switch](https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/83/Inter_alarm_terminal.png/revision/latest?cb=20200312221706) and [1F Alarm switch](https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/aa/Inter_alarm_terminal_2.png/revision/latest?cb=20200312221936)\n[Alarm Switch Map](https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/ec/Interchange_alarm_map.png/revision/latest?cb=20200314130950)." },
-					{ "name": "Boss", "value": "**Name:** Killa." },
-					{ "name": "Locations", "value": "Marked on the map.\nAbout everywhere in the mall." },
-					{ "name": "Health", "value": "890 Total, Head: 70, Thorax: 210, Stomach: 170, Arms: 100 each, Legs: 120 each." },
-					{ "name": "Followers", "value": "Killa has no followers of any sort." },
-					{ "name": "Suggestions", "value": "Leave suggestions about what else would be nice to have inside of this command." }
+					{
+						"name": "Description",
+						"value": "The South interchange is a key location for transport in the city. This strategic area connects the port and harbor with the industrial outskirts of Tarkov. Located in the center of the interchange is a huge ULTRA shopping mall which was used as the main base of operation for the EMERCOM evacuation."
+					},
+					{
+						"name": "Features",
+						"value": "Three anchor stores:\n**IDEA** (a furniture store)\n**OLI** (a hardware store)\n**Goshan** (a grocery store).\n\nMany small stores that sell a wide variety of products including electronics, clothing, exercise equipment, firearms, and food.\n\nOutside there is a go-kart track, large parking lots, small wooded areas, and numerous roads.\n\nA fully linked illumination grid, able to be switched on at the [power station](https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/c5/Power_switch.png/revision/latest/scale-to-width-down/1000?cb=20200312223921).\n\nAlarms around some stores and a triggerable alarm at the Kiba Arms Store. The alarms can be switched off at designated terminals:"
+					},
+					{
+						"name": "Alarm switches",
+						"value": "[2F Alarm switch](https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/83/Inter_alarm_terminal.png/revision/latest/scale-to-width-down/1000?cb=20200312221706) and [1F Alarm switch](https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/aa/Inter_alarm_terminal_2.png/revision/latest/scale-to-width-down/1000?cb=20200312221936)\n[Alarm Switch Map](https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/ec/Interchange_alarm_map.png/revision/latest/scale-to-width-down/1000?cb=20200314130950)."
+					},
+					{
+						"name": "Boss",
+						"value": "**Name:** Killa."
+					},
+					{
+						"name": "Locations",
+						"value": "Marked on the map.\nAbout everywhere in the mall."
+					},
+					{
+						"name": "Health",
+						"value": "890 Total, Head: 70, Thorax: 210, Stomach: 170, Arms: 100 each, Legs: 120 each."
+					},
+					{
+						"name": "Followers",
+						"value": "Killa has no followers of any sort."
+					},
+					{
+						"name": "Suggestions",
+						"value": "Leave suggestions about what else would be nice to have inside of this command."
+					}
 				],
 				"Map": [
-					{ "name": "Type \"/Maps Interchange Info\" to get detailed info about the area.","value": "Use the middle mouse button to view the image in fullscreen." }
+					{
+						"name": "Type \"/Maps Interchange Info\" to get detailed info about the area.",
+						"value": "Use the middle mouse button to view the image in fullscreen."
+					}
 				],
 				"Hidden Stashes": [
-					{ "name": "Type \"/Maps Interchange Info\" to get detailed info about the area.", "value": "Use the middle mouse button to view the image in fullscreen." }
+					{
+						"name": "Type \"/Maps Interchange Info\" to get detailed info about the area.",
+						"value": "Use the middle mouse button to view the image in fullscreen."
+					}
 				],
 				"Interactive Map": [
-					{ "name": "Type \"/Maps Interchange Info\" to get detailed info about the area.", "value": "*psst, click the link (blue text) to go to the interactive map!*" }
+					{
+						"name": "Type \"/Maps Interchange Info\" to get detailed info about the area.",
+						"value": "*psst, click the link (blue text) to go to the interactive map!*"
+					}
 				]
 			},
 
 			"lighthouse": {
 				"null": [
-					{ "name": "Type \"/Maps Lighthouse Info\" to get detailed info about the area.", "value": "Detailed map: **/Maps Lighthouse Map**.\nGuide for hidden stashes: **/Maps Lighthouse Hidden Stashes**.\nInteractive map: **/Maps Lighthouse Interactive Map**." }
+					{
+						"name": "Type \"/Maps Lighthouse Info\" to get detailed info about the area.",
+						"value": "Detailed map: **/Maps Lighthouse Map**.\nGuide for hidden stashes: **/Maps Lighthouse Hidden Stashes**.\nInteractive map: **/Maps Lighthouse Interactive Map**."
+					}
 				],
 				"Info": [
-					{ "name": "Description", "value": "The lighthouse at Cape Dalniy was an important strategic object on the way to Tarkov. During Contract Wars, it was the main entry point for USEC units and served as their base of operations. After the conflict, Scavs took a fancy to this place, until the old owners returned, who decided to stay in Tarkov and establish their own order." },
-					{ "name": "Features", "value": "Lighthouse is the only map to include the [Rogues](https://escapefromtarkov.fandom.com/wiki/Rogues) faction. At the Water treatment plant, Rogues are stationed on machine gun and grenade launcher emplacements, with patrols around the area. Guards will perform suppressive fire on enemies who come too close. Players on the [USEC](https://escapefromtarkov.fandom.com/wiki/USEC) faction, however, will not be opened fire upon immediately, unless they are in a group with a [BEAR](https://escapefromtarkov.fandom.com/wiki/BEAR). Instead, the Rogues will tell the player to leave the area, only shooting at them if they do not leave. If a USEC player fights the Rogues, they will be treated as hostile by them for the next few raids.\nThe lighthouse itself is not reachable - the bridge connecting the mainland to the lighthouse is covered by a sniper which will shoot and kill players if they try to cross." },
-					{ "name": "Boss", "value": "There is no boss on this map, but there are [Rogues](https://escapefromtarkov.fandom.com/wiki/Rogues) patrolling the area. Rogues often patrol in pairs, and will employ highly accurate suppressive fire while pushing players." },
-					{ "name": "Suggestions", "value": "Leave suggestions about what else would be nice to have inside of this command." }
+					{
+						"name": "Description",
+						"value": "The lighthouse at Cape Dalniy was an important strategic object on the way to Tarkov. During Contract Wars, it was the main entry point for USEC units and served as their base of operations. After the conflict, Scavs took a fancy to this place, until the old owners returned, who decided to stay in Tarkov and establish their own order."
+					},
+					{
+						"name": "Features",
+						"value": "Lighthouse is the only map to include the [Rogues](https://escapefromtarkov.fandom.com/wiki/Rogues) faction. At the Water treatment plant, Rogues are stationed on machine gun and grenade launcher emplacements, with patrols around the area. Guards will perform suppressive fire on enemies who come too close. Players on the [USEC](https://escapefromtarkov.fandom.com/wiki/USEC) faction, however, will not be opened fire upon immediately, unless they are in a group with a [BEAR](https://escapefromtarkov.fandom.com/wiki/BEAR). Instead, the Rogues will tell the player to leave the area, only shooting at them if they do not leave. If a USEC player fights the Rogues, they will be treated as hostile by them for the next few raids.\nThe lighthouse itself is not reachable - the bridge connecting the mainland to the lighthouse is covered by a sniper which will shoot and kill players if they try to cross."
+					},
+					{
+						"name": "Boss",
+						"value": "There is no boss on this map, but there are [Rogues](https://escapefromtarkov.fandom.com/wiki/Rogues) patrolling the area. Rogues often patrol in pairs, and will employ highly accurate suppressive fire while pushing players."
+					},
+					{
+						"name": "Suggestions",
+						"value": "Leave suggestions about what else would be nice to have inside of this command."
+					}
 				],
 				"Map": [
-					{ "name": "Type \"/Maps Lighthouse Info\" to get detailed info about the area.", "value": "Use the middle mouse button to view the image in fullscreen." }
+					{
+						"name": "Type \"/Maps Lighthouse Info\" to get detailed info about the area.",
+						"value": "Use the middle mouse button to view the image in fullscreen."
+					}
 				],
 				"Hidden Stashes": [
-					{ "name": "Type \"/Maps Lighthouse Info\" to get detailed info about the area.", "value": "Use the middle mouse button to view the image in fullscreen." }
+					{
+						"name": "Type \"/Maps Lighthouse Info\" to get detailed info about the area.",
+						"value": "Use the middle mouse button to view the image in fullscreen."
+					}
 				],
 				"Interactive Map": [
-					{ "name": "Type \"/Maps Lighthouse Info\" to get detailed info about the area.", "value": "*psst, click the link (blue text) to go to the interactive map!*" }
+					{
+						"name": "Type \"/Maps Lighthouse Info\" to get detailed info about the area.",
+						"value": "*psst, click the link (blue text) to go to the interactive map!*"
+					}
 				]
 			},
 
 			"reserve": {
 				"null": [
-					{ "name": "Type \"/Maps Reserve Info\" to get detailed info about the area.", "value": "Detailed map: **/Maps Reserve Map**.\nInteractive map: **/Maps Reserve Interactive Map**.\nDetailed map with key guide: **/Maps Reserve Key Map**.\nUnderground D-2 Bunker: **/Maps Reserve D-2 Bunker Map**." }
+					{
+						"name": "Type \"/Maps Reserve Info\" to get detailed info about the area.",
+						"value": "Detailed map: **/Maps Reserve Map**.\nInteractive map: **/Maps Reserve Interactive Map**.\nDetailed map with key guide: **/Maps Reserve Key Map**.\nUnderground D-2 Bunker: **/Maps Reserve D-2 Bunker Map**."
+					}
 				],
 				"Info": [
-					{ "name": "Description", "value": "The secret Federal State Reserve Agency base that, according to urban legend, contains enough supplies to last for years: food, medications and other resources, enough to survive an all-out nuclear war." },
-					{ "name": "Features", "value": "Mounted, static weaponry in the form of the [AGS grenade launcher](https://escapefromtarkov.fandom.com/wiki/AGS-30_30x29mm_automatic_grenade_launcher) and [NSV machine gun](https://escapefromtarkov.fandom.com/wiki/NSV_%22Utyos%22_12.7x108_heavy_machine_gun)." },
-					{ "name": "Boss", "value": "**Name:** Glukhar." },
-					{ "name": "Locations", "value": "Marked circles on the map.\nIn and around the \"K\" Buildings near the train station.\nIn and around the \"Bishop\", \"Pawn\", and \"Knight\" Dorms.\nIn and around the Repair Depot." },
-					{ "name": "Health", "value": "1010 Total, Head: 70, Thorax: 220, Stomach: 140, Arms: 145 each, Legs: 145 each." },
-					{ "name": "Followers", "value": "Glukhar always has 6 followers with a wide assortment of weapons and gear." },
-					{ "name": "Suggestions", "value": "Leave suggestions about what else would be nice to have inside of this command." }
+					{
+						"name": "Description",
+						"value": "The secret Federal State Reserve Agency base that, according to urban legend, contains enough supplies to last for years: food, medications and other resources, enough to survive an all-out nuclear war."
+					},
+					{
+						"name": "Features",
+						"value": "Mounted, static weaponry in the form of the [AGS grenade launcher](https://escapefromtarkov.fandom.com/wiki/AGS-30_30x29mm_automatic_grenade_launcher) and [NSV machine gun](https://escapefromtarkov.fandom.com/wiki/NSV_%22Utyos%22_12.7x108_heavy_machine_gun)."
+					},
+					{
+						"name": "Boss",
+						"value": "**Name:** Glukhar."
+					},
+					{
+						"name": "Locations",
+						"value": "Marked circles on the map.\nIn and around the \"K\" Buildings near the train station.\nIn and around the \"Bishop\", \"Pawn\", and \"Knight\" Dorms.\nIn and around the Repair Depot."
+					},
+					{
+						"name": "Health",
+						"value": "1010 Total, Head: 70, Thorax: 220, Stomach: 140, Arms: 145 each, Legs: 145 each."
+					},
+					{
+						"name": "Followers",
+						"value": "Glukhar always has 6 followers with a wide assortment of weapons and gear."
+					},
+					{
+						"name": "Suggestions",
+						"value": "Leave suggestions about what else would be nice to have inside of this command."
+					}
 				],
 				"Map": [
-					{ "name": "Type \"/Maps Reserve Info\" to get detailed info about the area.", "value": "Use the middle mouse button to view the image in fullscreen." }
+					{
+						"name": "Type \"/Maps Reserve Info\" to get detailed info about the area.",
+						"value": "Use the middle mouse button to view the image in fullscreen."
+					}
 				],
 				"Interactive Map": [
-					{ "name": "Type \"/Maps Reserve Info\" to get detailed info about the area.", "value": "*psst, click the link (blue text) to go to the interactive map!*" }
+					{
+						"name": "Type \"/Maps Reserve Info\" to get detailed info about the area.",
+						"value": "*psst, click the link (blue text) to go to the interactive map!*"
+					}
 				],
 				"Key Map": [
-					{ "name": "Type \"/Maps Reserve Info\" to get detailed info about the area.", "value": "Use the middle mouse button to view the image in fullscreen." }
+					{
+						"name": "Type \"/Maps Reserve Info\" to get detailed info about the area.",
+						"value": "Use the middle mouse button to view the image in fullscreen."
+					}
 				],
 				"D-2 Bunker Map": [
-					{ "name": "Type \"/Maps Reserve Info\" to get detailed info about the area.", "value": "Use the middle mouse button to view the image in fullscreen." }
+					{
+						"name": "Type \"/Maps Reserve Info\" to get detailed info about the area.",
+						"value": "Use the middle mouse button to view the image in fullscreen."
+					}
 				]
 			},
 
 			"shoreline": {
 				"null": [
-					{ "name": "Type \"/Maps Shoreline Info\" to get detailed info about the area.", "value": "Detailed map: **/Maps Shoreline Map**.\nGuide for hidden stashes: **/Maps Shoreline Hidden Stashes**.\nInteractive map: **/Maps Shoreline Interactive Map**.\nKey Spawns Map: **/Maps Shoreline Key Spawns Map**.\nResort Map: **/Maps Shoreline Resort**.\n3D map: **/Maps Shoreline 3D**." }
+					{
+						"name": "Type \"/Maps Shoreline Info\" to get detailed info about the area.",
+						"value": "Detailed map: **/Maps Shoreline Map**.\nGuide for hidden stashes: **/Maps Shoreline Hidden Stashes**.\nInteractive map: **/Maps Shoreline Interactive Map**.\nKey Spawns Map: **/Maps Shoreline Key Spawns Map**.\nResort Map: **/Maps Shoreline Resort**.\n3D map: **/Maps Shoreline 3D**."
+					}
 				],
 				"Info": [
-					{ "name": "Description", "value": "Shoreline is a large area located on the coastal outskirts of Tarkov, next to the city's port. The area's geography features tracts of undulating woodland, large open fields, jagged cliffs, a swamp and a long stretch of shoreline. Significant man made points of interest include a partially abandoned village, a modern residential development, a boating facility, a gas station, a weather station, a cellular communications tower and the focal point of the map, the Azure Coast Health Resort. This luxury compound consists of three multi-story buildings and was once used as temporary accommodation by members of TerraGroup and its associated divisions as they prepared for the evacuation of Tarkov Port. When operational, the resort draws power from a nearby hydroelectric plant." },
-					{ "name": "Features", "value": "Shoreline is the second largest location in [Escape from Tarkov](https://escapefromtarkov.fandom.com/wiki/Escape_from_Tarkov) and contains a plethora of areas for players to explore and loot. The large, varied terrain means players can expect to engage in fire fights at both close quarters and long range." },
-					{ "name": "Boss", "value": "**Name:** Sanitar." },
-					{ "name": "Locations", "value": "Marked circles on the map.\nPort/Pier Area.\nLocked cottage area.\nHealth resort east and west wing." },
-					{ "name": "Health", "value": "1270 Total, Head: 70, Thorax: 360, Stomach: 140, Arms: 120 each, Legs: 230 each." },
-					{ "name": "Followers", "value": "Following Sanitar are two well-armed and armored guards." },
-					{ "name": "Suggestions", "value": "Leave suggestions about what else would be nice to have inside of this command." }
+					{
+						"name": "Description",
+						"value": "Shoreline is a large area located on the coastal outskirts of Tarkov, next to the city's port. The area's geography features tracts of undulating woodland, large open fields, jagged cliffs, a swamp and a long stretch of shoreline. Significant man made points of interest include a partially abandoned village, a modern residential development, a boating facility, a gas station, a weather station, a cellular communications tower and the focal point of the map, the Azure Coast Health Resort. This luxury compound consists of three multi-story buildings and was once used as temporary accommodation by members of TerraGroup and its associated divisions as they prepared for the evacuation of Tarkov Port. When operational, the resort draws power from a nearby hydroelectric plant."
+					},
+					{
+						"name": "Features",
+						"value": "Shoreline is the second largest location in [Escape from Tarkov](https://escapefromtarkov.fandom.com/wiki/Escape_from_Tarkov) and contains a plethora of areas for players to explore and loot. The large, varied terrain means players can expect to engage in fire fights at both close quarters and long range."
+					},
+					{
+						"name": "Boss",
+						"value": "**Name:** Sanitar."
+					},
+					{
+						"name": "Locations",
+						"value": "Marked circles on the map.\nPort/Pier Area.\nLocked cottage area.\nHealth resort east and west wing."
+					},
+					{
+						"name": "Health",
+						"value": "1270 Total, Head: 70, Thorax: 360, Stomach: 140, Arms: 120 each, Legs: 230 each."
+					},
+					{
+						"name": "Followers",
+						"value": "Following Sanitar are two well-armed and armored guards."
+					},
+					{
+						"name": "Suggestions",
+						"value": "Leave suggestions about what else would be nice to have inside of this command."
+					}
 				],
 				"Map": [
-					{ "name": "Type \"/Maps Shoreline Info\" to get detailed info about the area.", "value": "Use the middle mouse button to view the image in fullscreen." }
+					{
+						"name": "Type \"/Maps Shoreline Info\" to get detailed info about the area.",
+						"value": "Use the middle mouse button to view the image in fullscreen."
+					}
 				],
 				"Hidden Stashes": [
-					{ "name": "Type \"/Maps Shoreline Info\" to get detailed info about the area.", "value": "Use the middle mouse button to view the image in fullscreen." }
+					{
+						"name": "Type \"/Maps Shoreline Info\" to get detailed info about the area.",
+						"value": "Use the middle mouse button to view the image in fullscreen."
+					}
 				],
 				"Interactive Map": [
-					{ "name": "Type \"/Maps Shoreline Info\" to get detailed info about the area.", "value": "*psst, click the link (blue text) to go to the interactive map!*" }
+					{
+						"name": "Type \"/Maps Shoreline Info\" to get detailed info about the area.",
+						"value": "*psst, click the link (blue text) to go to the interactive map!*"
+					}
 				],
 				"Key Spawns Map": [
-					{ "name": "Type \"/Maps Shoreline Info\" to get detailed info about the area.", "value": "Use the middle mouse button to view the image in fullscreen." }
+					{
+						"name": "Type \"/Maps Shoreline Info\" to get detailed info about the area.",
+						"value": "Use the middle mouse button to view the image in fullscreen."
+					}
 				],
 				"Resort Map": [
-					{ "name": "Type \"/Maps Shoreline Info\" to get detailed info about the area.", "value": "Use the middle mouse button to view the image in fullscreen." }
+					{
+						"name": "Type \"/Maps Shoreline Info\" to get detailed info about the area.",
+						"value": "Use the middle mouse button to view the image in fullscreen."
+					}
 				],
 				"3D Map": [
-					{ "name": "Type \"/Maps Shoreline Info\" to get detailed info about the area.", "value": "Use the middle mouse button to view the image in fullscreen." }
+					{
+						"name": "Type \"/Maps Shoreline Info\" to get detailed info about the area.",
+						"value": "Use the middle mouse button to view the image in fullscreen."
+					}
 				]
 			},
 
 			"labs": {
 				"null": [
-					{ "name": "Type \"/Maps Labs Info\" to get detailed info about the area.", "value": "Detailed map: **/Maps Labs Map**.\nInteractive map: **/Maps Labs Interactive Map**.\nMap for each floor: **/Maps Labs Basement/First Floor/Second Floor**.\n3D map: **/Maps Labs 3D**." }
+					{
+						"name": "Type \"/Maps Labs Info\" to get detailed info about the area.",
+						"value": "Detailed map: **/Maps Labs Map**.\nInteractive map: **/Maps Labs Interactive Map**.\nMap for each floor: **/Maps Labs Basement/First Floor/Second Floor**.\n3D map: **/Maps Labs 3D**."
+					}
 				],
 				"Info": [
-					{ "name": "Description", "value": "Underground laboratory complex TerraGroup Labs is a secret object right under the center of Tarkov. Officially, this research center does not exist and, based on data scraps, is engaged in R&D, testing and simulation projects in chemistry, physics, biology, and high-tech areas." },
-					{ "name": "Features", "value": "**Insurance** [doesn't work](https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/21/TheLab-Insurance-Messages-01.PNG/revision/latest/scale-to-width-down/512?cb=20181227203004) on labs.\n**Announcer**\nWhenever an event of high importance happens inside The Lab, an announcement will be triggered.\nThere is an announcement for every extraction besides the **Ventilation shaft** and the **Sewage conduit**. The announcement for the parking extraction can be disabled using the [Yellow keycard](https://escapefromtarkov.fandom.com/wiki/TerraGroup_Labs_keycard_(Yellow)).\n**Tagged and Cursed**\nUnlike other maps in Tarkov, PMCs are not tagged and cursed at the start of a raid on Labs when deploying with no gear or weapons.\nYou can't go in as a scav on Labs." },
-					{ "name": "Boss", "value": "There is no boss on this map but every single AI is a [Raider](https://escapefromtarkov.fandom.com/wiki/Scav_Raiders). They are dangerous but carry better gear." },
-					{ "name": "Suggestions", "value": "Leave suggestions about what else would be nice to have inside of this command." }
+					{
+						"name": "Description",
+						"value": "Underground laboratory complex TerraGroup Labs is a secret object right under the center of Tarkov. Officially, this research center does not exist and, based on data scraps, is engaged in R&D, testing and simulation projects in chemistry, physics, biology, and high-tech areas."
+					},
+					{
+						"name": "Features",
+						"value": "**Insurance** [doesn't work](https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/21/TheLab-Insurance-Messages-01.PNG/revision/latest/scale-to-width-down/512?cb=20181227203004) on labs.\n**Announcer**\nWhenever an event of high importance happens inside The Lab, an announcement will be triggered.\nThere is an announcement for every extraction besides the **Ventilation shaft** and the **Sewage conduit**. The announcement for the parking extraction can be disabled using the [Yellow keycard](https://escapefromtarkov.fandom.com/wiki/TerraGroup_Labs_keycard_(Yellow)).\n**Tagged and Cursed**\nUnlike other maps in Tarkov, PMCs are not tagged and cursed at the start of a raid on Labs when deploying with no gear or weapons.\nYou can't go in as a scav on Labs."
+					},
+					{
+						"name": "Boss",
+						"value": "There is no boss on this map but every single AI is a [Raider](https://escapefromtarkov.fandom.com/wiki/Scav_Raiders). They are dangerous but carry better gear."
+					},
+					{
+						"name": "Suggestions",
+						"value": "Leave suggestions about what else would be nice to have inside of this command."
+					}
 				],
 				"Map": [
-					{ "name": "Type \"/Maps Labs Info\" to get detailed info about the area.", "value": "Use the middle mouse button to view the image in fullscreen." }
+					{
+						"name": "Type \"/Maps Labs Info\" to get detailed info about the area.",
+						"value": "Use the middle mouse button to view the image in fullscreen."
+					}
 				],
 				"Interactive Map": [
-					{ "name": "Type \"/Maps Labs Info\" to get detailed info about the area.", "value": "*psst, click the link (blue text) to go to the interactive map!*" }
+					{
+						"name": "Type \"/Maps Labs Info\" to get detailed info about the area.",
+						"value": "*psst, click the link (blue text) to go to the interactive map!*"
+					}
 				],
 				"Basement Map": [
-					{ "name": "Type \"/Maps Labs Info\" to get detailed info about the area.", "value": "Use the middle mouse button to view the image in fullscreen." }
+					{
+						"name": "Type \"/Maps Labs Info\" to get detailed info about the area.",
+						"value": "Use the middle mouse button to view the image in fullscreen."
+					}
 				],
 				"First Floor Map": [
-					{ "name": "Type \"/Maps Labs Info\" to get detailed info about the area.", "value": "Use the middle mouse button to view the image in fullscreen." }
+					{
+						"name": "Type \"/Maps Labs Info\" to get detailed info about the area.",
+						"value": "Use the middle mouse button to view the image in fullscreen."
+					}
 				],
 				"Second Floor Map": [
-					{ "name": "Type \"/Maps Labs Info\" to get detailed info about the area.", "value": "Use the middle mouse button to view the image in fullscreen." }
+					{
+						"name": "Type \"/Maps Labs Info\" to get detailed info about the area.",
+						"value": "Use the middle mouse button to view the image in fullscreen."
+					}
 				],
 				"3D Map": [
-					{ "name": "Type \"/Maps Labs Info\" to get detailed info about the area.", "value": "Use the middle mouse button to view the image in fullscreen." }
+					{
+						"name": "Type \"/Maps Labs Info\" to get detailed info about the area.",
+						"value": "Use the middle mouse button to view the image in fullscreen."
+					}
 				]
 			},
 
 			"woods": {
 				"null": [
-					{ "name": "Type \"/Maps Woods Info\" to get detailed info about the area.", "value": "Detailed map: **/Maps Woods Map**.\nGuide for hidden stashes: **/Maps Woods Hidden Stashes**.\nInteractive map: **/Maps Woods Interactive Map**." }
+					{
+						"name": "Type \"/Maps Woods Info\" to get detailed info about the area.",
+						"value": "Detailed map: **/Maps Woods Map**.\nGuide for hidden stashes: **/Maps Woods Hidden Stashes**.\nInteractive map: **/Maps Woods Interactive Map**."
+					}
 				],
 				"Info": [
-					{ "name": "Description", "value": "The Priozersky Natural Reserve recently became part of the state-protected wildlife reserves of the North Western Federal District." },
-					{ "name": "Features", "value": "A moderately sized section of woods with some open fields, small hills, a logging camp, and the bunkers [ZB-014](https://escapefromtarkov.fandom.com/wiki/ZB-014_key) and [ZB-016](https://escapefromtarkov.fandom.com/wiki/ZB-016)." },
-					{ "name": "Boss", "value": "**Name:** Shturman." },
-					{ "name": "Locations", "value": "Shturman's location is around the Sawmill." },
-					{ "name": "Health", "value": "812 Total, Head: 62, Thorax: 180, Stomach: 150, Arms: 100 each, Legs: 110 each." },
-					{ "name": "Followers", "value": "Shturman and his two followers will engage the player at a long range protecting the sawmill area of the woods." },
-					{ "name": "Suggestions", "value": "Leave suggestions about what else would be nice to have inside of this command." }
+					{
+						"name": "Description",
+						"value": "The Priozersky Natural Reserve recently became part of the state-protected wildlife reserves of the North Western Federal District."
+					},
+					{
+						"name": "Features",
+						"value": "A moderately sized section of woods with some open fields, small hills, a logging camp, and the bunkers [ZB-014](https://escapefromtarkov.fandom.com/wiki/ZB-014_key) and [ZB-016](https://escapefromtarkov.fandom.com/wiki/ZB-016)."
+					},
+					{
+						"name": "Boss",
+						"value": "**Name:** Shturman."
+					},
+					{
+						"name": "Locations",
+						"value": "Shturman's location is around the Sawmill."
+					},
+					{
+						"name": "Health",
+						"value": "812 Total, Head: 62, Thorax: 180, Stomach: 150, Arms: 100 each, Legs: 110 each."
+					},
+					{
+						"name": "Followers",
+						"value": "Shturman and his two followers will engage the player at a long range protecting the sawmill area of the woods."
+					},
+					{
+						"name": "Suggestions",
+						"value": "Leave suggestions about what else would be nice to have inside of this command."
+					}
 				],
 				"Map": [
-					{ "name": "Type \"/Maps Woods Info\" to get detailed info about the area.","value": "Use the middle mouse button to view the image in fullscreen." }
+					{
+						"name": "Type \"/Maps Woods Info\" to get detailed info about the area.",
+						"value": "Use the middle mouse button to view the image in fullscreen."
+					}
 				],
 				"Hidden Stashes": [
-					{ "name": "Type \"/Maps Woods Info\" to get detailed info about the area.", "value": "Use the middle mouse button to view the image in fullscreen." }
+					{
+						"name": "Type \"/Maps Woods Info\" to get detailed info about the area.",
+						"value": "Use the middle mouse button to view the image in fullscreen."
+					}
 				],
 				"Interactive Map": [
-					{ "name": "Type \"/Maps Woods Info\" to get detailed info about the area.", "value": "*psst, click the link (blue text) to go to the interactive map!*" }
+					{
+						"name": "Type \"/Maps Woods Info\" to get detailed info about the area.",
+						"value": "*psst, click the link (blue text) to go to the interactive map!*"
+					}
 				]
 			}
 		},
@@ -336,13 +661,13 @@
 				"Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/cd/Factory_3D_b_Johnny_Tushonka.jpg/revision/latest?cb=20210704215141"
 			},
 			"interchange": {
-				"null" : "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/af/Interchange.jpg/revision/latest?cb=20180124204206",
+				"null": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/af/Interchange.jpg/revision/latest?cb=20180124204206",
 				"Info": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/3e/Banner_interchange.png/revision/latest?cb=20200811153253",
 				"Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e5/InterchangeMap_Updated_4.24.2020.png/revision/latest?cb=20210320055357",
 				"Hidden Stashes": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/fe/Interchange_hidden_stash_map.jpg/revision/latest?cb=20191117132146"
 			},
 			"lighthouse": {
-				"null" : "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/dc/Banner_lighthouse.png/revision/latest?cb=20211213001748",
+				"null": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/dc/Banner_lighthouse.png/revision/latest?cb=20211213001748",
 				"Info": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d6/Lighthouse_concept_%282%29.jpg/revision/latest?cb=20211102173810",
 				"Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/13/Jindouz_Lighthouse_Map_V1.png/revision/latest?cb=20211218192352",
 				"Hidden Stashes": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/05/Hokkaido_Lighthouse_Stashes_Map.jpeg/revision/latest?cb=20211219225541"
