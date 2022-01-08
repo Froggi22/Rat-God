@@ -133,8 +133,8 @@ git push origin <awesome-new-feature-name>
 
 ### What are these files?
 
-- `.eslintrc` - Settings for the ESLint extension.
+- `.eslintrc` - Settings linting extensions.
 - `.gitignore` - Used for ignoring files from Git.
 - `config.json` - Central file for information/text that the bot sends.
 - `Procfile` - For Heroku - the bot's hosting platform.
-- `README.md` - Documentation
+- `README.md` - Documentation.

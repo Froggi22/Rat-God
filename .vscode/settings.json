@@ -1,5 +1,4 @@
 {
-	"standard.autoFixOnSave": true,
 	"standard.engine": "standardx",
 	"editor.wordWrap": "on",
 	"editor.insertSpaces": false,
