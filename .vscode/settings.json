@@ -1,5 +1,6 @@
 {
 	"standard.engine": "standardx",
+	"standard.autoFixOnSave": true,
 	"editor.wordWrap": "on",
 	"editor.insertSpaces": false,
 	"editor.detectIndentation": false,

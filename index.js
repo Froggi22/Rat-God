@@ -19,7 +19,7 @@ module.exports = { commands }
 // Event Handler
 readdirSync("./events").forEach(file => {
 	const event = require(`./events/${file}`)
-	event.name = file.replace(".js", "")
+	event.name = file.replace(/.(j|t)s/, "")
 	if (event.run) client.on(event.name, (...args) => event.run(...args, client))
 	else console.log(`[./events/${file}] You forgot run!`)
 })
@@ -28,7 +28,7 @@ readdirSync("./events").forEach(file => {
 readdirSync("./commands").forEach(folder => {
 	readdirSync(`./commands/${folder}`).forEach(file => {
 		const command = require(`./commands/${folder}/${file}`)
-		command.name = file.replace(".js", "")
+		command.name = file.replace(/.(j|t)s/, "")
 		if (command.description && command.run) client.commands.set(command.name, command)
 		if (!command.description) console.log(`[./commands/${folder}/${file}] You forgot description!`)
 		if (!command.run && folder !== "Keys") console.log(`[./commands/${folder}/${file}] You forgot run!`)
