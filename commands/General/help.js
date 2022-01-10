@@ -3,7 +3,7 @@ const { embedDesign, general } = require("../../config.json")
 const commandReply = require("../../commandReply.js")
 
 module.exports = {
-	description: "A mini-list of Rat Gods commands",
+	description: "A compact list of Rat Gods commands",
 	run (interaction) {
 		commandReply.interactionReply(interaction, {
 			embeds: [new MessageEmbed()

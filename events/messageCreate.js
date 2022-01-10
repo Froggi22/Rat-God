@@ -12,13 +12,13 @@ module.exports = {
 
 		switch (message.content) { // Check for interaction update commands
 		case "!guild":
-			await client.guilds.cache.get("861948446910578699").commands.set(client.commands.map(command => command))
+			await client.guilds.cache.get(general.developerGuildID).commands.set(client.commands.map(command => command))
 			return commandReply.messageReply(message, "Deployed Guild Slash Commands")
 		case "!global":
 			await client.application.commands.set(client.commands.map(command => command))
 			return commandReply.messageReply(message, "Deployed Global Slash Commands")
 		case "!removeguild":
-			await client.guilds.cache.get("861948446910578699").commands.set([])
+			await client.guilds.cache.get(general.developerGuildID).commands.set([])
 			return commandReply.messageReply(message, "Removed Guild Slash Commands")
 		}
 	}

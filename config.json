@@ -1,7 +1,7 @@
 {
 	"embedDesign": {
 		"wikiMaps": "https://escapefromtarkov.fandom.com/wiki/Map_of_Tarkov",
-		"gameUpdate": "Updated for game version: 0.12.12.10.16427",
+		"gameUpdate": "Updated for game version: 0.12.12.10.16440",
 		"color": "#FFD700",
 		"colorRed": "FF0000",
 
@@ -14,11 +14,12 @@
 	},
 
 	"general": {
-		"lastUpdatedMessage": "**Last updated -** 2022-01-08.",
+		"lastUpdatedMessage": "**Last updated -** 2022-01-10.",
 		"version": "1.3.1",
 		"latestUpdateMessage": "+ Rat God is now open source and has a brand new website! The links are listed in the command /Help.\n\n+ Updated, edited and corrected everything for patch 12.12.\n+ Added Lighthouse map command.\n~ Updated all ammo.\n\n+ New Rat God profile picture.\n\n~ Corrected punctuation.",
 		"prefix": "/",
 		"prefixMessage": "My prefix is   **/**",
+		"developerGuildID": "861948446910578699",
 		"developers": [
 			"229212817448894464",
 			"379643682984296448"
@@ -143,7 +144,7 @@
 				"customs": "[A **very** useful Customs map](https://tarkov-tools.com/map/customs).",
 				"factory": "[A **very** useful Factory map](https://tarkov-tools.com/map/factory).",
 				"interchange": "[A **very** useful Interchange map](https://tarkov-tools.com/map/interchange).",
-				"lighthouse": "[A **very** useful Lighthouse map](https://tarkov-tools.com/map/lighthouse).",
+				"lighthouse": "[A **very** useful Lighthouse map](https://tarkov-tools.com/map/lighthouse-landscape).",
 				"reserve": "[A **very** useful Reserve map](https://tarkov-tools.com/map/reserve).",
 				"shoreline": "[A **very** useful Shoreline map](https://tarkov-tools.com/map/shoreline).",
 				"labs": "[A **very** useful Labs map](https://tarkov-tools.com/map/labs).",

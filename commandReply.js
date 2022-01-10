@@ -4,8 +4,8 @@ module.exports = {
 	// Function for replying to interactions
 	interactionReply: function (interaction, messageContent) {
 		// This is for inducing an interaction failure
-		// const delay = ms => new Promise(resolve => setTimeout(resolve, ms))
-		// await delay(4000)
+		/* const delay = ms => new Promise(resolve => setTimeout(resolve, ms))
+		await delay(4000) */
 
 		interaction.reply(messageContent)
 			.catch(() => {
