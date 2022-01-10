@@ -43,10 +43,11 @@ This project is constantly being worked and improved upon by a few number of peo
 - Rat God uses **Slash commands** - Prefix: `/`.
 - Auto-complete choices, so you don't have to remember any by heart!
 - To get a list of **all** commands, execute `/Commands`.
-- For extra help or questions, execute`/Support` or click [here](https://discord.com/invite/kg7VfRQ9Xw) to head over to the Discord support server.
+- For extra help or questions, execute `/Support` or click [here](https://discord.com/invite/kg7VfRQ9Xw) to head over to the Discord support server.
 
 Commands for all calibers:\
-Example command: `/ammo 20x70mm`.
+Example command: `/ammo 20x70mm`.\
+The raw command for copy-pasting: `/ammo caliber:20x70mm`.
 
 ```txt
 12x70mm
@@ -75,7 +76,7 @@ Stationary Weapons
 
 Commands for all maps:\
 Example command: `/maps woods map`.\
-The raw command for copy-pasting: `/maps woods map:Map`\
+The raw command for copy-pasting: `/maps woods map:Map`.\
 Note: All maps have an Info command as well.
 
 ```txt
