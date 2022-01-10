@@ -13,8 +13,7 @@ module.exports = {
 					.catch(() => {
 						interaction.user.send(messageContent)
 						interaction.user.send(`Interaction failed **and** ${general.sendMessageError}`)
-							.catch(error => console.log(`InteractionReply catch! > ${error}`)
-							)
+							.catch(error => console.log(`InteractionReply catch! > ${error}`))
 					})
 			})
 	},
@@ -24,8 +23,7 @@ module.exports = {
 			.catch(() => {
 				message.author.send(messageContent)
 				message.author.send(general.sendMessageError)
-					.catch(error => console.log(`MessageReply catch! > ${error}`)
-					)
+					.catch(error => console.log(`MessageReply catch! > ${error}`))
 			})
 	}
 }
