@@ -30,7 +30,7 @@
 		"helpCommandSubtext": "`Latest` - Shows latest updates.\n\n[Website](https://rat-god-website.herokuapp.com/).\n[Instructional Video](https://youtu.be/xQwQqnkmScg).\n[Github](https://github.com/Froggi22/Rat-God).",
 		"supportInviteLink": "https://discord.com/invite/kg7VfRQ9Xw",
 		"modAbuseImage": "https://cdn.discordapp.com/attachments/865617643449221141/867828829489594429/Mod_abuse.png",
-		"sendMessageError": "I may not have have permission to send messages in that channel!",
+		"sendMessageError": "I may not have have permission to send messages in that channel!\nIf this error still persists, please contact Froggi22#3436 or join the Support Server; https://discord.com/invite/kg7VfRQ9Xw",
 		"descriptionRatGod": "Rat God will help you in Escape From Tarkov, by accessing in-game information and delivering it to you!",
 		"permissionsRatGod": "Rat God's minimum permissions requirements are:\nUse Application Commands.\nSend Messages.\nEmbed Links.",
 		"cooldown": 3000
