@@ -14,7 +14,7 @@
 	},
 
 	"general": {
-		"lastUpdatedMessage": "**Last updated -** 2022-01-10.",
+		"lastUpdatedMessage": "**Last updated -** 2022-01-11.",
 		"version": "1.3.1",
 		"latestUpdateMessage": "+ Rat God is now open source and has a brand new website! The links are listed in the command /Help.\n\n+ Updated, edited and corrected everything for patch 12.12.\n+ Added Lighthouse map command.\n~ Updated all ammo.\n\n+ New Rat God profile picture.\n\n~ Corrected punctuation.",
 		"prefix": "/",
@@ -177,7 +177,7 @@
 					},
 					{
 						"name": "Features",
-						"value": "**The Dorms** are two buildings located in the **southernmost** area of the map. The eastern building is three stories tall while the western building is two stories tall. Each structure boasts a front entrance and a fire escape at each end with doorways leading to each floor (some of which are blocked or permanently locked). These dorms are the location of many Quests and unlockable rooms.\n\n**Construction** is a two story concrete frame of a building. This structure had a wide view of the river crossing and bridge.\n\n**New Gas Station** is a building at the western side of the map, near the main road. The building has two unlockable rooms in it, and a view on the shortcut.\n\n**Military Checkpoint** is at the end of the road past the Gas Station. This point has many Scavs and is the only location with easy access through the wall to the extraction zones.\n\n**ZB-1013 or Stronghold** is at the northern end of the map and features a unlockable extract; loot; and views of crackhouse, construction and the train crossing."
+						"value": "**The Dorms** are two buildings located in the southernmost area of the map. The eastern building is three stories tall while the western building is two stories tall. Each structure boasts a front entrance and a fire escape at each end with doorways leading to each floor (some of which are blocked or permanently locked). These dorms are the location of many Quests and unlockable rooms.\n\n**Construction** is a two story concrete frame of a building. This structure had a wide view of the river crossing and bridge.\n\n**New Gas Station** is a building at the western side of the map, near the main road. The building has two unlockable rooms in it.\n\n**Military Checkpoint** is at the end of the road past the Gas Station. This point has many Scavs and is the only location with easy access through the wall to the extraction zones.\n\n**ZB-1013 or Stronghold** is at the northern end of the map and features a unlockable extract; loot; and views of crackhouse, construction and the train crossing."
 					},
 					{
 						"name": "Boss",
