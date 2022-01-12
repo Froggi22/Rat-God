@@ -16,7 +16,7 @@
 	"general": {
 		"lastUpdatedMessage": "**Last updated -** 2022-01-12.",
 		"version": "1.3.1",
-		"latestUpdateMessage": "+ Rat God is now open source and has a brand new website! The links are listed in the command /Help.\n\n+ Updated, edited and corrected everything for patch 12.12.\n+ Added Lighthouse map command.\n~ Updated all ammo.\n\n+ New Rat God profile picture.\n\n~ Corrected punctuation.",
+		"latestUpdateMessage": "+ Bot is verified and surpassed 100 servers!\n\n+ Rat God is now open source and has a brand new website! The links are listed in the command /Help.\n\n+ Updated, edited and corrected everything for patch 12.12.\n+ Added Lighthouse map command.\n~ Updated all ammo.\n\n+ New Rat God profile picture.\n\n~ Corrected punctuation.",
 		"prefix": "/",
 		"prefixMessage": "My prefix is   **/**",
 		"developerGuildID": "861948446910578699",
@@ -32,7 +32,7 @@
 		"modAbuseImage": "https://cdn.discordapp.com/attachments/865617643449221141/867828829489594429/Mod_abuse.png",
 		"sendMessageError": "I may not have have permission to send messages in that channel!\nIf this error still persists, please contact Froggi22#3436 or join the Support Server; https://discord.com/invite/kg7VfRQ9Xw",
 		"descriptionRatGod": "Rat God will help you in Escape From Tarkov, by accessing in-game information and delivering it to you!",
-		"permissionsRatGod": "Rat God's minimum permissions requirements are:\nUse Application Commands.\nSend Messages.\nEmbed Links.",
+		"permissionsRatGod": "Rat God's minimum permissions requirements are:\nUse Application Commands.\nSend Messages.\nEmbed Links.\nAttach Files.\nRead message history.",
 		"cooldown": 3000
 	},
 
