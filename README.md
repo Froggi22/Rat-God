@@ -7,7 +7,7 @@
 </p>
 <p align="center">
 	<a href="LICENSE"><img src="https://badgen.net/badge/License/GPL%20v3/blue" alt="License GPL v3" /></a>
-	<a href="https://discord.com/invite/kg7VfRQ9Xw"><img src="https://badgen.net/discord/online-members/kg7VfRQ9Xw?icon=discord&label" alt="Discord" /></a>
+	<a href="https://discord.com/invite/kg7VfRQ9Xw"><img src="https://badgen.net/discord/online-members/kg7VfRQ9Xw?icon=discord&label" alt="Discord Server" /></a>
 </p>
 
 - - -
