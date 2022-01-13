@@ -126,7 +126,7 @@
 			"Map": "Detailed Map",
 			"Interactive Map": "Interactive Map",
 			"Hidden Stashes": "Hidden Stashes",
-			"3D Map": "3D Customs Map",
+			"3D Map": "3D Map",
 			"Dorms Map": "Customs Dorms Map",
 			"Key Spawns Map": "Key Spawns Map",
 			"Resort Map": "Resort Map",
@@ -152,7 +152,7 @@
 				"woods": "[A **very** useful Woods map](https://tarkov-tools.com/map/woods)."
 			},
 			"Hidden Stashes": "Locations of all hidden stashes:",
-			"3D Map": "A useful 3D Customs map:",
+			"3D Map": "A useful 3D map:",
 			"Dorms Map": "Dorms guide:",
 			"Key Spawns Map": "Key spawns map:",
 			"Resort Map": "Resort guide:",

@@ -83,7 +83,7 @@ Note: All maps have an Info command as well.
 Customs:        Normal Map | Hidden Stashes | Interactive Map | Dorms Map | 3D Map
 Factory:        Normal Map | Interactive Map
 Interchange:    Normal Map | Hidden Stashes | Interactive Map
-Lighthouse:     Normal Map | Hidden Stashes | Interactive Map
+Lighthouse:     Normal Map | Hidden Stashes | Interactive Map | 3D Map
 Reserve:        Normal Map | Interactive Map | Keys | D-2 Bunker Map
 Shoreline:      Normal Map | Hidden Stashes | Interactive Map | Key Spawns | Resort Map | 3D Map
 Labs:           Normal Map | Interactive Map | Basement Map | 1st Floor Map | 2nd Floor Map | 3D Map
@@ -95,11 +95,12 @@ Woods:          Normal Map | Hidden Stashes | Interactive Map
 ### Prerequisites
 
 - This code is distributed under the terms of the [GNU General Public License, v3](LICENSE). Read and understand it.
-- Installed [Node.js](https://nodejs.org/en/) version 16.6+.
+- Installed [Node.js](https://nodejs.org/en/) version 16.9.0 or newer.
 - Have a [Discord application](https://discord.com/developers/applications) ("Bot").
 - Using commit titles named using the [Calver](https://calver.org/) scheme YYYY.0M.0D.MICRO.
   - Example: `2021.12.07.0`.
   - Explanation: The first commit on the 7th of December 2021.
+- We use ESLint to enforce a consistent coding style.
 
 ### Setup
 
@@ -107,7 +108,7 @@ Woods:          Normal Map | Hidden Stashes | Interactive Map
 2. Navigate to the project folder: `cd Rat-God`.
 3. Create a new file called: `.env`.
 4. Edit said env file and write: `TOKEN=your-token-here`, but replace the "your-token-here" text with your API token, obtained from the [Discord Developer Portal](https://discord.com/developers/applications).
-5. Install dependencies: `npm i`.
+5. Install dependencies: `npm ci`.
 6. Execute the program: `node .`.
 
 ### Submit a Pull Request
