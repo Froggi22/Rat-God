@@ -14,7 +14,7 @@
 	},
 
 	"general": {
-		"lastUpdatedMessage": "**Last updated -** 2022-01-12.",
+		"lastUpdatedMessage": "**Last updated -** 2022-01-13.",
 		"version": "1.3.1",
 		"latestUpdateMessage": "+ Bot is verified and surpassed 100 servers!\n\n+ Rat God is now open source and has a brand new website! The links are listed in the command /Help.\n\n+ Updated, edited and corrected everything for patch 12.12.\n+ Added Lighthouse map command.\n~ Updated all ammo.\n\n+ New Rat God profile picture.\n\n~ Corrected punctuation.",
 		"prefix": "/",
@@ -85,7 +85,8 @@
 			"Info",
 			"Map",
 			"Hidden Stashes",
-			"Interactive Map"
+			"Interactive Map",
+			"3D Map"
 		],
 		"reserve": [
 			"Info",
@@ -348,7 +349,7 @@
 				"null": [
 					{
 						"name": "Type \"/Maps Lighthouse Info\" to get detailed info about the area.",
-						"value": "Detailed map: **/Maps Lighthouse Map**.\nGuide for hidden stashes: **/Maps Lighthouse Hidden Stashes**.\nInteractive map: **/Maps Lighthouse Interactive Map**."
+						"value": "Detailed map: **/Maps Lighthouse Map**.\nGuide for hidden stashes: **/Maps Lighthouse Hidden Stashes**.\nInteractive map: **/Maps Lighthouse Interactive Map**.\n3D map: **/Maps Lighthouse 3D**."
 					}
 				],
 				"Info": [
@@ -385,6 +386,12 @@
 					{
 						"name": "Type \"/Maps Lighthouse Info\" to get detailed info about the area.",
 						"value": "*psst, click the link (blue text) to go to the interactive map!*"
+					}
+				],
+				"3D Map": [
+					{
+						"name": "Type \"/Maps Lighthouse Info\" to get detailed info about the area.",
+						"value": "Use the middle mouse button to view the image in fullscreen."
 					}
 				]
 			},
@@ -671,7 +678,8 @@
 				"null": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/dc/Banner_lighthouse.png/revision/latest?cb=20211213001748",
 				"Info": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d6/Lighthouse_concept_%282%29.jpg/revision/latest?cb=20211102173810",
 				"Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/13/Jindouz_Lighthouse_Map_V1.png/revision/latest?cb=20211218192352",
-				"Hidden Stashes": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/05/Hokkaido_Lighthouse_Stashes_Map.jpeg/revision/latest?cb=20211219225541"
+				"Hidden Stashes": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/05/Hokkaido_Lighthouse_Stashes_Map.jpeg/revision/latest?cb=20211219225541",
+				"3D Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e2/Re3mrLighthouseIsometricDay-min.png/revision/latest?cb=20220112220933"
 			},
 			"reserve": {
 				"null": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/b/b6/Reserve_top_view.jpg/revision/latest?cb=20190723174600",
