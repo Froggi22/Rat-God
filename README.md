@@ -98,8 +98,8 @@ Woods:          Normal Map | Hidden Stashes | Interactive Map
 - Installed [Node.js](https://nodejs.org/en/) version 16.9.0 or newer.
 - Have a [Discord application](https://discord.com/developers/applications) ("Bot").
 - Using commit titles named using the [Calver](https://calver.org/) scheme YYYY.0M.0D.MICRO.
-  - Example: `2021.12.07.0`.
-  - Explanation: The first commit on the 7th of December 2021.
+	- Example: `2021.12.07.0`.
+	- Explanation: The first commit on the 7th of December 2021.
 - We use ESLint to enforce a consistent coding style.
 
 ### Setup

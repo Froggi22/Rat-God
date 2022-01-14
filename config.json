@@ -14,7 +14,7 @@
 	},
 
 	"general": {
-		"lastUpdatedMessage": "**Last updated -** 2022-01-13.",
+		"lastUpdatedMessage": "**Last updated -** 2022-01-14.",
 		"version": "1.3.1",
 		"latestUpdateMessage": "+ Bot is verified and surpassed 100 servers!\n\n+ Rat God is now open source and has a brand new website! The links are listed in the command /Help.\n\n+ Updated, edited and corrected everything for patch 12.12.\n+ Added Lighthouse map command.\n~ Updated all ammo.\n\n+ New Rat God profile picture.\n\n~ Corrected punctuation.",
 		"prefix": "/",
@@ -25,7 +25,6 @@
 			"379643682984296448"
 		],
 		"froggiDiscordTag": "Froggi22#3436",
-
 		"helpCommands": "`Ammo` - Shows all ammo commands. \n`Maps` - Shows all maps commands.\n\n`Ping` - Pings the bot.\n`Modabuse` - For those complaining about mod abuse.\n`Servercount` - How many servers the bot is invited to.\n`Support` - Sends support link.",
 		"helpCommandSubtext": "`Latest` - Shows latest updates.\n\n[Website](https://rat-god-website.herokuapp.com/).\n[Instructional Video](https://youtu.be/xQwQqnkmScg).\n[Github](https://github.com/Froggi22/Rat-God).",
 		"supportInviteLink": "https://discord.com/invite/kg7VfRQ9Xw",
@@ -124,8 +123,8 @@
 			"null": "Maps Command",
 			"Info": "Detailed Information",
 			"Map": "Detailed Map",
-			"Interactive Map": "Interactive Map",
 			"Hidden Stashes": "Hidden Stashes",
+			"Interactive Map": "Interactive Map",
 			"3D Map": "3D Map",
 			"Dorms Map": "Customs Dorms Map",
 			"Key Spawns Map": "Key Spawns Map",
@@ -141,6 +140,7 @@
 			"null": "The different types of maps:",
 			"Info": "Useful info:",
 			"Map": "A useful map:",
+			"Hidden Stashes": "Locations of all hidden stashes:",
 			"Interactive Map": {
 				"customs": "[A **very** useful Customs map](https://tarkov-tools.com/map/customs).",
 				"factory": "[A **very** useful Factory map](https://tarkov-tools.com/map/factory).",
@@ -151,7 +151,6 @@
 				"labs": "[A **very** useful Labs map](https://tarkov-tools.com/map/labs).",
 				"woods": "[A **very** useful Woods map](https://tarkov-tools.com/map/woods)."
 			},
-			"Hidden Stashes": "Locations of all hidden stashes:",
 			"3D Map": "A useful 3D map:",
 			"Dorms Map": "Dorms guide:",
 			"Key Spawns Map": "Key spawns map:",
