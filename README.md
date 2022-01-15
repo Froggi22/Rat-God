@@ -111,6 +111,10 @@ Woods:          Normal Map | Hidden Stashes | Interactive Map
 5. Install dependencies: `npm ci`.
 6. Execute the program: `node .`.
 
+#### Slash commands
+
+For slash commands to work, edit the [config.json](config.json) file and change `developerGuildID` & `developers` to your [server and user ID](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-) respectively.
+
 ### Submit a Pull Request
 
 1. Fork this repository (should be on the top right of this page).

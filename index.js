@@ -28,7 +28,7 @@ readdirSync("./events").forEach(file => {
 readdirSync("./commands").forEach(folder => {
 	readdirSync(`./commands/${folder}`).forEach(file => {
 		const command = require(`./commands/${folder}/${file}`)
-		command.name = file.replace(/.(j|t)s/, "")
+		command.name = file.replace(/\.(j|t)s/, "")
 		if (command.description && command.run) client.commands.set(command.name, command)
 		if (!command.description) console.log(`[./commands/${folder}/${file}] You forgot description!`)
 		if (!command.run && folder !== "Keys") console.log(`[./commands/${folder}/${file}] You forgot run!`)
