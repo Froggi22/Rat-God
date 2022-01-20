@@ -32,6 +32,7 @@ This project is constantly being worked and improved upon by a few number of peo
 - [Support Discord Server](https://discord.com/invite/kg7VfRQ9Xw) *<-- Highly recommend to join!*
 - [Website](https://rat-god-website.herokuapp.com/)
 - [Website's repository](https://github.com/Froggi22/Rat-God-Website)
+- Vote on [Top.gg](https://top.gg/bot/864572952275714059/vote)
 
 ## How to use
 
@@ -42,8 +43,8 @@ This project is constantly being worked and improved upon by a few number of peo
 
 - Rat God uses **Slash commands** - Prefix: `/`.
 - Auto-complete choices, so you don't have to remember any by heart!
-- To get a list of **all** commands, execute `/Commands`.
-- For extra help or questions, execute `/Support` or click [here](https://discord.com/invite/kg7VfRQ9Xw) to head over to the Discord support server.
+- To get a list of **all** commands, execute `/commands`.
+- For extra help or questions, execute `/support` or click [here](https://discord.com/invite/kg7VfRQ9Xw) to head over to the Discord support server.
 
 Commands for all calibers:\
 Example command: `/ammo 20x70mm`.\
