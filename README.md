@@ -98,9 +98,6 @@ Woods:          Normal Map | Hidden Stashes | Interactive Map
 - This code is distributed under the terms of the [GNU General Public License, v3](LICENSE). Read and understand it.
 - Installed [Node.js](https://nodejs.org/en/) version 16.9.0 or newer.
 - Have a [Discord application](https://discord.com/developers/applications) ("Bot").
-- Using commit titles named using the [Calver](https://calver.org/) scheme YYYY.0M.0D.MICRO.
-	- Example: `2021.12.07.0`.
-	- Explanation: The first commit on the 7th of December 2021.
 - We use ESLint to enforce a consistent coding style.
 
 ### Setup
@@ -126,7 +123,7 @@ For slash commands to work, edit the [config.json](config.json) file and change 
 
 ```txt
 git add <changed-files...>
-git commit -m "YYYY.0M.0D.MICRO" -m "Description of changes"
+git commit -m "Cool new feature" -m "Description of changes"
 git push origin <awesome-new-feature-name>
 ```
 
