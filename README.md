@@ -36,7 +36,7 @@ This project is constantly being worked and improved upon by a few number of peo
 
 ## How to use
 
-1. Click [here](https://discord.com/api/oauth2/authorize?client_id=864572952275714059&permissions=2147600448&scope=bot%20applications.commands) to add me to your server!
+1. Click [here](https://discord.com/api/oauth2/authorize?client_id=864572952275714059&permissions=274878023744&scope=bot%20applications.commands) to add me to your server!
 2. Use the commands provided [here](#features).
 
 ## Features
@@ -90,6 +90,15 @@ Shoreline:      Normal Map | Hidden Stashes | Interactive Map | Key Spawns | Res
 Labs:           Normal Map | Interactive Map | Basement Map | 1st Floor Map | 2nd Floor Map | 3D Map
 Woods:          Normal Map | Hidden Stashes | Interactive Map
 ```
+
+## Permissions
+Rat God requests a few permissions. Some are these are required for the bot to be able to function as intended. Here are the permissions requested by the bot with an explanation of what the use-case is:
+- Send Messages (Replying to a mention with its prefix)
+- Send Messages in Threads (Replying to a mention with its prefix, but in threads this time)
+- Embed Links (Sending embeds & embedding links to images)
+- Attach Files (Unsure if required, will update soon)
+- Read Message History (Unsure if required, will update soon)
+- Add Reactions (Not required. For future expansion)
 
 ## Contributing
 
