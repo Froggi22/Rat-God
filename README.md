@@ -29,6 +29,7 @@ This project is constantly being worked and improved upon by a few number of peo
 
 ## Links
 
+- [Invite Bot](https://discord.com/api/oauth2/authorize?client_id=864572952275714059&permissions=274877958208&scope=bot%20applications.commands)
 - [Support Discord Server](https://discord.com/invite/kg7VfRQ9Xw) *<-- Highly recommend to join!*
 - [Website](https://rat-god-website.herokuapp.com/)
 - [Website's repository](https://github.com/Froggi22/Rat-God-Website)
@@ -36,7 +37,7 @@ This project is constantly being worked and improved upon by a few number of peo
 
 ## How to use
 
-1. Click [here](https://discord.com/api/oauth2/authorize?client_id=864572952275714059&permissions=274878023744&scope=bot%20applications.commands) to add me to your server!
+1. Click [here](https://discord.com/api/oauth2/authorize?client_id=864572952275714059&permissions=274877958208&scope=bot%20applications.commands) to add me to your server!
 2. Use the commands provided [here](#features).
 
 ## Features
@@ -92,12 +93,11 @@ Woods:          Normal Map | Hidden Stashes | Interactive Map
 ```
 
 ## Permissions
-Rat God requests a few permissions. Some are these are required for the bot to be able to function as intended. Here are the permissions requested by the bot with an explanation of what the use-case is:
-- Send Messages (Replying to a mention with its prefix)
-- Send Messages in Threads (Replying to a mention with its prefix, but in threads this time)
-- Embed Links (Sending embeds & embedding links to images)
-- Attach Files (Unsure if required, will update soon)
-- Read Message History (Unsure if required, will update soon)
+Rat God requests a few permissions. Some are these are required for the bot to be able to function as intended. Here are the permissions requested by the bot with an explanation of what the use-cases are:
+- Send Messages (Replying to mentions & Interaction fallbacks)
+- Send Messages in Threads (Replying to mentions & Interaction fallbacks, but in threads this time)
+- Embed Links (Not required. For future expansion)
+- Attach Files (Not required. For future expansion)
 - Add Reactions (Not required. For future expansion)
 
 ## Contributing
