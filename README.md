@@ -19,7 +19,14 @@
 - [How to use](#how-to-use)
 - [Features](#features)
 - [Contributing](#contributing)
+	- [Prerequisites](#prerequisites)
+	- [Submit a Pull Request](#submit-a-pull-request)
+	- [Slash commands](#slash-commands)
 - [Folder & File Information](#folder--file-information)
+	- [Folders](#folders)
+	- [Files](#files)
+
+- - -
 
 ## About
 
@@ -109,42 +116,29 @@ Rat God requests a few permissions. Some are these are required for the bot to b
 - Have a [Discord application](https://discord.com/developers/applications) ("Bot").
 - We use ESLint to enforce a consistent coding style.
 
-### Setup
-
-1. Clone me where you keep your Github projects: `git clone https://github.com/Froggi22/Rat-God.git`.
-2. Navigate to the project folder: `cd Rat-God`.
-3. Create a new file called: `.env`.
-4. Edit said env file and write: `TOKEN=your-token-here`, but replace the "your-token-here" text with your API token, obtained from the [Discord Developer Portal](https://discord.com/developers/applications).
-5. Install dependencies: `npm ci`.
-6. Execute the program: `node .`.
-
-#### Slash commands
-
-For slash commands to work, edit the [config.json](config.json) file and change `developerGuildID` & `developers` to your [server and user ID](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-) respectively.
-
 ### Submit a Pull Request
 
 1. Fork this repository (should be on the top right of this page).
 2. Clone the fork to your desired local Github projects folder.
-3. Code your cool new feature!
-4. [Run](#setup) and test your cool new feature.
-5. Stage, commit, and push your files:
+3. Create a new file called: `.env`.
+4. Edit said env file and write: `TOKEN=your-token-here`, but replace the "your-token-here" text with your API token, obtained from the [Discord Developer Portal](https://discord.com/developers/applications).
+5. Install dependencies: `npm ci`.
+6. Code your cool new feature!
+7. Test out the program: `node .`.
+8. Stage, commit, and push your files to your fork.
+9. Create a new pull request.
 
-```txt
-git add <changed-files...>
-git commit -m "Cool new feature" -m "Description of changes"
-git push origin <awesome-new-feature-name>
-```
+#### Slash commands
 
-6. `git` will output a link to help you create a new pull request from there.
+For slash commands to work during testing, edit the [config.json](config.json) file and change `developerGuildID` & `developers` to your [server and user ID](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-) respectively.
 
 ## Folder & File Information
 
-### What's in each folder?
+### Folders
 
 - `.vscode/` - Visual Studio Code settings.
 
-### What are these files?
+### Files
 
 - `.eslintrc` - Settings for linting extensions.
 - `.gitignore` - Used for ignoring files from Git.
