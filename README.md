@@ -93,7 +93,7 @@ Customs:        Normal Map | Hidden Stashes | Interactive Map | Dorms Map | 3D M
 Factory:        Normal Map | Interactive Map
 Interchange:    Normal Map | Hidden Stashes | Interactive Map
 Lighthouse:     Normal Map | Hidden Stashes | Interactive Map | 3D Map
-Reserve:        Normal Map | Interactive Map | Keys | D-2 Bunker Map
+Reserve:        Normal Map | Interactive Map | Keys | D-2 Bunker Map | 3D Map
 Shoreline:      Normal Map | Hidden Stashes | Interactive Map | Key Spawns | Resort Map | 3D Map
 Labs:           Normal Map | Interactive Map | Basement Map | 1st Floor Map | 2nd Floor Map | 3D Map
 Woods:          Normal Map | Hidden Stashes | Interactive Map
