@@ -13,7 +13,7 @@
 	},
 
 	"general": {
-		"lastUpdatedMessage": "**Last updated -** 2022-01-29.",
+		"lastUpdatedMessage": "**Last updated -** 2022-01-30.",
 		"developerGuildID": "861948446910578699",
 		"developers": [
 			"229212817448894464",
@@ -92,7 +92,8 @@
 			"Map",
 			"Interactive Map",
 			"Key Map",
-			"D-2 Bunker Map"
+			"D-2 Bunker Map",
+			"3D Map"
 		],
 		"shoreline": [
 			"Info",
@@ -455,6 +456,12 @@
 						"name": "Type \"/Maps Reserve Info\" to get detailed info about the area.",
 						"value": "Use the middle mouse button to view the image in fullscreen."
 					}
+				],
+				"3D Map": [
+					{
+						"name": "Type \"/Maps Reserve Info\" to get detailed info about the area.",
+						"value": "Use the middle mouse button to view the image in fullscreen."
+					}
 				]
 			},
 
@@ -685,7 +692,8 @@
 				"Info": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/62/Gluhar_Spawn_Locations.png/revision/latest?cb=20191226213630",
 				"Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/42/3D_Map_by_loweffortsaltbox.png/revision/latest?cb=20200410160036",
 				"Key Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/9f/Keys_and_doors_v3.png/revision/latest?cb=20201023113645",
-				"D-2 Bunker Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d0/ReserveExpandedUnderground.png/revision/latest?cb=20201004224828"
+				"D-2 Bunker Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d0/ReserveExpandedUnderground.png/revision/latest?cb=20201004224828",
+				"3D Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/38/Re3mrReserveCardinalNorthWikiVer.jpg/revision/latest?cb=20220127204615"
 			},
 			"shoreline": {
 				"null": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d5/Banner_shoreline.png/revision/latest?cb=20171101223501",
