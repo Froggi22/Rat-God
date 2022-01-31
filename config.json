@@ -1,6 +1,6 @@
 {
 	"embedDesign": {
-		"gameUpdate": "Updated for game version: 0.12.12.10.16440",
+		"gameUpdate": "Updated for game version: 0.12.12.15.16584",
 		"ratGodImage": "https://cdn.discordapp.com/attachments/865617643449221141/920345495568777316/RG_Profile.png",
 
 		"wikiMaps": "https://escapefromtarkov.fandom.com/wiki/Map_of_Tarkov",
@@ -13,7 +13,7 @@
 	},
 
 	"general": {
-		"lastUpdatedMessage": "**Last updated -** 2022-01-30.",
+		"lastUpdatedMessage": "**Last updated -** 2022-01-31.",
 		"developerGuildID": "861948446910578699",
 		"developers": [
 			"229212817448894464",
