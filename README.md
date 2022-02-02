@@ -30,7 +30,7 @@
 
 ## About
 
-Rat God is an open source Discord bot that will help you in the game Escape From Tarkov! It obtains information from the Official Escape from Tarkov Wiki, and delivering it to the user with a slash command request. This bot benefits the user due to it being a fast lookup for ammunition and maps details, and most likely faster than looking it up on said Wiki!
+Rat God is an Open Source Discord bot project that will help you in the game Escape From Tarkov, and is covered by the [GNU General Public License version 2](LICENSE)! It obtains information from the Official Escape from Tarkov Wiki, and delivering it to the user with a slash command request. This bot benefits the user due to it being a fast lookup for ammunition and maps details, and most likely faster than looking it up on said Wiki!
 
 This project is constantly being worked and improved upon by a few number of people as a hobby. So please show your support in the Discord Support Server!
 
@@ -111,7 +111,6 @@ Rat God requests a few permissions. Some are these are required for the bot to b
 
 ### Prerequisites
 
-- Rat God is an Open Source project covered by the [GNU General Public License version 2](LICENSE).
 - Installed [Node.js](https://nodejs.org/en/) version 16.9.0 or newer.
 - Have a [Discord application](https://discord.com/developers/applications) ("Bot").
 - We use ESLint to enforce a consistent coding style.
