@@ -111,7 +111,7 @@ Rat God requests a few permissions. Some are these are required for the bot to b
 
 ### Prerequisites
 
-- This code is distributed under the terms of the [GNU General Public License, v3](LICENSE). Read and understand it.
+- Rat God is an Open Source project covered by the [GNU General Public License version 2](LICENSE).
 - Installed [Node.js](https://nodejs.org/en/) version 16.9.0 or newer.
 - Have a [Discord application](https://discord.com/developers/applications) ("Bot").
 - We use ESLint to enforce a consistent coding style.
