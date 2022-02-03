@@ -23,8 +23,8 @@
 	- [Submit a Pull Request](#submit-a-pull-request)
 	- [Slash commands](#slash-commands)
 - [Folder & File Information](#folder--file-information)
-	- [Folders](#folders)
-	- [Files](#files)
+	- [Folder Info](#folder-info)
+	- [File Info](#file-info)
 
 - - -
 
@@ -133,11 +133,11 @@ For slash commands to work during testing, edit the [config.json](config.json) f
 
 ## Folder & File Information
 
-### Folders
+### Folder Info
 
 - `.vscode/` - Visual Studio Code settings.
 
-### Files
+### File Info
 
 - `.eslintrc` - Settings for linting extensions.
 - `.gitignore` - Used for ignoring files from Git.
