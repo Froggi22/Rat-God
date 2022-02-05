@@ -7,7 +7,7 @@ module.exports = {
 	run (interaction) {
 		commandReply.interactionReply(interaction, {
 			embeds: [new MessageEmbed()
-				.setColor(embedDesign.color)
+				.setColor(embedDesign.defaultColor)
 				.setAuthor({ name: "Support", url: general.supportInviteLink, iconURL: embedDesign.ratGodImage })
 				.setThumbnail(embedDesign.ratGodImage)
 				.setDescription("Contact information for support;")

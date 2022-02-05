@@ -7,7 +7,7 @@ module.exports = {
 	run (interaction) {
 		commandReply.interactionReply(interaction, {
 			embeds: [new MessageEmbed()
-				.setColor(embedDesign.color)
+				.setColor(embedDesign.defaultColor)
 				.setImage(general.modAbuseImage)
 				.setTimestamp()
 			]

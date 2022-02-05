@@ -11,7 +11,7 @@ module.exports = {
 		const startTime = new Date()
 		await interaction.reply({ embeds: [embed], fetchReply: true }).catch() // Reply with first embed but wait for an edit
 		embed // Second embed
-			.setColor(embedDesign.color)
+			.setColor(embedDesign.defaultColor)
 			.setAuthor({ name: `🏓 Pong!\nThe heartbeat ping is ${Math.round(client.ws.ping)}ms.\nThe message round-trip took ${new Date() - startTime}ms.` })
 			.setTimestamp()
 		interaction.editReply({ embeds: [embed] }).catch() // Edit the message with new info

@@ -7,7 +7,7 @@ module.exports = {
 	run (interaction, client) {
 		commandReply.interactionReply(interaction, {
 			embeds: [new MessageEmbed()
-				.setColor(embedDesign.color)
+				.setColor(embedDesign.defaultColor)
 				.addFields(
 					{ name: "Servers", value: `${client.guilds.cache.size}`, inline: true },
 					{ name: "Channels", value: `${client.channels.cache.size}`, inline: true },

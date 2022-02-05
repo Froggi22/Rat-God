@@ -15,7 +15,7 @@ module.exports = {
 		const caliber = interaction.options.getString("caliber")
 		commandReply.interactionReply(interaction, {
 			embeds: [new MessageEmbed()
-				.setColor(embedDesign.color)
+				.setColor(embedDesign.defaultColor)
 				.setAuthor({ name: `${caliber} ${embedDesign.ammoTitle}`, url: embedDesign.wikiBallistics, iconURL: embedDesign.ratGodImage })
 				.setDescription(`${embedDesign.ammoDescription}`)
 				.setImage(ammo[caliber])

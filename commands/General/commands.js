@@ -7,7 +7,7 @@ module.exports = {
 	async run (interaction) {
 		commandReply.interactionReply(interaction, {
 			embeds: [new MessageEmbed()
-				.setColor(embedDesign.color)
+				.setColor(embedDesign.defaultColor)
 				.setAuthor({ name: "A Complete List Of Commands For Rat God", url: embedDesign.wikiMain, iconURL: embedDesign.ratGodImage })
 				.setDescription("A list of all functioning commands for Rat God:")
 				.addFields(
@@ -23,7 +23,7 @@ module.exports = {
 					},
 					{
 						name: "\u200b",
-						value: "`Reserve`\n`Reserve Info`\n`Reserve Map`\n`Reserve IM`\n`Reserve Key Guide`\n`Reserve D-2 Bunker`\n\n`Shoreline`\n`Shoreline Info`\n`Shoreline Map`\n`Shoreline HS`\n`Shoreline IM`\n`Shoreline Key Spawns`\n`Shoreline Resort`\n`Shoreline 3D`\n\n`Labs`\n`Labs Info`\n`Labs Map`\n`Labs IM`\n`Labs Basement`\n`Labs 1st Floor`\n`Labs 2nd Floor`\n\n`Woods`\n`Woods Info`\n`Woods Map`\n`Woods HS`\n`Woods IM`",
+						value: "`Reserve`\n`Reserve Info`\n`Reserve Map`\n`Reserve IM`\n`Reserve Key Guide`\n`Reserve D-2 Bunker`\n`Reserve 3D`\n\n`Shoreline`\n`Shoreline Info`\n`Shoreline Map`\n`Shoreline HS`\n`Shoreline IM`\n`Shoreline Key Spawns`\n`Shoreline Resort`\n`Shoreline 3D`\n\n`Labs`\n`Labs Info`\n`Labs Map`\n`Labs IM`\n`Labs Basement`\n`Labs 1st Floor`\n`Labs 2nd Floor`\n\n`Woods`\n`Woods Info`\n`Woods Map`\n`Woods HS`\n`Woods IM`",
 						inline: true
 					},
 

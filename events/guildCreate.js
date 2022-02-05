@@ -6,7 +6,7 @@ module.exports = {
 		client.user.setPresence({ activities: [{ type: "LISTENING", name: `/Help | In ${client.guilds.cache.size} Servers` }] })
 
 		const embed = new MessageEmbed()
-			.setColor(embedDesign.color)
+			.setColor(embedDesign.defaultColor)
 			.setThumbnail(embedDesign.ratGodImage)
 			.setTitle("Thank you for inviting Rat God!")
 			.setDescription(general.descriptionRatGod)

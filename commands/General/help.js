@@ -7,7 +7,7 @@ module.exports = {
 	run (interaction) {
 		commandReply.interactionReply(interaction, {
 			embeds: [new MessageEmbed()
-				.setColor(embedDesign.color)
+				.setColor(embedDesign.defaultColor)
 				.setAuthor({ name: "Rat Gods Commands", url: embedDesign.wikiMain, iconURL: embedDesign.ratGodImage })
 				.setDescription(`Leave suggestions to ${general.froggiDiscordTag}.`)
 				.addFields(

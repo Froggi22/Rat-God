@@ -117,7 +117,7 @@ module.exports = {
 
 		return commandReply.interactionReply(interaction, {
 			embeds: [new MessageEmbed()
-				.setColor(embedDesign.color)
+				.setColor(embedDesign.defaultColor)
 				.setAuthor({ name: "Escape From Tarkov Maps Wiki", url: embedDesign.wikiMaps, iconURL: embedDesign.ratGodImage })
 				.setTitle(`${locationCap} ${maps.titles[map]}`)
 				.setDescription(maps.descriptions[map][location] || maps.descriptions[map])

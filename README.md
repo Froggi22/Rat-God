@@ -1,4 +1,4 @@
-<h1 align="center"><img src="assets/RG.png" alt="Rat God" width="150" /></h1>
+<h1 align="center"><img src="assets/RG.png" alt="Rat God" width="150" title="Rat God" /></h1>
 
 <h1 align="center">Rat God</h1>
 
@@ -6,8 +6,8 @@
 	A Discord bot to help you in Escape From Tarkov!
 </p>
 <p align="center">
-	<a href="LICENSE"><img src="https://badgen.net/badge/License/GPL%20v3/blue" alt="License GPL v3" /></a>
-	<a href="https://discord.com/invite/kg7VfRQ9Xw"><img src="https://badgen.net/discord/online-members/kg7VfRQ9Xw?icon=discord&label" alt="Discord Server" /></a>
+	<a href="LICENSE"><img src="https://badgen.net/badge/License/GPLv2/blue" alt="License GPLv2" title="License GPLv2" /></a>
+	<a href="https://discord.com/invite/kg7VfRQ9Xw"><img src="https://badgen.net/discord/online-members/kg7VfRQ9Xw?icon=discord&label" alt="Discord Server" title="Join our Discord community!" /></a>
 </p>
 
 - - -
@@ -44,8 +44,8 @@ This project is constantly being worked and improved upon by a few number of peo
 
 ## How to use
 
-1. Click [here](https://discord.com/api/oauth2/authorize?client_id=864572952275714059&permissions=274877958208&scope=bot%20applications.commands) to add me to your server!
-2. Use the commands provided [here](#features).
+1. [Add me to your server](https://discord.com/api/oauth2/authorize?client_id=864572952275714059&permissions=274877958208&scope=bot%20applications.commands).
+2. Use the [commands](#features)! 🎉
 
 ## Features
 
