@@ -19,6 +19,7 @@
 - [How to use](#how-to-use)
 - [Features](#features)
 - [Contributing](#contributing)
+	- [If you wanna help out, please do!](#if-you-wanna-help-out-please-do)
 	- [Prerequisites](#prerequisites)
 	- [Submit a Pull Request](#submit-a-pull-request)
 	- [Slash commands](#slash-commands)
@@ -108,6 +109,10 @@ Rat God requests a few permissions. Some are these are required for the bot to b
 - Add Reactions (Not required. For future expansion)
 
 ## Contributing
+
+### If you wanna help out, please do!
+
+We're always looking for people who can help with anything from simple spelling mistakes, icon updates, fixes for small bugs, or just posting issues to keep track of what needs to be done.
 
 ### Prerequisites
 
