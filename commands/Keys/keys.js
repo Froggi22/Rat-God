@@ -1,3 +1,5 @@
+// This is function is work in progress, not currently active
+
 module.exports = {
 	description: "Key Guides",
 	options: [
