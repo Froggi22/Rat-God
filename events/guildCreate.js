@@ -2,7 +2,7 @@ const { MessageEmbed, Permissions } = require("discord.js")
 const { embedDesign, general } = require("../config.json")
 
 module.exports = {
-	async run (guild, client) {
+	run (guild, client) {
 		client.user.setPresence({ activities: [{ type: "LISTENING", name: `/Help | In ${client.guilds.cache.size} Servers` }] })
 
 		const embed = new MessageEmbed()

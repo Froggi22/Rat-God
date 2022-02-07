@@ -2,7 +2,7 @@ const { general } = require("../config.json")
 const commandReply = require("../commandReply.js")
 
 module.exports = {
-	async run (interaction, client) {
+	run (interaction, client) {
 		if (!interaction.isCommand()) return // Return if interaction isn't a command
 
 		const command = client.commands.get(interaction.commandName)

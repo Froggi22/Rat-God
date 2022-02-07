@@ -1,5 +1,5 @@
 module.exports = {
-	async run (client) {
+	run (client) {
 		const startupDate = new Date().toLocaleString().replace(",", "")
 		console.log(`${startupDate} || Ready! Logged in as ${client.user.tag}`)
 		client.user.setPresence({

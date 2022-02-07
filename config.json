@@ -13,7 +13,7 @@
 	},
 
 	"general": {
-		"lastUpdatedMessage": "**Last updated -** 2022-02-06.",
+		"lastUpdatedMessage": "**Last updated -** 2022-02-07.",
 		"developerGuildID": "861948446910578699",
 		"developers": [
 			"229212817448894464",
@@ -31,7 +31,7 @@
 		"modAbuseImage": "https://cdn.discordapp.com/attachments/865617643449221141/867828829489594429/Mod_abuse.png",
 		"sendMessageError": "I may not have have permission to send messages in that channel!\nIf this error still persists, please contact Froggi22#3436 or join the Support Server; https://discord.com/invite/kg7VfRQ9Xw",
 		"descriptionRatGod": "Rat God will help you in Escape From Tarkov, by accessing in-game information and delivering it to you!",
-		"permissionsRatGod": "Rat God's minimum permissions requirements are:\nUse Application Commands.\nSend Messages.\nEmbed Links.\nAttach Files.\nRead message history.",
+		"permissionsRatGod": "To understand why Rat God requires certain permissions, please view the \"Permissions\" section on [our Github page](https://github.com/Froggi22/Rat-God).",
 		"cooldown": 3000
 	},
 

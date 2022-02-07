@@ -4,7 +4,7 @@ const commandReply = require("../../commandReply.js")
 
 module.exports = {
 	description: "A complete list of Rat Gods commands",
-	async run (interaction) {
+	run (interaction) {
 		commandReply.interactionReply(interaction, {
 			embeds: [new MessageEmbed()
 				.setColor(embedDesign.defaultColor)
