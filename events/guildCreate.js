@@ -3,7 +3,13 @@ const { embedDesign, general } = require("../config.json")
 
 module.exports = {
 	run (guild, client) {
-		client.user.setPresence({ activities: [{ type: "LISTENING", name: `/Help | In ${client.guilds.cache.size} Servers` }] })
+		client.user.setPresence({
+			status: "online",
+			activities: [{
+				type: "LISTENING",
+				name: `/Help | In ${client.guilds.cache.size} Servers`
+			}]
+		})
 
 		const embed = new MessageEmbed()
 			.setColor(embedDesign.defaultColor)
