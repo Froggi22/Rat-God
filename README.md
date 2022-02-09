@@ -6,7 +6,7 @@
 	A Discord bot to help you in Escape From Tarkov!
 </p>
 <p align="center">
-	<a href="LICENSE"><img src="https://badgen.net/badge/License/GPLv2/blue" alt="License GPLv2" title="License GPLv2" /></a>
+	<a href="LICENSE"><img src="https://badgen.net/badge/License/GPLv2/blue" alt="GPLv2 license" title="GPLv2 license" /></a>
 	<a href="https://discord.com/invite/kg7VfRQ9Xw"><img src="https://badgen.net/discord/online-members/kg7VfRQ9Xw?icon=discord&label" alt="Discord Server" title="Join our Discord community!" /></a>
 </p>
 
@@ -101,6 +101,7 @@ Woods:          Normal Map | Hidden Stashes | Interactive Map
 ```
 
 ## Permissions
+
 Rat God requests a few permissions. Some are these are required for the bot to be able to function as intended. Here are the permissions requested by the bot with an explanation of what the use-cases are:
 - Send Messages (Replying to mentions & Interaction fallbacks)
 - Send Messages in Threads (Replying to mentions & Interaction fallbacks, but in threads this time)
