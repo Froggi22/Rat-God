@@ -32,7 +32,7 @@ module.exports = {
 
 					{
 						name: "General",
-						value: "`Help` - Help command.\n`Ping` - Pings the bot.\n`Commands` - This message.\n`Modabuse` - Users breaking rules and complaining about mod abuse.\n`Mention` - Mention the bot to recieve the prefix.\n`Servercount` - Bot's popularity.\n`Support` - Contact details.\n`Latest` - Latest updates.",
+						value: "`Help` - Help command.\n`Ping` - Pings the bot.\n`Commands` - This message.\n`Modabuse` - Funny meme about mod abuse.\n`Mention` - Mention the bot to recieve the prefix.\n`Servercount` - Bot's popularity.\n`Support` - Contact details.\n`Latest` - Latest updates.",
 						inline: true
 					}
 				)

@@ -11,7 +11,7 @@ module.exports = {
 				.setAuthor({ name: "Rat Gods Commands", url: embedDesign.wikiMain, iconURL: embedDesign.ratGodImage })
 				.setDescription(`Leave suggestions to ${general.froggiDiscordTag}.`)
 				.addFields(
-					{ name: "Commands", value: `${general.prefixMessage}.\n${general.helpCommands}\n` },
+					{ name: "Commands", value: `${general.prefixMessage}\n${general.helpCommands}\n` },
 					{ name: `Version ${general.version}`, value: `${general.lastUpdatedMessage}\n${general.helpCommandSubtext}` }
 				)
 				.setFooter({ text: embedDesign.gameUpdate })

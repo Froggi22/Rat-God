@@ -1,6 +1,8 @@
 const { MessageEmbed } = require("discord.js")
 const { embedDesign } = require("../../config.json")
 
+// Would be nice if we could integrate this to commandReply.js ...
+
 module.exports = {
 	description: "Pinging responsetimes",
 	async run (interaction, client) {
