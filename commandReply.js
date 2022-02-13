@@ -6,7 +6,8 @@ module.exports = {
 		// This is for inducing an interaction failure
 		/* const delay = ms => new Promise(resolve => setTimeout(resolve, ms))
 		await delay(4000) */
-
+		
+		await interaction.deferReply({ ephemeral: true }).catch()
 		await interaction.editReply(messageContent)
 			.catch(() => {
 				interaction.channel.send(messageContent)
@@ -28,5 +29,4 @@ module.exports = {
 					.catch(error => console.log(`MessageReply catch! > ${error}`))
 			})
 	}
-	await interaction.deferReply({ ephemeral: true }).catch()
 }
