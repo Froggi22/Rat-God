@@ -7,7 +7,7 @@ module.exports = {
 		/* const delay = ms => new Promise(resolve => setTimeout(resolve, ms))
 		await delay(4000) */
 		
-		await interaction.deferReply({ ephemeral: true }).catch()
+		await interaction.deferReply().catch()
 		await interaction.editReply(messageContent)
 			.catch(() => {
 				interaction.channel.send(messageContent)
