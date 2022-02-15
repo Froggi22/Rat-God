@@ -6,7 +6,7 @@
 	A Discord bot to help you in Escape From Tarkov!
 </p>
 <p align="center">
-	<a href="LICENSE"><img src="https://badgen.net/badge/License/GPLv2/blue" alt="GPLv2 license" title="GPLv2 license" /></a>
+	<a href="LICENSE"><img src="https://badgen.net/badge/License/AGPLv3/blue" alt="AGPLv3 license" title="AGPLv3 license" /></a>
 	<a href="https://discord.com/invite/kg7VfRQ9Xw"><img src="https://badgen.net/discord/online-members/kg7VfRQ9Xw?icon=discord&label" alt="Discord Server" title="Join our Discord community!" /></a>
 </p>
 
@@ -31,7 +31,7 @@
 
 ## About
 
-Rat God is an Open Source Discord bot project that will help you in the game Escape From Tarkov, and is covered by the [GNU General Public License version 2](LICENSE)! It obtains information from the Official Escape from Tarkov Wiki, and delivering it to the user with a slash command request. This bot benefits the user due to it being a fast lookup for ammunition and maps details, and most likely faster than looking it up on said Wiki!
+Rat God is an Open Source Discord bot project that will help you in the game Escape From Tarkov, and is covered by the [Affero General Public License version 3](LICENSE)! It obtains information from the Official Escape from Tarkov Wiki, and delivering it to the user with a slash command request. This bot benefits the user due to it being a fast lookup for ammunition and maps details, and most likely faster than looking it up on said Wiki!
 
 This project is constantly being worked and improved upon by a few number of people as a hobby. So please show your support in the Discord Support Server!
 
@@ -135,7 +135,7 @@ We're always looking for people who can help with anything from simple spelling 
 
 #### Slash commands
 
-For slash commands to work during testing, edit the [config.json](config.json) file and change `developerGuildID` & `developers` to your [server and user ID](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-) respectively.
+For [slash commands](https://support.discord.com/hc/en-us/articles/1500000368501-Slash-Commands-FAQ) to work during testing with your own bot, edit the [config.json](config.json) file and change `developerGuildID` & `developers` to your [server and user ID](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-) respectively.
 
 ## Folder & File Information
 

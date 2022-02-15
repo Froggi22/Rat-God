@@ -1,16 +1,14 @@
-const { MessageEmbed } = require("discord.js")
-const { embedDesign, general } = require("../../config.json")
-const commandReply = require("../../commandReply.js")
+import { MessageEmbed } from "discord.js"
+import { interactionReply } from "../../commandReply.js"
+import { config } from "../../index.js"
 
-module.exports = {
-	description: "Funny meme about mod abuse",
-	run (interaction) {
-		commandReply.interactionReply(interaction, {
-			embeds: [new MessageEmbed()
-				.setColor(embedDesign.defaultColor)
-				.setImage(general.modAbuseImage)
-				.setTimestamp()
-			]
-		})
-	}
+export const description = "Funny meme about mod abuse"
+export function run (interaction) {
+	interactionReply(interaction, {
+		embeds: [new MessageEmbed()
+			.setColor(config.embedDesign.defaultColor)
+			.setImage(config.general.modAbuseImage)
+			.setTimestamp()
+		]
+	})
 }

@@ -1,9 +1,10 @@
 {
-	"standard.engine": "standardx",
-	"standard.autoFixOnSave": true,
 	"editor.wordWrap": "on",
 	"editor.insertSpaces": false,
 	"editor.detectIndentation": false,
 	"editor.comments.insertSpace": false,
-	"files.trimTrailingWhitespace": true
+	"files.trimTrailingWhitespace": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true
+	}
 }

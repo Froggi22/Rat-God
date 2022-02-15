@@ -1,27 +1,28 @@
-const { MessageEmbed } = require("discord.js")
-const { embedDesign, ammo } = require("../../config.json")
-const commandReply = require("../../commandReply.js")
+import { MessageEmbed } from "discord.js"
+import { interactionReply } from "../../commandReply.js"
+// import { tarkovJSONArray } from "../../events/ready.js"
+import { config } from "../../index.js"
 
-module.exports = {
-	description: "Ammo charts for different calibers",
-	options: [{
-		type: "STRING",
-		name: "caliber",
-		description: "The ammunition caliber",
-		required: true,
-		choices: Object.keys(ammo).map(choice => { return { name: choice, value: choice } })
-	}],
-	run (interaction) {
-		const caliber = interaction.options.getString("caliber")
-		commandReply.interactionReply(interaction, {
-			embeds: [new MessageEmbed()
-				.setColor(embedDesign.defaultColor)
-				.setAuthor({ name: `${caliber} ${embedDesign.ammoTitle}`, url: embedDesign.wikiBallistics, iconURL: embedDesign.ratGodImage })
-				.setDescription(`${embedDesign.ammoDescription}`)
-				.setImage(ammo[caliber])
-				.setFooter({ text: embedDesign.gameUpdate })
-				.setTimestamp()
-			]
-		})
-	}
+export const description = "Ammo charts for different calibers"
+export const options = [{
+	type: "STRING",
+	name: "caliber",
+	description: "The ammunition caliber",
+	required: true,
+	choices: Object.keys(config.ammo).map(choice => { return { name: choice, value: choice } })
+}]
+
+export function run (interaction) {
+	// console.log(tarkovJSONArray[0]._name)
+	const caliber = interaction.options.getString("caliber")
+	interactionReply(interaction, {
+		embeds: [new MessageEmbed()
+			.setColor(config.embedDesign.defaultColor)
+			.setAuthor({ name: `🐀 ${caliber} ${config.embedDesign.ammoTitle}`, url: config.embedDesign.wikiBallistics })
+			.setDescription(`${config.embedDesign.ammoDescription}`)
+			.setImage(config.ammo[caliber])
+			.setFooter({ text: config.embedDesign.gameUpdate })
+			.setTimestamp()
+		]
+	})
 }
