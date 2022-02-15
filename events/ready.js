@@ -1,8 +1,26 @@
 // const fetch = require("node-fetch")
 import { readFile } from "fs/promises"
 
-const tarkovJSONObj = JSON.parse(await readFile("tarkovJSON.json"))
-export const tarkovJSONArray = Object.values(tarkovJSONObj)
+const tarkovJSONRaw = JSON.parse(await readFile("tarkovJSON.json"))
+export const tarkovJSONValues = Object.values(tarkovJSONRaw)
+
+console.log("\n\n===================================================")
+
+const tarkovJSONAmmo = tarkovJSONValues.filter(Obj => Obj._props && Obj._props.Caliber && Obj._props.ammoType !== "grenade" && Obj._name.toLowerCase() !== "ammo" && !Obj._name.toLowerCase().startsWith("shrapnel"))
+for (let i = 0; i < tarkovJSONAmmo.length; i++) {
+	console.log(tarkovJSONAmmo[i]._name)
+}
+
+/*
+for (let item = 0; item < tarkovJSONValues.length; item++) {
+	// console.log(tarkovJSONArray[item])
+	if (tarkovJSONValues[item]._props && tarkovJSONValues[item]._props.Caliber) {
+		console.log(typeof (myArray))
+		console.log(tarkovJSONValues[item]._props.Caliber.replace("Caliber", ""))
+		// counter += 1
+	}
+} */
+
 // console.log("===================================================")
 // console.log(Object.values(tarkovJSONObj)[0])
 // console.log(Object.values(tarkovJSONObj)[0]._props.Weight)
