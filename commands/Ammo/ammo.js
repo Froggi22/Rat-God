@@ -13,14 +13,15 @@ export const options = [{
 }]
 
 export function run (interaction) {
-	console.log("========== Ammo interaction ==========")
+	// console.log("========== Ammo interaction ==========")
 	const caliber = interaction.options.getString("caliber")
 	const caliberMatch = caliber.replace("mm", "").replace(".", "").trim()
-	console.log(`CALIBER REQUESTED >> ${caliberMatch}`)
 
-	for (let i = 0; i < tarkovJSONAmmo.length; i++) {
-		console.log(tarkovJSONAmmo[i]._name.replace("patron_", "").replace(/_/g, " ").trim())
+	for (let item = 0; item < tarkovJSONAmmo.length; item++) {
+		console.log(`>>>>>> ${tarkovJSONAmmo[item]._props.Caliber.replace("Caliber", "")} --> ${caliberMatch}`)
+		if (tarkovJSONAmmo[item]._props.Caliber.replace("Caliber", "") === caliberMatch) console.log(tarkovJSONAmmo[item]._name.replace("patron_", "").replace(/_/g, " ").trim())
 	}
+	console.log(`CALIBER REQUESTED >> ${caliberMatch}`)
 	interactionReply(interaction, {
 		embeds: [new MessageEmbed()
 			.setColor(config.embedDesign.defaultColor)
@@ -33,6 +34,5 @@ export function run (interaction) {
 	})
 }
 
-// 1143x23 == 45 ACP
-// 57x28 == 57x28
-//
+//!	1143x23 == 45 ACP
+//	762x35 == .300 Blackout
