@@ -15,6 +15,13 @@
 ## Table of contents
 
 - [About](#about)
+	- [Data Collection](#data-collection)
+	- [Why Open Source](#why-open-source)
+		- [Peer review & Reliability](#peer-review--reliability)
+		- [Transparency](#transparency)
+		- [Flexibility](#flexibility)
+		- [The Price Tag](#the-price-tag)
+	- [How This Project Makes Money](#how-this-project-makes-money)
 - [Links](#links)
 - [How to use](#how-to-use)
 - [Features](#features)
@@ -31,9 +38,37 @@
 
 ## About
 
-Rat God is an Open Source Discord bot project that will help you in the game Escape From Tarkov, and is covered by the [Affero General Public License version 3](LICENSE)! It obtains information from the Official Escape from Tarkov Wiki, and delivering it to the user with a slash command request. This bot benefits the user due to it being a fast lookup for ammunition and maps details, and most likely faster than looking it up on said Wiki!
+Rat God is an Open Source Discord bot project that will help you in the game Escape From Tarkov, and is covered by the [Affero General Public License version 3](LICENSE)! It obtains information from the Official Escape from Tarkov Wiki and delivers it to the user with a slash command request. This bot benefits the user due to it being a fast lookup for ammunition and maps details, and most likely faster than looking it up on said Wiki!
 
-This project is constantly being worked and improved upon by a few number of people as a hobby. So please show your support in the Discord Support Server!
+This project is constantly being worked on and improved upon by a few people as a hobby. So please show your support in the Discord Support Server! And if you're a very kind soul, you can check out the [Patreon site](https://www.patreon.com/Froggi22)!
+
+### Data Collection
+
+This project does not collect nor store any data, thus not selling anything to 3rd parties - Because ignorance is bliss.
+
+### Why Open Source
+
+Here are the following reasons why this project is open source and supporting the movement:
+
+#### **Peer review & Reliability**
+
+Since the source code is freely accessible and any peer programmers can contribute, it turns into living code rather than closed and stagnant. Consequently, this may result that the community could keep updating the project and make it outlive its original authors. Additionally, this means that you can find help, resources, and perspectives that reach beyond one interest group or company.
+
+#### **Transparency**
+
+All code changes, data tracking, and collections are public and allow you to check and track that for yourself without relying on vendor promises. This results in a trustworthy and reliable product or service as you can see all the shenanigans going on.
+
+#### **Flexibility**
+
+The emphasis on modification can make the community address their unique problems with code suggestions. Alternatively, create forks and add said specific features tailored to their needs. Another flexibility perk is the freedom - you can take your open source code anywhere and use it for anything, at any time.
+
+#### **The Price Tag**
+
+Services that are open source are often also free of charge, like this project.
+
+### How This Project Makes Money
+
+This project does not make any money. However, you can make donations on our [Patreon site](https://www.patreon.com/Froggi22) to support this project!
 
 ## Links
 
@@ -42,6 +77,7 @@ This project is constantly being worked and improved upon by a few number of peo
 - [Website](https://rat-god-website.herokuapp.com/)
 - [Website's repository](https://github.com/Froggi22/Rat-God-Website)
 - Vote on [Top.gg](https://top.gg/bot/864572952275714059/vote)
+- [Patreon site](https://www.patreon.com/Froggi22)
 
 ## How to use
 
@@ -121,7 +157,7 @@ We're always looking for people who can help with anything from simple spelling 
 - Have a [Discord application](https://discord.com/developers/applications) ("Bot").
 - We use ESLint to enforce a consistent coding style.
 
-### Submit a Pull Request
+### Submit A Pull Request
 
 1. Fork this repository (should be on the top right of this page).
 2. Clone the fork to your desired local Github projects folder.
@@ -133,7 +169,7 @@ We're always looking for people who can help with anything from simple spelling 
 8. Stage, commit, and push your files to your fork.
 9. Create a new pull request.
 
-#### Slash commands
+#### Slash Commands
 
 For [slash commands](https://support.discord.com/hc/en-us/articles/1500000368501-Slash-Commands-FAQ) to work during testing with your own bot, edit the [config.json](config.json) file and change `developerGuildID` & `developers` to your [server and user ID](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-) respectively.
 
