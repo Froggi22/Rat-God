@@ -50,19 +50,19 @@ This project does not collect nor store any data, thus not selling anything to 3
 
 Here are the following reasons why this project is open source and supporting the movement:
 
-#### **Peer review & Reliability**
+#### Peer review & Reliability
 
 Since the source code is freely accessible and any peer programmers can contribute, it turns into living code rather than closed and stagnant. Consequently, this may result that the community could keep updating the project and make it outlive its original authors. Additionally, this means that you can find help, resources, and perspectives that reach beyond one interest group or company.
 
-#### **Transparency**
+#### Transparency
 
 All code changes, data tracking, and collections are public and allow you to check and track that for yourself without relying on vendor promises. This results in a trustworthy and reliable product or service as you can see all the shenanigans going on.
 
-#### **Flexibility**
+#### Flexibility
 
 The emphasis on modification can make the community address their unique problems with code suggestions. Alternatively, create forks and add said specific features tailored to their needs. Another flexibility perk is the freedom - you can take your open source code anywhere and use it for anything, at any time.
 
-#### **The Price Tag**
+#### The Price Tag
 
 Services that are open source are often also free of charge, like this project.
 
