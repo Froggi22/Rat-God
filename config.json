@@ -8,12 +8,11 @@
 		"wikiBallistics": "https://escapefromtarkov.fandom.com/wiki/Ballistics",
 		"ammoTitle": "Ammunition Table",
 		"ammoDescription": "Type **/Help** to get Rat Gods commands",
-		"defaultColor": "#FFD700",
-		"colorRed": "FF0000"
+		"defaultColor": "#FFD700"
 	},
 
 	"general": {
-		"lastUpdatedMessage": "**Last updated -** 2022-03-03.",
+		"lastUpdatedMessage": "**Last updated -** 2022-03-06.",
 		"developerGuildID": "861948446910578699",
 		"developers": [
 			"229212817448894464",
