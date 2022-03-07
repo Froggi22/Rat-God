@@ -6,7 +6,7 @@ const tarkovJSONRaw = JSON.parse(await readFile("tarkovJSON.json"))
 export const tarkovJSONValues = Object.values(tarkovJSONRaw)
 
 export const tarkovJSONAmmo = tarkovJSONValues.filter(Obj => Obj._props && Obj._props.Caliber && Obj._props.ammoType !== "grenade" && Obj._name.toLowerCase() !== "ammo" && !Obj._name.toLowerCase().startsWith("shrapnel"))
-
+console.log("1143x23ACP".toLowerCase().replace("acp", ""))
 /* const arr = []
 // Iterate thorugh ammo names
 for (let item = 0; item < tarkovJSONAmmo.length; item++) {

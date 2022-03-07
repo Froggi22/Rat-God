@@ -42,12 +42,8 @@ export function run (interaction) {
 	console.log("========== Ammo interaction ==========")
 	const caliber = interaction.options.getString("caliber")
 	console.log(`caliber > ${caliber}`)
-	console.log(`config.ammo > ${toString(config.ammo)}`)
-	const valueToKey = (Object.keys(config.ammo).find(key => {
-		console.log(`key > ${key}`)
-		console.log(`config.ammo[key] > ${config.ammo[key]}`)
-		return config.ammo[key] === caliber
-	}))
+	console.log(`config.ammo > ${config.ammo.toString()}`)
+	const valueToKey = (Object.keys(config.ammo).find(key => config.ammo[key] === caliber))
 	// console.log(Object.keys(config.ammo).find(key => {
 	// 	console.log(`key > ${key}`)
 	// 	return config.ammo[key] === caliber
@@ -75,9 +71,28 @@ export function run (interaction) {
 		// if (tarkovJSONAmmo[item]._props.Caliber && !arr.includes(tarkovJSONAmmo[item]._props.Caliber)) arr.push(tarkovJSONAmmo[item]._props.Caliber)
 		// console.log(`>>>>>> ${tarkovJSONAmmo[item]._props.ammoCaliber.replace("Caliber", "")} --> ${caliber}`)
 		if (itemProps.Caliber && item._props.Caliber.replace("Caliber", "") === caliber) {
-			console.log(tarkovJSONAmmo[objNr]._name.replace("patron_", "").replace(`${valueToKey}_`, "").replace(/_/g, " "))
+			console.log(
+				tarkovJSONAmmo[objNr]._name
+					.toLowerCase()
+					.replace(valueToKey.replace("acp", ""), "")
+					.replace("patron_", "")
+					.replace(caliber, "")
+					.replace(`${valueToKey}_`, "")
+					.replace(valueToKey.replace("mm", ""), "")
+					.replace(/_/g, " ")
+					.trim()
+					.replace(/\w\S*/g, w => `${w[0].toUpperCase()}${w.slice(1)}`))
 			tableData.push([
-				item._name.replace("patron_", "").replace(`${valueToKey}_`, "").replace(/_/g, " "),
+				item._name
+					.toLowerCase()
+					.replace(valueToKey.replace("acp", ""), "")
+					.replace("patron_", "")
+					.replace(caliber, "")
+					.replace(`${valueToKey}_`, "")
+					.replace(valueToKey.replace("mm", ""), "")
+					.replace(/_/g, " ")
+					.trim()
+					.replace(/\w\S*/g, w => `${w[0].toUpperCase()}${w.slice(1)}`),
 				itemProps.PenetrationPower,
 				itemProps.Damage,
 				itemProps.ArmorDamage,
@@ -96,8 +111,8 @@ export function run (interaction) {
 			tableData[i][1],
 			tableData[i][2],
 			tableData[i][3],
-			`${tableData[i][4]} %`,
-			`${tableData[i][4]} m/s`
+			`${tableData[i][4]}%`,
+			`${tableData[i][5]}m/s`
 		])
 	}
 
