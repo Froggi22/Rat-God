@@ -2,8 +2,9 @@ import { MessageEmbed } from "discord.js"
 import { interactionReply } from "../../commandReply.js"
 import { tarkovJSONAmmo } from "../../events/ready.js"
 import { config } from "../../index.js"
+import AsciiTable from "ascii-table"
 
-const tarkovAmmo = {
+/* const tarkovAmmo = {
 	"12x70mm": "12g",						// 15
 	"20x70mm": "20g",						// 11
 	"23x75mm": "23x75",							// 20
@@ -26,7 +27,7 @@ const tarkovAmmo = {
 	"12.7x55mm STs-130": "127x55",			// 16
 	"40x46 mm": "40x46",						// 21
 	"Stationary Weapons": "127x108"			// 13
-}
+} */
 
 export const description = "Ammo charts for different calibers"
 export const options = [{
@@ -40,25 +41,74 @@ export const options = [{
 export function run (interaction) {
 	console.log("========== Ammo interaction ==========")
 	const caliber = interaction.options.getString("caliber")
-	console.log(caliber)
-	// const caliberMatch = caliber
+	console.log(`caliber > ${caliber}`)
+	console.log(`config.ammo > ${toString(config.ammo)}`)
+	const valueToKey = (Object.keys(config.ammo).find(key => {
+		console.log(`key > ${key}`)
+		console.log(`config.ammo[key] > ${config.ammo[key]}`)
+		return config.ammo[key] === caliber
+	}))
+	// console.log(Object.keys(config.ammo).find(key => {
+	// 	console.log(`key > ${key}`)
+	// 	return config.ammo[key] === caliber
+	// }))
+	// const valueToKey = (Object.keys(config.ammo).find(key => config.ammo[key] === caliber)).replace("mm", "")
+	console.log(`ValueToKey > ${valueToKey}`)
+	// console.log(interaction.options.get("caliber"))
 
-	// console.log(caliberMatch)
+	const table = new AsciiTable()
+	const tableData = []
+	table.removeBorder()
+	table.addRow([
+		"Name",
+		"Pen",
+		"Dmg",
+		"A Dmg",
+		"Frag",
+		"Velo"
+	])
+
 	// const arr = []
-	for (let item = 0; item < tarkovJSONAmmo.length; item++) {
+	for (let objNr = 0; objNr < tarkovJSONAmmo.length; objNr++) {
+		const item = tarkovJSONAmmo[objNr]
+		const itemProps = item._props
 		// if (tarkovJSONAmmo[item]._props.Caliber && !arr.includes(tarkovJSONAmmo[item]._props.Caliber)) arr.push(tarkovJSONAmmo[item]._props.Caliber)
 		// console.log(`>>>>>> ${tarkovJSONAmmo[item]._props.ammoCaliber.replace("Caliber", "")} --> ${caliber}`)
-		if (tarkovJSONAmmo[item]._props.Caliber && tarkovJSONAmmo[item]._props.Caliber.replace("Caliber", "") === caliber) console.log(tarkovJSONAmmo[item]._name.replace("patron_", "").replace(/_/g, " ").trim())
+		if (itemProps.Caliber && item._props.Caliber.replace("Caliber", "") === caliber) {
+			console.log(tarkovJSONAmmo[objNr]._name.replace("patron_", "").replace(`${valueToKey}_`, "").replace(/_/g, " "))
+			tableData.push([
+				item._name.replace("patron_", "").replace(`${valueToKey}_`, "").replace(/_/g, " "),
+				itemProps.PenetrationPower,
+				itemProps.Damage,
+				itemProps.ArmorDamage,
+				Math.floor(itemProps.FragmentationChance * 100),
+				itemProps.InitialSpeed
+			])
+		}
+		// TODO
 		// ERROR, FIX > STATIONARY WEAPONS, THERE ARE 2 VALUES NEEDED TO BE SEARCHED FOR 127x108 & 30x29!
+		// Capitalize each word
 	}
+	tableData.sort((x, y) => { return y[1] - x[1] || y[2] - x[2] })
+	for (const i in tableData) {
+		table.addRow([
+			tableData[i][0],
+			tableData[i][1],
+			tableData[i][2],
+			tableData[i][3],
+			`${tableData[i][4]} %`,
+			`${tableData[i][4]} m/s`
+		])
+	}
+
 	// console.log(arr)
-	// console.log(`CALIBER REQUESTED >> ${caliberMatch}`)
 	interactionReply(interaction, {
 		embeds: [new MessageEmbed()
 			.setColor(config.embedDesign.defaultColor)
-			.setAuthor({ name: `🐀 ${caliber} ${config.embedDesign.ammoTitle}`, url: config.embedDesign.wikiBallistics })
-			.setDescription(`${config.embedDesign.ammoDescription}`)
-			.setImage(config.ammo[caliber])
+			.setAuthor({ name: `🐀 ${valueToKey} ${config.embedDesign.ammoTitle}`, url: config.embedDesign.wikiBallistics })
+			// .setDescription(config.embedDesign.ammoDescription)
+			.setDescription(`\`\`\`${table.toString()}\`\`\``)
+			// .setImage(config.ammo[caliber])
 			.setFooter({ text: config.embedDesign.gameUpdate })
 			.setTimestamp()
 		]
