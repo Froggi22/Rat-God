@@ -9,7 +9,6 @@ export function run (interaction, client) {
 			.setColor(config.embedDesign.defaultColor)
 			.setTitle("🏓 Pong!")
 			.setDescription(`My ping is **${Math.round(client.ws.ping)}**ms!\nI am online and responsive! 🕙`)
-			.setTimestamp()
 		]
 	})
 }

@@ -123,7 +123,6 @@ export function run (interaction) {
 			.setImage(config.maps.images[location][map])
 			.addFields(config.maps.fields[location][map])
 			.setFooter({ text: config.embedDesign.gameUpdate })
-			.setTimestamp()
 		]
 	})
 }
