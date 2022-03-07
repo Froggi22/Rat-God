@@ -6,7 +6,7 @@ const tarkovJSONRaw = JSON.parse(await readFile("tarkovJSON.json"))
 export const tarkovJSONValues = Object.values(tarkovJSONRaw)
 
 export const tarkovJSONAmmo = tarkovJSONValues.filter(Obj => Obj._props && Obj._props.Caliber && Obj._props.ammoType !== "grenade" && Obj._name.toLowerCase() !== "ammo" && !Obj._name.toLowerCase().startsWith("shrapnel"))
-console.log("1143x23ACP".toLowerCase().replace("acp", ""))
+
 /* const arr = []
 // Iterate thorugh ammo names
 for (let item = 0; item < tarkovJSONAmmo.length; item++) {
@@ -78,16 +78,16 @@ export async function run (client) {
 }
 
 /* Dynamic statistics and information
-	BSG has a JSON file with information about all in-game items.
-	Fetch the JSON file async on ready event (bot restarts every ~12-24h) and either store it in memory or save it as a JSON file.
-	Here we can filter through the items and find whatever we like (ammo).
-	When searching for ammo, we will look for a specific caliber.
+	+ BSG has a JSON file with information about all in-game items.
+	~ Fetch the JSON file async on ready event (bot restarts every ~12-24h) and either store it in memory or save it as a JSON file.
+	+ Here we can filter through the items and find whatever we like (ammo).
+	+ When searching for ammo, we will look for a specific caliber.
 
-	Then store all the correct calibers and collect their stats (Flesh-, armor dmg).
-	Return then that to the user who requested it with the proper formatting.
+	+ Then store all the correct calibers and collect their stats (Flesh-, armor dmg).
+	+ Return then that to the user who requested it with the proper formatting.
 
-	Ready >
-		Fetches API, stores in memory
-	Other files e.g Ammo >
-		Requires variable & does shit
+	~ Ready >
+		~ Fetches API, stores in memory
+	+ Other files e.g Ammo >
+		+ Requires variable & does shit
 */

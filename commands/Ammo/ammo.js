@@ -50,7 +50,6 @@ export function run (interaction) {
 	// }))
 	// const valueToKey = (Object.keys(config.ammo).find(key => config.ammo[key] === caliber)).replace("mm", "")
 	console.log(`ValueToKey > ${valueToKey}`)
-	// console.log(interaction.options.get("caliber"))
 
 	const table = new AsciiTable()
 	const tableData = []
@@ -71,26 +70,24 @@ export function run (interaction) {
 		// if (tarkovJSONAmmo[item]._props.Caliber && !arr.includes(tarkovJSONAmmo[item]._props.Caliber)) arr.push(tarkovJSONAmmo[item]._props.Caliber)
 		// console.log(`>>>>>> ${tarkovJSONAmmo[item]._props.ammoCaliber.replace("Caliber", "")} --> ${caliber}`)
 		if (itemProps.Caliber && item._props.Caliber.replace("Caliber", "") === caliber) {
-			console.log(
-				tarkovJSONAmmo[objNr]._name
-					.toLowerCase()
-					.replace(valueToKey.replace("acp", ""), "")
-					.replace("patron_", "")
-					.replace(caliber, "")
-					.replace(`${valueToKey}_`, "")
-					.replace(valueToKey.replace("mm", ""), "")
-					.replace(/_/g, " ")
-					.trim()
-					.replace(/\w\S*/g, w => `${w[0].toUpperCase()}${w.slice(1)}`))
+			// console.log(tarkovJSONAmmo[objNr]._name)
+			// console.log(
+			// 	tarkovJSONAmmo[objNr]._name
+			// 		.toLowerCase()
+			// 		.replace(/_/g, " ")
+			// 		.replace("patron ", "")
+			// 		.split(" ").slice(1).join(" ") // This instead of something like: .replace(caliber.replace("mm", ""), "")
+			// 		.replace("mm", "")
+			// 		.trim()
+			// 		.replace(/\w\S*/g, w => `${w[0].toUpperCase()}${w.slice(1)}`)
+			// )
 			tableData.push([
 				item._name
 					.toLowerCase()
-					.replace(valueToKey.replace("acp", ""), "")
-					.replace("patron_", "")
-					.replace(caliber, "")
-					.replace(`${valueToKey}_`, "")
-					.replace(valueToKey.replace("mm", ""), "")
 					.replace(/_/g, " ")
+					.replace("patron ", "")
+					.split(" ").slice(1).join(" ")
+					.replace("mm", "")
 					.trim()
 					.replace(/\w\S*/g, w => `${w[0].toUpperCase()}${w.slice(1)}`),
 				itemProps.PenetrationPower,
