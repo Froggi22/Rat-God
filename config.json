@@ -384,7 +384,7 @@
 				"Interactive Map": [
 					{
 						"name": "Type \"/Maps Lighthouse Info\" to get detailed info about the area.",
-						"value": "*psst, click the link (blue text) to go to the interactive map!*"
+						"value": "\u200B"
 					}
 				],
 				"3D Map": [
@@ -441,7 +441,7 @@
 				"Interactive Map": [
 					{
 						"name": "Type \"/Maps Reserve Info\" to get detailed info about the area.",
-						"value": "*psst, click the link (blue text) to go to the interactive map!*"
+						"value": "\u200B"
 					}
 				],
 				"Key Map": [
