@@ -91,7 +91,7 @@ export function run (interaction) {
 					.trim()
 					.replace(/\w\S*/g, w => `${w[0].toUpperCase()}${w.slice(1)}`),
 				itemProps.PenetrationPower,
-				itemProps.Damage,
+				itemProps.ProjectileCount > 1 ? itemProps.Damage * itemProps.ProjectileCount : itemProps.Damage,
 				itemProps.ArmorDamage,
 				Math.floor(itemProps.FragmentationChance * 100),
 				itemProps.InitialSpeed
