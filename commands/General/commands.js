@@ -36,7 +36,6 @@ export function run (interaction) {
 				}
 			)
 			.setFooter({ text: config.embedDesign.gameUpdate })
-			.setTimestamp()
 		]
 	})
 }
