@@ -1,6 +1,6 @@
 {
 	"embedDesign": {
-		"gameUpdate": "Updated for game version: 0.12.12.15.16909",
+		"gameUpdate": "Updated for game version: 0.12.12.15.17076",
 		"ratGodImage": "https://cdn.discordapp.com/attachments/865617643449221141/920345495568777316/RG_Profile.png",
 
 		"wikiMaps": "https://escapefromtarkov.fandom.com/wiki/Map_of_Tarkov",
@@ -12,7 +12,7 @@
 	},
 
 	"general": {
-		"lastUpdatedMessage": "**Last updated -** 2022-03-08.",
+		"lastUpdatedMessage": "**Last updated -** 2022-03-10.",
 		"latestUpdateDate": "December 13, 2021 14:32:00",
 		"developerGuildID": "861948446910578699",
 		"developers": [
@@ -84,13 +84,11 @@
 			"Info",
 			"Map",
 			"Hidden Stashes",
-			"Interactive Map",
 			"3D Map"
 		],
 		"reserve": [
 			"Info",
 			"Map",
-			"Interactive Map",
 			"Key Map",
 			"D-2 Bunker Map",
 			"3D Map"
@@ -146,8 +144,6 @@
 				"customs": "[A **very** useful Customs map](https://mapgenie.io/tarkov/maps/customs).",
 				"factory": "[A **very** useful Factory map](https://mapgenie.io/tarkov/maps/factory).",
 				"interchange": "[A **very** useful Interchange map](https://mapgenie.io/tarkov/maps/interchange).",
-				"lighthouse": "~~A **very** useful Lighthouse map~~.\nCurrently unavailable due to Tarkov Tools' shut down!",
-				"reserve": "~~A **very** useful Reserve map~~.\nCurrently unavailable due to Tarkov Tools' shut down!",
 				"shoreline": "[A **very** useful Shoreline map](https://mapgenie.io/tarkov/maps/shoreline).",
 				"labs": "[A **very** useful Labs map](https://mapgenie.io/tarkov/maps/lab).",
 				"woods": "[A **very** useful Woods map](https://mapgenie.io/tarkov/maps/woods)."
@@ -382,12 +378,6 @@
 						"value": "Use the middle mouse button to view the image in fullscreen."
 					}
 				],
-				"Interactive Map": [
-					{
-						"name": "Type \"/Maps Lighthouse Info\" to get detailed info about the area.",
-						"value": "\u200B"
-					}
-				],
 				"3D Map": [
 					{
 						"name": "Type \"/Maps Lighthouse Info\" to get detailed info about the area.",
@@ -437,12 +427,6 @@
 					{
 						"name": "Type \"/Maps Reserve Info\" to get detailed info about the area.",
 						"value": "Use the middle mouse button to view the image in fullscreen."
-					}
-				],
-				"Interactive Map": [
-					{
-						"name": "Type \"/Maps Reserve Info\" to get detailed info about the area.",
-						"value": "\u200B"
 					}
 				],
 				"Key Map": [

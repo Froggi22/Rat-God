@@ -17,12 +17,12 @@ export function run (interaction) {
 				},
 				{
 					name: "Maps",
-					value: "`Maps`\n`Customs`\n`Customs Info`\n`Customs Map`\n`Customs HS`\n`Customs IM`\n`Customs Dorms`\n`Customs 3D`\n\n`Factory`\n`Factory Info`\n`Factory Map`\n`Factory IM`\n\n`Interchange`\n`Interchange Info`\n`Interchange Map`\n`Interchange HS`\n`Interchange IM`\n\n`Lighthouse`\n`Lighthouse Info`\n`Lighthouse Map`\n`Lighthouse HS`\n`Lighthouse IM`\n`Lighthouse 3D`",
+					value: "`Maps`\n`Customs`\n`Customs Info`\n`Customs Map`\n`Customs HS`\n`Customs IM`\n`Customs Dorms`\n`Customs 3D`\n\n`Factory`\n`Factory Info`\n`Factory Map`\n`Factory IM`\n\n`Interchange`\n`Interchange Info`\n`Interchange Map`\n`Interchange HS`\n`Interchange IM`\n\n`Lighthouse`\n`Lighthouse Info`\n`Lighthouse Map`\n`Lighthouse HS`\n`Lighthouse 3D`",
 					inline: true
 				},
 				{
 					name: "\u200b",
-					value: "`Reserve`\n`Reserve Info`\n`Reserve Map`\n`Reserve IM`\n`Reserve Key Guide`\n`Reserve D-2 Bunker`\n`Reserve 3D`\n\n`Shoreline`\n`Shoreline Info`\n`Shoreline Map`\n`Shoreline HS`\n`Shoreline IM`\n`Shoreline Key Spawns`\n`Shoreline Resort`\n`Shoreline 3D`\n\n`Labs`\n`Labs Info`\n`Labs Map`\n`Labs IM`\n`Labs Basement`\n`Labs 1st Floor`\n`Labs 2nd Floor`\n\n`Woods`\n`Woods Info`\n`Woods Map`\n`Woods HS`\n`Woods IM`",
+					value: "`Reserve`\n`Reserve Info`\n`Reserve Map`\n`Reserve Key Guide`\n`Reserve D-2 Bunker`\n`Reserve 3D`\n\n`Shoreline`\n`Shoreline Info`\n`Shoreline Map`\n`Shoreline HS`\n`Shoreline IM`\n`Shoreline Key Spawns`\n`Shoreline Resort`\n`Shoreline 3D`\n\n`Labs`\n`Labs Info`\n`Labs Map`\n`Labs IM`\n`Labs Basement`\n`Labs 1st Floor`\n`Labs 2nd Floor`\n\n`Woods`\n`Woods Info`\n`Woods Map`\n`Woods HS`\n`Woods IM`",
 					inline: true
 				},
 

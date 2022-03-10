@@ -10,11 +10,9 @@ export function run (interaction, client) {
 	// Cooldown
 	const now = Date.now()
 	const expirationTime = cooldowns.get(interaction.user.id) + config.general.cooldown
-	if (now < expirationTime) {
-		const timeLeft = (expirationTime - now) / 1000
-		return interactionReply(interaction, `Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the \`${command.name}\` command.`)
-	}
-	cooldowns.set(interaction.user.id, now)
+	if (now < expirationTime) return interactionReply(interaction, `Please wait ${((expirationTime - now) / 1000).toFixed(1)} more second(s) before reusing the \`${command.name[0].toUpperCase() + command.name.slice(1)}\` command.`)
+
+	cooldowns.set(interaction.user.id, now) // Set user cooldown
 	setTimeout(() => cooldowns.delete(interaction.user.id), config.general.cooldown)
 
 	command.run(interaction, client)

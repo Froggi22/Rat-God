@@ -2,6 +2,7 @@ import { MessageEmbed } from "discord.js"
 import { interactionReply } from "../../commandReply.js"
 import { config } from "../../index.js"
 
+const subcommandDesc = "What kind of map guide?"
 export const description = "Map guides"
 export const options = [
 	{
@@ -11,7 +12,7 @@ export const options = [
 		options: [
 			{
 				name: "map",
-				description: "What kind of map guide?",
+				description: subcommandDesc,
 				type: "STRING",
 				choices: config.maps.customs.map(choice => { return { name: choice, value: choice } })
 			}
@@ -24,7 +25,7 @@ export const options = [
 		options: [
 			{
 				name: "map",
-				description: "What kind of map guide?",
+				description: subcommandDesc,
 				type: "STRING",
 				choices: config.maps.factory.map(choice => { return { name: choice, value: choice } })
 			}
@@ -37,7 +38,7 @@ export const options = [
 		options: [
 			{
 				name: "map",
-				description: "What kind of map guide?",
+				description: subcommandDesc,
 				type: "STRING",
 				choices: config.maps.interchange.map(choice => { return { name: choice, value: choice } })
 			}
@@ -50,7 +51,7 @@ export const options = [
 		options: [
 			{
 				name: "map",
-				description: "What kind of map guide?",
+				description: subcommandDesc,
 				type: "STRING",
 				choices: config.maps.lighthouse.map(choice => { return { name: choice, value: choice } })
 			}
@@ -63,7 +64,7 @@ export const options = [
 		options: [
 			{
 				name: "map",
-				description: "What kind of map guide?",
+				description: subcommandDesc,
 				type: "STRING",
 				choices: config.maps.reserve.map(choice => { return { name: choice, value: choice } })
 			}
@@ -76,7 +77,7 @@ export const options = [
 		options: [
 			{
 				name: "map",
-				description: "What kind of map guide?",
+				description: subcommandDesc,
 				type: "STRING",
 				choices: config.maps.shoreline.map(choice => { return { name: choice, value: choice } })
 			}
@@ -89,7 +90,7 @@ export const options = [
 		options: [
 			{
 				name: "map",
-				description: "What kind of map guide?",
+				description: subcommandDesc,
 				type: "STRING",
 				choices: config.maps.labs.map(choice => { return { name: choice, value: choice } })
 			}
@@ -102,17 +103,18 @@ export const options = [
 		options: [
 			{
 				name: "map",
-				description: "What kind of map guide?",
+				description: subcommandDesc,
 				type: "STRING",
 				choices: config.maps.woods.map(choice => { return { name: choice, value: choice } })
 			}
 		]
 	}
 ]
+
 export function run (interaction) {
 	const location = interaction.options.getSubcommand() // Fetch location, e.g. customs
-	const map = interaction.options.getString("map") || "null" // What kind of map, e.g. Hidden Stashes
 	const locationCap = location[0].toUpperCase() + location.slice(1) // Capitalize location name, e.g. customs -> Customs
+	const map = interaction.options.getString("map") || "null" // What kind of map, e.g. Hidden Stashes
 
 	return interactionReply(interaction, {
 		embeds: [new MessageEmbed()
