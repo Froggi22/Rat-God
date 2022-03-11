@@ -31,24 +31,30 @@ export function run (interaction) {
 	])
 
 	function pushData (item, itemProps) {
-		// console.log(item._name)
-		let itemName = item._name
-			.replace(/_/g, " ")
-			.replace("patron ", "")
-			.split(" ").slice(1).join(" ")
-			.trim()
-			.replace(/\w\S*/g, w => w.match(/[a-z]/) ? w.replace(w.match(/[a-z]/)[0], w.match(/[a-z]/)[0].toUpperCase()) : w)
-		const customSwitcheruu = {
-			"": "B-32 gl",
-			Slug: "Lead Slug",
-			Buckshot: "Buckshot 7"
+		console.log(item._name)
+		const correctedItemNamesObj = { // Change keys to raw version (item._name)
+			patron_12x70_slug: "Lead Slug",
+			patron_12x70_buckshot_65: "Buckshot 6.5 Express",
+			patron_12x70_buckshot_85: "Buckshot 8.5 Magnum",
+			patron_12x70_buckshot_525: "Buckshot 5.25",
+			patron_20x70_slug_broadhead: "Slug Devastator",
+			patron_20x70_buckshot_73: "Buckshot 7.3",
+			patron_12x70_buckshot: "Buckshot 7.5",
+			patron_20x70_buckshot_62: "Buckshot 6.2",
+			patron_20x70_buckshot_56: "Buckshot 5.6",
+			patron_762x25tt_T_Gzh: "PT Gzh",
+			patron_127x108: "B-32 gl"
 		}
-		// if (Object.keys(customSwitcheruu).includes(itemName)) itemName = "B-32 gl"
-		// console.log(`|${itemName}|`)
-		const renameThisLaterPls = Object.keys(customSwitcheruu).find(key => key === itemName)
-		// console.log(renameThisLaterPls)
-		if (renameThisLaterPls !== undefined) itemName = customSwitcheruu[renameThisLaterPls]
-		// console.log(itemName)
+		let itemName = item._name
+		const correctedItemName = Object.keys(correctedItemNamesObj).find(key => key === itemName)
+		if (correctedItemName !== undefined) itemName = correctedItemNamesObj[correctedItemName]
+		else {
+			itemName = item._name.replace(/_/g, " ")
+				.replace("patron ", "")
+				.split(" ").slice(1).join(" ")
+				.trim()
+				.replace(/\w\S*/g, w => w.match(/[a-z]/i) ? w.replace(w.match(/[a-z]/i)[0], w.match(/[a-z]/i)[0].toUpperCase()) : w)
+		}
 		tableData.push([
 			itemName,
 			itemProps.PenetrationPower,

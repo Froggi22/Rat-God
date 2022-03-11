@@ -1,8 +1,6 @@
 // import fetch from "node-fetch"
 import { readFile } from "fs/promises"
 
-// Read tarkovJSON.json
-
 export async function fetchAmmo () {
 	const tarkovJSONRaw = JSON.parse(await readFile("tarkovJSON.json"))
 	/* // const TDurl = "https://raw.githubusercontent.com/TarkovTracker/tarkovdata/master/ammunition.json" // TarkovData JSON
