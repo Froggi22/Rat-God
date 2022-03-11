@@ -14,7 +14,7 @@ export const options = [
 				name: "map",
 				description: subcommandDesc,
 				type: "STRING",
-				choices: config.maps.customs.map(choice => { return { name: choice, value: choice } })
+				choices: config.maps.customs.map(choice => ({ name: choice, value: choice }))
 			}
 		]
 	},
@@ -27,7 +27,7 @@ export const options = [
 				name: "map",
 				description: subcommandDesc,
 				type: "STRING",
-				choices: config.maps.factory.map(choice => { return { name: choice, value: choice } })
+				choices: config.maps.factory.map(choice => ({ name: choice, value: choice }))
 			}
 		]
 	},
@@ -40,7 +40,7 @@ export const options = [
 				name: "map",
 				description: subcommandDesc,
 				type: "STRING",
-				choices: config.maps.interchange.map(choice => { return { name: choice, value: choice } })
+				choices: config.maps.interchange.map(choice => ({ name: choice, value: choice }))
 			}
 		]
 	},
@@ -53,7 +53,7 @@ export const options = [
 				name: "map",
 				description: subcommandDesc,
 				type: "STRING",
-				choices: config.maps.lighthouse.map(choice => { return { name: choice, value: choice } })
+				choices: config.maps.lighthouse.map(choice => ({ name: choice, value: choice }))
 			}
 		]
 	},
@@ -66,7 +66,7 @@ export const options = [
 				name: "map",
 				description: subcommandDesc,
 				type: "STRING",
-				choices: config.maps.reserve.map(choice => { return { name: choice, value: choice } })
+				choices: config.maps.reserve.map(choice => ({ name: choice, value: choice }))
 			}
 		]
 	},
@@ -79,7 +79,7 @@ export const options = [
 				name: "map",
 				description: subcommandDesc,
 				type: "STRING",
-				choices: config.maps.shoreline.map(choice => { return { name: choice, value: choice } })
+				choices: config.maps.shoreline.map(choice => ({ name: choice, value: choice }))
 			}
 		]
 	},
@@ -92,7 +92,7 @@ export const options = [
 				name: "map",
 				description: subcommandDesc,
 				type: "STRING",
-				choices: config.maps.labs.map(choice => { return { name: choice, value: choice } })
+				choices: config.maps.labs.map(choice => ({ name: choice, value: choice }))
 			}
 		]
 	},
@@ -105,7 +105,7 @@ export const options = [
 				name: "map",
 				description: subcommandDesc,
 				type: "STRING",
-				choices: config.maps.woods.map(choice => { return { name: choice, value: choice } })
+				choices: config.maps.woods.map(choice => ({ name: choice, value: choice }))
 			}
 		]
 	}

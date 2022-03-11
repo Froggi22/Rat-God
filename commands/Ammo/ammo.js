@@ -10,7 +10,7 @@ export const options = [{
 	name: "caliber",
 	description: "The ammunition caliber",
 	required: true,
-	choices: Object.entries(config.ammo).map(choice => { return { name: choice[0], value: choice[1] } })
+	choices: Object.entries(config.ammo).map(choice => ({ name: choice[0], value: choice[1] }))
 }]
 
 const tarkovJSONAmmo = await fetchAmmo()
@@ -31,7 +31,7 @@ export function run (interaction) {
 	])
 
 	function pushData (item, itemProps) {
-		console.log(item._name)
+		// console.log(item._name)
 		let itemName = item._name
 			.replace(/_/g, " ")
 			.replace("patron ", "")
@@ -44,11 +44,11 @@ export function run (interaction) {
 			Buckshot: "Buckshot 7"
 		}
 		// if (Object.keys(customSwitcheruu).includes(itemName)) itemName = "B-32 gl"
-		console.log(itemName)
-		const renameThisLaterPls = Object.keys(customSwitcheruu).find(key => customSwitcheruu[key] === itemName)
-		console.log(renameThisLaterPls)
-		if (renameThisLaterPls) itemName = renameThisLaterPls
-		console.log(itemName)
+		// console.log(`|${itemName}|`)
+		const renameThisLaterPls = Object.keys(customSwitcheruu).find(key => key === itemName)
+		// console.log(renameThisLaterPls)
+		if (renameThisLaterPls !== undefined) itemName = customSwitcheruu[renameThisLaterPls]
+		// console.log(itemName)
 		tableData.push([
 			itemName,
 			itemProps.PenetrationPower,
