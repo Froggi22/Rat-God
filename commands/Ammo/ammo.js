@@ -4,7 +4,7 @@ import { fetchAmmo } from "../../events/ready.js"
 import { config } from "../../index.js"
 import AsciiTable from "ascii-table"
 
-const stats = {
+const stats = { // Object with full name and short name respectively
 	Name: "Name",
 	"Penetration Power": "Pen",
 	Damage: "Dmg",
@@ -29,18 +29,18 @@ export const options = [
 		choices: Object.entries(stats).splice(1).map(stat => ({ name: stat[0], value: stat[1] }))
 	}
 ]
-const startTime = new Date()
+const delayStart = new Date()
 const tarkovJSONAmmo = await fetchAmmo()
-console.log(`fetchAmmo() delay: ${new Date() - startTime}ms`)
+console.log(`fetchAmmo() delay: ${new Date() - delayStart}ms`)
 
 export function run (interaction) {
 	const caliber = interaction.options.getString("caliber")
 	const sorting = interaction.options.getString("sorting")
-	const valueToKey = Object.keys(config.ammo).find(key => config.ammo[key] === caliber)
+	const valueToKey = Object.keys(config.ammo).find(key => config.ammo[key] === caliber) // Fetches the caliber's full name / common name
 
 	const table = new AsciiTable()
 	table.removeBorder()
-	table.addRow(Object.values(stats))
+	table.addRow(Object.values(stats)) // Adds table headers e.g. Name
 
 	function pushData (item, itemProps) {
 		// console.log(item._name)
@@ -77,16 +77,16 @@ export function run (interaction) {
 			patron_127x108: "B-32 gl"
 		}
 		let itemName = item._name
-		const correctedItemName = Object.keys(correctedItemNamesObj).find(key => key === itemName)
-		if (correctedItemName !== undefined) itemName = correctedItemNamesObj[correctedItemName]
+		const correctedItemName = Object.keys(correctedItemNamesObj).find(key => key === itemName) // Finds the bullet's corrected name
+		if (correctedItemName !== undefined) itemName = correctedItemNamesObj[correctedItemName] // If the corrected name exists - use it
 		else {
 			itemName = item._name.replace(/_/g, " ")
 				.replace("patron ", "")
-				.split(" ").slice(1).join(" ")
+				.split(" ").slice(1).join(" ") // Removes the caliber
 				.trim()
-				.replace(/\w\S*/g, w => w.match(/[a-z]/i) ? w.replace(w.match(/[a-z]/i)[0], w.match(/[a-z]/i)[0].toUpperCase()) : w)
+				.replace(/\w\S*/g, w => w.match(/[a-z]/i) ? w.replace(w.match(/[a-z]/i)[0], w.match(/[a-z]/i)[0].toUpperCase()) : w) // Makes each word's first letter capitalized
 		}
-		tableData.push([
+		tableData.push([ // Add the bullet's data as a new row
 			itemName,
 			itemProps.PenetrationPower,
 			itemProps.ProjectileCount > 1 ? itemProps.Damage * itemProps.ProjectileCount : itemProps.Damage,
@@ -97,16 +97,16 @@ export function run (interaction) {
 	}
 
 	const tableData = []
-	for (let objNr = 0; objNr < tarkovJSONAmmo.length; objNr++) {
+	for (let objNr = 0; objNr < tarkovJSONAmmo.length; objNr++) { // Iterate through each ammo object
 		const item = tarkovJSONAmmo[objNr]
 		const itemProps = item._props
 		if (!itemProps.Caliber) continue
 		if (itemProps.Caliber.replace("Caliber", "") === caliber) pushData(item, itemProps)
-		else if (caliber === "127x108" && itemProps.Caliber.replace("Caliber", "") === "30x29")	pushData(item, itemProps)
+		else if (caliber === "127x108" && itemProps.Caliber.replace("Caliber", "") === "30x29")	pushData(item, itemProps) // The caliber 127x108 includes 30x29
 	}
 	function sortTable (statSorting) {
 		const statPos = []
-		for (let i = 0; i < 3; i++) statPos.push(Object.values(stats).indexOf(statSorting[i]))
+		for (let i = 0; i < statSorting.length; i++) statPos.push(Object.values(stats).indexOf(statSorting[i])) // Fetches the sorting stat's position in stats
 		tableData.sort((x, y) => y[statPos[0]] - x[statPos[0]] || y[statPos[1]] - x[statPos[1]] || y[statPos[2]] - x[statPos[2]])
 	}
 	if (!sorting || sorting === "Pen") sortTable(["Pen", "Dmg", "A Dmg"])
