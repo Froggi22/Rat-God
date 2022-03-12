@@ -12,7 +12,7 @@
 	},
 
 	"general": {
-		"lastUpdatedMessage": "**Last updated -** 2022-03-10.",
+		"lastUpdatedMessage": "**Last updated -** 2022-03-11.",
 		"latestUpdateDate": "December 13, 2021 14:32:00",
 		"developerGuildID": "861948446910578699",
 		"developers": [
@@ -26,7 +26,7 @@
 		"prefixMessage": "My prefix is  **/**  (Slash)!",
 		"froggiDiscordTag": "Froggi22#3436",
 		"helpCommands": "`Ammo` - Shows all ammo commands. \n`Maps` - Shows all maps commands.\n\n`Ping` - Pings the bot.\n`Modabuse` - Funny meme about mod abuse.\n`Servercount` - How many servers the bot's in.\n`Support` - Sends support link.",
-		"helpCommandSubtext": "`Latest` - Shows latest updates.\n\n[Website](https://rat-god-website.herokuapp.com/).\n[Instructional Video](https://youtu.be/xQwQqnkmScg) - *Yes many cringe*.\n[Github](https://github.com/Froggi22/Rat-God).",
+		"helpCommandSubtext": "`Latest` - Shows latest updates.\n\n[Website](https://rat-god-website.herokuapp.com).\n[Instructional Video](https://youtu.be/xQwQqnkmScg) - *Yes many cringe*.\n[Github](https://github.com/Froggi22/Rat-God).",
 		"supportInviteLink": "https://discord.com/invite/kg7VfRQ9Xw",
 		"modAbuseImage": "https://cdn.discordapp.com/attachments/865617643449221141/867828829489594429/Mod_abuse.png",
 		"sendMessageError": "I may not have have permission to send messages in that channel!\nIf this error still persists, please contact Froggi22#3436 or join the Support Server; https://discord.com/invite/kg7VfRQ9Xw",

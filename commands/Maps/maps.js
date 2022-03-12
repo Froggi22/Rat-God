@@ -9,105 +9,89 @@ export const options = [
 		name: "customs",
 		description: "Customs area",
 		type: "SUB_COMMAND",
-		options: [
-			{
-				name: "map",
-				description: subcommandDesc,
-				type: "STRING",
-				choices: config.maps.customs.map(choice => ({ name: choice, value: choice }))
-			}
-		]
+		options: [{
+			name: "map",
+			description: subcommandDesc,
+			type: "STRING",
+			choices: config.maps.customs.map(choice => ({ name: choice, value: choice }))
+		}]
 	},
 	{
 		name: "factory",
 		description: "Factory area",
 		type: "SUB_COMMAND",
-		options: [
-			{
-				name: "map",
-				description: subcommandDesc,
-				type: "STRING",
-				choices: config.maps.factory.map(choice => ({ name: choice, value: choice }))
-			}
-		]
+		options: [{
+			name: "map",
+			description: subcommandDesc,
+			type: "STRING",
+			choices: config.maps.factory.map(choice => ({ name: choice, value: choice }))
+		}]
 	},
 	{
 		name: "interchange",
 		description: "Interchange area",
 		type: "SUB_COMMAND",
-		options: [
-			{
-				name: "map",
-				description: subcommandDesc,
-				type: "STRING",
-				choices: config.maps.interchange.map(choice => ({ name: choice, value: choice }))
-			}
-		]
+		options: [{
+			name: "map",
+			description: subcommandDesc,
+			type: "STRING",
+			choices: config.maps.interchange.map(choice => ({ name: choice, value: choice }))
+		}]
 	},
 	{
 		name: "lighthouse",
 		description: "Lighthouse area",
 		type: "SUB_COMMAND",
-		options: [
-			{
-				name: "map",
-				description: subcommandDesc,
-				type: "STRING",
-				choices: config.maps.lighthouse.map(choice => ({ name: choice, value: choice }))
-			}
-		]
+		options: [{
+			name: "map",
+			description: subcommandDesc,
+			type: "STRING",
+			choices: config.maps.lighthouse.map(choice => ({ name: choice, value: choice }))
+		}]
 	},
 	{
 		name: "reserve",
 		description: "Reserve area",
 		type: "SUB_COMMAND",
-		options: [
-			{
-				name: "map",
-				description: subcommandDesc,
-				type: "STRING",
-				choices: config.maps.reserve.map(choice => ({ name: choice, value: choice }))
-			}
-		]
+		options: [{
+			name: "map",
+			description: subcommandDesc,
+			type: "STRING",
+			choices: config.maps.reserve.map(choice => ({ name: choice, value: choice }))
+		}]
 	},
 	{
 		name: "shoreline",
 		description: "Shoreline area",
 		type: "SUB_COMMAND",
-		options: [
-			{
-				name: "map",
-				description: subcommandDesc,
-				type: "STRING",
-				choices: config.maps.shoreline.map(choice => ({ name: choice, value: choice }))
-			}
-		]
+		options: [{
+			name: "map",
+			description: subcommandDesc,
+			type: "STRING",
+			choices: config.maps.shoreline.map(choice => ({ name: choice, value: choice }))
+		}]
 	},
 	{
 		name: "labs",
 		description: "The Lab area",
 		type: "SUB_COMMAND",
-		options: [
-			{
-				name: "map",
-				description: subcommandDesc,
-				type: "STRING",
-				choices: config.maps.labs.map(choice => ({ name: choice, value: choice }))
-			}
-		]
+		options: [{
+			name: "map",
+			description: subcommandDesc,
+			type: "STRING",
+			choices: config.maps.labs.map(choice => ({ name: choice, value: choice }))
+		}]
 	},
 	{
 		name: "woods",
 		description: "Woods area",
 		type: "SUB_COMMAND",
-		options: [
-			{
-				name: "map",
-				description: subcommandDesc,
-				type: "STRING",
-				choices: config.maps.woods.map(choice => ({ name: choice, value: choice }))
-			}
-		]
+		options: [{
+			name: "map",
+			description: subcommandDesc,
+			type: "STRING",
+			choices: config.maps.woods.map(choice => ({ name: choice, value: choice }))
+		}]
 	}
 ]
 

@@ -16,11 +16,8 @@ export async function fetchAmmo () {
 }
 
 export async function run (client) {
-	const startTime = new Date()
-	// console.log(tarkovJSONAmmo[0]._name)
-	console.log(`Startup delay > ${new Date() - startTime}ms`)
 	const startupDate = new Date().toLocaleString().replace(",", "")
-	console.log(`${startupDate} || Ready! Logged in as ${client.user.tag}`)
+	console.log(`${startupDate} - Ready! Logged in as ${client.user.tag}`)
 	client.user.setPresence({
 		status: "online",
 		activities: [{
