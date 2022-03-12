@@ -31,7 +31,7 @@ export const options = [
 ]
 const startTime = new Date()
 const tarkovJSONAmmo = await fetchAmmo()
-console.log(`fetchAmmo delay: ${new Date() - startTime}ms`)
+console.log(`fetchAmmo() delay: ${new Date() - startTime}ms`)
 
 export function run (interaction) {
 	const caliber = interaction.options.getString("caliber")
@@ -104,12 +104,16 @@ export function run (interaction) {
 		if (itemProps.Caliber.replace("Caliber", "") === caliber) pushData(item, itemProps)
 		else if (caliber === "127x108" && itemProps.Caliber.replace("Caliber", "") === "30x29")	pushData(item, itemProps)
 	}
-	const sortTable = (stat1, stat2, stat3) => tableData.sort((x, y) => y[stat1] - x[stat1] || y[stat2] - x[stat2] || y[stat3] - x[stat3])
-	if (!sorting || sorting === "Pen") sortTable(1, 2, 3)
-	else if (sorting === "Dmg") sortTable(2, 3, 1)
-	else if (sorting === "A Dmg") sortTable(3, 2, 1)
-	else if (sorting === "Frag") sortTable(4, 1, 2)
-	else sortTable(5, 1, 2)
+	function sortTable (statSorting) {
+		const statPos = []
+		for (let i = 0; i < 3; i++) statPos.push(Object.values(stats).indexOf(statSorting[i]))
+		tableData.sort((x, y) => y[statPos[0]] - x[statPos[0]] || y[statPos[1]] - x[statPos[1]] || y[statPos[2]] - x[statPos[2]])
+	}
+	if (!sorting || sorting === "Pen") sortTable(["Pen", "Dmg", "A Dmg"])
+	else if (sorting === "Dmg") sortTable(["Dmg", "A Dmg", "Pen"])
+	else if (sorting === "A Dmg") sortTable(["A Dmg", "Dmg", "Pen"])
+	else if (sorting === "Frag") sortTable(["Frag", "Pen", "Dmg"])
+	else sortTable(["Velo", "Pen", "Dmg"])
 	for (const stat in tableData) {
 		table.addRow([
 			tableData[stat][0], // Name
