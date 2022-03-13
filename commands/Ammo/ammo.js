@@ -44,7 +44,6 @@ export function run (interaction) {
 	table.addRow(Object.values(stats)) // Adds table headers e.g. Name
 
 	function pushData (item, itemProps) {
-		// console.log(item._name)
 		const correctedItemNamesObj = { // Change keys to raw version (item._name)
 			patron_12x70_slug: "Lead Slug",
 			patron_12x70_buckshot_65: "Buckshot 6.5 Express",
