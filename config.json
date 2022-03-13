@@ -8,7 +8,11 @@
 		"wikiBallistics": "https://escapefromtarkov.fandom.com/wiki/Ballistics",
 		"ammoTitle": "Ammunition Table",
 		"ammoDescription": "Type **/Help** to get Rat Gods commands",
-		"defaultColor": "#FFD700"
+		"defaultColor": "#FFD700",
+		"green": "#78B159",
+		"yellow": "#FDCB58",
+		"orange": "#F4900C",
+		"red": "#DD2E44"
 	},
 
 	"general": {
@@ -25,8 +29,8 @@
 		"prefix": "/",
 		"prefixMessage": "My prefix is  **/**  (Slash)!",
 		"froggiDiscordTag": "Froggi22#3436",
-		"helpCommands": "`Ammo` - Shows all ammo commands. \n`Maps` - Shows all maps commands.\n\n`Ping` - Pings the bot.\n`Modabuse` - Funny meme about mod abuse.\n`Servercount` - How many servers the bot's in.\n`Support` - Sends support link.",
-		"helpCommandSubtext": "`Latest` - Shows latest updates.\n\n[Website](https://rat-god-website.herokuapp.com).\n[Instructional Video](https://youtu.be/xQwQqnkmScg) - *Yes many cringe*.\n[Github](https://github.com/Froggi22/Rat-God).",
+		"helpCommands": "`Ammo` - Shows all ammo commands. \n`Maps` - Shows all maps commands.\n\n`Ping` - Pings the bot.\n`Modabuse` - Funny meme about mod abuse.\n`Servercount` - Bot's popularity.\n`Support` - Contact details.",
+		"helpCommandSubtext": "`Latest` - Latest updates.\n\n[Website](https://rat-god-website.herokuapp.com).\n[Instructional Video](https://youtu.be/xQwQqnkmScg) - *Yes many cringe*.\n[Github](https://github.com/Froggi22/Rat-God).",
 		"supportInviteLink": "https://discord.com/invite/kg7VfRQ9Xw",
 		"modAbuseImage": "https://cdn.discordapp.com/attachments/865617643449221141/867828829489594429/Mod_abuse.png",
 		"sendMessageError": "I may not have have permission to send messages in that channel!\nIf this error still persists, please contact Froggi22#3436 or join the Support Server; https://discord.com/invite/kg7VfRQ9Xw",
@@ -119,7 +123,6 @@
 		],
 
 		"titles": {
-			"null": "Maps Command",
 			"Info": "Detailed Information",
 			"Map": "Detailed Map",
 			"Hidden Stashes": "Hidden Stashes",
@@ -136,7 +139,6 @@
 		},
 
 		"descriptions": {
-			"null": "The different types of maps:",
 			"Info": "Useful info:",
 			"Map": "A useful map:",
 			"Hidden Stashes": "Locations of all hidden stashes:",
@@ -161,12 +163,6 @@
 
 		"fields": {
 			"customs": {
-				"null": [
-					{
-						"name": "Type \"/Maps Customs Info\" to get detailed info about the area",
-						"value": "Detailed map: **/Maps Customs Map**.\nGuide for hidden stashes: **/Maps Customs Hidden Stashes**.\nInteractive map: **/Maps Customs Interactive Map**.\nDorms map: **/Maps Customs Dorms**.\n3D map: **/Maps Customs 3D**."
-					}
-				],
 				"Info": [
 					{
 						"name": "Description",
@@ -230,12 +226,6 @@
 			},
 
 			"factory": {
-				"null": [
-					{
-						"name": "Type \"/Maps Factory Info\" to get detailed info about the area.",
-						"value": "Detailed map: **/Maps Factory Map**.\nInteractive map: **/Maps Factory Interactive Map**."
-					}
-				],
 				"Info": [
 					{
 						"name": "Description",
@@ -281,12 +271,6 @@
 			},
 
 			"interchange": {
-				"null": [
-					{
-						"name": "Type \"/Maps Interchange Info\" to get detailed info about the area.",
-						"value": "Detailed map: **/Maps Interchange Map**.\nGuide for hidden stashes: **/Maps Interchange Hidden Stashes**.\nInteractive map: **/Maps Interchange Interactive Map**."
-					}
-				],
 				"Info": [
 					{
 						"name": "Description",
@@ -342,12 +326,6 @@
 			},
 
 			"lighthouse": {
-				"null": [
-					{
-						"name": "Type \"/Maps Lighthouse Info\" to get detailed info about the area.",
-						"value": "Detailed map: **/Maps Lighthouse Map**.\nGuide for hidden stashes: **/Maps Lighthouse Hidden Stashes**.\nInteractive map: **/Maps Lighthouse Interactive Map**.\n3D map: **/Maps Lighthouse 3D**."
-					}
-				],
 				"Info": [
 					{
 						"name": "Description",
@@ -387,12 +365,6 @@
 			},
 
 			"reserve": {
-				"null": [
-					{
-						"name": "Type \"/Maps Reserve Info\" to get detailed info about the area.",
-						"value": "Detailed map: **/Maps Reserve Map**.\nInteractive map: **/Maps Reserve Interactive Map**.\nDetailed map with key guide: **/Maps Reserve Key Map**.\nUnderground D-2 Bunker: **/Maps Reserve D-2 Bunker Map**."
-					}
-				],
 				"Info": [
 					{
 						"name": "Description",
@@ -450,12 +422,6 @@
 			},
 
 			"shoreline": {
-				"null": [
-					{
-						"name": "Type \"/Maps Shoreline Info\" to get detailed info about the area.",
-						"value": "Detailed map: **/Maps Shoreline Map**.\nGuide for hidden stashes: **/Maps Shoreline Hidden Stashes**.\nInteractive map: **/Maps Shoreline Interactive Map**.\nKey Spawns Map: **/Maps Shoreline Key Spawns Map**.\nResort Map: **/Maps Shoreline Resort**.\n3D map: **/Maps Shoreline 3D**."
-					}
-				],
 				"Info": [
 					{
 						"name": "Description",
@@ -525,12 +491,6 @@
 			},
 
 			"labs": {
-				"null": [
-					{
-						"name": "Type \"/Maps Labs Info\" to get detailed info about the area.",
-						"value": "Detailed map: **/Maps Labs Map**.\nInteractive map: **/Maps Labs Interactive Map**.\nMap for each floor: **/Maps Labs Basement/First Floor/Second Floor**.\n3D map: **/Maps Labs 3D**."
-					}
-				],
 				"Info": [
 					{
 						"name": "Description",
@@ -588,12 +548,6 @@
 			},
 
 			"woods": {
-				"null": [
-					{
-						"name": "Type \"/Maps Woods Info\" to get detailed info about the area.",
-						"value": "Detailed map: **/Maps Woods Map**.\nGuide for hidden stashes: **/Maps Woods Hidden Stashes**.\nInteractive map: **/Maps Woods Interactive Map**."
-					}
-				],
 				"Info": [
 					{
 						"name": "Description",
@@ -646,7 +600,6 @@
 		},
 		"images": {
 			"customs": {
-				"null": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/40/Customs07.png/revision/latest?cb=20180525014110",
 				"Info": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/eb/Customs_Dealmaker_Haunt.png/revision/latest?cb=20200905125123",
 				"Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/55/CustomsLargeExpansionGloryMonki.png/revision/latest?cb=20210224211032",
 				"Hidden Stashes": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/7e/Customs_Hidden_Stashes.jpg/revision/latest?cb=20191111193149",
@@ -654,25 +607,21 @@
 				"3D Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/27/2021_Customs_by_PaulRIISK.png/revision/latest?cb=20210202221431"
 			},
 			"factory": {
-				"null": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/6c/Fac4.png/revision/latest?cb=20180322235010",
 				"Info": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/4b/Fac9.png/revision/latest?cb=20180322235120",
 				"Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/cd/Factory_3D_b_Johnny_Tushonka.jpg/revision/latest?cb=20210704215141"
 			},
 			"interchange": {
-				"null": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/af/Interchange.jpg/revision/latest?cb=20180124204206",
 				"Info": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/3e/Banner_interchange.png/revision/latest?cb=20200811153253",
 				"Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e5/InterchangeMap_Updated_4.24.2020.png/revision/latest?cb=20210320055357",
 				"Hidden Stashes": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/fe/Interchange_hidden_stash_map.jpg/revision/latest?cb=20191117132146"
 			},
 			"lighthouse": {
-				"null": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/dc/Banner_lighthouse.png/revision/latest?cb=20211213001748",
 				"Info": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d6/Lighthouse_concept_%282%29.jpg/revision/latest?cb=20211102173810",
 				"Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/13/Jindouz_Lighthouse_Map_V1.png/revision/latest?cb=20211218192352",
 				"Hidden Stashes": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/05/Hokkaido_Lighthouse_Stashes_Map.jpeg/revision/latest?cb=20211219225541",
 				"3D Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e2/Re3mrLighthouseIsometricDay-min.png/revision/latest?cb=20220112220933"
 			},
 			"reserve": {
-				"null": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/f7/ReserveConcept4.jpg/revision/latest?cb=20190516191339",
 				"Info": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/62/Gluhar_Spawn_Locations.png/revision/latest?cb=20191226213630",
 				"Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/42/3D_Map_by_loweffortsaltbox.png/revision/latest?cb=20200410160036",
 				"Key Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/9f/Keys_and_doors_v3.png/revision/latest?cb=20201023113645",
@@ -680,7 +629,6 @@
 				"3D Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/38/Re3mrReserveCardinalNorthWikiVer.jpg/revision/latest?cb=20220127204615"
 			},
 			"shoreline": {
-				"null": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d5/Banner_shoreline.png/revision/latest?cb=20171101223501",
 				"Info": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/a1/Sanitar_Map.png/revision/latest?cb=20200803113415",
 				"Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/ac/Shoreline_Map_-_12.7.png/revision/latest?cb=20211224235423",
 				"Hidden Stashes": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/8c/Shoreline_hidden_stashes_map_with_pics.jpg/revision/latest?cb=20210110045931",
@@ -689,7 +637,6 @@
 				"3D Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e1/Actual_caches_37_map_shoreline.jpg/revision/latest?cb=20200105023458"
 			},
 			"labs": {
-				"null": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/db/Labs-Showcase-10.png/revision/latest?cb=20190123211524",
 				"Info": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/24/Labs-Showcase-2.png/revision/latest?cb=20190123211403",
 				"Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/cf/The_Lab_Map_%28Horizontal%29_%28EN%29.png/revision/latest?cb=20200330144615",
 				"Basement Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/06/TheLabBasementByLogiwonk.png/revision/latest?cb=20210525222902",
@@ -698,7 +645,6 @@
 				"3D Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/6d/The_Lab_3D_map_by_SteelSmith_TTV.png/revision/latest?cb=20200510152630"
 			},
 			"woods": {
-				"null": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/cd/Woods-Showcase-11.png/revision/latest?cb=20190212212759",
 				"Info": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/74/Woods-Showcase-14.png/revision/latest?cb=20190212212824",
 				"Map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/05/Glory4lyfeWoods_map_v4_marked.png/revision/latest?cb=20211212154613",
 				"Hidden Stashes": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/55/Woods_Caches.png/revision/latest?cb=20210122093726"

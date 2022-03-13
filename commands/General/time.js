@@ -2,7 +2,7 @@ import { MessageEmbed } from "discord.js"
 import { interactionReply } from "../../commandReply.js"
 import { config } from "../../index.js"
 
-export const description = "In-game raid time"
+export const description = "Current in-game raid time"
 export function run (interaction) {
 	/* In-game raid time algorithm
 		In-game time moves at 7 seconds per irl second.

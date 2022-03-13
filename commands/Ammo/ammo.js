@@ -4,7 +4,7 @@ import { fetchAmmo } from "../../events/ready.js"
 import { config } from "../../index.js"
 import AsciiTable from "ascii-table"
 
-const stats = { // Object with full name and short name respectively
+const stats = { // Object with full names and short names of the stats respectively
 	Name: "Name",
 	"Penetration Power": "Pen",
 	Damage: "Dmg",
@@ -26,6 +26,7 @@ export const options = [
 		name: "sorting",
 		description: "The order of the bullets in the list",
 		type: "STRING",
+		required: false,
 		choices: Object.entries(stats).splice(1).map(stat => ({ name: stat[0], value: stat[1] }))
 	}
 ]
@@ -119,7 +120,7 @@ export function run (interaction) {
 			tableData[stat][0], // Name
 			tableData[stat][1], // Penetration Power
 			tableData[stat][2], // Damage
-			tableData[stat][3], // Armor Damage
+			`${tableData[stat][3]}%`, // Armor Damage
 			`${tableData[stat][4]}%`, // Fragmentation Chance
 			`${tableData[stat][5]}m/s` // Initial Velocity
 		])

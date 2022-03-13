@@ -1,13 +1,13 @@
 import { config } from "./index.js"
 
 // Function for replying to interactions
-export async function interactionReply (interaction, messageContent) {
+export async function interactionReply (interaction, messageContent, ephemeral = false) {
 	// This is for inducing an interaction failure
 	/* const delay = ms => new Promise(resolve => setTimeout(resolve, ms))
 	await delay(4000) */
 
 	let error;
-	[, error] = await tryCatchPromise(interaction.deferReply())
+	[, error] = await tryCatchPromise(interaction.deferReply({ ephemeral: ephemeral }))
 	if (!error) {
 		[, error] = await tryCatchPromise(interaction.editReply(messageContent))
 		// If both deferReply and editReply successful then return

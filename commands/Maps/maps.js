@@ -13,6 +13,7 @@ export const options = [
 			name: "map",
 			description: subcommandDesc,
 			type: "STRING",
+			required: true,
 			choices: config.maps.customs.map(choice => ({ name: choice, value: choice }))
 		}]
 	},
@@ -24,6 +25,7 @@ export const options = [
 			name: "map",
 			description: subcommandDesc,
 			type: "STRING",
+			required: true,
 			choices: config.maps.factory.map(choice => ({ name: choice, value: choice }))
 		}]
 	},
@@ -35,6 +37,7 @@ export const options = [
 			name: "map",
 			description: subcommandDesc,
 			type: "STRING",
+			required: true,
 			choices: config.maps.interchange.map(choice => ({ name: choice, value: choice }))
 		}]
 	},
@@ -46,6 +49,7 @@ export const options = [
 			name: "map",
 			description: subcommandDesc,
 			type: "STRING",
+			required: true,
 			choices: config.maps.lighthouse.map(choice => ({ name: choice, value: choice }))
 		}]
 	},
@@ -57,6 +61,7 @@ export const options = [
 			name: "map",
 			description: subcommandDesc,
 			type: "STRING",
+			required: true,
 			choices: config.maps.reserve.map(choice => ({ name: choice, value: choice }))
 		}]
 	},
@@ -68,6 +73,7 @@ export const options = [
 			name: "map",
 			description: subcommandDesc,
 			type: "STRING",
+			required: true,
 			choices: config.maps.shoreline.map(choice => ({ name: choice, value: choice }))
 		}]
 	},
@@ -79,6 +85,7 @@ export const options = [
 			name: "map",
 			description: subcommandDesc,
 			type: "STRING",
+			required: true,
 			choices: config.maps.labs.map(choice => ({ name: choice, value: choice }))
 		}]
 	},
@@ -90,6 +97,7 @@ export const options = [
 			name: "map",
 			description: subcommandDesc,
 			type: "STRING",
+			required: true,
 			choices: config.maps.woods.map(choice => ({ name: choice, value: choice }))
 		}]
 	}
@@ -97,14 +105,13 @@ export const options = [
 
 export function run (interaction) {
 	const location = interaction.options.getSubcommand() // Fetch location, e.g. customs
-	const locationCap = location[0].toUpperCase() + location.slice(1) // Capitalize location name, e.g. customs -> Customs
-	const map = interaction.options.getString("map") || "null" // What kind of map, e.g. Hidden Stashes
+	const map = interaction.options.getString("map") // What kind of map, e.g. Hidden Stashes
 
 	return interactionReply(interaction, {
 		embeds: [new MessageEmbed()
 			.setColor(config.embedDesign.defaultColor)
 			.setAuthor({ name: "🐀 Escape From Tarkov Maps Wiki", url: config.embedDesign.wikiMaps })
-			.setTitle(`${locationCap} ${config.maps.titles[map]}`)
+			.setTitle(`${location[0].toUpperCase() + location.slice(1)} ${config.maps.titles[map]}`)
 			.setDescription(config.maps.descriptions[map][location] || config.maps.descriptions[map])
 			.setImage(config.maps.images[location][map])
 			.addFields(config.maps.fields[location][map])

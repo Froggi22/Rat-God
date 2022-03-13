@@ -12,6 +12,7 @@ module.exports = {
 					name: "Key",
 					description: "What kind of key",
 					type: "STRING",
+					required: true,
 					choices: "a"
 				}
 			]
@@ -25,6 +26,7 @@ module.exports = {
 					name: "Key",
 					description: "What kind of key",
 					type: "STRING",
+					required: true,
 					choices: "a"
 				}
 			]
