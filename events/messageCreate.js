@@ -13,11 +13,14 @@ export async function run (message, client) {
 	case "!guild":
 		await client.guilds.cache.get(config.general.developerGuildID).commands.set(commands.map(command => command))
 		return messageReply(message, "Deployed Guild Slash Commands!")
-	case "!global":
-		await client.application.commands.set(commands.map(command => command))
-		return messageReply(message, "Deployed Global Slash Commands!")
 	case "!removeguild":
 		await client.guilds.cache.get(config.general.developerGuildID).commands.set([])
 		return messageReply(message, "Removed Guild Slash Commands!")
+	case "!global":
+		await client.application.commands.set(commands.map(command => command))
+		return messageReply(message, "Deployed Global Slash Commands!")
+	case "!removeglobal":
+		await client.application.commands.set([])
+		return messageReply(message, "Removed Global Slash Commands!")
 	}
 }

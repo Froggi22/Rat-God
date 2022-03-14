@@ -1,26 +1,136 @@
 import { MessageEmbed } from "discord.js"
 import { interactionReply } from "../../commandReply.js"
+import { fetchAmmo } from "../../events/ready.js"
 import { config } from "../../index.js"
+import AsciiTable from "ascii-table"
+
+const stats = { // Object with full names and short names of the stats respectively
+	Name: "Name",
+	"Penetration Power": "Pen",
+	Damage: "Dmg",
+	"Armor Damage": "A Dmg",
+	"Fragmentation Chance": "Frag",
+	"Initial Velocity": "Velo"
+}
 
 export const description = "Ammo charts for different calibers"
-export const options = [{
-	type: "STRING",
-	name: "caliber",
-	description: "The ammunition caliber",
-	required: true,
-	choices: Object.keys(config.ammo).map(choice => { return { name: choice, value: choice } })
-}]
+export const options = [
+	{
+		name: "caliber",
+		description: "The ammunition caliber",
+		type: "STRING",
+		required: true,
+		choices: Object.entries(config.ammo).map(choice => ({ name: choice[0], value: choice[1] }))
+	},
+	{
+		name: "sorting",
+		description: "The order of the bullets in the list",
+		type: "STRING",
+		required: false,
+		choices: Object.entries(stats).splice(1).map(stat => ({ name: stat[0], value: stat[1] }))
+	}
+]
+const delayStart = new Date()
+const tarkovJSONAmmo = await fetchAmmo()
+console.log(`fetchAmmo() delay: ${new Date() - delayStart}ms`)
 
 export function run (interaction) {
 	const caliber = interaction.options.getString("caliber")
+	const sorting = interaction.options.getString("sorting")
+	const valueToKey = Object.keys(config.ammo).find(key => config.ammo[key] === caliber) // Fetches the caliber's full name / common name
+
+	const table = new AsciiTable()
+	table.removeBorder()
+	table.addRow(Object.values(stats)) // Adds table headers e.g. Name
+
+	function pushData (item, itemProps) {
+		const correctedItemNamesObj = { // Change keys to raw version (item._name)
+			patron_12x70_slug: "Lead Slug",
+			patron_12x70_buckshot_65: "Buckshot 6.5 Express",
+			patron_12x70_buckshot_85: "Buckshot 8.5 Magnum",
+			patron_12x70_buckshot_525: "Buckshot 5.25",
+			patron_20x70_slug_broadhead: "Slug Devastator",
+			patron_20x70_buckshot_73: "Buckshot 7.3",
+			patron_12x70_buckshot: "Buckshot 7.5",
+			patron_20x70_buckshot_62: "Buckshot 6.2",
+			patron_20x70_buckshot_56: "Buckshot 5.6",
+			patron_762x25tt_T_Gzh: "PT Gzh",
+			patron_9x19_GT: "T gzh",
+			patron_9x19_7n31: "PBP Gzh", // Either works tbh
+			patron_1143x23_acp: "Acp FMJ",
+			patron_1143x23_rip: "Acp Rip",
+			patron_9x21_sp10: "PS Gzh",
+			patron_9x21_sp11: "P Gzh",
+			patron_9x21_sp12: "PE Gzh",
+			patron_9x21_sp13: "BT Gzh",
+			patron_366_custom_ap: "TKM AP-M",
+			patron_545x39_7n39: "PPBS",
+			patron_556x45_MK_255_Mod_0: "RRLP",
+			patron_556x45_mk_318_mod_0: "SOST",
+			patron_762x51_tpz_sp: "TCW SP",
+			patron_762x51_bpz_fmj: "BCP FMJ",
+			patron_762x54r_7n37: "BS",
+			patron_762x54r_7bt1: "BT",
+			patron_762х54R_7N1: "PS",
+			patron_86x70_lapua_magnum: "Lapua FMJ",
+			patron_86x70_lapua_magnum_upz: "Lapua UCW",
+			patron_127x108: "B-32 gl"
+		}
+		let itemName = item._name
+		const correctedItemName = Object.keys(correctedItemNamesObj).find(key => key === itemName) // Finds the bullet's corrected name
+		if (correctedItemName !== undefined) itemName = correctedItemNamesObj[correctedItemName] // If the corrected name exists - use it
+		else {
+			itemName = item._name.replace(/_/g, " ")
+				.replace("patron ", "")
+				.split(" ").slice(1).join(" ") // Removes the caliber
+				.trim()
+				.replace(/\w\S*/g, w => w.match(/[a-z]/i) ? w.replace(w.match(/[a-z]/i)[0], w.match(/[a-z]/i)[0].toUpperCase()) : w) // Makes each word's first letter capitalized
+		}
+		tableData.push([ // Add the bullet's data as a new row
+			itemName,
+			itemProps.PenetrationPower,
+			itemProps.ProjectileCount > 1 ? itemProps.Damage * itemProps.ProjectileCount : itemProps.Damage,
+			itemProps.ArmorDamage,
+			Math.floor(itemProps.FragmentationChance * 100),
+			itemProps.InitialSpeed
+		])
+	}
+
+	const tableData = []
+	for (let objNr = 0; objNr < tarkovJSONAmmo.length; objNr++) { // Iterate through each ammo object
+		const item = tarkovJSONAmmo[objNr]
+		const itemProps = item._props
+		if (!itemProps.Caliber) continue
+		if (itemProps.Caliber.replace("Caliber", "") === caliber) pushData(item, itemProps)
+		else if (caliber === "127x108" && itemProps.Caliber.replace("Caliber", "") === "30x29")	pushData(item, itemProps) // The caliber 127x108 includes 30x29
+	}
+	function sortTable (statSorting) {
+		const statPos = []
+		for (let i = 0; i < statSorting.length; i++) statPos.push(Object.values(stats).indexOf(statSorting[i])) // Fetches the sorting stat's position in stats
+		tableData.sort((x, y) => y[statPos[0]] - x[statPos[0]] || y[statPos[1]] - x[statPos[1]] || y[statPos[2]] - x[statPos[2]])
+	}
+	if (!sorting || sorting === "Pen") sortTable(["Pen", "Dmg", "A Dmg"])
+	else if (sorting === "Dmg") sortTable(["Dmg", "A Dmg", "Pen"])
+	else if (sorting === "A Dmg") sortTable(["A Dmg", "Dmg", "Pen"])
+	else if (sorting === "Frag") sortTable(["Frag", "Pen", "Dmg"])
+	else sortTable(["Velo", "Pen", "Dmg"])
+	for (const stat in tableData) {
+		table.addRow([
+			tableData[stat][0], // Name
+			tableData[stat][1], // Penetration Power
+			tableData[stat][2], // Damage
+			`${tableData[stat][3]}%`, // Armor Damage
+			`${tableData[stat][4]}%`, // Fragmentation Chance
+			`${tableData[stat][5]}m/s` // Initial Velocity
+		])
+	}
+
 	interactionReply(interaction, {
 		embeds: [new MessageEmbed()
 			.setColor(config.embedDesign.defaultColor)
-			.setAuthor({ name: `🐀 ${caliber} ${config.embedDesign.ammoTitle}`, url: config.embedDesign.wikiBallistics })
-			.setDescription(`${config.embedDesign.ammoDescription}`)
-			.setImage(config.ammo[caliber])
+			.setAuthor({ name: `🐀 ${valueToKey} ${config.embedDesign.ammoTitle}`, url: config.embedDesign.wikiBallistics })
+			.setDescription(`\`\`\`txt\n${table.toString()}\`\`\``)
 			.setFooter({ text: config.embedDesign.gameUpdate })
-			.setTimestamp()
 		]
 	})
 }

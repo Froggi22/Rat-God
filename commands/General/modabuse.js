@@ -8,7 +8,6 @@ export function run (interaction) {
 		embeds: [new MessageEmbed()
 			.setColor(config.embedDesign.defaultColor)
 			.setImage(config.general.modAbuseImage)
-			.setTimestamp()
 		]
 	})
 }

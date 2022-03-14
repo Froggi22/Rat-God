@@ -12,7 +12,6 @@ export function run (interaction, client) {
 				{ name: "Channels", value: `${client.channels.cache.size}`, inline: true },
 				{ name: "Users", value: `${client.users.cache.size}`, inline: true }
 			)
-			.setTimestamp()
 		]
 	})
 }

@@ -14,7 +14,6 @@ export function run (interaction) {
 				{ name: `Version ${config.general.version}`, value: `${config.general.lastUpdatedMessage}\n${config.general.helpCommandSubtext}` }
 			)
 			.setFooter({ text: config.embedDesign.gameUpdate })
-			.setTimestamp()
 		]
 	})
 }

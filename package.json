@@ -13,6 +13,7 @@
 		"url": "https://rat-god-website.herokuapp.com"
 	},
 	"dependencies": {
+		"ascii-table": "^0.0.9",
 		"discord.js": "^13.6.0",
 		"dotenv": "^10.0.0",
 		"node-fetch": "^2.6.7"

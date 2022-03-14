@@ -14,7 +14,6 @@ export function run (interaction) {
 				{ name: "Discord Server", value: `[Link](${config.general.supportInviteLink})` },
 				{ name: "Froggi's DMs", value: config.general.froggiDiscordTag }
 			)
-			.setTimestamp()
 		]
 	})
 }

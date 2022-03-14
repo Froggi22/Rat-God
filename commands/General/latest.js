@@ -9,9 +9,9 @@ export function run (interaction) {
 			.setColor(config.embedDesign.defaultColor)
 			.setAuthor({ name: "🐀 Latest update", url: config.embedDesign.wikiMain })
 			.setDescription(`\`\`\`diff\n# ${config.general.version}\n\n${config.general.latestUpdateMessage}\n\`\`\``)
-			.addField("Appreciation letter", `Thank you for inviting and using my bot! I'm so thankful for surpassing 100 servers!\n I appreciate all feedback in the [Support Server](${config.general.supportInviteLink})!\n`)
+			.addField("Appreciation letter", `Thank you so much for inviting and using my bot! I'm very thankful for surpassing 200 servers!\n I appreciate all feedback in the [Support Server](${config.general.supportInviteLink})!\n`)
 			.setFooter({ text: config.embedDesign.gameUpdate })
-			.setTimestamp()
+			.setTimestamp(new Date(config.general.latestUpdateDate))
 		]
 	})
 }
