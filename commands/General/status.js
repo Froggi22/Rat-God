@@ -1,10 +1,10 @@
 import { MessageEmbed } from "discord.js"
 import { interactionReply } from "../../commandReply.js"
 import { config } from "../../index.js"
-import fetch from "node-fetch"
+// import fetch from "node-fetch"
 // import { readFile } from "fs/promises"
 
-let tarkovServiceStatus
+/* let tarkovServiceStatus
 export async function fetchStatus () {
 	// const serviceStatus = JSON.parse(await readFile("tarkovServiceStatus.json")) // Used for mass-testing/restarting when you don't want to spam requests to the API. Uncomment this code line & import readFile but also comment out the fetch. Open the API URL in your browser, save as json file in project directory.
 	const url = "https://status.escapefromtarkov.com/api/services"
@@ -19,11 +19,19 @@ export async function fetchStatus () {
 		serviceStatus,
 		fetched: Date.now()
 	}
-}
+} */
 
 export const description = "Current status on Tarkov services"
 export async function run (interaction) {
-	if (!tarkovServiceStatus?.fetched || Date.now() - tarkovServiceStatus.fetched > 60 * 60 * 1000) tarkovServiceStatus = await fetchStatus() // If fetch time data is undefined or older than an hour, fetch again
+	interactionReply(interaction, {
+		embeds: [new MessageEmbed()
+			.setColor(config.embedDesign.red)
+			.setAuthor({ name: "🐀 Current Tarkov Service Status", url: "https://status.escapefromtarkov.com" })
+			.setDescription("This command is currently WIP, please check again later!")
+		]
+	}, true)
+
+	/* if (!tarkovServiceStatus?.fetched || Date.now() - tarkovServiceStatus.fetched > 60 * 60 * 1000) tarkovServiceStatus = await fetchStatus() // If fetch time data is undefined or older than an hour, fetch again
 	if (!tarkovServiceStatus?.serviceStatus) { // If fetching was unsuccessful, reply with an error response
 		interactionReply(interaction, {
 			embeds: [new MessageEmbed()
@@ -49,5 +57,5 @@ export async function run (interaction) {
 	else if (greenQuota >= 0.75) embed.setColor(config.embedDesign.yellow)	// Yellow	(7-9 Green)
 	else if (greenQuota >= 0.5) embed.setColor(config.embedDesign.orange)	// Orange	(5-6 Green)
 	else embed.setColor(config.embedDesign.red)								// Red		(0-4 Green)
-	interactionReply(interaction, { embeds: [embed] })
+	interactionReply(interaction, { embeds: [embed] }) */
 }
