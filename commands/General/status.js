@@ -12,10 +12,8 @@ export async function fetchStatus () {
 		method: "GET"
 	}
 	const serviceStatus = await fetch(url, settings)
-		.then(async response => {
-			console.log(response)
-			return await response.json()
-		})
+		.then(async response => await response.text())
+		.then(text => console.log(text))
 		.catch(error => console.log(`Status fetch error > ${error}`))
 	return {
 		serviceStatus,
