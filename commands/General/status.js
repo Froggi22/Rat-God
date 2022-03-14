@@ -8,12 +8,18 @@ let tarkovServiceStatus
 export async function fetchStatus () {
 	// const serviceStatus = JSON.parse(await readFile("tarkovServiceStatus.json")) // Used for mass-testing/restarting when you don't want to spam requests to the API. Uncomment this code line & import readFile but also comment out the fetch. Open the API URL in your browser, save as json file in project directory.
 	const url = "https://status.escapefromtarkov.com/api/services"
-	const settings = { method: "GET" }
+	const settings = {
+		method: "GET",
+		"User-Agent": "tomte"
+	}
 	const serviceStatus = await fetch(url, settings)
-		.then(response => response.json())
+		.then(async response => {
+			console.log(response)
+			return await response.json()
+		})
 		.catch(error => console.log(`Status fetch error > ${error}`))
 	return {
-		serviceStatus: serviceStatus,
+		serviceStatus,
 		fetched: Date.now()
 	}
 }
