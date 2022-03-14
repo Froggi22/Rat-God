@@ -9,8 +9,7 @@ export async function fetchStatus () {
 	// const serviceStatus = JSON.parse(await readFile("tarkovServiceStatus.json")) // Used for mass-testing/restarting when you don't want to spam requests to the API. Uncomment this code line & import readFile but also comment out the fetch. Open the API URL in your browser, save as json file in project directory.
 	const url = "https://status.escapefromtarkov.com/api/services"
 	const settings = {
-		method: "GET",
-		"User-Agent": "tomte"
+		method: "GET"
 	}
 	const serviceStatus = await fetch(url, settings)
 		.then(async response => {
