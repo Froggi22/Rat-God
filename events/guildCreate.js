@@ -18,6 +18,6 @@ export function run (guild, client) {
 		.addField(`${config.general.prefixMessage}`, `${config.general.permissionsRatGod}\n`)
 		.setFooter({ text: config.embedDesign.gameUpdate })
 
-	const channel = guild.channels.cache.find(channel => channel.type === "GUILD_TEXT" && channel.permissionsFor(guild.me).has(Permissions.FLAGS.VIEW_CHANNEL) && channel.permissionsFor(guild.me).has(Permissions.FLAGS.SEND_MESSAGES)) // Find the first textchannel where the bot can send the welcome message and have VIEW_CHANNEL & SEND_MESSAGES permissions
+	const channel = guild.channels.cache.find(channel => channel.type === "GUILD_TEXT" && channel.viewable && channel.isText() && channel.permissionsFor(guild.me).has(Permissions.FLAGS.SEND_MESSAGES)) // Find the first textchannel where the bot can send the welcome message with specific conditions
 	if (channel) channel.send({ embeds: [embed] }).catch() // If such channel exists, send the embed
 }
