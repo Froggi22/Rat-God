@@ -15,6 +15,7 @@ export async function fetchAmmo () {
 export async function run (client) {
 	const startupDate = new Date().toLocaleString().replace(",", "")
 	console.log(`${startupDate} - Ready! Logged in as ${client.user.tag}`)
+	console.log(`${client.uptime * 0.001}s`)
 	client.user.setPresence({
 		status: "online",
 		activities: [{

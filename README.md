@@ -55,7 +55,7 @@ The revenue this project generates is by generous donations on our [Patreon site
 
 - [Invite Bot](https://discord.com/api/oauth2/authorize?client_id=864572952275714059&permissions=274877958208&scope=bot%20applications.commands)
 - [Discord Server](https://discord.com/invite/kg7VfRQ9Xw) *<-- Highly recommend to join!*
-- [Website](https://rat-god-website.herokuapp.com/)
+- [Website](https://rat-god-website.herokuapp.com)
 - [Website's repository](https://github.com/Froggi22/Rat-God-Website)
 - Vote on [Top.gg](https://top.gg/bot/864572952275714059/vote)
 - [Patreon site](https://www.patreon.com/Froggi22)
