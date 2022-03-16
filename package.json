@@ -1,6 +1,6 @@
 {
 	"name": "rat-god",
-	"version": "1.5.0",
+	"version": "1.5.1",
 	"description": "An Open Source Discord bot that will help you in Escape From Tarkov!",
 	"license": "AGPL-3.0-only",
 	"main": "index.js",

@@ -43,6 +43,3 @@ export const config = JSON.parse(fs.readFileSync("config.json"))
 
 // Top.gg servercount
 AutoPoster(process.env.TOPGGTOKEN, client)
-/* ap.on("posted", () => {
-	console.log("Posted stats to Top.gg!")
-}) */

@@ -17,15 +17,15 @@
 
 	"general": {
 		"lastUpdatedMessage": "**Last updated -** 2022-03-16.",
-		"latestUpdateDate": "March 14, 2022 07:25:00",
+		"latestUpdateDate": "March 16, 2022 22:45:00",
 		"developerGuildID": "861948446910578699",
 		"developers": [
 			"229212817448894464",
 			"379643682984296448"
 		],
 
-		"version": "1.5.0",
-		"latestUpdateMessage": "+ Ammo rework - Replaced images with up-to-date data sourced from Tarkov, with an optional sorting option!\n\n+ New /Status command - Displaying the current status of the Tarkov services!\n\n+ New /Time command. Shows the current in-game raid time!\n\n~ The /maps command's map choice e.g. Hidden Stashes is now a required option, removing the \"The different types of maps\" command list as it was unnecessary.\n\n~ Switched all interactive maps from Tarkov Tools to Map Genie.\n- Removed the Reserve and Lighthouse interactive map links as they aren't free of charge.\n\n- Removed timestamps on all commands (except the /latest).\n+ /latest timestamp shows when said update went live.\n\n~ The /Ping command now only displays the heartbeat ping, in order to become more user-friendly.\n\n+ New Github README.md structure, with easier to read text and navigation.",
+		"version": "1.5.1",
+		"latestUpdateMessage": "+ Renamed /servercount to /statistics which includes more information e.g. dependency versions & uptime.\n\n~ Sending Top.gg bot stats, primarly for servercount on the website.\n\n~ Renamed /status to /service-status - still unavailable :(.",
 		"prefix": "/",
 		"prefixMessage": "My prefix is  **/**  (Slash)!",
 		"froggiDiscordTag": "Froggi22#3436",
