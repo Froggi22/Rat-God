@@ -4,6 +4,7 @@ import { config } from "../../index.js"
 
 export const description = "Amount of servers, channels and users the bot has cached"
 export function run (interaction, client) {
+	console.log(`${client.uptime * 0.001}s`)
 	interactionReply(interaction, {
 		embeds: [new MessageEmbed()
 			.setColor(config.embedDesign.defaultColor)

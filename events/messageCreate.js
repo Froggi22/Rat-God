@@ -3,7 +3,6 @@ import { config, commands } from "../index.js"
 
 export async function run (message, client) {
 	const botId = client.user.id
-	console.log(`${client.uptime * 0.001}s`)
 	if (message.content.match(RegExp(`^<@!?${botId}>`))) { // If message starts with bot ping
 		return messageReply(message, config.general.prefixMessage) // Reply with prefix
 	}
