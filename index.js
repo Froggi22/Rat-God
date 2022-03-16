@@ -1,3 +1,4 @@
+import { AutoPoster } from "topgg-autoposter"
 import discordjs from "discord.js"
 import fs from "fs"
 import dotenv from "dotenv"
@@ -39,3 +40,6 @@ for (const folder of fs.readdirSync("./commands")) {
 
 // JSON config
 export const config = JSON.parse(fs.readFileSync("config.json"))
+
+// Top.gg servercount
+AutoPoster(process.env.TOPGGTOKEN, client)

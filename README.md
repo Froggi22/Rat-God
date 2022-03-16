@@ -39,7 +39,7 @@
 
 Rat God is an Open Source Discord bot that helps you in the game Escape From Tarkov, and is covered by the [Affero General Public License version 3](LICENSE)! The information is sourced from the game and the Official Wiki. It can be requested using [Discord's slash commands](https://support.discord.com/hc/en-us/articles/1500000368501-Slash-Commands-FAQ). This bot benefits the user because it's a fast lookup for ammunition and maps details, presents unique data and is more than likely faster than looking it up on said Wiki!
 
-This project is constantly being worked on and improved upon by a few people as a hobby. So please show your support in the [Discord Support Server](https://discord.com/invite/kg7VfRQ9Xw)!
+This project is constantly being worked on and improved upon by a few people as a hobby. So please show your support in the [Discord Server](https://discord.com/invite/kg7VfRQ9Xw)!
 
 ### Data Collection 📊
 
@@ -55,7 +55,7 @@ The revenue this project generates is by generous donations on our [Patreon site
 
 - [Invite Bot](https://discord.com/api/oauth2/authorize?client_id=864572952275714059&permissions=274877958208&scope=bot%20applications.commands)
 - [Discord Server](https://discord.com/invite/kg7VfRQ9Xw) *<-- Highly recommend to join!*
-- [Website](https://rat-god-website.herokuapp.com/)
+- [Website](https://rat-god-website.herokuapp.com)
 - [Website's repository](https://github.com/Froggi22/Rat-God-Website)
 - Vote on [Top.gg](https://top.gg/bot/864572952275714059/vote)
 - [Patreon site](https://www.patreon.com/Froggi22)
@@ -74,7 +74,7 @@ The revenue this project generates is by generous donations on our [Patreon site
 - Rat God uses [Slash commands](https://support.discord.com/hc/en-us/articles/1500000368501-Slash-Commands-FAQ) - Prefix: `/`.
 - Auto-complete choices, so you don't have to remember any by heart!
 - To get a list of **all** commands, execute `/commands`.
-- For extra help or questions, execute `/support` or head over to the [Discord support server](https://discord.com/invite/kg7VfRQ9Xw).
+- For extra help or questions, execute `/support` or head over to the [Discord Server](https://discord.com/invite/kg7VfRQ9Xw).
 
 ### Ammunition 💥
 
