@@ -9,7 +9,28 @@ export async function fetchAmmo () {
 		.then(response => response.json())
 		.catch(error => console.log(`Error > ${error}`))
 	return Object.values(tarkovJSON)
-		.filter(Obj => Obj._props && Obj._props.Caliber && Obj._name !== "Ammo" && !Obj._name.startsWith("shrapnel"))
+		.filter(Obj =>
+			Obj._props &&
+			Obj._props.Caliber &&
+			Obj._name !== "Ammo" &&
+			!Obj._name.startsWith("shrapnel")
+		)
+}
+
+export async function fetchMaps (location) {
+	const correctedLocationNamesObj = {
+		customs: "bigmap",
+		reserve: "rezervebase"
+	}
+
+	const correctedItemName = Object.keys(correctedLocationNamesObj).find(key => key === location) // Finds the location's corrected name
+	if (correctedItemName) location = correctedLocationNamesObj[correctedItemName] // If the corrected name exists - use it
+	console.log(location)
+	const url = `https://dev.sp-tarkov.com/SPT-AKI/Server/src/branch/development/project/assets/database/locations/${location}/base.json`
+	const settings = { method: "GET" }
+	const data = await fetch(url, settings)
+		.then(response => response.json())
+		.catch(error => console.log(`Error > ${error}`))
 }
 
 export async function run (client) {
