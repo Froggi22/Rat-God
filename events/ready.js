@@ -1,5 +1,5 @@
 import fetch from "node-fetch"
-// import { readFile } from "fs/promises"
+import { readFile, writeFile } from "fs/promises"
 
 export async function fetchAmmo () {
 	// const tarkovJSON = JSON.parse(await readFile("tarkovJSON.json")) // Used for mass-testing/restarting when you don't want to spam requests to the API. Uncomment this code line & import readFile but also comment out the fetch. Open the API URL in your browser, save as json file in project directory.
@@ -17,20 +17,28 @@ export async function fetchAmmo () {
 		)
 }
 
-export async function fetchMaps (location) {
+export async function fetchMaps (mapsJSONObj, location) {
 	const correctedLocationNamesObj = {
 		customs: "bigmap",
-		reserve: "rezervebase"
+		reserve: "rezervbase"
+		// Factory
 	}
 
 	const correctedItemName = Object.keys(correctedLocationNamesObj).find(key => key === location) // Finds the location's corrected name
 	if (correctedItemName) location = correctedLocationNamesObj[correctedItemName] // If the corrected name exists - use it
 	console.log(location)
-	const url = `https://dev.sp-tarkov.com/SPT-AKI/Server/src/branch/development/project/assets/database/locations/${location}/base.json`
+	/* const url = `https://dev.sp-tarkov.com/SPT-AKI/Server/raw/branch/development/project/assets/database/locations/${location.toLowerCase()}/base.json`
 	const settings = { method: "GET" }
 	const data = await fetch(url, settings)
 		.then(response => response.json())
 		.catch(error => console.log(`Error > ${error}`))
+	console.log(data)
+	console.log("==============================")
+	mapsJSONObj[location] = data
+	writeFile("mapsJSON.json", JSON.stringify(mapsJSONObj)) */
+	const data = JSON.parse(await readFile("mapsJSON.json"))
+	mapsJSONObj[location] = data[location]
+	return mapsJSONObj
 }
 
 export async function run (client) {

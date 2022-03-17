@@ -16,7 +16,7 @@
 	},
 
 	"general": {
-		"lastUpdatedMessage": "**Last updated -** 2022-03-16.",
+		"lastUpdatedMessage": "**Last updated -** 2022-03-17.",
 		"latestUpdateDate": "March 16, 2022 22:45:00",
 		"developerGuildID": "861948446910578699",
 		"developers": [
@@ -65,6 +65,17 @@
 	},
 
 	"maps": {
+		"maplist": [
+			"Customs",
+			"Factory",
+			"Interchange",
+			"Lighthouse",
+			"Reserve",
+			"Shoreline",
+			"Labs",
+			"Woods"
+		],
+
 		"customs": [
 			"Info",
 			"Map",

@@ -30,11 +30,15 @@ export const options = [
 		choices: Object.entries(stats).splice(1).map(stat => ({ name: stat[0], value: stat[1] }))
 	}
 ]
-const delayStart = new Date()
-const tarkovJSONAmmo = await fetchAmmo()
-console.log(`fetchAmmo() delay: ${new Date() - delayStart}ms`)
+let tarkovJSONAmmo
 
-export function run (interaction) {
+export async function run (interaction) {
+	if (!tarkovJSONAmmo) {
+		const delayStart = new Date()
+		tarkovJSONAmmo = await fetchAmmo()
+		console.log(`fetchAmmo() delay: ${new Date() - delayStart}ms`)
+	}
+
 	const caliber = interaction.options.getString("caliber")
 	const sorting = interaction.options.getString("sorting")
 	const valueToKey = Object.keys(config.ammo).find(key => config.ammo[key] === caliber) // Fetches the caliber's full name / common name
