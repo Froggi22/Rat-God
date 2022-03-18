@@ -9,8 +9,9 @@ export async function interactionReply (interaction, messageContent, ephemeral =
 	let error;
 	[, error] = await tryCatchPromise(interaction.deferReply({ ephemeral: ephemeral }))
 	if (!error) {
-		[, error] = await tryCatchPromise(interaction.editReply({ content: messageContent, components }))
+		[, error] = await tryCatchPromise(interaction.editReply({ content: messageContent, components: [components] }))
 		// If both deferReply and editReply successful then return
+		console.log(error)
 		if (!error) return
 	}
 	[, error] = await tryCatchPromise(interaction.channel.send(messageContent))

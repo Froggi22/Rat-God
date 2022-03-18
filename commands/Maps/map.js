@@ -29,7 +29,7 @@ export async function run (interaction) {
 		.setColor(config.embedDesign.defaultColor)
 		.setAuthor({ name: "🐀 Escape From Tarkov Maps Wiki", url: config.embedDesign.wikiMaps })
 		.setTitle(`${location} guide`)
-		.setDescription(`${mapsJSONObj[location].Description || "\u200B"}\n\nBoss: ${BLS.BossName.replace("boss", "")}\nFollower count: ${BLS.BossEscortAmount}\nSpawn: ${BLS.BossZone.replace(/Zone/g, "").replace(/,/g, ", ")}\nSpawn chance: ${BLS.BossChance}%`)
+		.setDescription(`*${mapsJSONObj[location].Description || "\u200B"}*\n\nBoss: ${BLS.BossName.replace("boss", "")}\nFollower count: ${BLS.BossEscortAmount}\nSpawn: ${BLS.BossZone.replace(/Zone/g, "").replace(/,/g, ", ")}\nSpawn chance: ${BLS.BossChance}%`)
 		.addFields(
 			{ name: "Raid Time", value: `${mapsJSONObj[location].escape_time_limit}m`, inline: true },
 			{ name: "Players", value: `${mapsJSONObj[location].MinPlayers} - ${mapsJSONObj[location].MaxPlayers}`, inline: true },
@@ -44,5 +44,24 @@ export async function run (interaction) {
 	}
 	for (let i = 0; i < (3 - ((embed.fields.length - 4) % 3)) % 3; i++) embed.addField("\u200B", "\u200B", true) // Add whitespace fields for nice formatting, (Fills up so the embed.fields.length % 3 === 0)
 
-	return interactionReply(interaction, { embeds: [embed] })
+	const row = new MessageActionRow()
+		.addComponents(
+			new MessageButton()
+				.setURL(`https://escapefromtarkov.fandom.com/wiki/${location}`)
+				.setLabel("Wiki")
+				.setStyle("LINK")
+		)
+
+	const blacklistedIM = ["Lighthouse", "Reserve"]
+	if (!blacklistedIM.includes(location)) {
+		row.addComponents(
+			new MessageButton()
+				.setURL(`https://mapgenie.io/tarkov/maps/${location}`)
+				.setLabel("Map Genie")
+				.setStyle("LINK")
+		)
+	}
+	interaction.deferReply({ ephemeral: false })
+	interaction.editReply({ content: { embeds: [embed] }, components: [row] })
+	// return interactionReply(interaction, { embeds: [embed] }, false, { components: [row] })
 }
