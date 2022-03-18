@@ -1,7 +1,7 @@
 import { config } from "./index.js"
 
 // Function for replying to interactions
-export async function interactionReply (interaction, messageContent, ephemeral = false) {
+export async function interactionReply (interaction, messageContent, ephemeral = false, components = []) {
 	// This is for inducing an interaction failure
 	/* const delay = ms => new Promise(resolve => setTimeout(resolve, ms))
 	await delay(4000) */
@@ -9,7 +9,7 @@ export async function interactionReply (interaction, messageContent, ephemeral =
 	let error;
 	[, error] = await tryCatchPromise(interaction.deferReply({ ephemeral: ephemeral }))
 	if (!error) {
-		[, error] = await tryCatchPromise(interaction.editReply(messageContent))
+		[, error] = await tryCatchPromise(interaction.editReply({ content: messageContent, components }))
 		// If both deferReply and editReply successful then return
 		if (!error) return
 	}
