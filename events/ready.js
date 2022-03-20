@@ -1,5 +1,5 @@
 import fetch from "node-fetch"
-import { readFile, writeFile, appendFile } from "fs/promises"
+import { readFile, appendFile } from "fs/promises"
 
 export async function fetchAmmo () {
 	// const tarkovJSON = JSON.parse(await readFile("tarkovJSON.json")) // Used for mass-testing/restarting when you don't want to spam requests to the API. Uncomment this code line & import readFile but also comment out the fetch. Open the API URL in your browser, save as json file in project directory.
@@ -18,19 +18,20 @@ export async function fetchAmmo () {
 }
 
 export async function fetchMaps (mapsJSONObj, location) {
+	let correctedName = location
 	const correctedLocationNamesObj = {
 		customs: "bigmap",
 		reserve: "rezervbase"
 		// Factory
 	}
 
-	const correctedItemName = Object.keys(correctedLocationNamesObj).find(key => key === location) // Finds the location's corrected name
-	if (correctedItemName) location = correctedLocationNamesObj[correctedItemName] // If the corrected name exists - use it
+	if (Object.keys(correctedLocationNamesObj).find(key => key === location.toLowerCase())) correctedName = correctedLocationNamesObj[location.toLowerCase()] // If the corrected name exists - use it
 
 	const data1 = JSON.parse(await readFile("mapsJSON.json"))
 	if (data1[location]) mapsJSONObj[location] = data1[location]
 	else {
-		const url = `https://dev.sp-tarkov.com/SPT-AKI/Server/raw/branch/development/project/assets/database/locations/${location.toLowerCase()}/base.json`
+		const delayStart = new Date()
+		const url = `https://dev.sp-tarkov.com/SPT-AKI/Server/raw/branch/development/project/assets/database/locations/${correctedName.toLowerCase()}/base.json`
 		const settings = { method: "GET" }
 		const data2 = await fetch(url, settings)
 			.then(response => response.json())
@@ -40,6 +41,7 @@ export async function fetchMaps (mapsJSONObj, location) {
 		console.log("==============================")
 		mapsJSONObj[location] = data2
 		appendFile("mapsJSON.json", JSON.stringify(mapsJSONObj))
+		console.log(`fetchMaps() delay: ${new Date() - delayStart}ms`)
 	}
 	return mapsJSONObj
 }

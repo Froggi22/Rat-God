@@ -2,6 +2,7 @@ import { MessageEmbed } from "discord.js"
 import { interactionReply } from "../../commandReply.js"
 import { fetchAmmo } from "../../events/ready.js"
 import { config } from "../../index.js"
+import { capitalizeString } from "../../utils.js"
 import AsciiTable from "ascii-table"
 
 const stats = { // Object with full names and short names of the stats respectively
@@ -88,7 +89,7 @@ export async function run (interaction) {
 				.replace("patron ", "")
 				.split(" ").slice(1).join(" ") // Removes the caliber
 				.trim()
-				.replace(/\w\S*/g, w => w.match(/[a-z]/i) ? w.replace(w.match(/[a-z]/i)[0], w.match(/[a-z]/i)[0].toUpperCase()) : w) // Makes each word's first letter capitalized
+			itemName = capitalizeString(itemName)
 		}
 		tableData.push([ // Add the bullet's data as a new row
 			itemName,

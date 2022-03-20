@@ -2,6 +2,7 @@ import { MessageEmbed, MessageActionRow, MessageButton } from "discord.js"
 import { interactionReply } from "../../commandReply.js"
 import { config } from "../../index.js"
 import { fetchMaps } from "../../events/ready.js"
+import { capitalizeString } from "../../utils.js"
 
 export const description = "Information and maps about a specific location"
 export const options = [{
@@ -9,7 +10,7 @@ export const options = [{
 	description: "What location",
 	type: "STRING",
 	required: true,
-	choices: config.maps.maplist.map(location => ({ name: location, value: location })) // Factory, Shoreline, Labs etc.
+	choices: Object.keys(config.locations).map(location => ({ name: location, value: location })) // Factory, Shoreline, Labs etc.
 }]
 
 let mapsJSONObj = {}
@@ -18,50 +19,70 @@ export async function run (interaction) {
 	const location = interaction.options.getString("location") // e.g. Customs
 
 	if (!mapsJSONObj[location]) { // If obj doesnt have said location
-		const delayStart = new Date()
 		mapsJSONObj = await fetchMaps(mapsJSONObj, location)
-		console.log(`fetchMaps() delay: ${new Date() - delayStart}ms`)
 	}
 
 	const BLS = mapsJSONObj[location].BossLocationSpawn.find(BLSObj => BLSObj.BossName !== "sectantPriest")
 
+	let bossEscortAmountCount = 0
+	if (BLS.Supports) {
+		for (let i = 0; i < BLS.Supports.length; i++) {
+			if (BLS.Supports[i].BossEscortAmount) {
+				bossEscortAmountCount += Number(BLS.Supports[i].BossEscortAmount)
+			}
+		}
+	}
 	const embed = new MessageEmbed()
 		.setColor(config.embedDesign.defaultColor)
 		.setAuthor({ name: "🐀 Escape From Tarkov Maps Wiki", url: config.embedDesign.wikiMaps })
 		.setTitle(`${location} guide`)
-		.setDescription(`*${mapsJSONObj[location].Description || "\u200B"}*\n\nBoss: ${BLS.BossName.replace("boss", "")}\nFollower count: ${BLS.BossEscortAmount}\nSpawn: ${BLS.BossZone.replace(/Zone/g, "").replace(/,/g, ", ")}\nSpawn chance: ${BLS.BossChance}%`)
+		.setDescription(`*${mapsJSONObj[location].Description.trim() || "\u200B"}*\n\n**Boss:** ${BLS.BossName.replace("boss", "")}\n**Follower count:** ${bossEscortAmountCount}\n**Spawn:** ${BLS.BossZone.replace(/Zone/g, "").replace(/,/g, ", ")}\n**Spawn chance:** ${BLS.BossChance}%\n`)
 		.addFields(
 			{ name: "Raid Time", value: `${mapsJSONObj[location].escape_time_limit}m`, inline: true },
 			{ name: "Players", value: `${mapsJSONObj[location].MinPlayers} - ${mapsJSONObj[location].MaxPlayers}`, inline: true },
 			{ name: "Insurance", value: `${mapsJSONObj[location].Insurance ? "Yes" : "No"}`, inline: true },
 			{ name: "\u200B", value: "**Extractions**" }
 		)
-		.setImage(config.maps.images[location.toLowerCase()].Map)
+		.setImage(config.locations[location.toLowerCase()].map)
 		.setFooter({ text: config.embedDesign.gameUpdate })
 
+	const InfofieldsLength = embed.fields.length
+
 	for (let i = 0; i < mapsJSONObj[location].exits.length; i++) {
-		embed.addField(`${mapsJSONObj[location].exits[i].Name}`, `Chance: ${mapsJSONObj[location].exits[i].Chance}%\nTime: ${mapsJSONObj[location].exits[i].ExfiltrationTime}s`, true)
+		embed.addField(`${mapsJSONObj[location].exits[i].Name.replace("EXFIL_", "").replace(/_/g, " ")}`, `Chance: ${mapsJSONObj[location].exits[i].Chance}%\nTime: ${mapsJSONObj[location].exits[i].ExfiltrationTime}s`, true)
 	}
-	for (let i = 0; i < (3 - ((embed.fields.length - 4) % 3)) % 3; i++) embed.addField("\u200B", "\u200B", true) // Add whitespace fields for nice formatting, (Fills up so the embed.fields.length % 3 === 0)
+
+	for (let i = 0; i < (3 - ((embed.fields.length - InfofieldsLength) % 3)) % 3; i++) {
+		embed.addField("\u200B", "\u200B", true) // Add whitespace fields for nice formatting, (Fills up so the embed.fields.length % 3 === 0)
+	}
 
 	const row = new MessageActionRow()
-		.addComponents(
+		.addComponents( // Wiki
 			new MessageButton()
 				.setURL(`https://escapefromtarkov.fandom.com/wiki/${location}`)
 				.setLabel("Wiki")
 				.setStyle("LINK")
 		)
 
-	const blacklistedIM = ["Lighthouse", "Reserve"]
-	if (!blacklistedIM.includes(location)) {
+	if (config.locations[location.toLowerCase()].interactive) { // Interactive
 		row.addComponents(
 			new MessageButton()
-				.setURL(`https://mapgenie.io/tarkov/maps/${location}`)
-				.setLabel("Map Genie")
+				.setURL(config.locations[location.toLowerCase()].interactive)
+				.setLabel("Interactive Map")
 				.setStyle("LINK")
 		)
 	}
-	interaction.deferReply({ ephemeral: false })
-	interaction.editReply({ content: { embeds: [embed] }, components: [row] })
-	// return interactionReply(interaction, { embeds: [embed] }, false, { components: [row] })
+
+	for (const specialMap in config.locations[location.toLowerCase()]) { // All other maps / buttons
+		if (specialMap !== "map" && specialMap !== "interactive") {
+			row.addComponents(
+				new MessageButton()
+					.setCustomId(`location-${location.toLowerCase()}-${specialMap.replace(" ", "_").replace("-", "").toLowerCase()}`)
+					.setLabel(`${capitalizeString(specialMap)} Map`)
+					.setStyle("PRIMARY")
+			)
+		}
+	}
+
+	return interactionReply(interaction, { messageEmbed: embed, messageEphemeral: true, messageComponents: row })
 }
