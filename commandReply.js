@@ -1,6 +1,7 @@
 import { config } from "./index.js"
 
 /**
+ * Sends a reply to an interaction.
  * @param {*} interaction The Discord interaction
  * @param {object} messageItems An object specifying the message details
  */
@@ -16,7 +17,7 @@ export async function interactionReply (interaction, { messageContent = undefine
 		// If both deferReply and editReply successful then return
 		if (!error) return
 	}
-	// [, error] = await tryCatchPromise(interaction.channel.send({ content: messageContent, embeds: messageEmbed ? [messageEmbed] : undefined }))
+	[, error] = await tryCatchPromise(interaction.channel.send({ content: messageContent, embeds: messageEmbed ? [messageEmbed] : undefined }))
 	// If channel.send successful then return
 	if (!error) return
 	[, error] = await tryCatchPromise(interaction.user.send({ content: messageContent, embeds: messageEmbed ? [messageEmbed] : undefined }))
@@ -30,6 +31,7 @@ export async function interactionReply (interaction, { messageContent = undefine
 }
 
 /**
+ * Sends a reply to a message command.
  * @param {*} message The Discord message
  * @param {string} messageContent Text in the message
  */
@@ -54,8 +56,9 @@ export async function messageReply (message, messageContent) {
 }
 
 /**
+ * Takes a promise and handles it.
  * @param {promise} promise Any promise
- * @returns An array with a null element, depening on the promise result. Data arr[0] is returned if promise is resolved
+ * @returns {array} Arryay with one truthy element - data or error
  */
 export async function tryCatchPromise (promise) {
 	try {

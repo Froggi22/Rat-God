@@ -5,7 +5,7 @@ import { config } from "../../index.js"
 export const description = "A complete list of Rat Gods commands"
 export function run (interaction) {
 	interactionReply(interaction, {
-		embeds: [new MessageEmbed()
+		messageEmbed: new MessageEmbed()
 			.setColor(config.embedDesign.defaultColor)
 			.setAuthor({ name: "🐀 A Complete List Of Commands For Rat God", url: config.embedDesign.wikiMain })
 			.setDescription("A list of all functioning commands for Rat God:")
@@ -17,12 +17,7 @@ export function run (interaction) {
 				},
 				{
 					name: "Maps",
-					value: "`Customs Info`\n`Customs Map`\n`Customs HS`\n`Customs IM`\n`Customs Dorms`\n`Customs 3D`\n\n`Factory Info`\n`Factory Map`\n`Factory IM`\n\n`Interchange Info`\n`Interchange Map`\n`Interchange HS`\n`Interchange IM`\n\n`Lighthouse Info`\n`Lighthouse Map`\n`Lighthouse HS`\n`Lighthouse 3D`",
-					inline: true
-				},
-				{
-					name: "\u200b",
-					value: "`Reserve Info`\n`Reserve Map`\n`Reserve Key Guide`\n`Reserve D-2 Bunker`\n`Reserve 3D`\n\n`Shoreline Info`\n`Shoreline Map`\n`Shoreline HS`\n`Shoreline IM`\n`Shoreline Key Spawns`\n`Shoreline Resort`\n`Shoreline 3D`\n\n`Labs Info`\n`Labs Map`\n`Labs IM`\n`Labs Basement`\n`Labs 1st Floor`\n`Labs 2nd Floor`\n`Labs 3D`\n\n`Woods Info`\n`Woods Map`\n`Woods HS`\n`Woods IM`",
+					value: "`Customs`\n`Factory`\n`Interchange`\n`Lighthouse`\n`Reserve`\n`Shoreline`\n`Labs`\n`Woods`",
 					inline: true
 				},
 
@@ -31,11 +26,9 @@ export function run (interaction) {
 
 				{
 					name: "General",
-					value: "`Help` - Help command.\n`Ping` - Pings the bot.\n`Commands` - This message.\n`Modabuse` - Funny meme about mod abuse.\n`Mention` - Mention the bot to recieve the prefix.\n`Servercount` - Bot's popularity.\n`Support` - Contact details.\n`Latest` - Latest updates.",
-					inline: true
+					value: "`Commands` - This message.\n`Help` - Help command.\n`Latest` - Latest update.\n`Modabuse` - Funny meme about mod abuse.\n`Ping` - Pinging the bot.\n`Service-Status` - WIP Status on Tarkov services\n`Statistics` - Bot statistics.\n`Support` - Contact details.\n`Time` - Current in-game raid time\n`Mention` - Mention the bot to recieve the prefix."
 				}
 			)
 			.setFooter({ text: config.embedDesign.gameUpdate })
-		]
 	})
 }

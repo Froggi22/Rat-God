@@ -48,17 +48,22 @@ export async function run (interaction) {
 	table.removeBorder()
 	table.addRow(Object.values(stats)) // Adds table headers e.g. Name
 
-	function pushData (item, itemProps) {
+	/**
+	 * Pushing cherry-picked data from the item object to an array.
+	 * @param {object} item The bullet object
+	 */
+	function pushData (item) {
 		const correctedItemNamesObj = { // Change keys to raw version (item._name)
+			patron_12x70_slug_50_bmg_m17_traccer: ".50 BMG",
 			patron_12x70_slug: "Lead Slug",
-			patron_12x70_buckshot_65: "Buckshot 6.5 Express",
-			patron_12x70_buckshot_85: "Buckshot 8.5 Magnum",
-			patron_12x70_buckshot_525: "Buckshot 5.25",
+			patron_12x70_buckshot_65: "6.5mm Express",
+			patron_12x70_buckshot: "7.5mm",
+			patron_12x70_buckshot_85: "8.5mm Magnum",
+			patron_12x70_buckshot_525: "5.25mm",
 			patron_20x70_slug_broadhead: "Slug Devastator",
-			patron_20x70_buckshot_73: "Buckshot 7.3",
-			patron_12x70_buckshot: "Buckshot 7.5",
-			patron_20x70_buckshot_62: "Buckshot 6.2",
-			patron_20x70_buckshot_56: "Buckshot 5.6",
+			patron_20x70_buckshot_73: "7.3mm",
+			patron_20x70_buckshot_62: "6.2mm",
+			patron_20x70_buckshot_56: "5.6mm",
 			patron_762x25tt_T_Gzh: "PT Gzh",
 			patron_9x19_GT: "T gzh",
 			patron_9x19_7n31: "PBP Gzh", // Either works tbh
@@ -81,6 +86,7 @@ export async function run (interaction) {
 			patron_86x70_lapua_magnum_upz: "Lapua UCW",
 			patron_127x108: "B-32 gl"
 		}
+		const itemProps = item._props
 		let itemName = item._name
 		const correctedItemName = Object.keys(correctedItemNamesObj).find(key => key === itemName) // Finds the bullet's corrected name
 		if (correctedItemName !== undefined) itemName = correctedItemNamesObj[correctedItemName] // If the corrected name exists - use it
@@ -88,6 +94,8 @@ export async function run (interaction) {
 			itemName = item._name.replace(/_/g, " ")
 				.replace("patron ", "")
 				.split(" ").slice(1).join(" ") // Removes the caliber
+				.replace("slug", "")
+				.replace("buckshot", "")
 				.trim()
 			itemName = capitalizeString(itemName)
 		}
@@ -106,9 +114,13 @@ export async function run (interaction) {
 		const item = tarkovJSONAmmo[objNr]
 		const itemProps = item._props
 		if (!itemProps.Caliber) continue
-		if (itemProps.Caliber.replace("Caliber", "") === caliber) pushData(item, itemProps)
-		else if (caliber === "127x108" && itemProps.Caliber.replace("Caliber", "") === "30x29")	pushData(item, itemProps) // The caliber 127x108 includes 30x29
+		if (itemProps.Caliber.replace("Caliber", "") === caliber) pushData(item)
+		else if (caliber === "127x108" && itemProps.Caliber.replace("Caliber", "") === "30x29")	pushData(item) // The caliber 127x108 includes 30x29
 	}
+	/**
+	 * Sorting tableData.
+	 * @param {Array} statSorting The sorting order - array with elements in the obj "stats"
+	 */
 	function sortTable (statSorting) {
 		const statPos = []
 		for (let i = 0; i < statSorting.length; i++) statPos.push(Object.values(stats).indexOf(statSorting[i])) // Fetches the sorting stat's position in stats
@@ -131,11 +143,10 @@ export async function run (interaction) {
 	}
 
 	interactionReply(interaction, {
-		embeds: [new MessageEmbed()
+		messageEmbed: new MessageEmbed()
 			.setColor(config.embedDesign.defaultColor)
 			.setAuthor({ name: `🐀 ${valueToKey} ${config.embedDesign.ammoTitle}`, url: config.embedDesign.wikiBallistics })
 			.setDescription(`\`\`\`txt\n${table.toString()}\`\`\``)
 			.setFooter({ text: config.embedDesign.gameUpdate })
-		]
 	})
 }

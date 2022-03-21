@@ -9,6 +9,12 @@ export function run (interaction) {
 		00:00:00 is equal to the unix time 10800000, which is 3 hours (UTC+3 - Russia)
 		Thus the algorithm to calculate the in-game time is: (UnixNow * 7 % 24 hours) + 3 hours
 	*/
+
+	/**
+	 * Calculating the in-game Tarkov raid time.
+	 * @param {bool} [opposite=true] Opposite time of default (+12h)
+	 * @returns {string} Formatted time string
+	 */
 	function tarkovTime (opposite = true) {
 		const hToMs = (h) => h * 60 * 60 * 1000 // Converts hours into milliseconds
 		const tarkovRatio = 7 // Ratio between tarkov and irl seconds
@@ -17,10 +23,9 @@ export function run (interaction) {
 	}
 
 	interactionReply(interaction, {
-		embeds: [new MessageEmbed()
+		messageEmbed: new MessageEmbed()
 			.setColor(config.embedDesign.defaultColor)
 			.setAuthor({ name: "🐀 In-game raid time" })
 			.setDescription(`:clock10: \`${tarkovTime()}\` - \`${tarkovTime(false)}\``)
-		]
 	})
 }

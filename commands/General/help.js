@@ -5,7 +5,7 @@ import { config } from "../../index.js"
 export const description = "A compact list of Rat Gods commands"
 export function run (interaction) {
 	interactionReply(interaction, {
-		embeds: [new MessageEmbed()
+		messageEmbed: new MessageEmbed()
 			.setColor(config.embedDesign.defaultColor)
 			.setAuthor({ name: "🐀 Rat Gods Commands", url: config.embedDesign.wikiMain })
 			.setDescription(`Leave suggestions to ${config.general.froggiDiscordTag}.`)
@@ -14,6 +14,5 @@ export function run (interaction) {
 				{ name: `Version ${config.general.version}`, value: `${config.general.lastUpdatedMessage}\n${config.general.helpCommandSubtext}` }
 			)
 			.setFooter({ text: config.embedDesign.gameUpdate })
-		]
 	})
 }

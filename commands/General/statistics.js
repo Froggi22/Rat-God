@@ -6,7 +6,7 @@ import ms from "ms"
 export const description = "Bot statistics"
 export function run (interaction, client) {
 	interactionReply(interaction, {
-		embeds: [new MessageEmbed()
+		messageEmbed: new MessageEmbed()
 			.setColor(config.embedDesign.defaultColor)
 			.setThumbnail(config.embedDesign.ratGodImage)
 			.addFields(
@@ -17,6 +17,5 @@ export function run (interaction, client) {
 				{ name: "Cached Channels", value: `${client.channels.cache.size}`, inline: true },
 				{ name: "Cached Users", value: `${client.users.cache.size}`, inline: true }
 			)
-		]
 	})
 }

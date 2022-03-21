@@ -5,10 +5,9 @@ import { config } from "../../index.js"
 export const description = "Pinging responsetimes"
 export function run (interaction, client) {
 	interactionReply(interaction, {
-		embeds: [new MessageEmbed()
+		messageEmbed: new MessageEmbed()
 			.setColor(config.embedDesign.defaultColor)
 			.setTitle("🏓 Pong!")
-			.setDescription(`My ping is **${Math.round(client.ws.ping)}**ms!\nI am online and responsive! 🕙`)
-		]
+			.setDescription(`Ping is **${Math.round(client.ws.ping)}**ms!\nI am online and responsive! 🕙`)
 	})
 }
