@@ -16,16 +16,16 @@
 	},
 
 	"general": {
-		"lastUpdatedMessage": "**Last updated -** 2022-03-21.",
-		"latestUpdateDate": "March 16, 2022 22:45:00",
+		"lastUpdatedMessage": "**Last updated -** 2022-03-22.",
+		"latestUpdateDate": "March 22, 2022 23:30:00",
 		"developerGuildID": "861948446910578699",
 		"developers": [
 			"229212817448894464",
 			"379643682984296448"
 		],
 
-		"version": "1.5.1",
-		"latestUpdateMessage": "+ Renamed /servercount to /statistics which includes more information e.g. dependency versions & uptime.\n\n~ Sending Top.gg bot stats, primarly for servercount on the website.\n\n~ Renamed /status to /service-status - still unavailable :(.",
+		"version": "1.5.2",
+		"latestUpdateMessage": "+ Maps rework - Now 1 command (/Map), with 1 option to choose your location (reducing the bloat). The initial response will contain more and new unique info, including a map! Additionally, the interaction response will have buttons (amount depends on location), where you can be either redirected to other sources e.g. the wiki, or other maps e.g. an In-Game map. The information is now dynamically sourced from Tarkov, and no longer static!\n\n- Removed \"Slugs\" and \"Buckshot\" from the 12x70mm bullet names. This means that you can view said embed on mobile without the text wordwrapping!\n\n- Removed WIP command /Service-Status.\n\n+ General code improvements, including more documentation!",
 		"prefix": "/",
 		"prefixMessage": "My prefix is  **/**  (Slash)!",
 		"froggiDiscordTag": "Froggi22#3436",
