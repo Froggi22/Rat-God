@@ -2,6 +2,7 @@ import { MessageEmbed } from "discord.js"
 import { interactionReply } from "../../commandReply.js"
 import { fetchAmmo } from "../../events/ready.js"
 import { config } from "../../index.js"
+import { capitalizeString } from "../../utils.js"
 import AsciiTable from "ascii-table"
 
 const stats = { // Object with full names and short names of the stats respectively
@@ -30,11 +31,15 @@ export const options = [
 		choices: Object.entries(stats).splice(1).map(stat => ({ name: stat[0], value: stat[1] }))
 	}
 ]
-const delayStart = new Date()
-const tarkovJSONAmmo = await fetchAmmo()
-console.log(`fetchAmmo() delay: ${new Date() - delayStart}ms`)
+let tarkovJSONAmmo
 
-export function run (interaction) {
+export async function run (interaction) {
+	if (!tarkovJSONAmmo) {
+		const delayStart = new Date()
+		tarkovJSONAmmo = await fetchAmmo()
+		console.log(`fetchAmmo() delay: ${new Date() - delayStart}ms`)
+	}
+
 	const caliber = interaction.options.getString("caliber")
 	const sorting = interaction.options.getString("sorting")
 	const valueToKey = Object.keys(config.ammo).find(key => config.ammo[key] === caliber) // Fetches the caliber's full name / common name
@@ -43,22 +48,26 @@ export function run (interaction) {
 	table.removeBorder()
 	table.addRow(Object.values(stats)) // Adds table headers e.g. Name
 
-	function pushData (item, itemProps) {
+	/**
+	 * Pushing cherry-picked data from the item object to an array.
+	 * @param {object} item The bullet object
+	 */
+	function pushData (item) {
 		const correctedItemNamesObj = { // Change keys to raw version (item._name)
+			patron_12x70_slug_50_bmg_m17_traccer: ".50 BMG",
 			patron_12x70_slug: "Lead Slug",
-			patron_12x70_buckshot_65: "Buckshot 6.5 Express",
-			patron_12x70_buckshot_85: "Buckshot 8.5 Magnum",
-			patron_12x70_buckshot_525: "Buckshot 5.25",
+			patron_12x70_buckshot_65: "6.5mm Express",
+			patron_12x70_buckshot: "7.5mm",
+			patron_12x70_buckshot_85: "8.5mm Magnum",
+			patron_12x70_buckshot_525: "5.25mm",
 			patron_20x70_slug_broadhead: "Slug Devastator",
-			patron_20x70_buckshot_73: "Buckshot 7.3",
-			patron_12x70_buckshot: "Buckshot 7.5",
-			patron_20x70_buckshot_62: "Buckshot 6.2",
-			patron_20x70_buckshot_56: "Buckshot 5.6",
+			patron_20x70_buckshot_73: "7.3mm",
+			patron_20x70_buckshot_62: "6.2mm",
+			patron_20x70_buckshot_56: "5.6mm",
 			patron_762x25tt_T_Gzh: "PT Gzh",
 			patron_9x19_GT: "T gzh",
 			patron_9x19_7n31: "PBP Gzh", // Either works tbh
-			patron_1143x23_acp: "Acp FMJ",
-			patron_1143x23_rip: "Acp Rip",
+			patron_1143x23_acp: "FMJ",
 			patron_9x21_sp10: "PS Gzh",
 			patron_9x21_sp11: "P Gzh",
 			patron_9x21_sp12: "PE Gzh",
@@ -76,6 +85,7 @@ export function run (interaction) {
 			patron_86x70_lapua_magnum_upz: "Lapua UCW",
 			patron_127x108: "B-32 gl"
 		}
+		const itemProps = item._props
 		let itemName = item._name
 		const correctedItemName = Object.keys(correctedItemNamesObj).find(key => key === itemName) // Finds the bullet's corrected name
 		if (correctedItemName !== undefined) itemName = correctedItemNamesObj[correctedItemName] // If the corrected name exists - use it
@@ -83,8 +93,11 @@ export function run (interaction) {
 			itemName = item._name.replace(/_/g, " ")
 				.replace("patron ", "")
 				.split(" ").slice(1).join(" ") // Removes the caliber
+				.replace("slug", "")
+				.replace("buckshot", "")
+				.replace("acp", "")
 				.trim()
-				.replace(/\w\S*/g, w => w.match(/[a-z]/i) ? w.replace(w.match(/[a-z]/i)[0], w.match(/[a-z]/i)[0].toUpperCase()) : w) // Makes each word's first letter capitalized
+			itemName = capitalizeString(itemName)
 		}
 		tableData.push([ // Add the bullet's data as a new row
 			itemName,
@@ -101,9 +114,13 @@ export function run (interaction) {
 		const item = tarkovJSONAmmo[objNr]
 		const itemProps = item._props
 		if (!itemProps.Caliber) continue
-		if (itemProps.Caliber.replace("Caliber", "") === caliber) pushData(item, itemProps)
-		else if (caliber === "127x108" && itemProps.Caliber.replace("Caliber", "") === "30x29")	pushData(item, itemProps) // The caliber 127x108 includes 30x29
+		if (itemProps.Caliber.replace("Caliber", "") === caliber) pushData(item)
+		else if (caliber === "127x108" && itemProps.Caliber.replace("Caliber", "") === "30x29")	pushData(item) // The caliber 127x108 includes 30x29
 	}
+	/**
+	 * Sorting tableData.
+	 * @param {Array} statSorting The sorting order - array with elements in the obj "stats"
+	 */
 	function sortTable (statSorting) {
 		const statPos = []
 		for (let i = 0; i < statSorting.length; i++) statPos.push(Object.values(stats).indexOf(statSorting[i])) // Fetches the sorting stat's position in stats
@@ -126,11 +143,10 @@ export function run (interaction) {
 	}
 
 	interactionReply(interaction, {
-		embeds: [new MessageEmbed()
+		messageEmbed: new MessageEmbed()
 			.setColor(config.embedDesign.defaultColor)
 			.setAuthor({ name: `🐀 ${valueToKey} ${config.embedDesign.ammoTitle}`, url: config.embedDesign.wikiBallistics })
 			.setDescription(`\`\`\`txt\n${table.toString()}\`\`\``)
 			.setFooter({ text: config.embedDesign.gameUpdate })
-		]
 	})
 }

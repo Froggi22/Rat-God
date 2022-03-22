@@ -85,10 +85,13 @@ The ammunition command `/ammo` consists of 2 parts:
 
 ### Maps 🗺️
 
-The maps command `/maps` also consists of 2 parts:
+The maps command `/map` consists of 1 part:
 
-1. Choosing the location, e.g. `/maps factory`.
-2. Choosing the map guide, e.g. `/maps factory map:Map`.
+1. Choosing the location, e.g. `/map factory`.
+
+The embed response has some buttons (amount varies on the map).\
+Some buttons link to external websites e.g. the wiki and to an interactive map.\
+The blue buttons however will send another message containing a special map e.g. an in-game map.
 
 ### Misc ⌚
 
