@@ -10,13 +10,13 @@ export const options = [{
 	description: "What location",
 	type: "STRING",
 	required: true,
-	choices: Object.keys(config.locations).map(location => ({ name: location, value: location })) // Factory, Shoreline, Labs etc.
+	choices: Object.keys(config.locations).map(location => ({ name: capitalizeString(location), value: location })) // Factory, Shoreline, Labs etc.
 }]
 
 let mapsJSONObj = {}
 
 export async function run (interaction) {
-	const location = interaction.options.getString("location") // e.g. Customs
+	const location = interaction.options.getString("location") // e.g. customs
 
 	if (!mapsJSONObj[location]) { // If obj doesnt have said location
 		mapsJSONObj = await fetchMaps(mapsJSONObj, location)
@@ -37,14 +37,14 @@ export async function run (interaction) {
 	const embed = new MessageEmbed()
 		.setColor(config.embedDesign.defaultColor)
 		.setAuthor({ name: "🐀 Escape From Tarkov Maps Wiki", url: config.embedDesign.wikiMaps })
-		.setTitle(`${location} guide`)
+		.setTitle(`${capitalizeString(location)} guide`)
 		.addFields(
 			{ name: "Raid Time", value: `${mapsJSONObj[location].escape_time_limit}m`, inline: true },
 			{ name: "Players", value: `${mapsJSONObj[location].MinPlayers} - ${mapsJSONObj[location].MaxPlayers}`, inline: true },
 			{ name: "Insurance", value: `${mapsJSONObj[location].Insurance ? "Yes" : "No"}`, inline: true },
 			{ name: "\u200B", value: "**Extractions**" }
 		)
-		.setImage(config.locations[location.toLowerCase()].map)
+		.setImage(config.locations[location].map)
 		.setFooter({ text: config.embedDesign.gameUpdate })
 
 	const customLocationDescriptions = {
@@ -53,8 +53,8 @@ export async function run (interaction) {
 		shoreline: "Shoreline is a large area located on the coastal outskirts of Tarkov, next to the city's port. The area's geography features tracts of undulating woodland, large open fields, jagged cliffs, a swamp and a long stretch of shoreline."
 	}
 
-	if (Object.keys(customLocationDescriptions).includes(location.toLowerCase())) {
-		embed.setDescription(`*${customLocationDescriptions[location.toLowerCase()]}*`)
+	if (Object.keys(customLocationDescriptions).includes(location)) {
+		embed.setDescription(`*${customLocationDescriptions[location]}*`)
 	} else {
 		embed.setDescription(`*${mapsJSONObj[location].Description.trim() || "\u200B"}*`)
 	}
@@ -79,20 +79,20 @@ export async function run (interaction) {
 				.setStyle("LINK")
 		)
 
-	if (config.locations[location.toLowerCase()].interactive) { // Interactive
+	if (config.locations[location].interactive) { // Interactive
 		row.addComponents(
 			new MessageButton()
-				.setURL(config.locations[location.toLowerCase()].interactive)
+				.setURL(config.locations[location].interactive)
 				.setLabel("Interactive Map")
 				.setStyle("LINK")
 		)
 	}
 
-	for (const specialMap in config.locations[location.toLowerCase()]) { // All other maps / buttons
+	for (const specialMap in config.locations[location]) { // All other maps / buttons
 		if (specialMap !== "map" && specialMap !== "interactive") {
 			row.addComponents(
 				new MessageButton()
-					.setCustomId(`location-${location.toLowerCase()}-${specialMap.replace(" ", "_").replace("-", "").toLowerCase()}`)
+					.setCustomId(`location-${location}-${specialMap.replace(" ", "_").replace("-", "").toLowerCase()}`)
 					.setLabel(`${capitalizeString(specialMap)} Map`)
 					.setStyle("PRIMARY")
 			)
