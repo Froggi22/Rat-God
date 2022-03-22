@@ -2,7 +2,7 @@ import { interactionReply } from "../commandReply.js"
 import { config, cooldowns, commands } from "../index.js"
 import { capitalizeFirstChar } from "../utils.js"
 
-export async function run (interaction, client) {
+export function run (interaction, client) {
 	if (interaction.isCommand()) {
 		const command = commands.get(interaction.commandName)
 		if (!command) return
