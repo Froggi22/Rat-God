@@ -67,8 +67,7 @@ export async function run (interaction) {
 			patron_762x25tt_T_Gzh: "PT Gzh",
 			patron_9x19_GT: "T gzh",
 			patron_9x19_7n31: "PBP Gzh", // Either works tbh
-			patron_1143x23_acp: "Acp FMJ",
-			patron_1143x23_rip: "Acp Rip",
+			patron_1143x23_acp: "FMJ",
 			patron_9x21_sp10: "PS Gzh",
 			patron_9x21_sp11: "P Gzh",
 			patron_9x21_sp12: "PE Gzh",
@@ -96,6 +95,7 @@ export async function run (interaction) {
 				.split(" ").slice(1).join(" ") // Removes the caliber
 				.replace("slug", "")
 				.replace("buckshot", "")
+				.replace("acp", "")
 				.trim()
 			itemName = capitalizeString(itemName)
 		}
