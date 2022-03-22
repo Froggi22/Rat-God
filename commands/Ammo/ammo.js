@@ -2,7 +2,7 @@ import { MessageEmbed } from "discord.js"
 import { interactionReply } from "../../commandReply.js"
 import { fetchAmmo } from "../../events/ready.js"
 import { config } from "../../index.js"
-import { capitalizeString } from "../../utils.js"
+import { capitalizeWords } from "../../utils.js"
 import AsciiTable from "ascii-table"
 
 const stats = { // Object with full names and short names of the stats respectively
@@ -97,7 +97,7 @@ export async function run (interaction) {
 				.replace("buckshot", "")
 				.replace("acp", "")
 				.trim()
-			itemName = capitalizeString(itemName)
+			itemName = capitalizeWords(itemName)
 		}
 		tableData.push([ // Add the bullet's data as a new row
 			itemName,
@@ -144,8 +144,8 @@ export async function run (interaction) {
 
 	interactionReply(interaction, {
 		messageEmbed: new MessageEmbed()
-			.setColor(config.embedDesign.defaultColor)
-			.setAuthor({ name: `🐀 ${valueToKey} ${config.embedDesign.ammoTitle}`, url: config.embedDesign.wikiBallistics })
+			.setColor(config.embedDesign.color)
+			.setAuthor({ name: `🐀 ${valueToKey} ${config.embedDesign.ammoTitle}`, url: config.generalLinks.wikiBallistics })
 			.setDescription(`\`\`\`txt\n${table.toString()}\`\`\``)
 			.setFooter({ text: config.embedDesign.gameUpdate })
 	})

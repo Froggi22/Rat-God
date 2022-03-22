@@ -2,7 +2,7 @@ import { MessageEmbed, MessageActionRow, MessageButton } from "discord.js"
 import { interactionReply } from "../../commandReply.js"
 import { config } from "../../index.js"
 import { fetchMaps } from "../../events/ready.js"
-import { capitalizeString } from "../../utils.js"
+import { capitalizeWords } from "../../utils.js"
 
 export const description = "Information and maps about a specific location"
 export const options = [{
@@ -10,7 +10,7 @@ export const options = [{
 	description: "What location",
 	type: "STRING",
 	required: true,
-	choices: Object.keys(config.locations).map(location => ({ name: capitalizeString(location), value: location })) // Factory, Shoreline, Labs etc.
+	choices: Object.keys(config.locations).map(location => ({ name: capitalizeWords(location), value: location })) // Factory, Shoreline, Labs etc.
 }]
 
 let mapsJSONObj = {}
@@ -35,9 +35,9 @@ export async function run (interaction) {
 		bossEscortAmountCount += Number(BLS.BossEscortAmount)
 	}
 	const embed = new MessageEmbed()
-		.setColor(config.embedDesign.defaultColor)
-		.setAuthor({ name: "🐀 Escape From Tarkov Maps Wiki", url: config.embedDesign.wikiMaps })
-		.setTitle(`${capitalizeString(location)} guide`)
+		.setColor(config.embedDesign.color)
+		.setAuthor({ name: "🐀 Escape From Tarkov Maps Wiki", url: config.generalLinks.wikiMaps })
+		.setTitle(`${capitalizeWords(location)} guide`)
 		.addFields(
 			{ name: "Raid Time", value: `${mapsJSONObj[location].escape_time_limit}m`, inline: true },
 			{ name: "Players", value: `${mapsJSONObj[location].MinPlayers} - ${mapsJSONObj[location].MaxPlayers}`, inline: true },
@@ -64,7 +64,7 @@ export async function run (interaction) {
 	const InfofieldsLength = embed.fields.length
 
 	for (let i = 0; i < mapsJSONObj[location].exits.length; i++) {
-		embed.addField(`${capitalizeString(mapsJSONObj[location].exits[i].Name.replace("EXFIL_", "").replace(/_/g, " "))}`, `Chance: ${mapsJSONObj[location].exits[i].Chance}%\nTime: ${mapsJSONObj[location].exits[i].ExfiltrationTime}s`, true)
+		embed.addField(`${capitalizeWords(mapsJSONObj[location].exits[i].Name.replace("EXFIL_", "").replace(/_/g, " "))}`, `Chance: ${mapsJSONObj[location].exits[i].Chance}%\nTime: ${mapsJSONObj[location].exits[i].ExfiltrationTime}s`, true)
 	}
 
 	for (let i = 0; i < (3 - ((embed.fields.length - InfofieldsLength) % 3)) % 3; i++) {
@@ -93,7 +93,7 @@ export async function run (interaction) {
 			row.addComponents(
 				new MessageButton()
 					.setCustomId(`location-${location}-${specialMap.replace(" ", "_").replace("-", "").toLowerCase()}`)
-					.setLabel(`${capitalizeString(specialMap)} Map`)
+					.setLabel(`${capitalizeWords(specialMap)} Map`)
 					.setStyle("PRIMARY")
 			)
 		}

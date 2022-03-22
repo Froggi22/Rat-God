@@ -1,18 +1,18 @@
 {
 	"embedDesign": {
 		"gameUpdate": "Updated for game version: 0.12.12.15.17076",
-		"ratGodImage": "https://cdn.discordapp.com/attachments/865617643449221141/920345495568777316/RG_Profile.png",
-
-		"wikiMaps": "https://escapefromtarkov.fandom.com/wiki/Map_of_Tarkov",
-		"wikiMain": "https://escapefromtarkov.fandom.com/wiki/Escape_from_Tarkov_Wiki",
-		"wikiBallistics": "https://escapefromtarkov.fandom.com/wiki/Ballistics",
 		"ammoTitle": "Ammunition Table",
 		"ammoDescription": "Type **/Help** to get Rat Gods commands",
-		"defaultColor": "#FFD700",
-		"green": "#78B159",
-		"yellow": "#FDCB58",
-		"orange": "#F4900C",
-		"red": "#DD2E44"
+		"color": "#FFD700"
+	},
+
+	"generalLinks": {
+		"botProfileImage": "https://cdn.discordapp.com/attachments/865617643449221141/920345495568777316/RG_Profile.png",
+		"modAbuseImage": "https://cdn.discordapp.com/attachments/865617643449221141/867828829489594429/Mod_abuse.png",
+		"tarkovItems": "https://dev.sp-tarkov.com/SPT-AKI/Server/raw/branch/development/project/assets/database/templates/items.json",
+		"wikiMain": "https://escapefromtarkov.fandom.com/wiki/Escape_from_Tarkov_Wiki",
+		"wikiBallistics": "https://escapefromtarkov.fandom.com/wiki/Ballistics",
+		"wikiMaps": "https://escapefromtarkov.fandom.com/wiki/Map_of_Tarkov"
 	},
 
 	"general": {
@@ -26,13 +26,14 @@
 
 		"version": "1.5.2",
 		"latestUpdateMessage": "+ Maps rework - Now 1 command (/Map), with 1 option to choose your location (reducing the bloat). The initial response will contain more and new unique info, including a map! Additionally, the interaction response will have buttons (amount depends on location), where you can be either redirected to other sources e.g. the wiki, or other maps e.g. an In-Game map. The information is now dynamically sourced from Tarkov, and no longer static!\n\n- Removed \"Slugs\", \"Buckshot\" and \"Acp\" from the bullet lists. This means that you can view said embed on mobile without the text wordwrapping!\n\n- Removed WIP command /Service-Status.\n\n+ General code improvements, including more documentation!",
+
 		"prefix": "/",
 		"prefixMessage": "My prefix is  **/**  (Slash)!",
 		"froggiDiscordTag": "Froggi22#3436",
+
 		"helpCommands": "`Ammo` - Shows all ammo commands. \n`Maps` - Shows all maps commands.\n\n`Ping` - Pings the bot.\n`Modabuse` - Funny meme about mod abuse.\n`Servercount` - Bot's popularity.\n`Support` - Contact details.",
 		"helpCommandSubtext": "`Latest` - Latest updates.\n\n[Website](https://rat-god-website.herokuapp.com).\n[Instructional Video](https://youtu.be/xQwQqnkmScg) - *Yes many cringe*.\n[Github](https://github.com/Froggi22/Rat-God).",
 		"supportInviteLink": "https://discord.com/invite/kg7VfRQ9Xw",
-		"modAbuseImage": "https://cdn.discordapp.com/attachments/865617643449221141/867828829489594429/Mod_abuse.png",
 		"sendMessageError": "I may not have have permission to send messages in that channel!\nIf this error still persists, please contact Froggi22#3436 or join the Support Server: https://discord.com/invite/kg7VfRQ9Xw",
 		"descriptionRatGod": "Rat God will help you in Escape From Tarkov, by accessing in-game information and delivering it to you!",
 		"permissionsRatGod": "To understand why Rat God requires certain permissions, please view the \"Permissions\" section on [our Github page](https://github.com/Froggi22/Rat-God).",

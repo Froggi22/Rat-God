@@ -6,8 +6,8 @@ export const description = "A complete list of Rat Gods commands"
 export function run (interaction) {
 	interactionReply(interaction, {
 		messageEmbed: new MessageEmbed()
-			.setColor(config.embedDesign.defaultColor)
-			.setAuthor({ name: "🐀 A Complete List Of Commands For Rat God", url: config.embedDesign.wikiMain })
+			.setColor(config.embedDesign.color)
+			.setAuthor({ name: "🐀 A Complete List Of Commands For Rat God", url: config.generalLinks.wikiMain })
 			.setDescription("A list of all functioning commands for Rat God:")
 			.addFields(
 				{
