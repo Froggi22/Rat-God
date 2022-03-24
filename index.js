@@ -42,4 +42,10 @@ for (const folder of fs.readdirSync("./commands")) {
 export const config = JSON.parse(fs.readFileSync("config.json"))
 
 // Top.gg servercount
-if (process.env.TOPGG_TOKEN) AutoPoster(process.env.TOPGG_TOKEN, client)
+if (process.env.TOPGG_TOKEN) {
+	try {
+		AutoPoster(process.env.TOPGG_TOKEN, client)
+	} catch (error) {
+		console.log(`Top.gg error >> ${error}`)
+	}
+}
