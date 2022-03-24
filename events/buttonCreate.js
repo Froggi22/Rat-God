@@ -1,7 +1,6 @@
 import { MessageEmbed } from "discord.js"
 import { config } from "../index.js"
-import { interactionReply } from "../commandReply.js"
-import { capitalizeWords } from "../utils.js"
+import { interactionReply, capitalizeWords } from "../utils.js"
 
 export function run (interaction) {
 	if (interaction.customId.startsWith("location")) {

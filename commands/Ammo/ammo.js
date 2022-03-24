@@ -1,8 +1,8 @@
 import { MessageEmbed } from "discord.js"
-import { interactionReply } from "../../commandReply.js"
+import { interactionReply, capitalizeWords } from "../../utils.js"
 import { fetchAmmo } from "../../events/ready.js"
 import { config } from "../../index.js"
-import { capitalizeWords } from "../../utils.js"
+
 import AsciiTable from "ascii-table"
 
 const stats = { // Object with full names and short names of the stats respectively

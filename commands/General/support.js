@@ -1,5 +1,5 @@
 import { MessageEmbed } from "discord.js"
-import { interactionReply } from "../../commandReply.js"
+import { interactionReply } from "../../utils.js"
 import { config } from "../../index.js"
 
 export const description = "Link to Froggi's DMs and the Discord Support Server"

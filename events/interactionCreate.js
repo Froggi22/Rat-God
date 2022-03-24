@@ -1,6 +1,5 @@
-import { interactionReply } from "../commandReply.js"
+import { interactionReply, capitalizeWords } from "../utils.js"
 import { config, cooldowns, commands } from "../index.js"
-import { capitalizeWords } from "../utils.js"
 
 export function run (interaction, client) {
 	if (interaction.isCommand()) {

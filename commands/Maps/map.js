@@ -1,8 +1,7 @@
 import { MessageEmbed, MessageActionRow, MessageButton } from "discord.js"
-import { interactionReply } from "../../commandReply.js"
+import { interactionReply, capitalizeWords } from "../../utils.js"
 import { config } from "../../index.js"
 import { fetchMaps } from "../../events/ready.js"
-import { capitalizeWords } from "../../utils.js"
 
 export const description = "Information and maps about a specific location"
 export const options = [{

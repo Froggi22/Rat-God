@@ -147,8 +147,8 @@ We're always looking for people who can help with anything from simple spelling 
 2. Clone the fork to your desired local Github projects folder.
 3. Create a new file called: `.env` ([Read more about enviroment variables](https://nodejs.dev/learn/how-to-read-environment-variables-from-nodejs)).
 4. Enviroment variables in the project:
-	- BOT_TOKEN: The Discord bot token.
-	- TOPGG_TOKEN: An optional Top.gg token for posting bot statistics to their website.
+	- `BOT_TOKEN`: The Discord bot token.
+	- `TOPGG_TOKEN`: An optional Top.gg token for posting bot statistics to their website.
 5. Install dependencies: `npm ci`.
 6. Code your new feature!
 7. Test out the program: `node .`.

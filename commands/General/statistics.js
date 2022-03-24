@@ -1,5 +1,5 @@
 import { MessageEmbed, version } from "discord.js"
-import { interactionReply } from "../../commandReply.js"
+import { interactionReply } from "../../utils.js"
 import { config } from "../../index.js"
 import ms from "ms"
 
