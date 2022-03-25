@@ -13,6 +13,17 @@ export function capitalizeWords (string) {
 }
 
 /**
+ * Looks for a key in an object and returns the key value if key found. If key not found then returns the search query
+ * @param {object} obj
+ * @param {*} keySearch
+ * @returns {string}
+ */
+export function ObjectKeyValueSearch (obj, keySearch) {
+	if (Object.keys(obj).find(key => key === keySearch)) return obj[keySearch]
+	else return keySearch
+}
+
+/**
  * Sends a reply to an interaction.
  * @param {*} interaction The Discord interaction
  * @param {object} messageItems An object specifying the message details

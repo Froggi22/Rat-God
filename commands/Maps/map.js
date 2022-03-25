@@ -1,5 +1,5 @@
 import { MessageEmbed, MessageActionRow, MessageButton } from "discord.js"
-import { interactionReply, capitalizeWords } from "../../utils.js"
+import { interactionReply, capitalizeWords, ObjectKeyValueSearch } from "../../utils.js"
 import { config } from "../../index.js"
 import { fetchMaps } from "../../events/ready.js"
 
@@ -46,19 +46,25 @@ export async function run (interaction) {
 		.setImage(config.locations[location].map)
 		.setFooter({ text: config.embedDesign.gameUpdate })
 
-	const customLocationDescriptions = {
+	const locationDesc = {
 		customs: "A large area of industrial park land situated adjacent to the factory. This area houses a customs terminal, fuel storage facilities, offices, and dorms as well as a variety of other infrastructure buildings.",
 		labs: "Underground laboratory complex TerraGroup Labs is a secret object right under the center of Tarkov. Officially, this research center does not exist and, based on data scraps, is engaged in R&D, testing and simulation projects in chemistry, physics, biology, and high-tech areas.",
 		shoreline: "Shoreline is a large area located on the coastal outskirts of Tarkov, next to the city's port. The area's geography features tracts of undulating woodland, large open fields, jagged cliffs, a swamp and a long stretch of shoreline."
 	}
 
-	if (Object.keys(customLocationDescriptions).includes(location)) {
-		embed.setDescription(`*${customLocationDescriptions[location]}*`)
+	if (Object.keys(locationDesc).includes(location)) {
+		embed.setDescription(`*${locationDesc[location]}*`)
 	} else {
 		embed.setDescription(`*${mapsJSONObj[location].Description.trim() || "\u200B"}*`)
 	}
+
+	const bossNames = {
+		Bully: "Reshala",
+		Kojaniy: "Shturman"
+	}
+
 	if (BLS?.BossChance !== 0 && BLS?.BossChance !== undefined) { // If the boss can spawn, then add the info
-		embed.setDescription(`${embed.description}\n\n**Boss:** ${BLS.BossName.replace("boss", "")}\n**Follower count:** ${bossEscortAmountCount}\n**Spawn:** ${BLS.BossZone.replace(/Zone/g, "").replace(/,/g, ", ")}\n**Spawn chance:** ${BLS.BossChance}%\n`)
+		embed.setDescription(`${embed.description}\n\n**Boss:** ${ObjectKeyValueSearch(bossNames, BLS.BossName.replace("boss", ""))}\n**Follower count:** ${bossEscortAmountCount}\n**Spawn:** ${BLS.BossZone.replace(/Zone/g, "").replace(/,/g, ", ")}\n**Spawn chance:** ${BLS.BossChance}%\n`)
 	}
 	const InfofieldsLength = embed.fields.length
 
