@@ -8,6 +8,9 @@
 <p align="center">
 	<a href="LICENSE"><img src="https://badgen.net/badge/License/AGPLv3/blue" alt="AGPLv3 license" title="AGPLv3 license" /></a>
 	<a href="https://discord.com/invite/kg7VfRQ9Xw"><img src="https://badgen.net/discord/online-members/kg7VfRQ9Xw?icon=discord&label" alt="Discord Server" title="Join our Discord community!" /></a>
+	<br />
+	<a href="https://top.gg/bot/864572952275714059"><img src="https://top.gg/api/widget/status/864572952275714059.svg" alt="Bot Status" title="Bot Status" /></a>
+	<a href="https://top.gg/bot/864572952275714059"><img src="https://top.gg/api/widget/servers/864572952275714059.svg" alt="Bot Server Count" title="Bot Server Count" /></a>
 </p>
 
 - - -
@@ -142,8 +145,10 @@ We're always looking for people who can help with anything from simple spelling 
 
 1. Fork this repository (should be on the top right of this page).
 2. Clone the fork to your desired local Github projects folder.
-3. Create a new file called: `.env`.
-4. Edit said env file and write: `TOKEN=your-token-here`, but replace the "your-token-here" text with your API token, obtained from the [Discord Developer Portal](https://discord.com/developers/applications).
+3. Create a new file called: `.env` ([Read more about enviroment variables](https://nodejs.dev/learn/how-to-read-environment-variables-from-nodejs)).
+4. Enviroment variables in the project:
+	- `BOT_TOKEN`: The Discord bot token.
+	- `TOPGG_TOKEN`: An optional Top.gg token for posting bot statistics to their website.
 5. Install dependencies: `npm ci`.
 6. Code your new feature!
 7. Test out the program: `node .`.

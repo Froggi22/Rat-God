@@ -1,5 +1,5 @@
 import { MessageEmbed } from "discord.js"
-import { interactionReply } from "../../commandReply.js"
+import { interactionReply } from "../../utils.js"
 import { config } from "../../index.js"
 
 export const description = "Current in-game raid time"
@@ -24,7 +24,7 @@ export function run (interaction) {
 
 	interactionReply(interaction, {
 		messageEmbed: new MessageEmbed()
-			.setColor(config.embedDesign.defaultColor)
+			.setColor(config.embedDesign.color)
 			.setAuthor({ name: "🐀 In-game raid time" })
 			.setDescription(`:clock10: \`${tarkovTime()}\` - \`${tarkovTime(false)}\``)
 	})

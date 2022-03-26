@@ -1,5 +1,6 @@
 import fetch from "node-fetch"
 import { readFile, stat } from "fs/promises"
+import { config } from "../index.js"
 
 const doesfileExist = path => stat(path).then(() => true, () => false)
 
@@ -12,7 +13,7 @@ export async function fetchAmmo () {
 	if (await doesfileExist("./tarkovJSON.json")) {
 		tarkovJSON = JSON.parse(await readFile("./tarkovJSON.json")) // Used for mass-testing/restarting when you don't want to spam requests to the API. Uncomment this code line & import readFile but also comment out the fetch. Open the API URL in your browser, save as json file in project directory.
 	} else {
-		const url = "https://dev.sp-tarkov.com/SPT-AKI/Server/raw/branch/development/project/assets/database/templates/items.json"
+		const url = config.generalLinks.tarkovItems
 		const settings = { method: "GET" }
 		tarkovJSON = await fetch(url, settings)
 			.then(response => response.json())

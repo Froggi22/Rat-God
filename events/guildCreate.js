@@ -11,8 +11,8 @@ export function run (guild, client) {
 	})
 
 	const embed = new MessageEmbed()
-		.setColor(config.embedDesign.defaultColor)
-		.setThumbnail(config.embedDesign.ratGodImage)
+		.setColor(config.embedDesign.color)
+		.setThumbnail(config.generalLinks.botProfileImage)
 		.setTitle("Thank you for inviting Rat God!")
 		.setDescription(config.general.descriptionRatGod)
 		.addField(`${config.general.prefixMessage}`, `${config.general.permissionsRatGod}\n`)

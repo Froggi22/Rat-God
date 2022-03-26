@@ -1,4 +1,4 @@
-import { messageReply } from "../commandReply.js"
+import { messageReply } from "../utils.js"
 import { config, commands } from "../index.js"
 
 export async function run (message, client) {
