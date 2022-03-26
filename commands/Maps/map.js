@@ -34,7 +34,7 @@ export async function run (interaction) {
 		bossEscortAmountCount += Number(BLS.BossEscortAmount)
 	}
 	const embed = new MessageEmbed()
-		.setColor(config.embedDesign.color)
+		.setColor(config.embedDesign.color.gold)
 		.setAuthor({ name: "🐀 Escape From Tarkov Maps Wiki", url: config.generalLinks.wikiMaps })
 		.setTitle(`${capitalizeWords(location)} guide`)
 		.addFields(

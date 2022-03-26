@@ -7,7 +7,7 @@ export const description = "Bot statistics"
 export function run (interaction, client) {
 	interactionReply(interaction, {
 		messageEmbed: new MessageEmbed()
-			.setColor(config.embedDesign.color)
+			.setColor(config.embedDesign.color.gold)
 			.setThumbnail(config.generalLinks.botProfileImage)
 			.addFields(
 				{ name: "D.JS version", value: `v${version}`, inline: true },

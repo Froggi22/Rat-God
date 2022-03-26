@@ -11,7 +11,7 @@ export function run (guild, client) {
 	})
 
 	const embed = new MessageEmbed()
-		.setColor(config.embedDesign.color)
+		.setColor(config.embedDesign.color.gold)
 		.setThumbnail(config.generalLinks.botProfileImage)
 		.setTitle("Thank you for inviting Rat God!")
 		.setDescription(config.general.descriptionRatGod)

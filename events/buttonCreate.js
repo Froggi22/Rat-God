@@ -9,7 +9,7 @@ export function run (interaction) {
 		const guide = interaction.customId.split("-")[2].replace("_", " ")
 
 		const embed = new MessageEmbed()
-			.setColor(config.embedDesign.color)
+			.setColor(config.embedDesign.color.gold)
 			.setTitle(`${locationCap} ${capitalizeWords(guide)} Map`)
 			.setImage(config.locations[location][guide])
 			.setFooter({ text: config.embedDesign.gameUpdate })

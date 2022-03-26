@@ -1,6 +1,5 @@
 # Project files
-tarkovJSON.json
-tarkovServiceStatus.json
+tarkov*.json
 
 # Logs
 logs

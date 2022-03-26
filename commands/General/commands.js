@@ -6,7 +6,7 @@ export const description = "A complete list of Rat Gods commands"
 export function run (interaction) {
 	interactionReply(interaction, {
 		messageEmbed: new MessageEmbed()
-			.setColor(config.embedDesign.color)
+			.setColor(config.embedDesign.color.gold)
 			.setAuthor({ name: "🐀 A Complete List Of Commands For Rat God", url: config.generalLinks.wikiMain })
 			.setDescription("A list of all functioning commands for Rat God:")
 			.addFields(
@@ -26,7 +26,7 @@ export function run (interaction) {
 
 				{
 					name: "General",
-					value: "`Commands` - This message.\n`Help` - Help command.\n`Latest` - Latest update.\n`Modabuse` - Funny meme about mod abuse.\n`Ping` - Pinging the bot.\n`Service-Status` - WIP Status on Tarkov services\n`Statistics` - Bot statistics.\n`Support` - Contact details.\n`Time` - Current in-game raid time\n`Mention` - Mention the bot to recieve the prefix."
+					value: "`Commands` - This message.\n`Help` - Help command.\n`Latest` - Latest update.\n`Modabuse` - Funny meme about mod abuse.\n`Ping` - Pinging the bot.\n`Service-Status` - WIP Status on Tarkov services\n`Statistics` - Bot statistics.\n`Support` - Contact details.\n`Time` - Current in-game raid time\n`Mention` - Mention the bot to receive the prefix."
 				}
 			)
 			.setFooter({ text: config.embedDesign.gameUpdate })

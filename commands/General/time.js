@@ -24,7 +24,7 @@ export function run (interaction) {
 
 	interactionReply(interaction, {
 		messageEmbed: new MessageEmbed()
-			.setColor(config.embedDesign.color)
+			.setColor(config.embedDesign.color.gold)
 			.setAuthor({ name: "🐀 In-game raid time" })
 			.setDescription(`:clock10: \`${tarkovTime()}\` - \`${tarkovTime(false)}\``)
 	})
