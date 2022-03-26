@@ -1,8 +1,8 @@
 import { MessageEmbed } from "discord.js"
-import { interactionReply } from "../../commandReply.js"
+import { interactionReply, capitalizeWords, ObjectKeyValueSearch } from "../../utils.js"
 import { fetchAmmo } from "../../events/ready.js"
 import { config } from "../../index.js"
-import { capitalizeString } from "../../utils.js"
+
 import AsciiTable from "ascii-table"
 
 const stats = { // Object with full names and short names of the stats respectively
@@ -53,7 +53,7 @@ export async function run (interaction) {
 	 * @param {object} item The bullet object
 	 */
 	function pushData (item) {
-		const correctedItemNamesObj = { // Change keys to raw version (item._name)
+		const correctedItemNames = { // Change keys to raw version (item._name)
 			patron_12x70_slug_50_bmg_m17_traccer: ".50 BMG",
 			patron_12x70_slug: "Lead Slug",
 			patron_12x70_buckshot_65: "6.5mm Express",
@@ -86,10 +86,8 @@ export async function run (interaction) {
 			patron_127x108: "B-32 gl"
 		}
 		const itemProps = item._props
-		let itemName = item._name
-		const correctedItemName = Object.keys(correctedItemNamesObj).find(key => key === itemName) // Finds the bullet's corrected name
-		if (correctedItemName !== undefined) itemName = correctedItemNamesObj[correctedItemName] // If the corrected name exists - use it
-		else {
+		let itemName = ObjectKeyValueSearch(correctedItemNames, item._name)
+		if (itemName === item._name) {
 			itemName = item._name.replace(/_/g, " ")
 				.replace("patron ", "")
 				.split(" ").slice(1).join(" ") // Removes the caliber
@@ -97,7 +95,7 @@ export async function run (interaction) {
 				.replace("buckshot", "")
 				.replace("acp", "")
 				.trim()
-			itemName = capitalizeString(itemName)
+			itemName = capitalizeWords(itemName)
 		}
 		tableData.push([ // Add the bullet's data as a new row
 			itemName,
@@ -144,8 +142,8 @@ export async function run (interaction) {
 
 	interactionReply(interaction, {
 		messageEmbed: new MessageEmbed()
-			.setColor(config.embedDesign.defaultColor)
-			.setAuthor({ name: `🐀 ${valueToKey} ${config.embedDesign.ammoTitle}`, url: config.embedDesign.wikiBallistics })
+			.setColor(config.embedDesign.color.gold)
+			.setAuthor({ name: `🐀 ${valueToKey} ${config.embedDesign.ammoTitle}`, url: config.generalLinks.wikiBallistics })
 			.setDescription(`\`\`\`txt\n${table.toString()}\`\`\``)
 			.setFooter({ text: config.embedDesign.gameUpdate })
 	})

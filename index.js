@@ -4,12 +4,12 @@ import fs from "fs"
 import dotenv from "dotenv"
 dotenv.config()
 
-// Token
-const token = process.env.TOKEN
-if (!token) throw new Error("No token found!")
+// Bot Token
+const BOT_TOKEN = process.env.BOT_TOKEN
+if (!BOT_TOKEN) throw new Error("No BOT_TOKEN found!")
 
 export const client = new discordjs.Client({ intents: [discordjs.Intents.FLAGS.GUILDS, discordjs.Intents.FLAGS.GUILD_MESSAGES, discordjs.Intents.FLAGS.DIRECT_MESSAGES] })
-client.login(token)
+client.login(BOT_TOKEN)
 
 // Commands
 export const commands = new discordjs.Collection()
@@ -42,4 +42,10 @@ for (const folder of fs.readdirSync("./commands")) {
 export const config = JSON.parse(fs.readFileSync("config.json"))
 
 // Top.gg servercount
-AutoPoster(process.env.TOPGGTOKEN, client)
+if (process.env.TOPGG_TOKEN) {
+	try {
+		AutoPoster(process.env.TOPGG_TOKEN, client)
+	} catch (error) {
+		console.log(`Top.gg error >> ${error}`)
+	}
+}
