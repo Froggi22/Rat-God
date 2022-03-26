@@ -61,6 +61,7 @@ export async function run (interaction) {
 
 	const embed = new MessageEmbed()
 		.setAuthor({ name: "🐀 Current Tarkov Service Status", url: config.generalLinks.tarkovOfficialStatus })
+
 	let greenCounter = 0 // "Green" service counter
 	for (let i = 0; i < serviceStatus.statuses.data.status.currentStatuses.length; i++) {
 		if (serviceStatus.statuses.data.status.currentStatuses[i].status === 0) { // If there's no issue with the service
@@ -68,6 +69,15 @@ export async function run (interaction) {
 			greenCounter++
 		} else embed.addField(serviceStatus.statuses.data.status.currentStatuses[i].name, ":red_circle:", true) // If there's an issue with the service - add the name, a red circle with inline property
 	}
+
+	if (serviceStatus.statuses.data.status.messages.length !== 0) {
+		if (serviceStatus.statuses.data.status.messages.length <= 1024) { // 1024 is the embed field value character limit
+			embed.addField("Messages", serviceStatus.statuses.data.status.messages)
+		} else {
+			embed.addField("Messages", `${serviceStatus.statuses.data.status.messages.slice(0, (1024 - 3))}...`) // Slices off message so that it has exactly the space for the 3 extra dots
+		}
+	}
+
 	const greenQuota = greenCounter / serviceStatus.statuses.data.status.currentStatuses.length // Calculate the amount of greens - which will be used to determine the embed color
 	if (greenQuota === 1) embed.setColor(config.embedDesign.color.green)			// Green	(10 Green)
 	else if (greenQuota >= 0.75) embed.setColor(config.embedDesign.color.yellow)	// Yellow	(7-9 Green)
