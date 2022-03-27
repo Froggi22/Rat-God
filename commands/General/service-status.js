@@ -33,7 +33,9 @@ async function fetchStatus () {
 			responseType: "json",
 			body: requestBody
 		})
-
+		console.log("====================")
+		console.log(response)
+		console.log("====================")
 		if (response.statusCode !== 200) throw new Error("Status fetch failed")
 		else return response.body
 	} catch (error) {
