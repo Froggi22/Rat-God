@@ -62,6 +62,7 @@ export async function run (interaction) {
 			patron_12x70_buckshot_525: "5.25mm",
 			patron_20x70_slug_broadhead: "Slug Devastator",
 			patron_20x70_buckshot_73: "7.3mm",
+			patron_20x70_buckshot: "7.5mm",
 			patron_20x70_buckshot_62: "6.2mm",
 			patron_20x70_buckshot_56: "5.6mm",
 			patron_762x25tt_T_Gzh: "PT Gzh",
