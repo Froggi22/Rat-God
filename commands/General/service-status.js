@@ -53,7 +53,9 @@ export async function run (interaction) {
 		console.log(`fetchStatus() delay: ${new Date() - delayStart}ms`)
 	}
 
-	console.log(JSON.stringify(serviceStatus?.statuses, null, 4))
+	console.log("====================")
+	console.log(JSON.stringify(serviceStatus?.statuses, null, 2))
+	console.log("====================")
 
 	if (!serviceStatus?.statuses) {
 		interactionReply(interaction, {
