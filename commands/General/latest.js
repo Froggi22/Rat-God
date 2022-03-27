@@ -9,7 +9,7 @@ export function run (interaction) {
 			.setColor(config.embedDesign.color.gold)
 			.setAuthor({ name: "🐀 Latest update", url: config.generalLinks.wikiMain })
 			.setDescription(`\`\`\`diff\n# ${config.general.version}\n\n${config.general.latestUpdateMessage}\n\`\`\``)
-			.addField("Appreciation letter", `Thank you so much for inviting and using my bot! I'm very thankful for surpassing 200 servers!\n I appreciate all feedback in the [Support Server](${config.general.supportInviteLink})!\n`)
+			.addField("Appreciation letter", `Thank you so much for inviting and using my bot! We're very thankful for surpassing 200 servers!\n We appreciate all feedback and suggestions in our [Discord Server](${config.general.supportInviteLink})!\n`)
 			.setFooter({ text: config.embedDesign.gameUpdate })
 			.setTimestamp(new Date(config.general.latestUpdateDate))
 	})

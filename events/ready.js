@@ -1,24 +1,16 @@
 import fetch from "node-fetch"
-import { readFile, stat } from "fs/promises"
 import { config } from "../index.js"
-
-const doesfileExist = path => stat(path).then(() => true, () => false)
 
 /**
  * Fetching a JSON with all tarkov items, but filtering out everything except ammo
  * @returns {Array} Each bullet item's stats
  */
 export async function fetchAmmo () {
-	let tarkovJSON
-	if (await doesfileExist("./tarkovJSON.json")) {
-		tarkovJSON = JSON.parse(await readFile("./tarkovJSON.json")) // Used for mass-testing/restarting when you don't want to spam requests to the API. Uncomment this code line & import readFile but also comment out the fetch. Open the API URL in your browser, save as json file in project directory.
-	} else {
-		const url = config.generalLinks.tarkovItems
-		const settings = { method: "GET" }
-		tarkovJSON = await fetch(url, settings)
-			.then(response => response.json())
-			.catch(error => console.log(`Error > ${error}`))
-	}
+	const url = config.generalLinks.tarkovItems
+	const settings = { method: "GET" }
+	const tarkovJSON = await fetch(url, settings)
+		.then(response => response.json())
+		.catch(error => console.log(`Error > ${error}`))
 	return Object.values(tarkovJSON)
 		.filter(Obj =>
 			Obj._props &&
@@ -45,22 +37,15 @@ export async function fetchMaps (mapsJSONObj, location) {
 
 	if (Object.keys(correctedLocationNamesObj).find(key => key === location.toLowerCase())) correctedName = correctedLocationNamesObj[location.toLowerCase()] // If the corrected name exists - use it
 
-	if (await doesfileExist("./mapsJSON.json")) {
-		const data1 = JSON.parse(await readFile("./mapsJSON.json"))
-		if (data1[location]) mapsJSONObj[location] = data1[location]
-		return mapsJSONObj
-	} else {
-		const delayStart = new Date()
-		const url = `https://dev.sp-tarkov.com/SPT-AKI/Server/raw/branch/development/project/assets/database/locations/${correctedName.toLowerCase()}/base.json`
-		const settings = { method: "GET" }
-		const data2 = await fetch(url, settings)
-			.then(response => response.json())
-			.catch(error => console.log(`Error > ${error}`))
-		mapsJSONObj[location] = data2
-		// appendFile("./mapsJSON.json", JSON.stringify(mapsJSONObj))
-		console.log(`fetchMaps() delay: ${new Date() - delayStart}ms`)
-		return mapsJSONObj
-	}
+	const delayStart = new Date()
+	const url = `https://dev.sp-tarkov.com/SPT-AKI/Server/raw/branch/development/project/assets/database/locations/${correctedName.toLowerCase()}/base.json`
+	const settings = { method: "GET" }
+	const data2 = await fetch(url, settings)
+		.then(response => response.json())
+		.catch(error => console.log(`Error > ${error}`))
+	mapsJSONObj[location] = data2
+	console.log(`fetchMaps() delay: ${new Date() - delayStart}ms`)
+	return mapsJSONObj
 }
 
 export async function run (client) {

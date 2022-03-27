@@ -3,6 +3,10 @@ import { interactionReply } from "../../utils.js"
 import { config } from "../../index.js"
 import got from "got"
 
+/**
+ * Fetching a JSON with all tarkov service statuses
+ * @returns {*} The JSON if fetching was successful, else undefined
+ */
 async function fetchStatus () {
 	try {
 		const requestBody = JSON.stringify({

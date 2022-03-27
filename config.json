@@ -2,7 +2,6 @@
 	"embedDesign": {
 		"gameUpdate": "Updated for game version: 0.12.12.15.17076",
 		"ammoTitle": "Ammunition Table",
-		"ammoDescription": "Type **/Help** to get Rat Gods commands",
 		"color": {
 			"gold": "#FFD700",
 			"green": "#78B159",
@@ -24,18 +23,17 @@
 	},
 
 	"general": {
-		"lastUpdatedMessage": "**Last updated -** 2022-03-26.",
-		"latestUpdateDate": "March 22, 2022 10:00:00",
+		"lastUpdatedMessage": "**Last updated -** 2022-03-27.",
+		"latestUpdateDate": "March 27, 2022 00:00:00",
 		"developerGuildID": "861948446910578699",
 		"developers": [
 			"229212817448894464",
 			"379643682984296448"
 		],
 
-		"version": "1.5.2",
-		"latestUpdateMessage": "+ Maps rework - Now 1 command (/Map), with 1 option to choose your location (reducing the bloat). The initial response will contain more and new unique info, including a map! Additionally, the interaction response will have buttons (amount depends on location), where you can be either redirected to other sources e.g. the wiki, or other maps e.g. an In-Game map. The information is now dynamically sourced from Tarkov, and no longer static!\n\n- Removed \"Slugs\", \"Buckshot\" and \"Acp\" from the bullet lists. This means that you can view said embed on mobile without the text wordwrapping!\n\n- Removed WIP command /Service-Status.\n\n+ General code improvements, including more documentation!",
+		"version": "1.5.3",
+		"latestUpdateMessage": "+ /Service-Status is now live and working! Showing the status of the various Tarkov services.\n\n+ Renamed the map bosses to their common names - Kojaniy to Shturman and Bully to Reshala. \n\n+ 2x new widgets in the README on github, showing bot status & server count.\n\n+ Updated both Bot and Server Top.gg page. Updated description and background image (epic Tagilla), also the Patreon banner.",
 
-		"prefix": "/",
 		"prefixMessage": "My prefix is  **/**  (Slash)!",
 		"devDiscordTag": "Froggi22#3436",
 
