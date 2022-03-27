@@ -53,6 +53,8 @@ export async function run (interaction) {
 		console.log(`fetchStatus() delay: ${new Date() - delayStart}ms`)
 	}
 
+	console.log(JSON.stringify(serviceStatus?.statuses, null, 4))
+
 	if (!serviceStatus?.statuses) {
 		interactionReply(interaction, {
 			messageEmbed: new MessageEmbed()
@@ -74,11 +76,11 @@ export async function run (interaction) {
 		} else embed.addField(serviceStatus.statuses.data.status.currentStatuses[i].name, ":red_circle:", true) // If there's an issue with the service - add the name, a red circle with inline property
 	}
 
-	if (serviceStatus.statuses.data.status.messages.length !== 0) {
-		if (serviceStatus.statuses.data.status.messages.length <= 1024) { // 1024 is the embed field value character limit
-			embed.addField("Messages", serviceStatus.statuses.data.status.messages)
+	if (serviceStatus.statuses.data.status.messages.length !== 0 && Array.isArray(serviceStatus.statuses.data.status.messages)) { // Has content and is an array
+		if (serviceStatus.statuses.data.status.messages[0].length <= 1024) { // 1024 is the embed field value character limit
+			embed.addField("Messages", serviceStatus.statuses.data.status.messages[0])
 		} else {
-			embed.addField("Messages", `${serviceStatus.statuses.data.status.messages.slice(0, (1024 - 3))}...`) // Slices off message so that it has exactly the space for the 3 extra dots
+			embed.addField("Messages", `${serviceStatus.statuses.data.status.messages[0].slice(0, (1024 - 3))}...`) // Slices off message so that it has exactly the space for the 3 extra dots
 		}
 	}
 
