@@ -33,9 +33,6 @@ async function fetchStatus () {
 			responseType: "json",
 			body: requestBody
 		})
-		console.log("====================")
-		console.log(response)
-		console.log("====================")
 		if (response.statusCode !== 200) throw new Error("Status fetch failed")
 		else return response.body
 	} catch (error) {
@@ -54,10 +51,6 @@ export async function run (interaction) {
 		serviceStatus.fetched = new Date()
 		console.log(`fetchStatus() delay: ${new Date() - delayStart}ms`)
 	}
-
-	console.log("====================")
-	console.log(JSON.stringify(serviceStatus?.statuses, null, 2))
-	console.log("====================")
 
 	if (!serviceStatus?.statuses) {
 		interactionReply(interaction, {
@@ -92,6 +85,11 @@ export async function run (interaction) {
 	if (greenQuota === 1) embed.setColor(config.embedDesign.color.green)			// Green	(10 Green)
 	else if (greenQuota >= 0.75) embed.setColor(config.embedDesign.color.yellow)	// Yellow	(7-9 Green)
 	else if (greenQuota >= 0.5) embed.setColor(config.embedDesign.color.orange)		// Orange	(5-6 Green)
-	else embed.setColor(config.embedDesign.color.red)								// Red		(0-4 Green)
+	else {
+		embed
+			.setColor(config.embedDesign.color.red)									// Red		(0-4 Green)
+			.setDescription("This command is unstable and may not display the correct service statuses!")
+		return interactionReply(interaction, { messageEmbed: embed, messageEphemeral: true })
+	}
 	return interactionReply(interaction, { messageEmbed: embed })
 }
