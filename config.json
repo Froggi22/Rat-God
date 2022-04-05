@@ -1,26 +1,26 @@
 {
 	"embedDesign": {
 		"gameUpdate": "Updated for game version: 0.12.12.15.17076",
-		"ammoTitle": "Ammunition Table",
 		"color": {
 			"gold": "#FFD700"
 		}
 	},
 
 	"generalLinks": {
+		"website": "https://rat-god-website.herokuapp.com",
 		"discordInvite": "https://discord.com/invite/kg7VfRQ9Xw",
+		"github": "https://github.com/Froggi22/Rat-God",
 		"botProfileImage": "https://cdn.discordapp.com/attachments/865617643449221141/920345495568777316/RG_Profile.png",
 		"modAbuseImage": "https://cdn.discordapp.com/attachments/865617643449221141/867828829489594429/Mod_abuse.png",
 		"tarkovItems": "https://dev.sp-tarkov.com/SPT-AKI/Server/raw/branch/development/project/assets/database/templates/items.json",
 		"tarkovOfficialStatus": "https://status.escapefromtarkov.com",
-		"tarkovAPIStatus": "https://api.tarkov.dev/graphql",
 		"wikiMain": "https://escapefromtarkov.fandom.com/wiki/Escape_from_Tarkov_Wiki",
 		"wikiBallistics": "https://escapefromtarkov.fandom.com/wiki/Ballistics",
 		"wikiMaps": "https://escapefromtarkov.fandom.com/wiki/Map_of_Tarkov"
 	},
 
 	"general": {
-		"lastUpdatedMessage": "**Last updated -** 2022-04-04.",
+		"lastUpdatedMessage": "**Last updated -** 2022-04-05.",
 		"latestUpdateDate": "March 27, 2022 00:00:00",
 		"developerGuildID": "861948446910578699",
 		"developers": [
@@ -32,13 +32,7 @@
 		"latestUpdateMessage": "+ Renamed the map bosses to their common names - Kojaniy to Shturman and Bully to Reshala. \n\n+ 2x new widgets in the README on github, showing bot status & server count.\n\n+ Updated both Bot and Server Top.gg page. Updated description and background image (epic Tagilla), also the Patreon banner.",
 
 		"prefixMessage": "My prefix is  **/**  (Slash)!",
-		"devDiscordTag": "Froggi22#3436",
-
-		"helpCommands": "`Ammo` - Shows all ammo commands. \n`Maps` - Shows all maps commands.\n\n`Ping` - Pings the bot.\n`Modabuse` - Funny meme about mod abuse.\n`Servercount` - Bot's popularity.\n`Support` - Contact details.",
-		"helpCommandSubtext": "`Latest` - Latest updates.\n\n[Website](https://rat-god-website.herokuapp.com).\n[Instructional Video](https://youtu.be/xQwQqnkmScg) - *Yes many cringe*.\n[Github](https://github.com/Froggi22/Rat-God).",
 		"sendMessageError": "I may not have have permission to send messages in that channel!\nIf this error still persists, please contact Froggi22#3436 or join the Support Server: https://discord.com/invite/kg7VfRQ9Xw",
-		"descriptionRatGod": "Rat God will help you in Escape From Tarkov, by accessing in-game information and delivering it to you!",
-		"permissionsRatGod": "To understand why Rat God requires certain permissions, please view the \"Permissions\" section on [our Github page](https://github.com/Froggi22/Rat-God).",
 		"cooldown": 3000
 	},
 
@@ -116,5 +110,16 @@
 			"ingame": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/84/Woods_Map_0.5.4.823.jpg/revision/latest?cb=20210703123554",
 			"hidden stashes": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/55/Woods_Caches.png/revision/latest?cb=20210122093726"
 		}
+	},
+
+	"locationDesc": {
+		"customs": "A large area of industrial park land situated adjacent to the factory. This area houses a customs terminal, fuel storage facilities, offices, and dorms as well as a variety of other infrastructure buildings.",
+		"labs": "Underground laboratory complex TerraGroup Labs is a secret object right under the center of Tarkov. Officially, this research center does not exist and, based on data scraps, is engaged in R&D, testing and simulation projects in chemistry, physics, biology, and high-tech areas.",
+		"shoreline": "Shoreline is a large area located on the coastal outskirts of Tarkov, next to the city's port. The area's geography features tracts of undulating woodland, large open fields, jagged cliffs, a swamp and a long stretch of shoreline."
+	},
+
+	"locationBossName": {
+		"Bully": "Reshala",
+		"Kojaniy": "Shturman"
 	}
 }

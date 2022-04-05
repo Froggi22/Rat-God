@@ -7,25 +7,29 @@ export function run (interaction) {
 	const embed = new MessageEmbed()
 		.setColor(config.embedDesign.color.gold)
 		.setAuthor({ name: "🐀 Rat Gods Commands", url: config.generalLinks.wikiMain })
-		.setDescription(`Leave suggestions to ${config.general.devDiscordTag}.`)
+		.setDescription(config.general.prefixMessage)
 		.addFields(
-			{ name: "Commands", value: `${config.general.prefixMessage}\n${config.general.helpCommands}\n` },
-			{ name: `Version ${config.general.version}`, value: `${config.general.lastUpdatedMessage}\n${config.general.helpCommandSubtext}` }
+			{ name: "Commands", value: "\n`Ammo` - Caliber bullet specifics. \n`Maps` - Map information.\n`Time` - Current in-game raid time.\n\n`Ping` - Pinging the bot.\n`Modabuse` - Funny meme about mod abuse.\n`Statistics` - Bot statistics." },
+			{ name: `Version ${config.general.version}`, value: `${config.general.lastUpdatedMessage}\n\`Latest\` - Latest updates.` }
 		)
 		.setFooter({ text: config.embedDesign.gameUpdate })
 
 	const row = new MessageActionRow()
 		.addComponents(
 			new MessageButton()
-				.setURL(config.generalLinks.discordInvite)
-				.setLabel("Support")
+				.setURL(config.generalLinks.website)
+				.setLabel("Website")
 				.setStyle("LINK"),
 
 			new MessageButton()
-				.setCustomId("devDiscordTag") // Necessary but useless
-				.setLabel(`Dev: ${config.general.devDiscordTag}`)
-				.setStyle("SECONDARY")
-				.setDisabled(true)
+				.setURL(config.generalLinks.github)
+				.setLabel("Github")
+				.setStyle("LINK"),
+
+			new MessageButton()
+				.setURL(config.generalLinks.discordInvite)
+				.setLabel("Support")
+				.setStyle("LINK")
 		)
 
 	return interactionReply(interaction, { messageEmbed: embed, messageComponents: row })
