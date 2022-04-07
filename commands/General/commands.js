@@ -26,7 +26,7 @@ export function run (interaction) {
 
 				{
 					name: "General",
-					value: "`Commands` - This message.\n`Help` - Help command.\n`Latest` - Latest update.\n`Modabuse` - Funny meme about mod abuse.\n`Ping` - Pinging the bot.\n`Service-Status` - WIP Status on Tarkov services\n`Statistics` - Bot statistics.\n`Support` - Contact details.\n`Time` - Current in-game raid time\n`Mention` - Mention the bot to receive the prefix."
+					value: "`Commands` - This message.\n`Help` - Help command.\n`Latest` - Latest update.\n`Modabuse` - Funny meme about mod abuse.\n`Ping` - Pinging the bot.\n`Statistics` - Bot statistics.\n`Time` - Current in-game raid time.\n`Mention` - Mention the bot to receive the prefix."
 				}
 			)
 			.setFooter({ text: config.embedDesign.gameUpdate })

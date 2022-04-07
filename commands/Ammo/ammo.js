@@ -144,7 +144,7 @@ export async function run (interaction) {
 	interactionReply(interaction, {
 		messageEmbed: new MessageEmbed()
 			.setColor(config.embedDesign.color.gold)
-			.setAuthor({ name: `🐀 ${valueToKey} ${config.embedDesign.ammoTitle}`, url: config.generalLinks.wikiBallistics })
+			.setAuthor({ name: `🐀 ${valueToKey} Ammunition Table`, url: config.generalLinks.wikiBallistics })
 			.setDescription(`\`\`\`txt\n${table.toString()}\`\`\``)
 			.setFooter({ text: config.embedDesign.gameUpdate })
 	})
