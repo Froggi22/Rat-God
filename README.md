@@ -15,29 +15,6 @@
 
 - - -
 
-## Table of contents
-
-- [About 💡](#about-)
-	- [Data Collection 📊](#data-collection-)
-	- [Revenue 💰](#revenue-)
-- [Links 🔗](#links-)
-- [How to use 🌟](#how-to-use-)
-- [Features 🧰](#features-)
-	- [Ammunition 💥](#ammunition-)
-	- [Maps 🗺️](#maps-%EF%B8%8F)
-	- [Misc ⌚](#misc-)
-- [FAQ 📚](#faq-)
-- [Permissions ⚙️](#permissions-%EF%B8%8F)
-- [Contributing 🔨](#contributing-)
-	- [Prerequisites 📩](#prerequisites-)
-	- [Implementing Changes 🏗️](#implementing-changes-%EF%B8%8F)
-	- [Slash Commands 🧪](#slash-commands-)
-- [Folder & File Information 🗂️](#folder--file-information-%EF%B8%8F)
-	- [Folder Info 📂](#folder-info-)
-	- [File Info 📄](#file-info-)
-
-- - -
-
 ## About 💡
 
 Rat God is an Open Source Discord bot that helps you in the game Escape From Tarkov, and is covered by the [Affero General Public License version 3](LICENSE)! The information is sourced from the game and the Official Wiki. It can be requested using [Discord's slash commands](https://support.discord.com/hc/en-us/articles/1500000368501-Slash-Commands-FAQ). This bot benefits the user because it's a fast lookup for ammunition and maps details, presents unique data and is more than likely faster than looking it up on said Wiki!
