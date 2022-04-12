@@ -32,5 +32,5 @@ export function run (interaction) {
 				.setStyle("LINK")
 		)
 
-	return interactionReply(interaction, { messageEmbed: embed, messageComponents: row })
+	return interactionReply(interaction, { messageEmbed: embed, messageComponents: [row] })
 }

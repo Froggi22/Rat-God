@@ -43,9 +43,9 @@ export const config = JSON.parse(fs.readFileSync("config.json"))
 
 // Top.gg servercount
 if (process.env.TOPGG_TOKEN) {
-	try {
-		AutoPoster(process.env.TOPGG_TOKEN, client)
-	} catch (error) {
+	const poster = AutoPoster(process.env.TOPGG_TOKEN, client)
+
+	poster.on("error", error => {
 		console.log(`Top.gg error >> ${error}`)
-	}
+	})
 }

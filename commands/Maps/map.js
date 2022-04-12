@@ -93,5 +93,5 @@ export async function run (interaction) {
 		}
 	}
 
-	return interactionReply(interaction, { messageEmbed: embed, messageComponents: row })
+	return interactionReply(interaction, { messageEmbed: embed, messageComponents: [row] })
 }
