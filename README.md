@@ -1,4 +1,4 @@
-<h1 align="center"><img src="assets/RG.png" alt="Rat God" width="150" title="Rat God" /></h1>
+<h1 align="center"><img src="./src/assets/RG.png" alt="Rat God" width="150" title="Rat God" /></h1>
 
 <h1 align="center">Rat God</h1>
 
@@ -142,12 +142,14 @@ To make [slash commands](https://support.discord.com/hc/en-us/articles/150000036
 
 ### Folder Info 📂
 
+- `.github/` - Github configs.
 - `.vscode/` - Visual Studio Code settings.
+- `src/` - The actual project files.
 
 ### File Info 📄
 
 - `.eslintrc` - Settings for linting extensions.
-- `.gitignore` - Used for ignoring files from Git.
-- `config.json` - Central file for information/text that the bot sends.
+- `.gitignore` - Git-tracking blacklist.
 - `Procfile` - For Heroku - the bot's hosting platform.
 - `README.md` - The documentation you're reading right now.
+- `src/config.json` - Central file for information/text that the bot sends.
