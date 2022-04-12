@@ -3,7 +3,7 @@
 	"version": "1.5.3",
 	"description": "An Open Source Discord bot that will help you in Escape From Tarkov!",
 	"license": "AGPL-3.0-only",
-	"main": "index.js",
+	"main": "./src/index.js",
 	"bugs": "https://github.com/Froggi22/Rat-God/issues",
 	"repository": "github:Froggi22/Rat-God",
 	"private": true,

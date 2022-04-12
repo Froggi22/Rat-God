@@ -1,0 +1,125 @@
+{
+	"embedDesign": {
+		"gameUpdate": "Updated for game version: 0.12.12.15.17076",
+		"color": {
+			"gold": "#FFD700"
+		}
+	},
+
+	"generalLinks": {
+		"website": "https://rat-god-website.herokuapp.com",
+		"discordInvite": "https://discord.com/invite/kg7VfRQ9Xw",
+		"github": "https://github.com/Froggi22/Rat-God",
+		"botProfileImage": "https://cdn.discordapp.com/attachments/865617643449221141/920345495568777316/RG_Profile.png",
+		"modAbuseImage": "https://cdn.discordapp.com/attachments/865617643449221141/867828829489594429/Mod_abuse.png",
+		"tarkovItems": "https://dev.sp-tarkov.com/SPT-AKI/Server/raw/branch/development/project/assets/database/templates/items.json",
+		"tarkovOfficialStatus": "https://status.escapefromtarkov.com",
+		"wikiMain": "https://escapefromtarkov.fandom.com/wiki/Escape_from_Tarkov_Wiki",
+		"wikiBallistics": "https://escapefromtarkov.fandom.com/wiki/Ballistics",
+		"wikiMaps": "https://escapefromtarkov.fandom.com/wiki/Map_of_Tarkov"
+	},
+
+	"general": {
+		"lastUpdatedMessage": "**Last updated -** 2022-04-13.",
+		"latestUpdateDate": "March 27, 2022 00:00:00",
+		"developerGuildID": "861948446910578699",
+		"developers": [
+			"229212817448894464",
+			"379643682984296448"
+		],
+
+		"version": "1.5.3",
+		"latestUpdateMessage": "+ Renamed the map bosses to their common names - Kojaniy to Shturman and Bully to Reshala. \n\n+ 2x new widgets in the README on github, showing bot status & server count.\n\n+ Updated both Bot and Server Top.gg page. Updated description and background image (epic Tagilla), also the Patreon banner.",
+
+		"prefixMessage": "My prefix is  **/**  (Slash)!",
+		"sendMessageError": "I may not have have permission to send messages in that channel!\nIf this error still persists, please contact Froggi22#3436 or join the Support Server: https://discord.com/invite/kg7VfRQ9Xw",
+		"cooldown": 3000
+	},
+
+	"ammo": {
+		"12x70mm": "12g",
+		"20x70mm": "20g",
+		"23x75mm": "23x75",
+		"9x18mm Makarov": "9x18PM",
+		"7.62x25mm Tokarev": "762x25TT",
+		"9x19mm Parabellum": "9x19PARA",
+		".45 ACP": "1143x23ACP",
+		"9x21mm Gyurza": "9x21",
+		"5.7x28mm FN": "57x28",
+		"4.6x30mm HK": "46x30",
+		"9x39mm": "9x39",
+		".366 TKM": "366TKM",
+		"5.45x39mm": "545x39",
+		"5.56x45mm NATO": "556x45NATO",
+		".300 Blackout": "762x35",
+		"7.62x39mm": "762x39",
+		"7.62x51mm NATO": "762x51",
+		"7.62x54mmR": "762x54R",
+		".338 Lapua Magnum": "86x70",
+		"12.7x55mm STs-130": "127x55",
+		"40x46 mm": "40x46",
+		"Stationary Weapons": "127x108"
+	},
+
+	"locations": {
+		"customs": {
+			"map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/27/2021_Customs_by_PaulRIISK.png/revision/latest?cb=20210202221431",
+			"interactive": "https://mapgenie.io/tarkov/maps/customs",
+			"ingame": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/95/Customs_Map_0.5.4.823.jpg/revision/latest?cb=20180107234058",
+			"hidden stashes": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/7e/Customs_Hidden_Stashes.jpg/revision/latest?cb=20191111193149",
+			"dorms": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/96/DormRoomsMap.jpg/revision/latest?cb=20200328162326"
+		},
+		"factory": {
+			"map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/cd/Factory_3D_b_Johnny_Tushonka.jpg/revision/latest?cb=20210704215141",
+			"interactive": "https://mapgenie.io/tarkov/maps/factory",
+			"ingame": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/46/Factory_Map_0.5.4.823.jpg/revision/latest?cb=20180107195528"
+		},
+		"interchange": {
+			"map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e5/InterchangeMap_Updated_4.24.2020.png/revision/latest?cb=20210320055357",
+			"interactive": "https://mapgenie.io/tarkov/maps/interchange",
+			"ingame": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/8b/OfficialInterchangePaperMap.jpg/revision/latest?cb=20200807114014",
+			"hidden stashes": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/fe/Interchange_hidden_stash_map.jpg/revision/latest?cb=20191117132146"
+		},
+		"lighthouse": {
+			"map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/13/Jindouz_Lighthouse_Map_V1.png/revision/latest?cb=20211218192352",
+			"hidden stashes": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/05/Hokkaido_Lighthouse_Stashes_Map.jpeg/revision/latest?cb=20211219225541",
+			"3d": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e2/Re3mrLighthouseIsometricDay-min.png/revision/latest?cb=20220112220933"
+		},
+		"reserve": {
+			"map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/38/Re3mrReserveCardinalNorthWikiVer.jpg/revision/latest?cb=20220127204615",
+			"keys": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/9/9f/Keys_and_doors_v3.png/revision/latest?cb=20201023113645",
+			"d2 bunker": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d0/ReserveExpandedUnderground.png/revision/latest?cb=20201004224828"
+		},
+		"shoreline": {
+			"map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/a/ac/Shoreline_Map_-_12.7.png/revision/latest?cb=20211224235423",
+			"interactive": "https://mapgenie.io/tarkov/maps/shoreline",
+			"ingame": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/17/Map_Shoreline.jpg/revision/latest?cb=20200728192547",
+			"hidden stashes": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/8c/Shoreline_hidden_stashes_map_with_pics.jpg/revision/latest?cb=20210110045931",
+			"key spawns": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/7/7e/ShorelineKeySpawnsByStealtheh.jpg/revision/latest?cb=20190908171904"
+		},
+		"labs": {
+			"map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/c/cf/The_Lab_Map_%28Horizontal%29_%28EN%29.png/revision/latest?cb=20200330144615",
+			"interactive": "https://mapgenie.io/tarkov/maps/lab",
+			"basement": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/06/TheLabBasementByLogiwonk.png/revision/latest?cb=20210525222902",
+			"first floor": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/35/TheLabFirstFloorByLogiwonk.png/revision/latest?cb=20190210195441",
+			"second floor": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/0f/TheLabSecondFloorByLogiwonk.png/revision/latest?cb=20190210195443"
+		},
+		"woods": {
+			"map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/0/05/Glory4lyfeWoods_map_v4_marked.png/revision/latest?cb=20211212154613",
+			"interactive": "https://mapgenie.io/tarkov/maps/woods",
+			"ingame": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/84/Woods_Map_0.5.4.823.jpg/revision/latest?cb=20210703123554",
+			"hidden stashes": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/5/55/Woods_Caches.png/revision/latest?cb=20210122093726"
+		}
+	},
+
+	"locationDesc": {
+		"customs": "A large area of industrial park land situated adjacent to the factory. This area houses a customs terminal, fuel storage facilities, offices, and dorms as well as a variety of other infrastructure buildings.",
+		"labs": "Underground laboratory complex TerraGroup Labs is a secret object right under the center of Tarkov. Officially, this research center does not exist and, based on data scraps, is engaged in R&D, testing and simulation projects in chemistry, physics, biology, and high-tech areas.",
+		"shoreline": "Shoreline is a large area located on the coastal outskirts of Tarkov, next to the city's port. The area's geography features tracts of undulating woodland, large open fields, jagged cliffs, a swamp and a long stretch of shoreline."
+	},
+
+	"locationBossName": {
+		"Bully": "Reshala",
+		"Kojaniy": "Shturman"
+	}
+}
