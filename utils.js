@@ -28,7 +28,7 @@ export function ObjectKeyValueSearch (obj, keySearch) {
  * @param {*} interaction The Discord interaction
  * @param {object} messageItems An object specifying the message details
  */
-export async function interactionReply (interaction, { messageContent = undefined, messageEmbed = undefined, messageEphemeral = false, messageComponents = undefined }) {
+export async function interactionReply (interaction, { messageContent = undefined, messageEmbed = undefined, messageEphemeral = false, messageComponents = [undefined] }) {
 	// This is for inducing an interaction failure
 	/* const delay = ms => new Promise(resolve => setTimeout(resolve, ms))
 	await delay(4000) */
@@ -36,7 +36,7 @@ export async function interactionReply (interaction, { messageContent = undefine
 	let error;
 	[, error] = await tryCatchPromise(interaction.deferReply({ ephemeral: messageEphemeral }))
 	if (!error) {
-		[, error] = await tryCatchPromise(interaction.editReply({ content: messageContent, embeds: messageEmbed ? [messageEmbed] : undefined, components: messageComponents ? [messageComponents] : undefined }))
+		[, error] = await tryCatchPromise(interaction.editReply({ content: messageContent, embeds: messageEmbed ? [messageEmbed] : undefined, components: messageComponents.every(element => element === undefined) ? undefined : messageComponents }))
 		// If both deferReply and editReply successful then return
 		if (!error) return
 	}
