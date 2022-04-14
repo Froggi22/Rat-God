@@ -13,14 +13,13 @@
 		"botProfileImage": "https://cdn.discordapp.com/attachments/865617643449221141/920345495568777316/RG_Profile.png",
 		"modAbuseImage": "https://cdn.discordapp.com/attachments/865617643449221141/867828829489594429/Mod_abuse.png",
 		"tarkovItems": "https://dev.sp-tarkov.com/SPT-AKI/Server/raw/branch/development/project/assets/database/templates/items.json",
-		"tarkovOfficialStatus": "https://status.escapefromtarkov.com",
 		"wikiMain": "https://escapefromtarkov.fandom.com/wiki/Escape_from_Tarkov_Wiki",
 		"wikiBallistics": "https://escapefromtarkov.fandom.com/wiki/Ballistics",
 		"wikiMaps": "https://escapefromtarkov.fandom.com/wiki/Map_of_Tarkov"
 	},
 
 	"general": {
-		"lastUpdatedMessage": "**Last updated -** 2022-04-13.",
+		"lastUpdatedMessage": "**Last updated -** 2022-04-14.",
 		"latestUpdateDate": "March 27, 2022 00:00:00",
 		"developerGuildID": "861948446910578699",
 		"developers": [
