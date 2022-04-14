@@ -6,7 +6,7 @@ import { fetchMaps } from "../../events/ready.js"
 export const description = "Information and maps about a specific location"
 export const options = [{
 	name: "location",
-	description: "What location",
+	description: "Specify the location",
 	type: "STRING",
 	required: true,
 	choices: Object.keys(config.locations).map(location => ({ name: capitalizeWords(location), value: location })) // Factory, Shoreline, Labs etc.
