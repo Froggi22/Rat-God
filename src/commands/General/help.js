@@ -9,7 +9,7 @@ export function run (interaction) {
 		.setAuthor({ name: "🐀 Rat Gods Commands", url: config.generalLinks.wikiMain })
 		.setDescription(config.general.prefixMessage)
 		.addFields(
-			{ name: "Commands", value: "\n`Ammo` - Caliber bullet specifics. \n`Maps` - Map information.\n`Time` - Current in-game raid time.\n\n`Ping` - Pinging the bot.\n`Modabuse` - Funny meme about mod abuse.\n`Statistics` - Bot statistics." },
+			{ name: "Commands", value: "\n`Ammo` - Caliber bullet specifics. \n`Maps` - Map information.\n`Time` - Current in-game raid time.\n\n`Ping` - Pinging the bot.\n`Statistics` - Bot statistics." },
 			{ name: `Version ${config.general.version}`, value: `${config.general.lastUpdatedMessage}\n\`Latest\` - Latest updates.` }
 		)
 		.setFooter({ text: config.embedDesign.gameUpdate })
