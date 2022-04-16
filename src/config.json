@@ -1,6 +1,6 @@
 {
 	"embedDesign": {
-		"gameUpdate": "Updated for game version: 0.12.12.15.17076",
+		"gameUpdate": "Updated for game version 0.12.12.15.17076",
 		"color": {
 			"gold": "#FFD700"
 		}
@@ -18,7 +18,7 @@
 	},
 
 	"general": {
-		"lastUpdatedMessage": "**Last updated -** 2022-04-16.",
+		"lastUpdatedMessage": "**Last updated -** 2022-04-17.",
 		"latestUpdateDate": "March 27, 2022 00:00:00",
 		"developerGuildID": "861948446910578699",
 		"developers": [

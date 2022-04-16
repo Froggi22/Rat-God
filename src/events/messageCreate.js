@@ -11,7 +11,7 @@ export async function run (message, client) {
 
 	switch (message.content) { // Check for interaction update commands
 	case "!guild":
-		await client.guilds.cache.get(config.general.developerGuildID).commands.set(commands.map(command => command))
+		await client.guilds.cache.get(config.general.developerGuildID).commands.set(commands.map(cmd => cmd))
 		return messageReply(message, "Deployed Guild Slash Commands!")
 	case "!removeguild":
 		await client.guilds.cache.get(config.general.developerGuildID).commands.set([])

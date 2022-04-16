@@ -27,22 +27,19 @@ export const cooldowns = new discordjs.Collection()
 // Event Handler
 for (const file of fs.readdirSync("./src/events")) {
 	import(`./events/${file}`).then(event => {
-		const eventName = file.replace(/\.(c|m)?(j|t)s/, "")
+		const eventName = file.replace(/\.js/, "")
 		if (event.run) client.on(eventName, (...args) => event.run(...args, client))
-		else console.log(`WARN ignoring src/events/${file}`)
+		else console.log(`WARN ignoring ./src/events/${file}`)
 	})
 }
 
 // Command Handler
-for (const folder of fs.readdirSync("./src/commands")) {
-	if (folder === "Keys") continue
-	for (const file of fs.readdirSync(`./src/commands/${folder}`)) {
-		import(`./commands/${folder}/${file}`).then(command => {
-			const commandName = file.replace(/\.(c|m)?(j|t)s/, "")
-			if (command.description && command.run) commands.set(commandName, { ...command, name: commandName })
-			else console.log(`WARN ignoring commands/${folder}/${file}`)
-		})
-	}
+for (const file of fs.readdirSync("./src/commands")) {
+	import(`./commands/${file}`).then(command => {
+		const commandName = file.replace(/\.js/, "")
+		if (command.description && command.run) commands.set(commandName, { ...command, name: commandName })
+		else console.log(`WARN ignoring ./src/commands/${file}`)
+	})
 }
 
 // JSON config

@@ -8,10 +8,10 @@ import { config } from "../index.js"
 export async function fetchAmmo () {
 	const url = config.generalLinks.tarkovItems
 	const settings = { method: "GET" }
-	const tarkovJSON = await fetch(url, settings)
-		.then(response => response.json())
-		.catch(error => console.log(`Error > ${error}`))
-	return Object.values(tarkovJSON)
+	const items = await fetch(url, settings)
+		.then(res => res.json())
+		.catch(e => console.log(`Error > ${e}`))
+	return Object.values(items)
 		.filter(Obj =>
 			Obj._props &&
 			Obj._props.Caliber &&
@@ -27,23 +27,23 @@ export async function fetchAmmo () {
  * @returns {Array} Updated object of fetched maps
  */
 export async function fetchMaps (mapsJSONObj, location) {
-	let correctedName = location
-	const correctedLocationNamesObj = {
+	let locationCorrect = location
+	const correctedLocations = {
 		customs: "bigmap",
 		factory: "factory4_day",
 		reserve: "rezervbase",
 		labs: "laboratory"
 	}
 
-	if (Object.keys(correctedLocationNamesObj).find(key => key === location.toLowerCase())) correctedName = correctedLocationNamesObj[location.toLowerCase()] // If the corrected name exists - use it
+	if (Object.keys(correctedLocations).find(key => key === location.toLowerCase())) locationCorrect = correctedLocations[location.toLowerCase()] // If the corrected name exists - use it
 
 	const delayStart = new Date()
-	const url = `https://dev.sp-tarkov.com/SPT-AKI/Server/raw/branch/development/project/assets/database/locations/${correctedName.toLowerCase()}/base.json`
+	const url = `https://dev.sp-tarkov.com/SPT-AKI/Server/raw/branch/development/project/assets/database/locations/${locationCorrect.toLowerCase()}/base.json`
 	const settings = { method: "GET" }
-	const data2 = await fetch(url, settings)
-		.then(response => response.json())
-		.catch(error => console.log(`Error > ${error}`))
-	mapsJSONObj[location] = data2
+	const locationInfo = await fetch(url, settings)
+		.then(res => res.json())
+		.catch(e => console.log(`Error > ${e}`))
+	mapsJSONObj[location] = locationInfo
 	console.log(`fetchMaps() delay: ${new Date() - delayStart}ms`)
 	return mapsJSONObj
 }

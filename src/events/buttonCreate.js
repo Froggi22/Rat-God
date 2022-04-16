@@ -7,12 +7,13 @@ export function run (interaction) {
 		const location = interaction.customId.split("-")[1]
 		const guide = interaction.customId.split("-")[2].replace("_", " ")
 
-		const embed = new MessageEmbed()
-			.setColor(config.embedDesign.color.gold)
-			.setTitle(`${capitalizeWords(location)} ${capitalizeWords(guide)} Map`)
-			.setImage(config.locations[location][guide])
-			.setFooter({ text: config.embedDesign.gameUpdate })
-
-		return interactionReply(interaction, { messageEmbed: embed, messageEphemeral: true })
+		return interactionReply(interaction, {
+			messageEmbed: new MessageEmbed()
+				.setColor(config.embedDesign.color.gold)
+				.setTitle(`${capitalizeWords(location)} ${capitalizeWords(guide)} Map`)
+				.setImage(config.locations[location][guide])
+				.setFooter({ text: config.embedDesign.gameUpdate }),
+			messageEphemeral: true
+		})
 	}
 }
