@@ -27,7 +27,7 @@ export const cooldowns = new discordjs.Collection()
 // Event Handler
 for (const file of fs.readdirSync("./src/events")) {
 	import(`./events/${file}`).then(event => {
-		const eventName = file.replace(/\.js/, "")
+		const eventName = file.replace(/\.(c|m)?(j|t)s/, "")
 		if (event.run) client.on(eventName, (...args) => event.run(...args, client))
 		else console.log(`WARN ignoring ./src/events/${file}`)
 	})
@@ -36,7 +36,7 @@ for (const file of fs.readdirSync("./src/events")) {
 // Command Handler
 for (const file of fs.readdirSync("./src/commands")) {
 	import(`./commands/${file}`).then(command => {
-		const commandName = file.replace(/\.js/, "")
+		const commandName = file.replace(/\.(c|m)?(j|t)s/, "")
 		if (command.description && command.run) commands.set(commandName, { ...command, name: commandName })
 		else console.log(`WARN ignoring ./src/commands/${file}`)
 	})
@@ -49,7 +49,7 @@ export const config = JSON.parse(fs.readFileSync("./src/config.json"))
 if (process.env.TOPGG_TOKEN) {
 	const poster = AutoPoster(process.env.TOPGG_TOKEN, client)
 
-	poster.on("error", error => {
-		console.log(`Top.gg error >> ${error}`)
+	poster.on("error", e => {
+		console.log(`Top.gg error >> ${e}`)
 	})
 }
