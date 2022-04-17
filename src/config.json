@@ -73,10 +73,11 @@
 			"ingame": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/46/Factory_Map_0.5.4.823.jpg/revision/latest?cb=20180107195528"
 		},
 		"interchange": {
-			"map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/e/e5/InterchangeMap_Updated_4.24.2020.png/revision/latest?cb=20210320055357",
+			"map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/2/27/Interchange2DMapLorathor.jpg/revision/latest?cb=20220409224052",
 			"interactive": "https://mapgenie.io/tarkov/maps/interchange",
 			"ingame": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/8b/OfficialInterchangePaperMap.jpg/revision/latest?cb=20200807114014",
-			"hidden stashes": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/fe/Interchange_hidden_stash_map.jpg/revision/latest?cb=20191117132146"
+			"hidden stashes": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/f/fe/Interchange_hidden_stash_map.jpg/revision/latest?cb=20191117132146",
+			"3d": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/8/8e/Interchange3DMapMrYundaz.jpg/revision/latest?cb=20220409223309"
 		},
 		"lighthouse": {
 			"map": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/1/13/Jindouz_Lighthouse_Map_V1.png/revision/latest?cb=20211218192352",

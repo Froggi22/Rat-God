@@ -128,7 +128,7 @@ We're always looking for people who can help with anything from simple spelling 
 	- `TOPGG_TOKEN`: An optional Top.gg token for posting bot statistics to their website.
 5. Install dependencies: `npm ci`.
 6. Code your new feature!
-7. Test out the program: `node .`.
+7. Test out the program: `npm start`.
 8. Stage, commit, and push your files to your fork.
 9. Create a new pull request.
 

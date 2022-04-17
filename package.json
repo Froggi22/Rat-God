@@ -8,9 +8,16 @@
 	"repository": "github:Froggi22/Rat-God",
 	"private": true,
 	"type": "module",
+	"scripts": {
+		"start": "node ."
+	},
 	"author": {
 		"name": "Froggi22",
 		"url": "https://rat-god-website.herokuapp.com"
+	},
+	"engines": {
+		"node": "16.x",
+		"npm": "8.x"
 	},
 	"dependencies": {
 		"ascii-table": "^0.0.9",
@@ -20,10 +27,6 @@
 		"ms": "^2.1.3",
 		"node-fetch": "^3.2.3",
 		"topgg-autoposter": "^2.0.1"
-	},
-	"engines": {
-		"node": "16.x",
-		"npm": "8.x"
 	},
 	"devDependencies": {
 		"eslint": "^8.13.0",

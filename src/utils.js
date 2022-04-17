@@ -2,11 +2,11 @@ import { config } from "./index.js"
 
 /**
  * Capitalizes each words first letter in a string.
- * @param {string} string Any string
+ * @param {string} str Any string
  * @returns {string} String with first letters in each word capitalized
  */
-export function capitalizeWords (string) {
-	return string
+export function capitalizeWords (str) {
+	return str
 		.split(" ")
 		.map(word => word.match(/[a-z]/i) ? word.replace(word.match(/[a-z]/i)[0], word.match(/[a-z]/i)[0].toUpperCase()) : word)
 		.join(" ")
