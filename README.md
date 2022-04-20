@@ -52,9 +52,8 @@ The revenue this project generates is by generous donations on our [Patreon site
 ## Features 🧰
 
 - Rat God uses [Slash commands](https://support.discord.com/hc/en-us/articles/1500000368501-Slash-Commands-FAQ) - Prefix: `/`.
-- Auto-complete choices, so you don't have to remember any by heart!
-- To get a list of **all** commands, execute `/commands`.
-- For extra help or questions, execute `/support` or head over to the [Discord Server](https://discord.com/invite/kg7VfRQ9Xw).
+- Auto-complete choices.
+Type `/`, click on Rat God's icon to view all commands.
 
 ### Ammunition 💥
 
@@ -69,9 +68,9 @@ The maps command `/map` consists of 1 part:
 
 1. Choosing the location, e.g. `/map location:Factory`.
 
-The embed response has some buttons (amount varies on the map).\
-Some buttons link to external websites e.g. the wiki and to an interactive map.\
-The blue buttons however will send another message containing a special map e.g. an in-game map.
+The message provide buttons which can be used for extra information.\
+Link buttons (colored gray), provide external resources, e.g. wiki and interactive maps.\
+Blue buttons will send another message, embedding a special map, e.g. an in-game map.
 
 ### Misc ⌚
 
@@ -91,7 +90,7 @@ Expand the sections below to view the most commonly asked questions along with t
 <details>
 	<summary>Do you have a video explaining how to use the bot?</summary>
 	<div class="faq-answer">
-		Yes we do! The video is <a href="https://youtu.be/xQwQqnkmScg" target="_blank">on youtube</a> - <i>Yes many cringe</i>
+		Yes we do! The video is <a href="https://youtu.be/xQwQqnkmScg" target="_blank">on youtube</a> - <i>Yes, many cringe</i>
 	</div>
 </details>
 
