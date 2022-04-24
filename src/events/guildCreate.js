@@ -10,9 +10,9 @@ export function run (guild, client) {
 		}]
 	})
 
-	if (!guild.available) return // if guild is not available, return
+	if (!guild.available) return
 
-	const channel = guild.channels.cache.find(channel => channel.isText() && channel.type === "GUILD_TEXT" && channel.viewable && channel.permissionsFor(guild.me).has(Permissions.FLAGS.VIEW_CHANNEL) && channel.permissionsFor(guild.me).has(Permissions.FLAGS.SEND_MESSAGES)) // Find the first viewable, text channel where the bot can view the channel and send the welcome message
+	const channel = guild.channels.cache.find(channel => channel.isText() && channel.type === "GUILD_TEXT" && channel.viewable && channel.permissionsFor(guild.me).has(Permissions.FLAGS.VIEW_CHANNEL) && channel.permissionsFor(guild.me).has(Permissions.FLAGS.SEND_MESSAGES)) // Find the first channel with specifications
 
 	if (channel) { // If such channel exists, send the embed
 		channel.send({
