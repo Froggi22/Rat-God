@@ -1,6 +1,7 @@
-import { MessageEmbed } from "discord.js"
+import { MessageEmbed, MessageActionRow, MessageButton } from "discord.js"
 import { config } from "../index.js"
 import { interactionReply, capitalizeWords } from "../utils.js"
+import { tarkovTime } from "../commands/time.js"
 
 export function run (interaction) {
 	if (interaction.customId.startsWith("location")) {
@@ -15,5 +16,17 @@ export function run (interaction) {
 				.setFooter({ text: config.embedDesign.gameUpdate }),
 			messageEphemeral: true
 		})
+	} else if (interaction.customId === "time-refresh") {
+		interaction.update({
+			components: [
+				new MessageActionRow()
+					.addComponents(
+						new MessageButton()
+							.setCustomId("time-refresh")
+							.setLabel(`${tarkovTime(true)} ⌚ ${tarkovTime(false)}`)
+							.setStyle("SECONDARY")
+					)
+			]
+		}).catch()
 	}
 }
