@@ -18,16 +18,15 @@
 	},
 
 	"general": {
-		"lastUpdatedMessage": "**Last updated -** 2022-04-17.",
-		"latestUpdateDate": "March 27, 2022 00:00:00",
+		"lastUpdatedMessage": "**Last updated -** 2022-05-25.",
+		"latestUpdateDate": "May 25, 2022 13:00:00",
 		"developerGuildID": "861948446910578699",
 		"developers": [
 			"229212817448894464",
 			"379643682984296448"
 		],
 
-		"version": "1.5.3",
-		"latestUpdateMessage": "+ Renamed the map bosses to their common names - Kojaniy to Shturman and Bully to Reshala. \n\n+ 2x new widgets in the README on github, showing bot status & server count.\n\n+ Updated both Bot and Server Top.gg page. Updated description and background image (epic Tagilla), also the Patreon banner.",
+		"latestUpdateMessage": "+ /time got upgraded with a button, so you can refresh the time whenever you want!",
 
 		"prefixMessage": "My prefix is  **/**  (Slash)!",
 		"sendMessageError": "I may not have have permission to send messages in that channel!\nIf this error still persists, please contact Froggi22#3436 or join the Support Server: https://discord.com/invite/kg7VfRQ9Xw",

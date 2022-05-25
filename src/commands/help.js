@@ -27,8 +27,7 @@ export function run (interaction) {
 			.setColor(config.embedDesign.color.gold)
 			.setAuthor({ name: "🐀 Rat Gods Commands", url: config.generalLinks.wikiMain })
 			.addFields(
-				{ name: "Commands", value: "\n`Ammo` - Caliber bullet specifics. \n`Maps` - Map information.\n`Time` - Current in-game raid time.\n\n`Statistics` - Bot statistics." },
-				{ name: `Version ${config.general.version}`, value: `${config.general.lastUpdatedMessage}\n\`Latest\` - Latest updates.` }
+				{ name: "Commands", value: `\n\`Ammo\` - Caliber bullet specifics. \n\`Maps\` - Map information.\n\`Time\` - Current in-game raid time.\n\n\`Statistics\` - Bot statistics.\n\n${config.general.lastUpdatedMessage}\n\`Latest\` - Latest updates.` }
 			)
 			.setFooter({ text: config.embedDesign.gameUpdate }),
 		messageComponents: [row]
