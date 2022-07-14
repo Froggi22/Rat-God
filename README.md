@@ -33,7 +33,7 @@ The revenue this project generates is by generous donations on our [Patreon site
 
 ## Links 🔗
 
-- [Invite Bot](https://discord.com/api/oauth2/authorize?client_id=864572952275714059&permissions=274877958208&scope=bot%20applications.commands)
+- [Invite Bot](https://discord.com/api/oauth2/authorize?client_id=864572952275714059&permissions=274877908992&scope=bot%20applications.commands)
 - [Discord Server](https://discord.com/invite/kg7VfRQ9Xw) *<-- Highly recommend to join!*
 - [Website](https://rat-god-website.herokuapp.com)
 - [Website's repository](https://github.com/Froggi22/Rat-God-Website)
@@ -44,7 +44,7 @@ The revenue this project generates is by generous donations on our [Patreon site
 
 ## How to use 🌟
 
-1. [Add me to your server](https://discord.com/api/oauth2/authorize?client_id=864572952275714059&permissions=274877958208&scope=bot%20applications.commands).
+1. [Add me to your server](https://discord.com/api/oauth2/authorize?client_id=864572952275714059&permissions=274877908992&scope=bot%20applications.commands).
 2. Use the [commands](#features)! 🎉
 
 - - -
@@ -98,12 +98,10 @@ Expand the sections below to view the most commonly asked questions along with t
 
 ## Permissions ⚙️
 
-Rat God requests a few permissions. Some are required for the bot to function as intended. Here are the permissions requested by the bot with an explanation of what the use-cases are:
+Here are the permissions requested by Rat God with an explanation of what the use-cases are:
+
 - Send Messages (Replying to mentions & Interaction fallbacks)
 - Send Messages in Threads (Replying to mentions & Interaction fallbacks - but in threads this time)
-- Embed Links (Not required. For future expansion)
-- Attach Files (Not required. For future expansion)
-- Add Reactions (Not required. For future expansion)
 
 - - -
 
