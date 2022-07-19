@@ -45,7 +45,7 @@ The revenue this project generates is by generous donations on our [Patreon site
 ## How to use 🌟
 
 1. [Add me to your server](https://discord.com/api/oauth2/authorize?client_id=864572952275714059&permissions=274877908992&scope=bot%20applications.commands).
-2. Use the [commands](#features)! 🎉
+2. Use the [commands](#features-)! 🎉
 
 - - -
 
