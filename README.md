@@ -1,4 +1,4 @@
-<h1 align="center"><img src="./src/assets/RG.png" alt="Rat God" width="150" title="Rat God" /></h1>
+<h1 align="center"><img src="./assets/RG.png" alt="Rat God" width="150" title="Rat God" /></h1>
 
 <h1 align="center">Rat God</h1>
 
