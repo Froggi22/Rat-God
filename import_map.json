@@ -1,0 +1,7 @@
+{
+	"imports": {
+		"discordeno": "https://deno.land/x/discordeno@13.0.0-rc45/mod.ts",
+		"dotenv": "https://deno.land/std@0.148.0/dotenv/load.ts",
+		"oak": "https://deno.land/x/oak@v10.6.0/mod.ts"
+	}
+}

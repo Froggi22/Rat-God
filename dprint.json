@@ -1,0 +1,15 @@
+{
+	"incremental": true,
+	"useTabs": true,
+	"typescript": {
+		"bracePosition": "sameLine",
+		"nextControlFlowPosition": "sameLine",
+		"semiColons": "asi",
+		"singleBodyPosition": "sameLine",
+		"trailingCommas": "never",
+		"useBraces": "preferNone",
+		"preferHanging": true
+	},
+	"includes": ["*.{ts,json}"],
+	"plugins": ["https://plugins.dprint.dev/typescript-0.69.5.wasm", "https://plugins.dprint.dev/json-0.15.3.wasm"]
+}
